@@ -1,0 +1,2370 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<script>
+    // Disable functions start
+    function DisaggregationDisabled(disabled, enabled) {
+        $("tr." + disabled + " input").prop('disabled', true);
+        $("tr." + disabled + " input[disabled]").css("background-color", "#DCDAD1");
+        $("tr." + enabled + " input[disabled]").css("background-color", "white");
+        console.log("Disaggregation entries disabled");
+    }
+
+    function noDisaggregationDisabled(disabled, enabled) {
+        $("tr." + enabled + " input").prop('disabled', true);
+        $("tr." + enabled + " input[disabled]").css("background-color", "#DCDAD1");
+        $("tr." + disabled + " input[disabled]").css("background-color", "white");
+        console.log("No Disaggregation entry disabled");
+    }
+
+    function noneDisabled() {
+        $(":input").prop('disabled', false);
+        $(":input[disabled]").css("background-color", "white");
+        console.log("No entries disabled");
+    }
+    function goal1() {
+        //Goal 1 Start
+        noneDisabled();
+        if ((($("#rZQRXUXUPaL-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if (($('#MpwayQltPTy-HllvX50cXC0-val').val() != "") || ($('#j6NGNhKM1jz-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if ((($("#ePlRlJHXijB-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if (($('input[id^="bKFp3z7BOK7"]').val() != "") || ($('input[id^="Gtrz0rkNIH9"]').val() != "")) {
+            noDisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if ((($("#Bt7EwzXnP1B-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I113Disabled", "I113Enabled");
+        }
+        if (($('#nsPgvbrDPwQ-HllvX50cXC0-val').val() != "") || ($('#LgOeUwjhGva-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I113Disabled", "I113Enabled");
+        }
+        if ((($("#EvxREEMoa5E-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I114Disabled", "I114Enabled");
+        }
+        if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="RL5Cd2V59j9"]').val() != "")) {
+            noDisaggregationDisabled("I114Disabled", "I114Enabled");
+        }
+        //Goal 1 End
+    }
+    function goal3() {
+        //Goal 3 Start
+        noneDisabled();
+        if ((($("#gAnNDrg3dLo-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I31Disabled", "I31Enabled");
+        }
+        if (($('input[id^="oqVHB2xihvP"]').val() != "") || ($('input[id^="KKQuhnCMtEP"]').val() != "")) {
+            noDisaggregationDisabled("I31Disabled", "I31Enabled");
+        }
+        if ((($("#aGhDRO2S4Lu-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I32Disabled", "I32Enabled");
+        }
+        if (($('#mH9XBhoW1Cf-HllvX50cXC0-val').val() != "") || ($('#JFvlTEuknXq-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I32Disabled", "I32Enabled");
+        }
+        if ((($("#atbJtXLSbyf-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I33Disabled", "I33Enabled");
+        }
+        if (($('#IcUjJW2C9Im-HllvX50cXC0-val').val() != "") || ($('#dlinqsDHurO-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I33Disabled", "I33Enabled");
+        }
+        if ((($("#L32d5C6AIqv-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I34Disabled", "I34Enabled");
+        }
+        if (($('input[id^="EIxxvp8CHka"]').val() != "") || ($('input[id^="q2e5Wwjb7Ut"]').val() != "")) {
+            noDisaggregationDisabled("I34Disabled", "I34Enabled");
+        }
+        if ((($("#mFeVazpypaZ-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I35Disabled", "I35Enabled");
+        }
+        if (($('#TU2VGO7AnYK-HllvX50cXC0-val').val() != "") || ($('#ETzoIk2kLNK-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I35Disabled", "I35Enabled");
+        }
+        if ((($("#qj15XcoUCDI-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I36Disabled", "I36Enabled");
+        }
+        if (($('#MemsRPHqriD-HllvX50cXC0-val').val() != "") || ($('#x7dHhPJWJPe-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I36Disabled", "I36Enabled");
+        }
+        if ((($("#iCihpG4jRzH-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I37Disabled", "I37Enabled");
+        }
+        if (($('#r1tLOkgBXcw-HllvX50cXC0-val').val() != "") || ($('#M0V0lnx10d4-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I37Disabled", "I37Enabled");
+        }
+        if ((($("#Ti6DZBxiGsG-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I38Disabled", "I38Enabled");
+        }
+        if (($('#rR9ege9U0X3-HllvX50cXC0-val').val() != "") || ($('#KjU4p8nocJQ-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I38Disabled", "I38Enabled");
+        }
+        if ((($("#JCrwCxh05iE-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I39Disabled", "I39Enabled");
+        }
+        if (($('#F2kfyiytNRy-HllvX50cXC0-val').val() != "") || ($('#vFCUplW58Dq-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I39Disabled", "I39Enabled");
+        }
+        //Goal 3 End
+    }
+    function goal4() {
+        noneDisabled();
+        if ((($("#rZQRXUXUPaL-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I41Disabled", "I41Enabled");
+        }
+        if (($('#MpwayQltPTy-HllvX50cXC0-val').val() != "") || ($('#j6NGNhKM1jz-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I41Disabled", "I41Enabled");
+        }
+        if ((($("#D1xcT46JCVw-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I42Disabled", "I42Enabled");
+        }
+        if (($('#o8atQWjlEQ5-HllvX50cXC0-val').val() != "") || ($('#RiN9u844TAI-HllvX50cXC0-vall').val() != "")) {
+            noDisaggregationDisabled("I42Disabled", "I42Enabled");
+        }
+        if ((($("#WCjZOCH6jPx-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I43Disabled", "I43Enabled");
+        }
+        if (($('#R64mkjYs7B7-HllvX50cXC0-val').val() != "") || ($('#NehgnuC4gS7-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I43Disabled", "I43Enabled");
+        }
+        if ((($("#C5f5nB3USZ6-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I44Disabled", "I44Enabled");
+        }
+        if (($('#kSShIs8ejPy-HllvX50cXC0-val').val() != "") || ($('#EIFg3dxRTm6-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I44Disabled", "I44Enabled");
+        }
+    }
+    function goal5() {
+        noneDisabled();
+        if ((($("#aQ7C0r1YsV1-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I51Disabled", "I51Enabled");
+        }
+        if (($('#ab5HIxZDpT6-HllvX50cXC0-val').val() != "") || ($('#ZeItmMcJmlK-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I51Disabled", "I51Enabled");
+        }
+        if ((($("#qnlmEhaz3mm-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I52Disabled", "I52Enabled");
+        }
+        if (($('input[id^="P1da2rLseDI"]').val() != "") || ($('input[id^="ZgZNqYI4j8m"]').val() != "")) {
+            noDisaggregationDisabled("I52Disabled", "I52Enabled");
+        }
+    }
+    function goal6() {
+        noneDisabled();
+        if ((($("#Zvs9yZWgT9C-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I61Disabled", "I61Enabled");
+        }
+        if (($('#w5VGTETV8sF-HllvX50cXC0-val').val() != "") || ($('#bVLdO86vavP-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I61Disabled", "I61Enabled");
+        }
+        if ((($("#dJC0iHI9bWC-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I62Disabled", "I62Enabled");
+        }
+        if (($('#ZPFtZbsXQIT-HllvX50cXC0-val').val() != "") || ($('#EsP5GPtG6Nq-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I62Disabled", "I62Enabled");
+        }
+    }
+    function goal7() {
+        noneDisabled();
+        if ((($("#njgxJV082qP-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I71Disabled", "I71Enabled");
+        }
+        if (($('#NvMedxX5rd6-HllvX50cXC0-val').val() != "") || ($('#oXGNeOZjg0F-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I71Disabled", "I71Enabled");
+        }
+        if ((($("#OI8W4V2UeCw-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I72Disabled", "I72Enabled");
+        }
+        if ((($("#lWs0BXDInz8-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I73Disabled", "I73Enabled");
+        }
+        if (($('#fg10UJuPwYW-HllvX50cXC0-val').val() != "") || ($('#V9ahdUlT8ak-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I73Disabled", "I73Enabled");
+        }
+    }
+    function goal8() {
+        noneDisabled();
+        if ((($("#oLXCIJJx7vv-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I81Disabled", "I81Enabled");
+        }
+        if ((($("#yligDLmShDN-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I82Disabled", "I82Enabled");
+        }
+        if (($('#HhL5Ma8V4Xg-HllvX50cXC0-val').val() != "") || ($('#dowKCFTkX21-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I82Disabled", "I82Enabled");
+        }
+    }
+    function goal10() {
+        noneDisabled();
+        if ((($("#qldG2iRO23H-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I101Disabled", "I101Enabled");
+        }
+        if (($('#y2DZFRXCUDf-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I101Disabled", "I101Enabled");
+        }
+        if ((($("#ps0bFERNaI8-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I102Disabled", "I102Enabled");
+        }
+        if (($('#x2A8wcnnmQK-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I102Disabled", "I102Enabled");
+        }
+        if ((($("#BTmzpqEarJu-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I103Disabled", "I103Enabled");
+        }
+        if ((($("#EvxREEMoa5E-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I104Disabled", "I104Enabled");
+        }
+        if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="pTOpNf6zkTv"]').val() != "")) {
+            noDisaggregationDisabled("I104Disabled", "I104Enabled");
+        }
+        if ((($("#kqnpnHrcTcg-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled("I105Disabled", "I105Enabled");
+        }
+        if (($('input[id^="kqnpnHrcTcg"]').val() != "") || ($('input[id^="pTOpNf6zkTv"]').val() != "")) {
+            noDisaggregationDisabled("I105Disabled", "I105Enabled");
+        }
+        if ((($("#w0tytyY7kos-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I106Disabled", "I106Enabled");
+        }
+        if (($('#IvsMptl5UT8-HllvX50cXC0-val').val() != "") || ($('#SL3O2NTNULs-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I106Disabled", "I106Enabled");
+        }
+    }
+    function goal11() {
+        noneDisabled();
+        if ((($("#TDacBLZz715-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if (($('input[id^="TmujztOG0EK"]').val() != "") || ($('input[id^="HsNWdBITNHt"]').val() != "")) {
+            noDisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if ((($("#c2wpYi5Pb4q-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if (($('input[id^="DFEUctZegna"]').val() != "") || ($('input[id^="mXWnPtBQw0A"]').val() != "")) {
+            noDisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if ((($("#uM0hXE3jV3V-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I113Disabled", "I113Enabled");
+        }
+    }
+    function goal12() {
+        noneDisabled();
+        if ((($("#iOUBfnKDDUd-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I121Disabled", "I121Enabled");
+        }
+        if (($('input[id^="x3ZQjj5q9hJ"]').val() != "") || ($('input[id^="mmwkAx1qU1B"]').val() != "")) {
+            noDisaggregationDisabled("I121Disabled", "I121Enabled");
+        }
+    }
+    function goal13() {
+        noneDisabled();
+        if ((($("#u0VoltROklI-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I131Disabled", "I131Enabled");
+        }
+        if (($('input[id^="DDUZoDV8n2F"]').val() != "")) {
+            noDisaggregationDisabled("I131Disabled", "I131Enabled");
+        }
+    }
+    function goal17() {
+        noneDisabled();
+        if ((($("#whsq6j7qVVW-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I171Disabled", "I171Enabled");
+        }
+        if (($('input[id^="Hj0yAWYGZ33"]').val() != "") || ($('input[id^="f3V68OtSW84"]').val() != "")) {
+            noDisaggregationDisabled("I171Disabled", "I171Enabled");
+        }
+        if ((($("#rW9QXpbg4Xd-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I172Disabled", "I172Enabled");
+        }
+        if (($('#q534i5qtxG2-HllvX50cXC0-val').val() != "") || ($('#UTKJklNQim3-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I172Disabled", "I172Enabled");
+        }
+        if ((($("#sqAeZUb3YJU-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I173Disabled", "I173Enabled");
+        }
+        if (($('input[id^="G58TeKd3pmk"]').val() != "") || ($('input[id^="zbkHN06Xsp3"]').val() != "")) {
+            noDisaggregationDisabled("I173Disabled", "I173Enabled");
+        }
+        if ((($("#kNSVUXnWRoG-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I174Disabled", "I174Enabled");
+        }
+        if (($('input[id^="KODuYGvv3QD"]').val() != "") || ($('input[id^="cGnhsPKJVI1"]').val() != "")) {
+            noDisaggregationDisabled("I174Disabled", "I174Enabled");
+        }
+        if ((($("#XbyQiRu1Ut1-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I175Disabled", "I175Enabled");
+        }
+        if (($('input[id^="KODuYGvv3QD"]').val() != "") || ($('input[id^="cGnhsPKJVI1"]').val() != "")) {
+            noDisaggregationDisabled("I175Disabled", "I175Enabled");
+        }
+    }
+    function goal18() {
+        noneDisabled();
+        if ((($("#ePlRlJHXijB-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I181Disabled", "I181Enabled");
+        }
+        if (($('input[id^="bKFp3z7BOK7"]').val() != "") || ($('input[id^="Gtrz0rkNIH9"]').val() != "")) {
+            noDisaggregationDisabled("I181Disabled", "I181Enabled");
+        }
+        if ((($("#BiJuAITpsnd-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I182Disabled", "I182Enabled");
+        }
+        if (($('input[id^="eiYjVHRP49h"]').val() != "") || ($('input[id^="w3t9VXk1mpU"]').val() != "")) {
+            noDisaggregationDisabled("I182Disabled", "I182Enabled");
+        }
+        if ((($("#crCqXgSy5qh-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I183Disabled", "I183Enabled");
+        }
+        if (($('input[id^="H4oevm5A5Pi"]').val() != "") || ($('input[id^="SBeRiBAZwCi"]').val() != "")) {
+            noDisaggregationDisabled("I183Disabled", "I183Enabled");
+        }
+        if ((($("#tIVQtMfe8aT-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I184Disabled", "I184Enabled");
+        }
+        if (($('input[id^="nXclvc4EIB4"]').val() != "") || ($('input[id^="SBeRiBAZwCi"]').val() != "")) {
+            noDisaggregationDisabled("I184Disabled", "I184Enabled");
+        }
+        if ((($("#H9qjAbq9v2v-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I185Disabled", "I185Enabled");
+        }
+        if (($('#BgbLInmNwUu-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I185Disabled", "I185Enabled");
+        }
+    }
+    function goal19() {
+        noneDisabled();
+        if ((($("#O5OlvsE3MwN-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I191Disabled", "I191Enabled");
+        }
+        if ((($("#MbHnRFptgWp-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I192Disabled", "I192Enabled");
+        }
+        if (($('#Ej7dXcqX99a-HllvX50cXC0-val').val() != "") || ($('#FLrQcqOLRfd-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I192Disabled", "I192Enabled");
+        }
+        if ((($("#sSGLC3rkVGs-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I193Disabled", "I193Enabled");
+        }
+    }
+    function goal20() {
+        noneDisabled();
+        if ((($("#XnqjuYc8o6n-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I201Disabled", "I201Enabled");
+        }
+        if (($('#JoDKuZTXJwg-HllvX50cXC0-val').val() != "") || ($('#swN4BwyElT3-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I201Disabled", "I201Enabled");
+        }
+        if ((($("#xt2wtvE2Nse-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I202Disabled", "I202Enabled");
+        }
+        if (($('#arJXCM5aX0X-HllvX50cXC0-val').val() != "") || ($('#pLzcyCsoHlj-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I202Disabled", "I202Enabled");
+        }
+        if ((($("#QIdqsSCdmSP-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I203Disabled", "I203Enabled");
+        }
+        if (($('#WNbwHJdi9fj-HllvX50cXC0-val').val() != "") || ($('#R2mSVduTEHb-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I203Disabled", "I203Enabled");
+        }
+        if ((($("#RynAka2RtAM-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I204Disabled", "I204Enabled");
+        }
+        if (($('#DrAIwyrNJTi-HllvX50cXC0-val').val() != "") || ($('#UzzgE5rssPd-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I204Disabled", "I204Enabled");
+        }
+    }
+    // disableOption function start
+
+    $(function () {
+        $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+        $("#tabs > .tabs > li").removeClass("ui-corner-top").addClass("ui-corner-left");
+        $("#goals").tabs();
+        $("#goals2").tabs();
+        $("#goals3").tabs();
+        $("#goals4").tabs();
+        $("#goals5").tabs();
+        $("#goals6").tabs();
+        $("#goals7").tabs();
+        $("#disaggregations").tabs();
+        $("#disaggregations2").tabs();
+        $("#disaggregations3").tabs();
+        $("#disaggregations4").tabs();
+        $("#disaggregations5").tabs();
+        $("#disaggregations6").tabs();
+        $("#disaggregations7").tabs();
+        $("#disaggregations8").tabs();
+        $("#disaggregations9").tabs();
+        $("#disaggregations10").tabs();
+        $("#disaggregations11").tabs();
+        $("#disaggregations12").tabs();
+        $("#disaggregations13").tabs();
+        $("#disaggregations14").tabs();
+        $("#disaggregations15").tabs();
+        $("#disaggregations16").tabs();
+        $("#disaggregations17").tabs();
+        $("#disaggregations18").tabs();
+        $("#disaggregations19").tabs();
+        $("#disaggregations20").tabs();
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel,#selectedPeriodId").change(function () {
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+            if (($(this).val() == "I111") || ($(this).val() == "I113")) {
+                $('.goal1NoHeaderSex').hide();
+                $('.goal1NoHeaderValue').show();
+                $('.goal1HeaderLoc').hide();
+            } else if (($(this).val() == "I112")) {
+                $('.goal1NoHeaderSex').show();
+                $('.goal1NoHeaderValue').hide();
+                $('.goal1HeaderLoc').hide();
+            } else {
+                $('.goal1NoHeaderSex').hide();
+                $('.goal1NoHeaderValue').hide();
+                $('.goal1HeaderLoc').show();
+            }
+            setTimeout(function () {
+                goal1();
+                console.log("Goal 1 Indicator  Changed");
+            }, 1000);
+        });
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel2,#selectedPeriodId").change(function () {
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        });
+        setTimeout(function () {
+            console.log("Goal 2 Indicator Changed");
+        }, 1000);
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel3,#selectedPeriodId").change(function () {
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+
+            if (($(this).val() == "I34")) {
+                $('.goal3NoHeader').hide();
+                $('.goal3NoHeaderSex').show();
+                $('.goal3NoHeaderValue').hide();
+            } else if (($(this).val() == "I32") || ($(this).val() == "I33")) {
+                $('.goal3NoHeader').hide();
+                $('.goal3NoHeaderSex').hide();
+                $('.goal3NoHeaderValue').show();
+            } else if ($(this).val() == "I31") {
+                $('.goal3NoHeader').show();
+                $('.goal3NoHeaderSex').show();
+                $('.goal3NoHeaderValue').hide();
+            } else {
+                $('.goal3NoHeader').hide();
+                $('.goal3NoHeaderSex').hide();
+                $('.goal3NoHeaderValue').show();
+            }
+            setTimeout(function () {
+                goal3();
+                console.log("Goal 3 Indicator Changed");
+            }, 1000);
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel4,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal4();
+                console.log("Goal 4 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel5,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal5();
+                console.log("Goal 5 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+
+            if (($(this).val() == "I52")) {
+                $('.goal5NoHeader').show();
+                $('.goal5Header').hide();
+            } else {
+                $('.goal5NoHeader').hide();
+                $('.goal5Header').show();
+            }
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel6,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal6();
+                console.log("Goal 6 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel7,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal7();
+                console.log("Goal 7 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel8,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal8();
+                console.log("Goal 8 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel9,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                console.log("Goal 9 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel10,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal10();
+                console.log("Goal 10 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+
+            if ($(this).val() == "I104") {
+                $('.goal10Header').show();
+                $('.goal10HeaderValue').hide();
+                $('.goal10HeaderSex').hide();
+            } else if ($(this).val() == "I105") {
+                $('.goal10HeaderSex').show();
+                $('.goal10HeaderValue').hide();
+                $('.goal10Header').hide();
+            } else {
+                $('.goal10Header').hide();
+                $('.goal10HeaderValue').show();
+                $('.goal10HeaderSex').hide();
+            }
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel11,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal11();
+                console.log("Goal 11 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel12,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal12();
+                console.log("Goal 12 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel13,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal13();
+                console.log("Goal 13 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel14,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                console.log("Goal 14 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel15,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                console.log("Goal 15 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel16,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                console.log("Goal 16 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+
+            if (($(this).val() == "I1611")) {
+                $('.goal16Header').show();
+                $('.goal16NoHeader').hide();
+            } else {
+                $('.goal16Header').hide();
+                $('.goal16NoHeader').show();
+            }
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel17,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal17();
+                console.log("Goal 17 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+
+            if (($(this).val() == "I171")) {
+                $('.sexDisagg').show();
+                $('.geoDisagg').hide();
+                $('.noDisagg').hide();
+            } else if (($(this).val() == "I172") || ($(this).val() == "I175")) {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').hide();
+                $('.noDisagg').show();
+            } else {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').show();
+                $('.noDisagg').hide();
+            }
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel18,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal18();
+                console.log("Goal 18 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+
+            if (($(this).val() == "I181") || ($(this).val() == "I182") || ($(this).val() == "I184")) {
+                $('.sexDisagg').show();
+                $('.geoDisagg').hide();
+                $('.noDisagg').hide();
+            } else if (($(this).val() == "I183")) {
+                $('.sexDisagg').show();
+                $('.geoDisagg').show();
+                $('.noDisagg').hide();
+            } else {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').hide();
+                $('.noDisagg').show();
+            }
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel19,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal19();
+                console.log("Goal 19 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+    $(function () {
+        $('.tabcontent2 tr').hide();
+        // Onchange Levels
+        $("#indicatorLevel20,#selectedPeriodId").change(function () {
+            setTimeout(function () {
+                goal20();
+                console.log("Goal 20 Indicator Changed");
+            }, 1000);
+            $('.' + $(this).val()).show();
+            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+            $('.tableHeader').show();
+        })
+    });
+</script>
+<style type="text/css">/*Styling for the outter tab Start*/
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/*Styling the Inner Tabs For Disaggregation*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.tableHeader {
+    background-color: #9ACD32 !important;
+}
+
+th {
+    text-align: center !important;
+    color: #ffffff !important;
+}
+
+h1 {
+    color: #ffffff !important;
+}
+
+input {
+    width: 4em;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    opacity: 2;
+}
+
+.asp {
+    padding: 22px 30px !important;
+    width: 100% !important;
+}
+
+.tab2 li {
+    opacity: 0.5;
+    transition: transform .5s; /* Animation */
+    z-index: 0;
+}
+
+.tab2 ul { /* width: 135% !important */
+    width: 106px !important
+}
+
+.tab2 li:hover {
+    opacity: 2;
+    position: relative;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    z-index: 200;
+}
+
+/* Outer Tab start */
+.tab {
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding: 0px;
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    z-index: 0;
+}
+
+.aspirations:hover {
+    opacity: 2;
+    position: relative;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    z-index: 200;
+}
+
+/* Outer Tab start */ /* Inner Tab Start */
+.disaggTab {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.disaggTab:hover {
+    position: relative;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    z-index: 200;
+    background-color: #337ab7;
+    color: white !important;
+}
+
+/* Inner Tab End */
+.tab ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.tab li {
+    display: inline-block;
+    padding: 2px;
+    float: none !important;
+}
+</style>
+<div class="row" id="tabs">
+<div class="tab2 col-xm-1 col-sm-2 col-md-1" style="z-index: 200">
+<ul>
+	<li><a class="asp" href="#asp-1" style="background-color:#9ACD32; color: white; font-weight: bold;">ASP1</a></li>
+	<li><a class="asp" href="#asp-2" style="background-color:#FF9933; color: white; font-weight: bold;">ASP2</a></li>
+	<li><a class="asp" href="#asp-3" style="background-color:#ff4c4c; color: white; font-weight: bold;">ASP3</a></li>
+	<li><a class="asp" href="#asp-4" style="background-color:#6666ff; color: white; font-weight: bold;">ASP4</a></li>
+	<li><a class="asp" href="#asp-5" style="background-color:#000000; color: white; font-weight: bold;">ASP5</a></li>
+	<li><a class="asp" href="#asp-6" style="background-color:#9932CC; color: white; font-weight: bold;">ASP6</a></li>
+	<li><a class="asp" href="#asp-7" style="background-color:#4ca6ff; color: white; font-weight: bold;">ASP7</a></li>
+</ul>
+</div>
+<!-- Aspiration 1 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-1">
+<div class="row" id="goals" style="border: none;margin-left: 10px;">
+<div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+<ul>
+	<li class="aspirations"><a href="#goal-1" style="background-color:#9ACD32; color: white; font-weight: bold;">Objectif 1</a></li>
+	<li class="aspirations"><a href="#goal-2" style="background-color:#FF9933; color: white; font-weight: bold;">Objectif 2</a></li>
+	<li class="aspirations"><a href="#goal-3" style="background-color:#ff4c4c; color: white; font-weight: bold;">Objectif 3</a></li>
+	<li class="aspirations"><a href="#goal-4" style="background-color:#6666ff; color: white; font-weight: bold;">Objectif 4</a></li>
+	<li class="aspirations"><a href="#goal-5" style="background-color:#000000; color: white; font-weight: bold;">Objectif 5</a></li>
+	<li class="aspirations"><a href="#goal-6" style="background-color:#9932CC; color: white; font-weight: bold;">Objectif 6</a></li>
+	<li class="aspirations"><a href="#goal-7" style="background-color:#4ca6ff; color: white; font-weight: bold;">Objectif 7</a></li>
+</ul>
+</div>
+<!-- Goal 1 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-1">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center; "><strong>Objectif 1: Un niveau de vie &eacute;lev&eacute;, Qualit&eacute; de vie et Bien-&ecirc;tre pour Tous</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I111">RNB par habitant</option><option value="I112">Taux de ch&ocirc;mage</option><option value="I113">Pr&eacute;valence deinsuffisance pond&eacute;rale chezenfantsmoins5</option><option value="I114">% depopulation l&#39;&eacute;lectricit&eacute;</option> </select></div>
+<!-- Tab disaggregations Start -->
+
+<div id="disaggregations" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+
+<div class="tabcontent2" id="NoDisagg">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9ACD32 !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I111 I111Enabled">
+			<td>Taux de croissance annuel du PIB r&eacute;el par habitant</td>
+			<td><input id="rZQRXUXUPaL-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I112 I112Enabled">
+			<td>Taux de ch&ocirc;mage</td>
+			<td><input id="ePlRlJHXijB-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I113 I113Enabled">
+			<td>Pr&eacute;valence du retard de croissance</td>
+			<td><input id="Bt7EwzXnP1B-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I114 I114Enabled">
+			<td>Acc&egrave;s &agrave; l&#39;&eacute;lectricit&eacute; (% population)</td>
+			<td><input id="EvxREEMoa5E-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9ACD32 !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="goal1NoHeaderSex" colspan="2">Sexe</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#9ACD32 !important;">
+			<th class="goal1NoHeaderSex">Femme</th>
+			<th class="goal1NoHeaderSex">Homme</th>
+			<th class="goal1NoHeaderValue">Valeur</th>
+			<th class="goal1HeaderLoc">Rural</th>
+			<th class="goal1HeaderLoc">Urbain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I111 I111Disabled">
+			<td>PIB par habitant dans l&#39;ann&eacute;e t+1</td>
+			<td><input id="MpwayQltPTy-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I111 I111Disabled">
+			<td>PIB par habitant dans l&#39;ann&eacute;e t</td>
+			<td><input id="j6NGNhKM1jz-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I112 I112Disabled">
+			<td>Personnes sans emploi</td>
+			<td><input id="bKFp3z7BOK7-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="bKFp3z7BOK7-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I112 I112Disabled">
+			<td>Personnes qui sont sur le march&eacute; du travail</td>
+			<td><input id="Gtrz0rkNIH9-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="Gtrz0rkNIH9-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I113 I113Disabled">
+			<td>Nombre d&#39;enfants de moins de 5 ans dont la taille pour cet &acirc;ge est &lt; -2</td>
+			<td><input id="nsPgvbrDPwQ-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I113 I113Disabled">
+			<td>Nombre total d&#39;enfants de moins de 5 ans</td>
+			<td><input id="LgOeUwjhGva-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I114 I114Disabled">
+			<td>Population ayant acc&egrave;s &agrave; l&#39;&eacute;nergie</td>
+			<td><input id="kCRn8WKklIR-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="kCRn8WKklIR-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I114 I114Disabled">
+			<td>Population totale</td>
+			<td><input id="RL5Cd2V59j9-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="RL5Cd2V59j9-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 1 End --><!-- Goal 2 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-2">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933;text-align: center; "><strong>Objectif 2: Citoyens Bien Eduqu&eacute;s et R&eacute;volution des Comp&eacute;tences sous-tendue par la Science, la Technologie et l&#39;Innovation</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel2" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I211">Pas d&#39;indicateur</option> </select></div>
+</div>
+<!-- Goal 2 End --><!-- Goal 3 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-3">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; "><strong>Objectif 3: Citoyens en Bonne Sant&eacute; et Bien Nourris</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel3" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I31">Nombre de nouveaux cas d&#39;infection par le VIH pour 1000 personnes</option><option value="I32">Cas de tuberculose pour 100,000 personnes par an</option><option value="I33">Incidence de cas de Malaria pour 1,000 personnes par an</option><option value="I34">% de la population &eacute;ligible vivant avec le VIH ayant acc&egrave;s aux ARV</option><option value="I35">%des femmes en &acirc;geprocr&eacute;er 15 49qui ont acc&egrave;s auxsexuelle et services de sant&eacute;reproductive</option><option value="I36">Taux de mortalit&eacute; maternelle</option><option value="I37">N&eacute;o- tauxmortalit&eacute;natal</option><option value="I38">Dans cinq mortalit y taux</option><option value="I39">% des accouchements assist&eacute;s parqualifi&eacute;. personnel de sant&eacute;</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations3" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg3">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg3">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg3">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I31 I31Enabled">
+			<td>Nombre de nouveaux cas d&#39;infection par le VIH pour 1000 personnes</td>
+			<td><input id="gAnNDrg3dLo-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I32 I32Enabled">
+			<td>Cas de tuberculose pour 100,000 personnes par an</td>
+			<td><input id="aGhDRO2S4Lu-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I33 I33Enabled">
+			<td>Incidence de cas de Malaria pour 1,000 personnes par an</td>
+			<td><input id="atbJtXLSbyf-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I34 I34Enabled">
+			<td>% de la population &eacute;ligible vivant avec le VIH ayant acc&egrave;s aux ARV</td>
+			<td><input id="L32d5C6AIqv-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I35 I35Enabled">
+			<td>Besoins en planification famliale satisfaits (%)</td>
+			<td><input id="mFeVazpypaZ-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I36 I36Enabled">
+			<td>Mortalit&eacute; maternelle (pour 100,000 naissances vivantes)</td>
+			<td><input id="qj15XcoUCDI-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I37 I37Enabled">
+			<td>Mortalit&eacute; n&eacute;o-natale (pour 1,000 naissances vivantes)</td>
+			<td><input id="iCihpG4jRzH-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I38 I38Enabled">
+			<td>Mortalit&eacute; des moins de cinq ans (pour 1,000 naissances vivantes)</td>
+			<td><input id="Ti6DZBxiGsG-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I39 I39Enabled">
+			<td>Naissances assist&eacute;es par un personnel de sant&eacute; qualifi&eacute; (%)</td>
+			<td><input id="JCrwCxh05iE-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg3">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="goal3NoHeaderSex" colspan="2">Sexe</th>
+			<th class="goal3NoHeader" colspan="2">Localisation g&eacute;ographique</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th class="goal3NoHeaderSex">Femme</th>
+			<th class="goal3NoHeaderSex">Homme</th>
+			<th class="goal3NoHeader">Rural</th>
+			<th class="goal3NoHeader">Urbain</th>
+			<th class="goal3NoHeaderValue">Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I31 I31Disabled">
+			<td>Nombre total de cas de VIH sur une p&eacute;riode donn&eacute;e</td>
+			<td><input id="oqVHB2xihvP-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="oqVHB2xihvP-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="oqVHB2xihvP-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="oqVHB2xihvP-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I31 I31Disabled">
+			<td>Nombre total de personnes vivant avec le VIH</td>
+			<td><input id="KKQuhnCMtEP-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="KKQuhnCMtEP-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="KKQuhnCMtEP-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="KKQuhnCMtEP-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I32 I32Disabled">
+			<td>Nombre de nouveaux cas et de rechutes de tuberculose qui surviennent en une ann&eacute;e</td>
+			<td><input id="mH9XBhoW1Cf-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I32 I32Disabled">
+			<td>Nombre de personne-ann&eacute;es d&#39;exposition au risque</td>
+			<td><input id="JFvlTEuknXq-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I33 I33Disabled">
+			<td>Nombre de cas de malaria confirm&eacute;s</td>
+			<td><input id="IcUjJW2C9Im-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I33 I33Disabled">
+			<td>Nombre de personne-ann&eacute;es d&#39;exposition</td>
+			<td><input id="dlinqsDHurO-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I34 I34Disabled">
+			<td>Nombre d&#39;adultes et enfants qui ont acc&egrave;s au traitement ARV &agrave; la fin de la p&eacute;riode de reportage</td>
+			<td><input id="EIxxvp8CHka-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="EIxxvp8CHka-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I34 I34Disabled">
+			<td>Le nombre estim&eacute; d&#39;adultes et d&#39;enfants vivant avec le VIH</td>
+			<td><input id="q2e5Wwjb7Ut-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="q2e5Wwjb7Ut-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I35 I35Disabled">
+			<td>Percentage de femmes en &acirc;ge de procr&eacute;er (15-49 ans) qui pour le moment utilisent</td>
+			<td><input id="TU2VGO7AnYK-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I35 I35Disabled">
+			<td>Total de la demande en planning familiale</td>
+			<td><input id="ETzoIk2kLNK-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I36 I36Disabled">
+			<td>D&eacute;c&egrave;s maternelles enregistr&eacute;es/estimation</td>
+			<td><input id="MemsRPHqriD-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I36 I36Disabled">
+			<td>Total des vies enregistr&eacute;es/estim&eacute;es dans la m&ecirc;me p&eacute;riode</td>
+			<td><input id="x7dHhPJWJPe-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I37 I37Disabled">
+			<td>Nombre d&#39;enfants d&eacute;c&eacute;d&eacute;s pendant les 28 premiers jours de la vie</td>
+			<td><input id="r1tLOkgBXcw-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I37 I37Disabled">
+			<td>Nombre de naissances vivantes</td>
+			<td><input id="M0V0lnx10d4-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I38 I38Disabled">
+			<td>Nombre de d&eacute;c&egrave;s parmi les enfants ag&eacute;s de 0-4</td>
+			<td><input id="rR9ege9U0X3-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I38 I38Disabled">
+			<td>Nombre de naissances vivantes</td>
+			<td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I39 I39Disabled">
+			<td>Nombre de naissances assist&eacute;es par du personnel de sant&eacute; qualifi&eacute;</td>
+			<td><input id="F2kfyiytNRy-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I39 I39Disabled">
+			<td>Nombre total de naissances vivantes dans la m&ecirc;me p&eacute;riode</td>
+			<td><input id="vFCUplW58Dq-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 3 End --><!-- Goal 4 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-4">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center; "><strong>Objectif 4: </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel4" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I41">Taux r&eacute;el de croissance du PIB</option><option value="I42">Valeur ajout&eacute;e de la Manufacture en tant que pourcentage du PIB</option><option value="I43">Proportion du PIB consacr&eacute;e aux d&eacute;penses pour la Recherche et D&eacute;veloppment</option><option value="I44">Valeur Ajout&eacute;e du Tourisme en proportion du PIB</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations4" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg4">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg4">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg4">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#6666ff !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I41 I41Enabled">
+			<td>Taux r&eacute;el de croissance du PIB</td>
+			<td><input id="rZQRXUXUPaL-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I42 I42Enabled">
+			<td>Valeur ajout&eacute;e de la Manufacture en tant que pourcentage du PIB</td>
+			<td><input id="D1xcT46JCVw-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I43 I43Enabled">
+			<td>Proportion du PIB consacr&eacute;e aux d&eacute;penses pour la Recherche et D&eacute;veloppment</td>
+			<td><input id="WCjZOCH6jPx-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I44 I44Enabled">
+			<td>Valeur Ajout&eacute;e du Tourisme en proportion du PIB</td>
+			<td><input id="C5f5nB3USZ6-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg4">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#6666ff !important;">
+			<th>&nbsp;</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I41 I41Disabled">
+			<td>PIB Nominal</td>
+			<td><input id="MpwayQltPTy-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I41 I41Disabled">
+			<td>Le d&eacute;flateur (par exemple: IPC)</td>
+			<td><input id="j6NGNhKM1jz-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I42 I42Disabled">
+			<td>le montant de la valeur de toute la production &ndash; (valeur des consommations interm&eacute;diaires)</td>
+			<td><input id="o8atQWjlEQ5-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I42 I42Disabled">
+			<td>PIB</td>
+			<td><input id="RiN9u844TAI-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I43 I43Disabled">
+			<td>D&eacute;penses Int&eacute;rieures Brutes de R&amp;D</td>
+			<td><input id="R64mkjYs7B7-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I43 I43Disabled">
+			<td>PIB</td>
+			<td><input id="NehgnuC4gS7-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I44 I44Disabled">
+			<td>PIB direct du Tourisme</td>
+			<td><input id="kSShIs8ejPy-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I44 I44Disabled">
+			<td>PIB</td>
+			<td><input id="EIFg3dxRTm6-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 4 End --><!-- Goal 5 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-5">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center; "><strong>Objectif 5: Agriculture moderne pour augmentation de la productivit&eacute; et de la production </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel5" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I51">Productivit&eacute; totale des facteurs</option><option value="I52">% par sexe de petits agriculteurs qui se convertissent &agrave; l&#39;agriculture commerciale &agrave; petite &eacute;chelle</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations5" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg5">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg5">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg5">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#000000 !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I51 I51Enabled">
+			<td>Productivit&eacute; totale des facteurs</td>
+			<td><input id="aQ7C0r1YsV1-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I52 I52Enabled">
+			<td>% par sexe de petits agriculteurs qui se convertissent &agrave; l&#39;agriculture commerciale &agrave; petite &eacute;chelle</td>
+			<td><input id="qnlmEhaz3mm-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg5">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#000000 !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="goal5Header">Valeur</th>
+			<th class="goal5NoHeader" colspan="2">Sexe</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#000000 !important;">
+			<th class="goal5NoHeader">Femme</th>
+			<th class="goal5NoHeader">Homme</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I51 I51Disabled">
+			<td>Productions Agricoles</td>
+			<td><input id="ab5HIxZDpT6-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I51 I51Disabled">
+			<td>Moyenne pond&eacute;r&eacute;e des intrants</td>
+			<td><input id="ZeItmMcJmlK-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I52 I52Disabled">
+			<td>Nombre de petits agriculteurs passant &agrave; l&#39;agriculture commerciale</td>
+			<td><input id="P1da2rLseDI-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="P1da2rLseDI-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I52 I52Disabled">
+			<td>Nombre de petits agriculteurs</td>
+			<td><input id="ZgZNqYI4j8m-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="ZgZNqYI4j8m-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 5 End--><!-- Goal 6 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-6">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center; "><strong>Objectif 6: Economie Bleue/Oc&eacute;ane pour une croissance &eacute;conomique acc&eacute;l&eacute;r&eacute;e </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel6" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I61">Valeur Ajout&eacute;e du Secteur Poisson (en poucentage du PIB)</option><option value="I62">Valeur Ajout&eacute;e de la biotechnologie marine en % du PIB</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations6" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg6">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg6">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg6">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9932CC !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I61 I61Enabled">
+			<td>Valeur Ajout&eacute;e du Secteur Poisson (en poucentage du PIB)</td>
+			<td><input id="Zvs9yZWgT9C-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I62 I62Enabled">
+			<td>Valeur Ajout&eacute;e de la biotechnologie marine en % du PIB</td>
+			<td><input id="dJC0iHI9bWC-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg6">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9932CC !important;">
+			<th>&nbsp;</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I61 I61Disabled">
+			<td>Contribution de la p&ecirc;che au PIB</td>
+			<td><input id="w5VGTETV8sF-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I61 I61Disabled">
+			<td>PIB</td>
+			<td><input id="bVLdO86vavP-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I62 I62Disabled">
+			<td>Contribution de la biotechnologie marine au PIB</td>
+			<td><input id="ZPFtZbsXQIT-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I62 I62Disabled">
+			<td>PIB</td>
+			<td><input id="EsP5GPtG6Nq-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 6 End--><!-- Goal 7 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-7">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff;text-align: center; "><strong>Objectif 7: Climat &eacute;cologiquement durable; &eacute;conomies et communaut&eacute;s r&eacute;silientes</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel7" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I71">% de terre agricole plac&eacute;e sous la pratique de la gestion durable des terres</option><option value="I72">% de zones c&ocirc;ti&egrave;res et marines pr&eacute;serv&eacute;es</option><option value="I73">% deterrestre et eauint&eacute;rieurzones conserv&eacute;es.</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations7" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg7">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg7">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg7">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#4ca6ff !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I71 I71Enabled">
+			<td>% de terre agricole plac&eacute;e sous la pratique de la gestion durable des terres</td>
+			<td><input id="njgxJV082qP-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I72 I72Enabled">
+			<td>% de zones c&ocirc;ti&egrave;res et marines pr&eacute;serv&eacute;es</td>
+			<td><input id="OI8W4V2UeCw-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I73 I73Enabled">
+			<td>Sites terrestres, zone prot&eacute;g&eacute;e moyenne ou biodiversit&eacute; de l&#39;eau douce, zone prot&eacute;g&eacute;e moyenne</td>
+			<td><input id="lWs0BXDInz8-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg7">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#4ca6ff !important;">
+			<th>&nbsp;</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I71 I71Disabled">
+			<td>Terre sur laquelle des pratiques contribuant &agrave; la durabilit&eacute; environnementale de l&#39;agriculture sont appliqu&eacute;es</td>
+			<td><input id="NvMedxX5rd6-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I71 I71Disabled">
+			<td>Terre agricole en entier</td>
+			<td><input id="oXGNeOZjg0F-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I72 I72Disabled">
+			<td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
+		</tr>
+		<tr class="I73 I73Disabled">
+			<td>Ensemble de la zone prot&eacute;g&eacute;e</td>
+			<td><input id="fg10UJuPwYW-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I73 I73Disabled">
+			<td>Ensemble de la zone territoriale</td>
+			<td><input id="V9ahdUlT8ak-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 7 End--></div>
+</div>
+<!-- Aspiration 1 End --><!-- Aspiration 2 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-2">
+<div class="row" id="goals2" style="border: none;margin-left: 10px;">
+<div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+<ul>
+	<li class="aspirations"><a href="#goal-8" style="background-color:#9ACD32; color: white; font-weight: bold;">Objectif 8</a></li>
+	<li class="aspirations"><a href="#goal-9" style="background-color:#FF9933; color: white; font-weight: bold;">Objectif 9</a></li>
+	<li class="aspirations"><a href="#goal-10" style="background-color:#ff4c4c; color: white; font-weight: bold;">Objectif 10</a></li>
+</ul>
+</div>
+<!-- Goal 8 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-8">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center; "><strong>Objectif 8: Une Afrique Unie (F&eacute;d&eacute;r&eacute;e ou Conf&eacute;d&eacute;r&eacute;e)</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel8" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I81">Nombre de Barri&egrave;res non tarifaires (BNT) signal&eacute;es et &eacute;limin&eacute;es</option><option value="I82">Changement des volumes des &eacute;changes intra-africains par an</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations8" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg8">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg8">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg8">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9ACD32 !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I81 I81Enabled">
+			<td>Nombre de Barri&egrave;res non tarifaires (BNT) signal&eacute;es et &eacute;limin&eacute;es</td>
+			<td><input id="oLXCIJJx7vv-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I82 I82Enabled">
+			<td>Changement des volumes des &eacute;changes intra-africains par an</td>
+			<td><input id="yligDLmShDN-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg8">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9ACD32 !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I81">
+			<td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
+		</tr>
+		<tr class="I82 I82Disabled">
+			<td>Volume par an des &eacute;changes de biens entre un pays et les autres (i)</td>
+			<td><input id="HhL5Ma8V4Xg-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I82 I82Disabled">
+			<td>Volume du commerce de biens entre un pays et les autres en un an (0)</td>
+			<td><input id="dowKCFTkX21-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 8 End --><!-- Goal 9 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-9">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933;text-align: center; "><strong>Objectif 9: Des Institutions Financi&egrave;res et Mon&eacute;taires cl&eacute;s sont cr&eacute;&eacute;es et fonctionnent au niveau continental</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel9" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I912">Pas d&#39;indicateur</option> </select></div>
+</div>
+<!-- Goal 9 End --><!-- Goal 10 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-10">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; "><strong>Objectif 10: Une infrastructure de Classe Mondiale sillonne l&#39;Afrique</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel10" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I101">% du progr&egrave;s r&eacute;alis&eacute; dans la construction du chaȋnon manquant de l&#39;Autoroute Transafricaine</option><option value="I102">% du progr&egrave;s r&eacute;alis&eacute; dans la construction du R&eacute;seau Ferroviaire Africain de Grande Vitesse</option><option value="I103">Nombre de protocoles mis en oeuvre sur l&#39;ouverture des cieux africains</option><option value="I104">Nombre de Mega Watts ajout&eacute;s au r&eacute;seau &eacute;lectrique national</option><option value="I105">Proportion de la population utilisant les t&eacute;l&eacute;phones portables</option><option value="I106">% de la contribution des TIC au PIB</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations10" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg10">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg10">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg10">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I101 I101Enabled">
+			<td>% du progr&egrave;s r&eacute;alis&eacute; dans la construction du chaȋnon manquant de l&#39;Autoroute Transafricaine</td>
+			<td><input id="qldG2iRO23H-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I102 I102Enabled">
+			<td>% du progr&egrave;s r&eacute;alis&eacute; dans la construction du R&eacute;seau Ferroviaire Africain de Grande Vitesse</td>
+			<td><input id="ps0bFERNaI8-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I103 I103Enabled">
+			<td>Nombre de protocoles mis en oeuvre sur l&#39;ouverture des cieux africains</td>
+			<td><input id="BTmzpqEarJu-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I104 I104Enabled">
+			<td>Nombre de Mega Watts ajout&eacute;s au r&eacute;seau &eacute;lectrique national</td>
+			<td><input id="EvxREEMoa5E-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I105 I105Enabled">
+			<td>Proportion de la population utilisant les t&eacute;l&eacute;phones portables</td>
+			<td><input id="kqnpnHrcTcg-bJmK5mlfvQk-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I106 I106Enabled">
+			<td>% de la contribution des TIC au PIB</td>
+			<td><input id="w0tytyY7kos-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg10">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="goal10Header" colspan="2">Localisation g&eacute;ographique</th>
+			<th class="goal10HeaderSex" colspan="2">Sexe</th>
+			<th class="goal10HeaderValue">Valeur</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th class="goal10Header">Rural</th>
+			<th class="goal10Header">Urbain</th>
+			<th class="goal10HeaderSex">Femme</th>
+			<th class="goal10HeaderSex">Homme</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I101 I101Disabled">
+			<td>5 &eacute;tapes/composantes compl&eacute;t&eacute;es</td>
+			<td><input id="y2DZFRXCUDf-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I102 I102Disabled">
+			<td>7 &eacute;tapes compl&eacute;t&eacute;es</td>
+			<td><input id="x2A8wcnnmQK-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I103">
+			<td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
+		</tr>
+		<tr class="I104 I104Disabled">
+			<td>Population ayant acc&egrave;s &agrave; l&#39;&eacute;nergie</td>
+			<td><input id="kCRn8WKklIR-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="kCRn8WKklIR-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I104 I104Disabled">
+			<td>Population totale</td>
+			<td><input id="pTOpNf6zkTv-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="pTOpNf6zkTv-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I105 I105Disabled">
+			<td>Nombre de personnes utilisant les t&eacute;l&eacute;phones portables</td>
+			<td><input id="kqnpnHrcTcg-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="kqnpnHrcTcg-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I105 I105Disabled">
+			<td>Population total &eacute;ligible (15+ ans)</td>
+			<td><input id="pTOpNf6zkTv-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="pTOpNf6zkTv-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I106 I106Disabled">
+			<td>Contribution des TIC au PIB</td>
+			<td><input id="IvsMptl5UT8-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I106 I106Disabled">
+			<td>PIB</td>
+			<td><input id="SL3O2NTNULs-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 10 End --></div>
+</div>
+<!-- Aspiration 2 End --><!-- Aspiration 3 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-3">
+<div class="row" id="goals3" style="border: none;margin-left: 10px;">
+<div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+<ul>
+	<li class="aspirations"><a href="#goal-11" style="background-color:#6666ff; color: white; font-weight: bold;">Objectif 11</a></li>
+	<li class="aspirations"><a href="#goal-12" style="background-color:#000000; color: white; font-weight: bold;">Objectif 12</a></li>
+</ul>
+</div>
+<!-- Goal 11 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-11">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center; "><strong>Objectif 11: Valeurs, pratiques d&eacute;mocratiques, principes universels des droits de l&#39;homme, justice et Etat de Droit bien implant&eacute;s</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel11" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I111">% de personnes qui croient qu&#39;il existe des m&eacute;canismes effectifs et des institutions de surveillance de la redevabilit&eacute; de leurs dirigeants</option><option value="I112">% de la population qui per&ccedil;oit qu&#39;il y a une libert&eacute; de la presse</option><option value="I113">Au moins 70% des public percevraient &eacute;lectionssont libres &eacute;quitable et transparente</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations11" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg11">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg11">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg11">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#6666ff !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I111 I111Enabled">
+			<td>% de personnes qui croient qu&#39;il existe des m&eacute;canismes effectifs et des institutions de surveillance de la redevabilit&eacute; de leurs dirigeants</td>
+			<td><input id="TDacBLZz715-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I112 I112Enabled">
+			<td>% de la population qui per&ccedil;oit qu&#39;il y a une libert&eacute; de la presse</td>
+			<td><input id="c2wpYi5Pb4q-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I113 I113Enabled">
+			<td>D&eacute;penses publiques en proportion du budget initial approuv&eacute;</td>
+			<td><input id="uM0hXE3jV3V-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg11">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#6666ff !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="2">Sexe</th>
+			<th colspan="2">Localisation g&eacute;ographique</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#6666ff !important;">
+			<th>Femme</th>
+			<th>Homme</th>
+			<th>Rural</th>
+			<th>Urbain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I111 I111Disabled">
+			<td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui croient que des m&eacute;canismes et des institutions de surveillance existent</td>
+			<td><input id="TmujztOG0EK-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="TmujztOG0EK-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="TmujztOG0EK-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="TmujztOG0EK-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I111 I111Disabled">
+			<td>Taille de l&#39;&eacute;chantillon</td>
+			<td><input id="HsNWdBITNHt-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="HsNWdBITNHt-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="HsNWdBITNHt-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="HsNWdBITNHt-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I112 I112Disabled">
+			<td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui per&ccedil;oivent la presse comme &eacute;tant libre</td>
+			<td><input id="DFEUctZegna-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="DFEUctZegna-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="DFEUctZegna-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="DFEUctZegna-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I112 I112Disabled">
+			<td>Taille de l&#39;&eacute;chantillon</td>
+			<td><input id="mXWnPtBQw0A-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="mXWnPtBQw0A-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="mXWnPtBQw0A-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="mXWnPtBQw0A-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I113"><!--<td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>-->
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 11 End --><!-- Goal 12 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-12">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center; "><strong>Objectif 12: Des institutions performantes ainsi qu&#39;un leadership transform&eacute; mis en place &agrave; tous les niveaux</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel12" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I121">Institutions et Leadership</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations12" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg12">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg12">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg12">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#000000 !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I121 I121Enabled">
+			<td>Institutions et Leadership</td>
+			<td><input id="iOUBfnKDDUd-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg12">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#000000 !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="2">Sexe</th>
+			<th colspan="2">Localisation g&eacute;ographique</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#000000 !important;">
+			<th>Femme</th>
+			<th>Homme</th>
+			<th>Rural</th>
+			<th>Urbain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I121 I121Disabled">
+			<td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui confirment avoir re&ccedil;u des demandes de pots-de-vin</td>
+			<td><input id="x3ZQjj5q9hJ-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="x3ZQjj5q9hJ-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="x3ZQjj5q9hJ-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="x3ZQjj5q9hJ-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I121 I121Disabled">
+			<td>Taille de l&#39;&eacute;chantillon</td>
+			<td><input id="mmwkAx1qU1B-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="mmwkAx1qU1B-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="mmwkAx1qU1B-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="mmwkAx1qU1B-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 12 End--></div>
+</div>
+<!-- Aspiration 3 End --><!-- Aspiration 4 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-4">
+<div class="row" id="goals4" style="border: none;margin-left: 10px;">
+<div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+<ul>
+	<li class="aspirations"><a href="#goal-13" style="background-color:#9932CC; color: white; font-weight: bold;">Objectif 13</a></li>
+	<li class="aspirations"><a href="#goal-14" style="background-color:#4ca6ff; color: white; font-weight: bold;">Objectif 14</a></li>
+	<li class="aspirations"><a href="#goal-15" style="background-color:#9ACD32; color: white; font-weight: bold;">Objectif 15</a></li>
+</ul>
+</div>
+<!-- Goal 13 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-13">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center; "><strong>Objectif 13: Paix, S&eacute;curit&eacute; et Stabilit&eacute; sont pr&eacute;serv&eacute;s</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel13" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I131">D&eacute;c&egrave;s li&eacute;s &agrave; un conflit pour une population de 100,000 habitants</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations13" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg13">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg13">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg13">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9932CC !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I131 I131Enabled">
+			<td>D&eacute;c&egrave;s li&eacute;s &agrave; un conflit pour une population de 100,000 habitants</td>
+			<td><input id="u0VoltROklI-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg13">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9932CC !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="2">Sexe</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#9932CC !important;">
+			<th>Femme</th>
+			<th>Homme</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I131 I131Disabled">
+			<td>Nombre de d&eacute;c&egrave;s li&eacute;s aux conflits</td>
+			<td><input id="DDUZoDV8n2F-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="DDUZoDV8n2F-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 13 End--><!-- Goal 14 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-14">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff;text-align: center; "><strong>Objectif 14: Une Afrique Stable et en Paix</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel14" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I1441">Pas d&#39;indicateur</option> </select></div>
+</div>
+<!-- Goal 14 End--><!-- Goal 15 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-15">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center;"><strong>Objectif 15: Une Architecture Africaine pour la Paix et la S&eacute;curit&eacute; enti&egrave;rement Fonctionnnelle et Op&eacute;rationnelle</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel15" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I1511">Pas d&#39;indicateur</option> </select></div>
+</div>
+<!-- Goal 15 End --></div>
+</div>
+<!-- Aspiration 4 End --><!-- Aspiration 5 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-5">
+<div class="row" id="goals5" style="border: none;margin-left: 10px;">
+<div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+<ul>
+	<li class="aspirations"><a href="#goal-16" style="background-color:#FF9933; color: white; font-weight: bold;">Objectif 16</a></li>
+</ul>
+</div>
+<!-- Goal 16 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-16">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933; text-align: center;"><strong>Objectif 16: La Rennaissance Culturelle Africaine est pr&eacute;&eacute;minente</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel16" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I1611">Pas d&#39;indicateur</option> </select></div>
+</div>
+<!-- Goal 16 End --></div>
+</div>
+<!--Aspiration 5 End --><!--Aspiration 6 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-6">
+<div class="row" id="goals6" style="border: none;margin-left: 10px;">
+<div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+<ul>
+	<li class="aspirations"><a href="#goal-17" style="background-color:#ff4c4c; color: white; font-weight: bold;">Objectif 17</a></li>
+	<li class="aspirations"><a href="#goal-18" style="background-color:#6666ff; color: white; font-weight: bold;">Objectif 18</a></li>
+</ul>
+</div>
+<!-- Goal 17 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-17">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center;"><strong>Objectif 17: Une &eacute;galit&eacute; de Genre enti&egrave;re dans toutes les sph&egrave;res de la Vie</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel17" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I171">Droits de propri&eacute;t&eacute; ou une guarantie sur la terre agricole</option><option value="I172">Si&egrave;ges occup&eacute;s par des femmes dans les parlements nationaux, dans des organismes r&eacute;gionaux et locaux</option><option value="I173">Femmes et filles ayant subi des violences sexuelles et physiques</option><option value="I174">Mutilation g&eacute;nitale f&eacute;minine</option><option value="I175">Proportion d&#39;enfants dont les naissances sont enregistr&eacute;es au cours de la premi&egrave;re ann&eacute;e</option> </select></div>
+
+<div id="disaggregations17" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg17">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg17">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg17">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I171 I171Enabled">
+			<td>Droits de propri&eacute;t&eacute; ou une guarantie sur la terre agricole</td>
+			<td><input id="whsq6j7qVVW-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I172 I172Enabled">
+			<td>Si&egrave;ges occup&eacute;s par des femmes dans les parlements nationaux, dans des organismes r&eacute;gionaux et locaux</td>
+			<td><input id="rW9QXpbg4Xd-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I173 I173Enabled">
+			<td>Femmes et filles ayant subi des violences sexuelles et physiques</td>
+			<td><input id="sqAeZUb3YJU-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I174 I174Enabled">
+			<td>Mutilation g&eacute;nitale f&eacute;minine</td>
+			<td><input id="kNSVUXnWRoG-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I175 I175Enabled">
+			<td>Proportion d&#39;enfants dont les naissances sont enregistr&eacute;es au cours de la premi&egrave;re ann&eacute;e</td>
+			<td><input id="XbyQiRu1Ut1-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg17">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="sexDisagg" colspan="2">Sexe</th>
+			<th class="geoDisagg" colspan="2">Localisation g&eacute;ographique</th>
+			<th class="noDisagg">Valeur</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#ff4c4c !important;">
+			<th class="sexDisagg">Femme</th>
+			<th class="sexDisagg">Homme</th>
+			<th class="geoDisagg">Rural</th>
+			<th class="geoDisagg">Urbain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I171 I171Disabled">
+			<td>Nombre total d&#39;agriculteurs qui sont propri&eacute;taires de leur terre ou bien qui ont des droits guarantis sur leur terre</td>
+			<td><input id="Hj0yAWYGZ33-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="Hj0yAWYGZ33-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I171 I171Disabled">
+			<td>Nombre total d&#39;agriculteurs</td>
+			<td><input id="f3V68OtSW84-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="f3V68OtSW84-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I172 I172Disabled">
+			<td>Nombre de Femmes &ndash; &eacute;lues ou nomm&eacute;es dans la l&eacute;gislature ou les organes de d&eacute;lib&eacute;ration aux niveaux r&eacute;gional et local le cas &eacute;ch&eacute;ant</td>
+			<td><input id="q534i5qtxG2-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I172 I172Disabled">
+			<td>Nombre total de personnes dans la l&eacute;gislature ou les organes de d&eacute;lib&eacute;ration aux niveaux r&eacute;gional ou local</td>
+			<td><input id="UTKJklNQim3-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I173 I173Disabled">
+			<td>Nombre de femmes et de filles ayant subi des violence sexuelles ou physiques</td>
+			<td><input id="G58TeKd3pmk-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="G58TeKd3pmk-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I173 I173Disabled">
+			<td>Nombre total de femmes et de filles</td>
+			<td><input id="zbkHN06Xsp3-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="zbkHN06Xsp3-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I174 I174Disabled">
+			<td>Nombre de filles et de femmes ag&eacute;es de 15-49 ans qui ont subi des MGF/D</td>
+			<td><input id="KODuYGvv3QD-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="KODuYGvv3QD-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I174 I174Disabled">
+			<td>Nombre total de femmes ag&eacute;es de 15-49 ans dans la population</td>
+			<td><input id="cGnhsPKJVI1-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="cGnhsPKJVI1-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I175 I175Disabled">
+			<td>Nombre d&#39;enfants (0-1) dont les naissances sont enregistr&eacute;es au cours de la premi&egrave;re ann&eacute;e</td>
+			<td><input id="h529oFxp0fz-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I175 I175Disabled">
+			<td>Nombre total d&#39;enfants ag&eacute;s de 0 -1 ans</td>
+			<td><input id="jvfrnV2dyE6-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 17 End --><!-- Goal 18 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-18">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center;"><strong>Objectif 18: Une Jeunesse et des Enfants Engag&eacute;s et D&eacute;marginalis&eacute;s</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel18" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I181">Taux de ch&ocirc;mage</option><option value="I182">% d&#39;enfants enr&ocirc;l&eacute;s dans le travail des enfants</option><option value="I183">% d&#39;enfants engag&eacute;s dans le mariage d&#39;enfants</option><option value="I184">% d&#39;enfants victimes de la traite des &ecirc;tres humains</option><option value="I185">Degr&eacute; de mise en oeuvre des dispositions de la Charte Africaine sur les Droits de la Jeunesse par les Etats Membres</option> </select></div>
+
+<div id="disaggregations18" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg18">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg18">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg18">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#6666ff !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I181 I181Enabled">
+			<td>Taux de ch&ocirc;mage</td>
+			<td><input id="ePlRlJHXijB-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I182 I182Enabled">
+			<td>% d&#39;enfants enr&ocirc;l&eacute;s dans le travail des enfants</td>
+			<td><input id="BiJuAITpsnd-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I183 I183Enabled">
+			<td>% d&#39;enfants engag&eacute;s dans le mariage d&#39;enfants</td>
+			<td><input id="crCqXgSy5qh-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I184 I184Enabled">
+			<td>% d&#39;enfants victimes de la traite des &ecirc;tres humains</td>
+			<td><input id="tIVQtMfe8aT-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I185 I185Enabled">
+			<td>Degr&eacute; de mise en oeuvre des dispositions de la Charte Africaine sur les Droits de la Jeunesse par les Etats Membres</td>
+			<td><input id="H9qjAbq9v2v-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg18">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#6666ff !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="sexDisagg" colspan="2">Sexe</th>
+			<th class="geoDisagg" colspan="2">Localisation g&eacute;ographique</th>
+			<th class="noDisagg">Valeur</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#6666ff !important;">
+			<th class="sexDisagg">Femme</th>
+			<th class="sexDisagg">Homme</th>
+			<th class="geoDisagg">Rural</th>
+			<th class="geoDisagg">Urbain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I181 I181Disabled">
+			<td>Nombre de personnes au ch&ocirc;mage</td>
+			<td><input id="bKFp3z7BOK7-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="bKFp3z7BOK7-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I181 I181Disabled">
+			<td>Nombre total de personnes appartenant &agrave; la population civile active</td>
+			<td><input id="Gtrz0rkNIH9-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="Gtrz0rkNIH9-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I182 I182Disabled">
+			<td>Nombre d&#39;enfants qui travaillent</td>
+			<td><input id="eiYjVHRP49h-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="eiYjVHRP49h-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I182 I182Disabled">
+			<td>Nombre total d&#39;enfants</td>
+			<td><input id="w3t9VXk1mpU-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="w3t9VXk1mpU-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I183 I183Disabled">
+			<td>Nombre d&#39;enfants mari&eacute;s de moins de 18 ans</td>
+			<td><input id="H4oevm5A5Pi-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="H4oevm5A5Pi-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="H4oevm5A5Pi-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="H4oevm5A5Pi-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I183 I183Disabled">
+			<td>Nombre total d&#39;enfants dans la population</td>
+			<td><input id="SBeRiBAZwCi-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="SBeRiBAZwCi-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+			<td><input id="SBeRiBAZwCi-iEgy3xKqVi5-val" name="entryfield" title="" value="" /></td>
+			<td><input id="SBeRiBAZwCi-r8hBd63qzn4-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I184 I184Disabled">
+			<td>Nombre d&#39;enfants victimes de la traite des &ecirc;tres humains</td>
+			<td><input id="nXclvc4EIB4-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="nXclvc4EIB4-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I184 I184Disabled">
+			<td>Nombre total d&#39;enfants dans la population</td>
+			<td><input id="SBeRiBAZwCi-sLKRSW7xmwp-val" name="entryfield" title="" value="" /></td>
+			<td><input id="SBeRiBAZwCi-sJUGNYho7Ey-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I185 I185Disabled">
+			<td>Niveau de mise&oelig;uvre des dispositions de la Charte africaine des droits de la jeunesse par &Eacute;tats membres</td>
+			<td><input id="BgbLInmNwUu-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 18 End --></div>
+</div>
+<!-- Aspiration 6 End --><!-- Aspiration 7 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-7">
+<div class="row" id="goals7" style="border: none;margin-left: 10px;">
+<div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+<ul>
+	<li class="aspirations"><a href="#goal-19" style="background-color:#000000; color: white; font-weight: bold;">Objectif 19</a></li>
+	<li class="aspirations"><a href="#goal-20" style="background-color:#9932CC; color: white; font-weight: bold;">Objectif 20</a></li>
+</ul>
+</div>
+<!-- Goal 19 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-19">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center;"><strong>Objectif 19: L&#39;Afrique en tant que Partenaire Important dans les Affaires Mondiales et la Coexistence Pacifique</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel19" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I191">L&eacute;gislation en mati&egrave;re statistique</option><option value="I192">Financement allou&eacute;e au syst&egrave;me statistique fonctionnel</option><option value="I193">Coordination de la compilation de statistiques officielles</option> </select></div>
+
+<div id="disaggregations19" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg19">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg19">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg19">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#000000 !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I191 I191Enabled">
+			<td>Disponibilit&eacute; (Oui / Non) de la l&eacute;gislation sur les statistiques</td>
+			<td><input id="O5OlvsE3MwN-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I192 I192Enabled">
+			<td>Financement allou&eacute;e au syst&egrave;me statistique fonctionnel</td>
+			<td><input id="MbHnRFptgWp-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I193 I193Enabled">
+			<td>Existencedesformels institutionnels arrangementspour la coordination de la compilation desofficielles statistiques</td>
+			<td><input id="sSGLC3rkVGs-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg19">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#000000 !important;">
+			<th>&nbsp;</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I191">
+		</tr>
+		<tr class="I192 I192Disabled">
+			<td>Le budget total allou&eacute; au syst&egrave;me statistique fonctionnel (X + Y + Z)</td>
+			<td><input id="Ej7dXcqX99a-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I192 I192Disabled">
+			<td>Le Budget total du gouvernement &eacute;tant</td>
+			<td><input id="FLrQcqOLRfd-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I193">
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 19 End --><!-- Goal 20 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="goal-20">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center;"><strong>Objectif 20: L&#39;Afrique prend enti&egrave;rement en charge le financement de son d&eacute;veloppement</strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel20" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I201">March&eacute;s des Capitaux</option><option value="I202">Syst&egrave;me Fiscal et les Revenus</option><option value="I203">Total de l&#39;APD en pourcentage du budget national</option><option value="I204">Ressources mobilis&eacute;es gr&acirc;ce &agrave; des m&eacute;canismes de financement innovants en % du budget national</option> </select></div>
+
+<div id="disaggregations20" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg20">Agr&eacute;gation</a></li>
+	<li><a class="disaggTab" href="#Disagg20">D&eacute;sagr&eacute;gation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg20">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9932CC !important;">
+			<th>Indicateur</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I201 I201Enabled">
+			<td>March&eacute;s des Capitaux</td>
+			<td><input id="XnqjuYc8o6n-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I202 I202Enabled">
+			<td>Syst&egrave;me Fiscal et les Revenus</td>
+			<td><input id="xt2wtvE2Nse-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I203 I203Enabled">
+			<td>Total de l&#39;APD en pourcentage du budget national</td>
+			<td><input id="QIdqsSCdmSP-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I204 I204Enabled">
+			<td>Ressources mobilis&eacute;es gr&acirc;ce &agrave; des m&eacute;canismes de financement innovants en % du budget national</td>
+			<td><input id="RynAka2RtAM-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg20">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#9932CC !important;">
+			<th>&nbsp;</th>
+			<th>Valeur</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I201 I201Disabled">
+			<td>Total des fonds provenant du march&eacute; national des capitaux</td>
+			<td><input id="JoDKuZTXJwg-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I201 I201Disabled">
+			<td>Total du budget du secteur public</td>
+			<td><input id="swN4BwyElT3-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I202 I202Disabled">
+			<td>Total des taxes pr&eacute;lev&eacute;s comme d&eacute;fini ci-dessus</td>
+			<td><input id="arJXCM5aX0X-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I202 I202Disabled">
+			<td>PIB</td>
+			<td><input id="pLzcyCsoHlj-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I203 I203Disabled">
+			<td>Total de toutes les sources de l&#39;Assistance Publique au D&eacute;veloppement tel que d&eacute;fini ci-dessus</td>
+			<td><input id="WNbwHJdi9fj-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I203 I203Disabled">
+			<td>Total de toutes les sources de financement - n&eacute;cessaires &agrave; l&#39;ex&eacute;cuton du budget</td>
+			<td><input id="R2mSVduTEHb-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I204 I204Disabled">
+			<td>Total de toutes les sources de financement innovantes telles que d&eacute;finies ci-dessus</td>
+			<td><input id="DrAIwyrNJTi-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+		<tr class="I204 I204Disabled">
+			<td>Total de toutes les sources de financement - n&eacute;cessaires &agrave; l&#39;ex&eacute;cuton du budget</td>
+			<td><input id="UzzgE5rssPd-HllvX50cXC0-val" name="entryfield" title="" value="" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 20 End --></div>
+</div>
+<!-- Aspiration 7 End --></div>

@@ -1,0 +1,2074 @@
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+            if ( ($(this).val()=="I111b")||($(this).val()=="I121")) {
+                $('.I111x').hide();
+            }
+            else {
+              $('.I111x').show();
+            }
+          })
+        });
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel2").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+          })
+        });
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel3").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+          })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel4").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ( ($(this).val()=="I4b1")) {
+                  $('.sdg4NoHeader').hide();
+                  $('.sdg4Header').show();
+              }
+              if ( ($(this).val()=="I422")||($(this).val()=="I451a")||($(this).val()=="I451b")) {
+                  $('.sdg4Header').hide();
+                  $('.sdg4NoHeader').show();
+              }
+
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel5").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ($(this).val()=='I5b1') {
+                $('.sexDisagg').show();
+                $('.noDisagg').hide();
+              } else {
+                $('.sexDisagg').hide();
+                $('.noDisagg').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel6").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel7").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ($(this).val()=="I711") {
+                  $('.sdg7Header').show();
+                  $('.sdg7NoHeader').hide();
+              }
+              if (($(this).val()=="I712") || ($(this).val()=="I721")||($(this).val()=="I731")) {
+                  $('.sdg7Header').hide();
+                  $('.sdg7NoHeader').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel8").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ($(this).val()=="I852") {
+                $('.sdg8Header').show();
+                $('.sdg8NoHeader').hide();
+              }
+              if (($(this).val()=="I821")||($(this).val()=="I842")||($(this).val()=="I811")||
+              ($(this).val()=="I861")||($(this).val()=="I8101")||($(this).val()=="I8102")||($(this).val()=="I8a1")) {
+                $('.sdg8Header').hide();
+                $('.sdg8NoHeader').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel9").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel10").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel11").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel12").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel13").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel14").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel15").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel16").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if (($(this).val()=="I1611")) {
+                $('.sdg16Header').show();
+                $('.sdg16NoHeader').hide();
+              }
+              else {
+                $('.sdg16Header').hide();
+                $('.sdg16NoHeader').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel17").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $("#sdgs").tabs();
+            $("#disaggregations").tabs();
+            $("#disaggregations2").tabs();
+            $("#disaggregations3").tabs();
+            $("#disaggregations4").tabs();
+            $("#disaggregations5").tabs();
+            $("#disaggregations6").tabs();
+            $("#disaggregations7").tabs();
+            $("#disaggregations8").tabs();
+            $("#disaggregations9").tabs();
+            $("#disaggregations10").tabs();
+            $("#disaggregations11").tabs();
+            $("#disaggregations12").tabs();
+            $("#disaggregations13").tabs();
+            $("#disaggregations14").tabs();
+            $("#disaggregations15").tabs();
+            $("#disaggregations16").tabs();
+            $("#disaggregations17").tabs();
+            $("#sdgs3").tabs();
+        });
+</script>
+<style type="text/css">/*Styling for the outter tab Start*/ * {box-sizing: border-box} body {font-family: "Lato", sans-serif;} /*Styling the Inner Tabs For Disaggregation*/ table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: center; padding: 8px; } tr:nth-child(even) { background-color: #dddddd; } .tableHeader{ background-color: #9ACD32 !important; } th{ text-align: center !important; color:#ffffff !important; } h1{ color:#ffffff !important; } input{ width: 4em; } /* Outer Tab start */ .tab { border: 1px solid #ccc; background-color: #f1f1f1; padding: 0px; display: block; background-color: inherit; color: black; padding: 22px 16px; width: 100%; border: none; outline: none; text-align: center; cursor: pointer; transition: 0.3s; font-size: 17px; z-index: 0; } .aspirations:hover{ opacity: 2; position: relative; -ms-transform: scale(1.5); /* IE 9 */ -webkit-transform: scale(1.5); /* Safari 3-8 */ transform: scale(1.5); z-index: 200; } /* Outer Tab start */ /* Inner Tab Start */ .disaggTab{ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important; } .disaggTab:hover{ position: relative; -ms-transform: scale(1.2); /* IE 9 */ -webkit-transform: scale(1.2); /* Safari 3-8 */ transform: scale(1.2); z-index: 200; background-color: #337ab7; color: white !important; } /* Inner Tab End */ .tab ul { list-style-type: none; margin: 0px; padding: 0px; text-align: center; } .tab li{ display: inline-block; padding: 2px; float: none !important; }
+</style>
+<div class="row" id="sdgs">
+  <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+  <ul>
+  	<li class="aspirations"><a href="#sdg-1" style="background-color:#e5243b; color: white; font-weight: bold;">SDG1</a></li>
+  	<li class="aspirations"><a href="#sdg-2" style="background-color:#DDA63A; color: white; font-weight: bold;">SDG2</a></li>
+  	<li class="aspirations"><a href="#sdg-3" style="background-color:#4C9F38; color: white; font-weight: bold;">SDG3</a></li>
+  	<li class="aspirations"><a href="#sdg-4" style="background-color:#C5192D; color: white; font-weight: bold;">SDG4</a></li>
+  	<li class="aspirations"><a href="#sdg-5" style="background-color:#FF3A21; color: white; font-weight: bold;">SDG5</a></li>
+  	<li class="aspirations"><a href="#sdg-6" style="background-color:#26BDE2; color: white; font-weight: bold;">SDG6</a></li>
+  	<li class="aspirations"><a href="#sdg-7" style="background-color:#FCC30B; color: white; font-weight: bold;">SDG7</a></li>
+  	<li class="aspirations"><a href="#sdg-8" style="background-color:#A21942; color: white; font-weight: bold;">SDG8</a></li>
+  	<li class="aspirations"><a href="#sdg-9" style="background-color:#FD6925; color: white; font-weight: bold;">SDG9</a></li>
+  	<li class="aspirations"><a href="#sdg-10" style="background-color:#DD1367; color: white; font-weight: bold;">SDG10</a></li>
+  	<li class="aspirations"><a href="#sdg-11" style="background-color:#FD9D24; color: white; font-weight: bold;">SDG11</a></li>
+  	<li class="aspirations"><a href="#sdg-12" style="background-color:#BF8B2E; color: white; font-weight: bold;">SDG12</a></li>
+  	<li class="aspirations"><a href="#sdg-13" style="background-color:#3F7E44; color: white; font-weight: bold;">SDG13</a></li>
+  	<li class="aspirations"><a href="#sdg-14" style="background-color:#0A97D9; color: white; font-weight: bold;">SDG14</a></li>
+  	<li class="aspirations"><a href="#sdg-15" style="background-color:#56C02B; color: white; font-weight: bold;">SDG15</a></li>
+  	<li class="aspirations"><a href="#sdg-16" style="background-color:#00689D; color: white; font-weight: bold;">SDG16</a></li>
+  	<li class="aspirations"><a href="#sdg-17" style="background-color:#19486A; color: white; font-weight: bold;">SDG17</a></li>
+  </ul>
+  </div>
+<!-- Goal 1 Start -->
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-1">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#e5243b;text-align: center; "><strong>Goal 1. End poverty in all its forms everywhere </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I111a">1.1.1a Population living below the international poverty line</option><option value="I111b">1.1.1b Employed population living below the international poverty line</option><option value="I121">1.2.1 Population living below the national poverty line</option> </select></div>
+<!-- Tab disaggregations Start -->
+
+<div id="disaggregations" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg">Disaggregation</a></li>
+</ul>
+
+<div class="tabcontent2" id="NoDisagg">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#e5243b !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I111a">
+			<td>Population living below the international poverty line</td>
+			<td><input id="TsZLukacJ6T-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:People living below US$1.90 per day No Dissaggregation" value="[ SDG_1:People living below US$1.90 per day No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I111b">
+			<td>Employed population living below the international poverty line</td>
+			<td><input id="wD1WS24kqQR-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Employed persons living in households below poverty line No Dissaggregation" value="[ SDG_1:Employed persons living in households below poverty line No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I121">
+			<td>Population living below the national poverty line</td>
+			<td><input id="HNUVvzz5Mcb-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:People living below the national  poverty line No Dissaggregation" value="[ SDG_1:People living below the national  poverty line No Dissaggregation ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#e5243b !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="I111x" colspan="2">Employment Status</th>
+			<th colspan="2">Geographical Location</th>
+			<th colspan="2">Sex</th>
+		</tr>
+		<tr class="tableHeader" id="tableHeader2" style="background-color:#e5243b !important;">
+			<th class="I111x">Employed</th>
+			<th class="I111x">Unemployed</th>
+			<th>Rural</th>
+			<th>Urban</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I111a">
+			<td>People living below the international poverty line/day</td>
+			<td><input id="TsZLukacJ6T-ssMY53iFjYm-val" name="entryfield" title="SDG_1:People living below US$1.90 per day Employed" value="[ SDG_1:People living below US$1.90 per day Employed ]" /></td>
+			<td><input id="TsZLukacJ6T-SOw3NHN47G7-val" name="entryfield" title="SDG_1:People living below US$1.90 per day Unemployed" value="[ SDG_1:People living below US$1.90 per day Unemployed ]" /></td>
+			<td><input id="TsZLukacJ6T-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:People living below US$1.90 per day Rural" value="[ SDG_1:People living below US$1.90 per day Rural ]" /></td>
+			<td><input id="TsZLukacJ6T-r8hBd63qzn4-val" name="entryfield" title="SDG_1:People living below US$1.90 per day Urban" value="[ SDG_1:People living below US$1.90 per day Urban ]" /></td>
+			<td><input id="TsZLukacJ6T-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:People living below US$1.90 per day Female" value="[ SDG_1:People living below US$1.90 per day Female ]" /></td>
+			<td><input id="TsZLukacJ6T-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:People living below US$1.90 per day Male" value="[ SDG_1:People living below US$1.90 per day Male ]" /></td>
+		</tr>
+		<tr class="I111a">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-ssMY53iFjYm-val" name="entryfield" title="SDG_1:Total population Employed" value="[ SDG_1:Total population Employed ]" /></td>
+			<td><input id="pTOpNf6zkTv-SOw3NHN47G7-val" name="entryfield" title="SDG_1:Total population Unemployed" value="[ SDG_1:Total population Unemployed ]" /></td>
+			<td><input id="pTOpNf6zkTv-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Total population Rural" value="[ SDG_1:Total population Rural ]" /></td>
+			<td><input id="pTOpNf6zkTv-r8hBd63qzn4-val" name="entryfield" title="SDG_1:Total population Urban" value="[ SDG_1:Total population Urban ]" /></td>
+			<td><input id="pTOpNf6zkTv-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:Total population Female" value="[ SDG_1:Total population Female ]" /></td>
+			<td><input id="pTOpNf6zkTv-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Total population Male" value="[ SDG_1:Total population Male ]" /></td>
+		</tr>
+		<tr class="I111b">
+			<td>Employed persons living in households below the poverty line</td>
+			<td><input id="wD1WS24kqQR-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Employed persons living in households below poverty line Rural" value="[ SDG_1:Employed persons living in households below poverty line Rural ]" /></td>
+			<td><input id="wD1WS24kqQR-r8hBd63qzn4-val" name="entryfield" title="SDG_1:Employed persons living in households below poverty line Urban" value="[ SDG_1:Employed persons living in households below poverty line Urban ]" /></td>
+			<td><input id="wD1WS24kqQR-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:Employed persons living in households below poverty line Female" value="[ SDG_1:Employed persons living in households below poverty line Female ]" /></td>
+			<td><input id="wD1WS24kqQR-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Employed persons living in households below poverty line Male" value="[ SDG_1:Employed persons living in households below poverty line Male ]" /></td>
+		</tr>
+		<tr class="I111b">
+			<td>Total number of employed persons</td>
+			<td><input id="mEtKA2HMRkT-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Total number of employed persons
+ Rural" value="[ SDG_1:Total number of employed persons
+ Rural ]" /></td>
+			<td><input id="mEtKA2HMRkT-r8hBd63qzn4-val" name="entryfield" title="SDG_1:Total number of employed persons
+ Urban" value="[ SDG_1:Total number of employed persons
+ Urban ]" /></td>
+			<td><input id="mEtKA2HMRkT-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:Total number of employed persons
+ Female" value="[ SDG_1:Total number of employed persons
+ Female ]" /></td>
+			<td><input id="mEtKA2HMRkT-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Total number of employed persons
+ Male" value="[ SDG_1:Total number of employed persons
+ Male ]" /></td>
+		</tr>
+		<tr class="I121">
+			<td>Total number of people living below the national poverty line</td>
+			<td><input id="HNUVvzz5Mcb-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:People living below the national  poverty line Rural" value="[ SDG_1:People living below the national  poverty line Rural ]" /></td>
+			<td><input id="HNUVvzz5Mcb-r8hBd63qzn4-val" name="entryfield" title="SDG_1:People living below the national  poverty line Urban" value="[ SDG_1:People living below the national  poverty line Urban ]" /></td>
+			<td><input id="HNUVvzz5Mcb-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:People living below the national  poverty line Female" value="[ SDG_1:People living below the national  poverty line Female ]" /></td>
+			<td><input id="HNUVvzz5Mcb-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:People living below the national  poverty line Male" value="[ SDG_1:People living below the national  poverty line Male ]" /></td>
+		</tr>
+		<tr class="I121">
+			<td>Total urban+rural population</td>
+			<td><input id="NCsJ0u0J5kO-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Total, urban or rural population Rural" value="[ SDG_1:Total, urban or rural population Rural ]" /></td>
+			<td><input id="NCsJ0u0J5kO-r8hBd63qzn4-val" name="entryfield" title="SDG_1:Total, urban or rural population Urban" value="[ SDG_1:Total, urban or rural population Urban ]" /></td>
+			<td><input id="NCsJ0u0J5kO-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:Total, urban or rural population Female" value="[ SDG_1:Total, urban or rural population Female ]" /></td>
+			<td><input id="NCsJ0u0J5kO-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Total, urban or rural population Male" value="[ SDG_1:Total, urban or rural population Male ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 1 End --><!-- Goal 2 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-2">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#DDA63A;text-align: center; "><strong>Goal 2. End hunger, achieve food security and improved nutrition and promote sustainable agriculture </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel2" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I211">2.1.1 Prevalence of undernourishment</option><option value="I221">2.2.1 Prevalence of stunting among children under 5</option><option value="I222a">2.2.2a Prevalence of overweight among children under 5</option><option value="I251">2.5.1 Number of plant and animal genetic resources for food and agriculture secured</option><option value="I252a1">2.5.2a Local breeds classified as being at risk</option><option value="I252a2">2.5.2a Local breeds classified as being not-at-risk</option><option value="I252a3">2.5.2a Local breeds classified as unknown level of risk of extinction</option><option value="I2a2">2.a.2 Total official flows to agriculture</option><option value="I2b1">2.b.1 Agricultural export subsidies</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations2" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg2">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg2">Disaggregation</a></li>
+</ul>
+
+<div class="tabcontent2" id="NoDisagg2">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#DDA63A !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I211">
+			<td>Prevalence of undernourishment</td>
+			<td><input id="pBeH3AFPieZ-HllvX50cXC0-val" name="entryfield" title="SDG_2:% of the population whose food intake is insufficient to meet dietary energy requirements for minimum one year." value="[ SDG_2:% of the population whose food intake is insufficient to meet dietary energy requirements for minimum one year. ]" /></td>
+		</tr>
+		<tr class="I221">
+			<td>Prevalence of stunting among children under 5</td>
+			<td><input id="Bt7EwzXnP1B-HllvX50cXC0-val" name="entryfield" title="SDG_2:Prevalence of stunting among children under 5" value="[ SDG_2:Prevalence of stunting among children under 5 ]" /></td>
+		</tr>
+		<tr class="I222a">
+			<td>Prevalence of overweight among children under 5</td>
+			<td><input id="SDnpTlaTfuA-HllvX50cXC0-val" name="entryfield" title="SDG_2:Prevalence of overweight among children under 5" value="[ SDG_2:Prevalence of overweight among children under 5 ]" /></td>
+		</tr>
+		<tr class="I251">
+			<td>Number of plant and animal genetic resources for food and agriculture secured</td>
+			<td><input id="dGsxottaM20-HllvX50cXC0-val" name="entryfield" title="SDG_2:Number of plant and animal genetic resources for food and agriculture secured " value="[ SDG_2:Number of plant and animal genetic resources for food and agriculture secured  ]" /></td>
+		</tr>
+		<tr class="I252a1">
+			<td>Local breeds classified as being at risk</td>
+			<td><input id="CDWr02Kxj2X-HllvX50cXC0-val" name="entryfield" title="SDG_2:Local breeds classified as being at risk	" value="[ SDG_2:Local breeds classified as being at risk	 ]" /></td>
+		</tr>
+		<tr class="I252a2">
+			<td>Local breeds classified as being not-at-risk</td>
+			<td><input id="tqDcS5WQm3T-HllvX50cXC0-val" name="entryfield" title="SDG_2:Local breeds classified as being not-at-risk	" value="[ SDG_2:Local breeds classified as being not-at-risk	 ]" /></td>
+		</tr>
+		<tr class="I252a3">
+			<td>Local breeds classified as unknown level of risk of extinction</td>
+			<td><input id="JhZxmBFYmuL-HllvX50cXC0-val" name="entryfield" title="SDG_2:Local breeds classified as unknown level of risk of extinction	" value="[ SDG_2:Local breeds classified as unknown level of risk of extinction	 ]" /></td>
+		</tr>
+		<tr class="I2a2">
+			<td>Total official flows to agriculture</td>
+			<td><input id="pH4ByZuNaRi-HllvX50cXC0-val" name="entryfield" title="SDG_2:Official development assistance (ODA) and other official flows" value="[ SDG_2:Official development assistance (ODA) and other official flows ]" /></td>
+		</tr>
+		<tr class="I2b1">
+			<td>Agricultural export subsidies</td>
+			<td><input id="KnUVvNnHny2-HllvX50cXC0-val" name="entryfield" title="SDG_2:Total export subsidies budgetary outalys and quantities" value="[ SDG_2:Total export subsidies budgetary outalys and quantities ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg2">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#DDA63A !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I211">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I221">
+			<td>No. of children under five whose weight for height is &gt; +2</td>
+			<td><input id="nsPgvbrDPwQ-HllvX50cXC0-val" name="entryfield" title="SDG_2:Children under five whose weight for height is &gt; +2" value="[ SDG_2:Children under five whose weight for height is &gt; +2 ]" /></td>
+		</tr>
+		<tr class="I221">
+			<td>Total No. of children under 5 years of age</td>
+			<td><input id="LgOeUwjhGva-HllvX50cXC0-val" name="entryfield" title="SDG_2:Total number of children under 5 years of age" value="[ SDG_2:Total number of children under 5 years of age ]" /></td>
+		</tr>
+		<tr class="I222a">
+			<td>No. of children under 5 whose weight for height is &lt; -2</td>
+			<td><input id="cBaVY4cTk1A-HllvX50cXC0-val" name="entryfield" title="SDG_2:Children under 5 whose weight for height is &lt; -2" value="[ SDG_2:Children under 5 whose weight for height is &lt; -2 ]" /></td>
+		</tr>
+		<tr class="I222a">
+			<td>Total No. of children under 5 years of age</td>
+			<td><input id="LgOeUwjhGva-HllvX50cXC0-val" name="entryfield" title="SDG_2:Total number of children under 5 years of age" value="[ SDG_2:Total number of children under 5 years of age ]" /></td>
+		</tr>
+		<tr class="I251">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I252a1">
+			<td>No. of local breeds classified as being at risk</td>
+			<td><input id="jHGHRAQ0RcL-HllvX50cXC0-val" name="entryfield" title="SDG_2:Livestock breeds classified as being at risk" value="[ SDG_2:Livestock breeds classified as being at risk ]" /></td>
+		</tr>
+		<tr class="I252a1">
+			<td>Total no. of local breeds in all risk categories</td>
+			<td><input id="NXhSDQe6OXB-HllvX50cXC0-val" name="entryfield" title="SDG_2:Total Number of Local Breeds in All Risk Categories" value="[ SDG_2:Total Number of Local Breeds in All Risk Categories ]" /></td>
+		</tr>
+		<tr class="I252a2">
+			<td>No. of local breeds classified as not-at-risk</td>
+			<td><input id="SdGVvEDBReG-HllvX50cXC0-val" name="entryfield" title="SDG_2:Livestock breeds classified as not at risk" value="[ SDG_2:Livestock breeds classified as not at risk ]" /></td>
+		</tr>
+		<tr class="I252a2">
+			<td>Total no. of local breeds in all risk categories</td>
+			<td><input id="NXhSDQe6OXB-HllvX50cXC0-val" name="entryfield" title="SDG_2:Total Number of Local Breeds in All Risk Categories" value="[ SDG_2:Total Number of Local Breeds in All Risk Categories ]" /></td>
+		</tr>
+		<tr class="I252a3">
+			<td>No. of local breeds classified as unknown</td>
+			<td><input id="Hz6LcIaTWfY-HllvX50cXC0-val" name="entryfield" title="SDG_2:Livestock breeds classified as unknown risk" value="[ SDG_2:Livestock breeds classified as unknown risk ]" /></td>
+		</tr>
+		<tr class="I252a3">
+			<td>Total no. of local breeds in all risk categories</td>
+			<td><input id="NXhSDQe6OXB-HllvX50cXC0-val" name="entryfield" title="SDG_2:Total Number of Local Breeds in All Risk Categories" value="[ SDG_2:Total Number of Local Breeds in All Risk Categories ]" /></td>
+		</tr>
+		<tr class="I2a2">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I2b1">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 2 End --><!-- Goal 3 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-3">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4C9F38;text-align: center; "><strong>Goal 3. Ensure healthy lives and promote well-being for all at all ages </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel3" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I311">3.1.1 Maternal mortality ratio</option><option value="I312">3.1.2 Proportion of births attended by skilled health personnel</option><option value="I321">3.2.1 Under-five mortality rate</option><option value="I322">3.2.2 Neonatal mortality rate</option><option value="I332">3.3.2 Tuberculosis incidence per 1,000 population</option><option value="I333">3.3.3 Malaria incidence per 1,000 population</option><option value="I335">3.3.5 Requiring intervention against NTDs</option><option value="I341">3.4.1 Death rate from NCDs (per 100,000)</option><option value="I342">3.4.2 Suicide mortality rate</option><option value="I352">3.5.2 Alcoholic consumption (in liters)</option><option value="I361">3.6.1 Traffic deaths (per 100,000)</option><option value="I371">3.7.1 Family planning needs satisfied (%)</option><option value="I391">3.9.1 Mortality, air pollution</option><option value="I392">3.9.2 Mortality, unsafe water (per 100,000)</option><option value="I393">3.9.3 Mortality, unintentional poisoning (per 100,000)</option><option value="I3a1">3.a.1 Tobacco users 15+ years (%)</option><option value="I3c1a">3.c.1 Physician Density (per 1,000)</option><option value="I3c1b">3.c.1 Nursing and Midwifery Density (per 1,000)</option><option value="I3c1c">3.c.1 Dentistry Density (per 1,000)</option><option value="I3c1d">3.c.1 Pharmaceutical Density (per 1,000)</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations3" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg3">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg3">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg3">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#4C9F38 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I311">
+			<td>Maternal mortality ratio</td>
+			<td><input id="qj15XcoUCDI-HllvX50cXC0-val" name="entryfield" title="SDG_3:Maternal mortality ratio	" value="[ SDG_3:Maternal mortality ratio	 ]" /></td>
+		</tr>
+		<tr class="I312">
+			<td>Proportion of births attended by skilled health personnel</td>
+			<td><input id="JCrwCxh05iE-HllvX50cXC0-val" name="entryfield" title="SDG_3:Proportion of births attended by skilled health personnel" value="[ SDG_3:Proportion of births attended by skilled health personnel ]" /></td>
+		</tr>
+		<tr class="I321">
+			<td>Under-five mortality rate</td>
+			<td><input id="Ti6DZBxiGsG-HllvX50cXC0-val" name="entryfield" title="SDG_3:Under-five mortality rate	" value="[ SDG_3:Under-five mortality rate	 ]" /></td>
+		</tr>
+		<tr class="I322">
+			<td>Neonatal mortality rate</td>
+			<td><input id="iCihpG4jRzH-HllvX50cXC0-val" name="entryfield" title="SDG_3:Neonatal mortality rate	" value="[ SDG_3:Neonatal mortality rate	 ]" /></td>
+		</tr>
+		<tr class="I332">
+			<td>Tuberculosis incidence per 1,000 population</td>
+			<td><input id="aGhDRO2S4Lu-HllvX50cXC0-val" name="entryfield" title="SDG_3:Tuberculosis incidence per 1,000 population	" value="[ SDG_3:Tuberculosis incidence per 1,000 population	 ]" /></td>
+		</tr>
+		<tr class="I333">
+			<td>Malaria incidence per 1,000 population</td>
+			<td><input id="atbJtXLSbyf-HllvX50cXC0-val" name="entryfield" title="SDG_3:Malaria incidence per 1,000 population	" value="[ SDG_3:Malaria incidence per 1,000 population	 ]" /></td>
+		</tr>
+		<tr class="I335">
+			<td>Requiring intervention against NTDs</td>
+			<td><input id="wjtsNUXEZmA-HllvX50cXC0-val" name="entryfield" title="SDG_3:Requiring intervention against NTDs	" value="[ SDG_3:Requiring intervention against NTDs	 ]" /></td>
+		</tr>
+		<tr class="I341">
+			<td>Death rate from NCDs (per 100,000)</td>
+			<td><input id="NS7zBWqKEXq-HllvX50cXC0-val" name="entryfield" title="SDG_3:Death rate from NCDs (per 100,000)	" value="[ SDG_3:Death rate from NCDs (per 100,000)	 ]" /></td>
+		</tr>
+		<tr class="I342">
+			<td>Suicide mortality rate</td>
+			<td><input id="qO7NEsYVVXN-HllvX50cXC0-val" name="entryfield" title="SDG_3:Suicide deaths in a year  x 100,000" value="[ SDG_3:Suicide deaths in a year  x 100,000 ]" /></td>
+		</tr>
+		<tr class="I352">
+			<td>Alcoholic consumption (in liters)</td>
+			<td><input id="Yk7ej3qZXDv-HllvX50cXC0-val" name="entryfield" title="SDG_3:Alcoholic consumption (in liters)	" value="[ SDG_3:Alcoholic consumption (in liters)	 ]" /></td>
+		</tr>
+		<tr class="I361">
+			<td>Traffic deaths (per 100,000)</td>
+			<td><input id="vmzqxcCgqPd-HllvX50cXC0-val" name="entryfield" title="SDG_3:Traffic deaths (per 100,000)	" value="[ SDG_3:Traffic deaths (per 100,000)	 ]" /></td>
+		</tr>
+		<tr class="I371">
+			<td>Family planning needs satisfied (%)</td>
+			<td><input id="mFeVazpypaZ-HllvX50cXC0-val" name="entryfield" title="SDG_3:Family planning needs satisfied (%)	" value="[ SDG_3:Family planning needs satisfied (%)	 ]" /></td>
+		</tr>
+		<tr class="I391">
+			<td>Mortality, air pollution</td>
+			<td><input id="DtwIkKQchib-HllvX50cXC0-val" name="entryfield" title="SDG_3:Mortality, air pollution	" value="[ SDG_3:Mortality, air pollution	 ]" /></td>
+		</tr>
+		<tr class="I392">
+			<td>Mortality, unsafe water (per 100,000)</td>
+			<td><input id="Rd6xzemL4S5-HllvX50cXC0-val" name="entryfield" title="SDG_3:Mortality, unsafe water (per 100,000)	" value="[ SDG_3:Mortality, unsafe water (per 100,000)	 ]" /></td>
+		</tr>
+		<tr class="I393">
+			<td>Mortality, unintentional poisoning (per 100,000)</td>
+			<td><input id="HW9SvVBHjfX-HllvX50cXC0-val" name="entryfield" title="SDG_3:Mortality, unintentional poisoning (per 100,000)	" value="[ SDG_3:Mortality, unintentional poisoning (per 100,000)	 ]" /></td>
+		</tr>
+		<tr class="I3a1">
+			<td>Tobacco users 15+ years</td>
+			<td><input id="OyAEqNG6RMg-HllvX50cXC0-val" name="entryfield" title="SDG_3:% of the population currently use any tobacco product daily or non-daily 15yrs+" value="[ SDG_3:% of the population currently use any tobacco product daily or non-daily 15yrs+ ]" /></td>
+		</tr>
+		<tr class="I3c1a">
+			<td>Physician Density (per 1,000)</td>
+			<td><input id="o7TozpqU8FT-HllvX50cXC0-val" name="entryfield" title="SDG_3:Physician Density (per 1,000)	" value="[ SDG_3:Physician Density (per 1,000)	 ]" /></td>
+		</tr>
+		<tr class="I3c1b">
+			<td>Nursing and Midwifery Density (per 1,000)</td>
+			<td><input id="UKUOkTXaoz6-HllvX50cXC0-val" name="entryfield" title="SDG_3:Nursing and Midwifery Density (per 1,000)	" value="[ SDG_3:Nursing and Midwifery Density (per 1,000)	 ]" /></td>
+		</tr>
+		<tr class="I3c1c">
+			<td>Dentistry Density (per 1,000)</td>
+			<td><input id="K35BjlZcXYV-HllvX50cXC0-val" name="entryfield" title="SDG_3:Dentistry Density (per 1,000)	" value="[ SDG_3:Dentistry Density (per 1,000)	 ]" /></td>
+		</tr>
+		<tr class="I3c1d">
+			<td>Pharmaceutical Density (per 1,000)</td>
+			<td><input id="W0lTMtPnlip-HllvX50cXC0-val" name="entryfield" title="SDG_3:Pharmaceutical Density (per 1,000)	" value="[ SDG_3:Pharmaceutical Density (per 1,000)	 ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg3">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#4C9F38 !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I311">
+			<td>Recorded/estimated maternal deaths</td>
+			<td><input id="MemsRPHqriD-HllvX50cXC0-val" name="entryfield" title="SDG_3:Recorded/estimated maternal deaths * 100,000" value="[ SDG_3:Recorded/estimated maternal deaths * 100,000 ]" /></td>
+		</tr>
+		<tr class="I311">
+			<td>Total recorded/estimated lives in the same period</td>
+			<td><input id="x7dHhPJWJPe-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total recorded/estimated lives in the same period" value="[ SDG_3:Total recorded/estimated lives in the same period ]" /></td>
+		</tr>
+		<tr class="I312">
+			<td>No. of women with live birth attended by skilled personnel</td>
+			<td><input id="F2kfyiytNRy-HllvX50cXC0-val" name="entryfield" title="SDG_3:Births attended by skilled health personnel" value="[ SDG_3:Births attended by skilled health personnel ]" /></td>
+		</tr>
+		<tr class="I312">
+			<td>Total number of live births in the same period</td>
+			<td><input id="vFCUplW58Dq-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total number of live births in the same period" value="[ SDG_3:Total number of live births in the same period ]" /></td>
+		</tr>
+		<tr class="I321">
+			<td>Number of deaths among children age 0-4</td>
+			<td><input id="rR9ege9U0X3-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of dealths among childre age 0-4" value="[ SDG_3:Number of dealths among childre age 0-4 ]" /></td>
+		</tr>
+		<tr class="I321">
+			<td>Number of live births</td>
+			<td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of live births" value="[ SDG_3:Number of live births ]" /></td>
+		</tr>
+		<tr class="I322">
+			<td>Number of children who died during the first 28 days of life</td>
+			<td><input id="r1tLOkgBXcw-HllvX50cXC0-val" name="entryfield" title="SDG_3:Children who died during the first 28 days of life" value="[ SDG_3:Children who died during the first 28 days of life ]" /></td>
+		</tr>
+		<tr class="I322">
+			<td>Number of live births</td>
+			<td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of live births" value="[ SDG_3:Number of live births ]" /></td>
+		</tr>
+		<tr class="I332">
+			<td>Number of new and relapse TB cases arising in a specified time period</td>
+			<td><input id="mH9XBhoW1Cf-HllvX50cXC0-val" name="entryfield" title="SDG_3:New and relapse TB cases" value="[ SDG_3:New and relapse TB cases ]" /></td>
+		</tr>
+		<tr class="I332">
+			<td>Number of person-years of exposure</td>
+			<td><input id="JFvlTEuknXq-HllvX50cXC0-val" name="entryfield" title="SDG_3:Person-years of exposure" value="[ SDG_3:Person-years of exposure ]" /></td>
+		</tr>
+		<tr class="I333">
+			<td>No. of Malaria Cases</td>
+			<td><input id="IcUjJW2C9Im-HllvX50cXC0-val" name="entryfield" title="SDG_3:Malaria cases" value="[ SDG_3:Malaria cases ]" /></td>
+		</tr>
+		<tr class="I333">
+			<td>Population at Risk</td>
+			<td><input id="dlinqsDHurO-HllvX50cXC0-val" name="entryfield" title="SDG_3:Population at risk" value="[ SDG_3:Population at risk ]" /></td>
+		</tr>
+		<tr class="I335">
+			<td>Average annual number of people requiring preventive chemotherapy</td>
+			<td><input id="wZdc6Gvc3um-HllvX50cXC0-val" name="entryfield" title="SDG_3:Average annual people requiring preventive chemotherapy" value="[ SDG_3:Average annual people requiring preventive chemotherapy ]" /></td>
+		</tr>
+		<tr class="I341">
+			<td>Number of deaths between ages 30 and 70 years from 4 NCD</td>
+			<td><input id="Cl2zeNxNNEM-HllvX50cXC0-val" name="entryfield" title="SDG_3:Deaths 30-70yrs frm 4 NCD" value="[ SDG_3:Deaths 30-70yrs frm 4 NCD ]" /></td>
+		</tr>
+		<tr class="I341">
+			<td>The population at exact age 30 in the synthetic life-table population</td>
+			<td><input id="yj4fJbzFrfg-HllvX50cXC0-val" name="entryfield" title="SDG_3:Population at exact age 30 in synthetic life-table" value="[ SDG_3:Population at exact age 30 in synthetic life-table ]" /></td>
+		</tr>
+		<tr class="I342">
+			<td>Number of suicide deaths in a year</td>
+			<td><input id="HzqYEXs8hoO-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of suicide deaths in a year" value="[ SDG_3:Number of suicide deaths in a year ]" /></td>
+		</tr>
+		<tr class="I342">
+			<td>Midyear resident population for the same calendar year</td>
+			<td><input id="Vak8DH4WNiD-HllvX50cXC0-val" name="entryfield" title="SDG_3:Midyear resident population same calendar year" value="[ SDG_3:Midyear resident population same calendar year ]" /></td>
+		</tr>
+		<tr class="I352">
+			<td>The total amount of alcohol consumed per adult (15+ years)</td>
+			<td><input id="w8oLlRxIzST-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total amount of alcohol consumbed per adult" value="[ SDG_3:Total amount of alcohol consumbed per adult ]" /></td>
+		</tr>
+		<tr class="I352">
+			<td>Midyear resident population (15+ years) for the same calendar year</td>
+			<td><input id="b1IbuE6i9Tc-HllvX50cXC0-val" name="entryfield" title="SDG_3:Midyear resident population (15+ years)" value="[ SDG_3:Midyear resident population (15+ years) ]" /></td>
+		</tr>
+		<tr class="I361">
+			<td>Number of deaths due to road traffic crashes</td>
+			<td><input id="SJCuhkbZCqN-HllvX50cXC0-val" name="entryfield" title="SDG_3:Deaths due to road traffic crashes" value="[ SDG_3:Deaths due to road traffic crashes ]" /></td>
+		</tr>
+		<tr class="I361">
+			<td>Total Population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I371">
+			<td>Number of women with family planning demand who use modern methods</td>
+			<td><input id="TU2VGO7AnYK-HllvX50cXC0-val" name="entryfield" title="SDG_3:Women with family planning demand" value="[ SDG_3:Women with family planning demand ]" /></td>
+		</tr>
+		<tr class="I371">
+			<td>Total demand for family planning</td>
+			<td><input id="ETzoIk2kLNK-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total demand for family planning" value="[ SDG_3:Total demand for family planning ]" /></td>
+		</tr>
+		<tr class="I391">
+			<td>Number of deaths attributable to the joint effects of household and ambient air pollution</td>
+			<td><input id="fqqZhw9AMvn-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of deaths attributable to the joint effects of household and ambient air pollution" value="[ SDG_3:Number of deaths attributable to the joint effects of household and ambient air pollution ]" /></td>
+		</tr>
+		<tr class="I391">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I392">
+			<td>Number of deaths from unsafe water, sanitation, and hygiene</td>
+			<td><input id="VM8F1Q8EVxB-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of deaths from unsafe water, sanitation and hygiene" value="[ SDG_3:Number of deaths from unsafe water, sanitation and hygiene ]" /></td>
+		</tr>
+		<tr class="I392">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I393">
+			<td>Number of deaths from unintentional poisoning</td>
+			<td><input id="C22hsuW2rE5-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of deaths from unintentional poisoning" value="[ SDG_3:Number of deaths from unintentional poisoning ]" /></td>
+		</tr>
+		<tr class="I393">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I3a1">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I3c1a">
+			<td>Number of physicians</td>
+			<td><input id="RbhomZoQGDs-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of physicians" value="[ SDG_3:Number of physicians ]" /></td>
+		</tr>
+		<tr class="I3c1a">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I3c1b">
+			<td>Number of nursing and midwifery personnel</td>
+			<td><input id="aRe93xxQav7-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of nursing and midwifery personnel" value="[ SDG_3:Number of nursing and midwifery personnel ]" /></td>
+		</tr>
+		<tr class="I3c1b">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I3c1c">
+			<td>Number of dentists, dental technician/assistants</td>
+			<td><input id="s4SKEVPtp2m-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of dentists, dental technician/assistants" value="[ SDG_3:Number of dentists, dental technician/assistants ]" /></td>
+		</tr>
+		<tr class="I3c1c">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I3c1d">
+			<td>pharmacists, pharmaceutical, technicians/assistants</td>
+			<td><input id="GYeuH3xRLlD-HllvX50cXC0-val" name="entryfield" title="SDG_3:pharmacists, pharmaceutical, technicians/assistants" value="[ SDG_3:pharmacists, pharmaceutical, technicians/assistants ]" /></td>
+		</tr>
+		<tr class="I3c1d">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 3 End --><!-- Goal 4 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-4">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#C5192D;text-align: center; "><strong>Goal 4. Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel4" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I422">4.2.2 Organized learning one year before official primary entry age (%)</option><option value="I451a">4.5.1 Gender Parity Index - Primary Education Enrollment</option><option value="I451b">4.5.1 Gender Parity Index - Secondary Education Enrollment</option><option value="I4b1">4.b.1 Total ODA for scholarships (in USD)</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations4" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg4">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg4">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg4">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#C5192D !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I422">
+			<td>Organized learning one year before official primary entry age (%)</td>
+			<td><input id="ES8fQnz9u4A-HllvX50cXC0-val" name="entryfield" title="SDG_4:Organized learning one year before official primary entry age (%)	" value="[ SDG_4:Organized learning one year before official primary entry age (%)	 ]" /></td>
+		</tr>
+		<tr class="I451a">
+			<td>Gender Parity Index - Primary Education Enrollment</td>
+			<td><input id="HcMZhdKHITQ-HllvX50cXC0-val" name="entryfield" title="SDG_4:Gender Parity Index - Primary Education Enrollment	" value="[ SDG_4:Gender Parity Index - Primary Education Enrollment	 ]" /></td>
+		</tr>
+		<tr class="I451b">
+			<td>Gender Parity Index - Secondary Education Enrollment</td>
+			<td><input id="xwCjzKpZEMe-HllvX50cXC0-val" name="entryfield" title="SDG_4:Gender Parity Index - Secondary Education Enrollment	" value="[ SDG_4:Gender Parity Index - Secondary Education Enrollment	 ]" /></td>
+		</tr>
+		<tr class="I4b1">
+			<td>Total ODA for scholarships (in USD)</td>
+			<td><input id="JdwU3qMoYxO-HllvX50cXC0-val" name="entryfield" title="SDG_4:Total official development assistance,ODA(scholarships)" value="[ SDG_4:Total official development assistance,ODA(scholarships) ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg4">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#C5192D !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="sdg4NoHeader" colspan="2">Sex</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#C5192D !important;">
+			<th class="sdg4NoHeader">Female</th>
+			<th class="sdg4NoHeader">Male</th>
+			<th class="sdg4Header">Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I422">
+			<td>No. of children who participated in organized learning programs 1yr before official primary age.</td>
+			<td><input id="q8mm20cJoYs-sLKRSW7xmwp-val" name="entryfield" title="SDG_4:Number of children who participated in organized learning programs 1yr before entry age Female" value="[ SDG_4:Number of children who participated in organized learning programs 1yr before entry age Female ]" /></td>
+			<td><input id="q8mm20cJoYs-sJUGNYho7Ey-val" name="entryfield" title="SDG_4:Number of children who participated in organized learning programs 1yr before entry age Male" value="[ SDG_4:Number of children who participated in organized learning programs 1yr before entry age Male ]" /></td>
+		</tr>
+		<tr class="I422">
+			<td>Total population in the same age range</td>
+			<td><input id="SBmI91hjx3T-sLKRSW7xmwp-val" name="entryfield" title="SDG_4:Total population of children below entry age in primary education Female" value="[ SDG_4:Total population of children below entry age in primary education Female ]" /></td>
+			<td><input id="SBmI91hjx3T-sJUGNYho7Ey-val" name="entryfield" title="SDG_4:Total population of children below entry age in primary education Male" value="[ SDG_4:Total population of children below entry age in primary education Male ]" /></td>
+		</tr>
+		<tr class="I451a">
+			<td>Gross enrollment ratio in primary education</td>
+			<td><input id="MPwkNd0OtI2-sLKRSW7xmwp-val" name="entryfield" title="SDG_4:Gross enrollment ratio in primary education Female" value="[ SDG_4:Gross enrollment ratio in primary education Female ]" /></td>
+			<td><input id="MPwkNd0OtI2-sJUGNYho7Ey-val" name="entryfield" title="SDG_4:Gross enrollment ratio in primary education Male" value="[ SDG_4:Gross enrollment ratio in primary education Male ]" /></td>
+		</tr>
+		<tr class="I451b">
+			<td>Gross enrollment ratio in secondary education</td>
+			<td><input id="AhMpu40ZhnW-sLKRSW7xmwp-val" name="entryfield" title="SDG_4:Gross enrollment ratio in secondary education Female" value="[ SDG_4:Gross enrollment ratio in secondary education Female ]" /></td>
+			<td><input id="AhMpu40ZhnW-sJUGNYho7Ey-val" name="entryfield" title="SDG_4:Gross enrollment ratio in secondary education Male" value="[ SDG_4:Gross enrollment ratio in secondary education Male ]" /></td>
+		</tr>
+		<tr class="I4b1">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 4 End --><!-- Goal 5 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-5">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF3A21;text-align: center; "><strong>Goal 5. Achieve gender equality and empower all women and girls </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel5" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I551a">5.5.1a Women in elected government</option><option value="I552">5.5.2 Proportion of women in managerial positions</option><option value="I5b1">5.b.1 Mobile telephone owners</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations5" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg5">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg5">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg5">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#FF3A21 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I551a">
+			<td>Women in elected government</td>
+			<td><input id="rW9QXpbg4Xd-HllvX50cXC0-val" name="entryfield" title="SDG_5:Women in elected government	" value="[ SDG_5:Women in elected government	 ]" /></td>
+		</tr>
+		<tr class="I552">
+			<td>The proportion of women in managerial positions</td>
+			<td><input id="ofjriq3zC1Y-HllvX50cXC0-val" name="entryfield" title="SDG_5:The proportion of women in managerial positions	" value="[ SDG_5:The proportion of women in managerial positions	 ]" /></td>
+		</tr>
+		<tr class="I5b1">
+			<td>Mobile telephone owners (%)</td>
+			<td><input id="kqnpnHrcTcg-bJmK5mlfvQk-val" name="entryfield" title="SDG_5:Individuals who own a mobile telephone. No Dissaggregation" value="[ SDG_5:Individuals who own a mobile telephone. No Dissaggregation ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg5">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#FF3A21 !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="sexDisagg" colspan="2">Sex</th>
+			<th class="noDisagg">Value</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#FF3A21 !important;">
+			<th class="sexDisagg">Female</th>
+			<th class="sexDisagg">Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I551a">
+			<td>Number of seats held by women members in single or lower chambers of national parliaments</td>
+			<td><input id="q534i5qtxG2-HllvX50cXC0-val" name="entryfield" title="SDG_5:Seats held by women members in parliaments" value="[ SDG_5:Seats held by women members in parliaments ]" /></td>
+		</tr>
+		<tr class="I551a">
+			<td>Total number of seats</td>
+			<td><input id="UTKJklNQim3-HllvX50cXC0-val" name="entryfield" title="SDG_5:Total number of seats" value="[ SDG_5:Total number of seats ]" /></td>
+		</tr>
+		<tr class="I552">
+			<td>Women employed in ISCO-08 category 1</td>
+			<td><input id="ygD0dPHpavK-HllvX50cXC0-val" name="entryfield" title="SDG_5:Women employed in ISCO-08 category 1&amp;14" value="[ SDG_5:Women employed in ISCO-08 category 1&amp;14 ]" /></td>
+		</tr>
+		<tr class="I552">
+			<td>All persons employed in ISCO-08 category 1</td>
+			<td><input id="Ebrx1HB3nkN-HllvX50cXC0-val" name="entryfield" title="SDG_5:All persons employed in ISCO-08 category 1&amp;14" value="[ SDG_5:All persons employed in ISCO-08 category 1&amp;14 ]" /></td>
+		</tr>
+		<tr class="I5b1">
+			<td>Number of individuals who own a mobile telephone</td>
+			<td><input id="kqnpnHrcTcg-sLKRSW7xmwp-val" name="entryfield" title="SDG_5:Individuals who own a mobile telephone. Female" value="[ SDG_5:Individuals who own a mobile telephone. Female ]" /></td>
+			<td><input id="kqnpnHrcTcg-sJUGNYho7Ey-val" name="entryfield" title="SDG_5:Individuals who own a mobile telephone. Male" value="[ SDG_5:Individuals who own a mobile telephone. Male ]" /></td>
+		</tr>
+		<tr class="I5b1">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:Total population Female" value="[ SDG_1:Total population Female ]" /></td>
+			<td><input id="pTOpNf6zkTv-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Total population Male" value="[ SDG_1:Total population Male ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 5 End--><!-- Goal 6 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-6">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#26BDE2;text-align: center; "><strong>Goal 6. Ensure availability and sustainable management of water and sanitation for all </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel6" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I642">6.4.2 Level of water stress</option><option value="I6a1">6.a.1 Proportion of water and sanitation ODA on spending plan</option><option value="I6b1">6.b.1 Proportion of local admin units with local community participation on water and sanitation interventions</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations6" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg6">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg6">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg6">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#26BDE2 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I642">
+			<td>Level of water stress</td>
+			<td><input id="jCcnjrZJy12-HllvX50cXC0-val" name="entryfield" title="SDG_6:Level of water stress	" value="[ SDG_6:Level of water stress	 ]" /></td>
+		</tr>
+		<tr class="I6a1">
+			<td>The proportion of water and sanitation ODA on spending plan</td>
+			<td><input id="ukncn1Hlzdf-HllvX50cXC0-val" name="entryfield" title="SDG_6:The proportion of water and sanitation ODA on spending plan	" value="[ SDG_6:The proportion of water and sanitation ODA on spending plan	 ]" /></td>
+		</tr>
+		<tr class="I6b1">
+			<td>Proportion of local admin units with local community participation on water and sanitation interventions</td>
+			<td><input id="UkPFxKSr0wb-HllvX50cXC0-val" name="entryfield" title="SDG_6:Proportion of local admin units with local community participation on water and sanitation interventions	" value="[ SDG_6:Proportion of local admin units with local community participation on water and sanitation interventions	 ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg6">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#26BDE2 !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I642">
+			<td>Total freshwater withdrawn</td>
+			<td><input id="XgtR08R2tWT-HllvX50cXC0-val" name="entryfield" title="SDG_6:Total freshwater withdrawn" value="[ SDG_6:Total freshwater withdrawn ]" /></td>
+		</tr>
+		<tr class="I642">
+			<td>Total renewable freshwater resources</td>
+			<td><input id="N6fWQSZhzXS-HllvX50cXC0-val" name="entryfield" title="SDG_6:Total renewable freshwater resources" value="[ SDG_6:Total renewable freshwater resources ]" /></td>
+		</tr>
+		<tr class="I6a1">
+			<td>The amount of water and sanitation</td>
+			<td><input id="goDhooTdnpA-HllvX50cXC0-val" name="entryfield" title="SDG_6:Total amount of water and sanitation" value="[ SDG_6:Total amount of water and sanitation ]" /></td>
+		</tr>
+		<tr class="I6a1">
+			<td>Total amount of water and sanitation-related ODA</td>
+			<td><input id="cZ1kDXBQ7C2-HllvX50cXC0-val" name="entryfield" title="SDG_6:Amount of water and sanitation" value="[ SDG_6:Amount of water and sanitation ]" /></td>
+		</tr>
+		<tr class="I6b1">
+			<td>Local admin units with operation policies and procedures for local participation</td>
+			<td><input id="nMmhSIi5hLE-HllvX50cXC0-val" name="entryfield" title="SDG_6:Number of local admin units" value="[ SDG_6:Number of local admin units ]" /></td>
+		</tr>
+		<tr class="I6b1">
+			<td>The total number of local administrative units in the country</td>
+			<td><input id="aXgQjzyBOHY-HllvX50cXC0-val" name="entryfield" title="SDG_6:Total number of local admin units in the country" value="[ SDG_6:Total number of local admin units in the country ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 6 End--><!-- Goal 7 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-7">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FCC30B;text-align: center; "><strong>Goal 7. Ensure access to affordable, reliable, sustainable and modern energy for all </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel7" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I711">7.1.1 Access to electricity (% population)</option><option value="I712">7.1.2 Access to clean energy (% population)</option><option value="I721">7.2.1 Renewable energy consumption</option><option value="I731">7.3.1 Energy intensity</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations7" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg7">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg7">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg7">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#FCC30B !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I711">
+			<td>Access to electricity (% population)</td>
+			<td><input id="EvxREEMoa5E-HllvX50cXC0-val" name="entryfield" title="SDG_7:Access to electricity (% population)	" value="[ SDG_7:Access to electricity (% population)	 ]" /></td>
+		</tr>
+		<tr class="I712">
+			<td>Access to clean energy (% population)</td>
+			<td><input id="QUGGAviJi4F-HllvX50cXC0-val" name="entryfield" title="SDG_7:Access to clean energy (% population)	" value="[ SDG_7:Access to clean energy (% population)	 ]" /></td>
+		</tr>
+		<tr class="I721">
+			<td>Renewable energy consumption</td>
+			<td><input id="zT3hIUDKfgl-HllvX50cXC0-val" name="entryfield" title="SDG_7:Renewable energy consumption	" value="[ SDG_7:Renewable energy consumption	 ]" /></td>
+		</tr>
+		<tr class="I731">
+			<td>Energy intensity</td>
+			<td><input id="iIHXuIzCh9H-HllvX50cXC0-val" name="entryfield" title="SDG_7:Energy intensity	" value="[ SDG_7:Energy intensity	 ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg7">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#FCC30B !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="sdg7Header" colspan="2">Geographical Location</th>
+			<th class="sdg7NoHeader">Value</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#FCC30B !important;">
+			<th class="sdg7Header">Rural</th>
+			<th class="sdg7Header">Urban</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I711">
+			<td>Population with access to energy</td>
+			<td><input id="kCRn8WKklIR-iEgy3xKqVi5-val" name="entryfield" title="SDG_7:Population with access to energy Rural" value="[ SDG_7:Population with access to energy Rural ]" /></td>
+			<td><input id="kCRn8WKklIR-r8hBd63qzn4-val" name="entryfield" title="SDG_7:Population with access to energy Urban" value="[ SDG_7:Population with access to energy Urban ]" /></td>
+		</tr>
+		<tr class="I711">
+			<td>Total population</td>
+      <td><input id="pTOpNf6zkTv-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Total population Rural" value="[ SDG_1:Total population Rural ]" /></td>
+			<td><input id="pTOpNf6zkTv-r8hBd63qzn4-val" name="entryfield" title="SDG_1:Total population Urban" value="[ SDG_1:Total population Urban ]" /></td>
+		</tr>
+		<tr class="I712">
+			<td>Number of people using clean fuels and technologies for cooking, heating and lighting</td>
+			<td><input id="EUVnujhYWcR-HllvX50cXC0-val" name="entryfield" title="SDG_7:Number of people using clean fuels and technologies for cooking, heating and lighting" value="[ SDG_7:Number of people using clean fuels and technologies for cooking, heating and lighting ]" /></td>
+		</tr>
+		<tr class="I712">
+			<td>Total population reporting any cooking, heating or lighting</td>
+			<td><input id="oqhLWFqRC14-HllvX50cXC0-val" name="entryfield" title="SDG_7:Total population reporting any cooking, heating or lighting" value="[ SDG_7:Total population reporting any cooking, heating or lighting ]" /></td>
+		</tr>
+		<tr class="I721">
+			<td>Consumption of energy from all renewable sources</td>
+			<td><input id="OEpkeiWuqX0-HllvX50cXC0-val" name="entryfield" title="SDG_7:Consumption of energy from all renewable sources" value="[ SDG_7:Consumption of energy from all renewable sources ]" /></td>
+		</tr>
+		<tr class="I721">
+			<td>Total final energy consumption</td>
+			<td><input id="WQGDscmrGgi-HllvX50cXC0-val" name="entryfield" title="SDG_7:Total final energy consumption" value="[ SDG_7:Total final energy consumption ]" /></td>
+		</tr>
+		<tr class="I731">
+			<td>Total energy supply to economy</td>
+			<td><input id="C0ScMXqXY02-HllvX50cXC0-val" name="entryfield" title="SDG_7:Total energy supply to economy" value="[ SDG_7:Total energy supply to economy ]" /></td>
+		</tr>
+		<tr class="I731">
+			<td>GDP</td>
+			<td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:GDP" value="[ SDG_7:GDP ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 7 End--><!-- Goal 8 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-8">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#A21942;text-align: center; "><strong>Goal 8. Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel8" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I811">8.1.1 Annual growth rate of real GDP per capita</option><option value="I821">8.2.1 Annual growth rate of real GDP per employed person</option><option value="I842">8.4.2 Domestic material consumption</option><option value="I852">8.5.2 Unemployment rate</option><option value="I861">8.6.1 Proportion of youth</option><option value="I8101">8.10.1 Commercial bank and ATMs presence (per 100,000)</option><option value="I8102">8.10.2 Bank account or mobile money service holders (% population)</option><option value="I8a1">8.a.1 Aid for Trade commitments and disbursements</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations8" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg8">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg8">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg8">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#A21942 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I811">
+			<td>Annual growth rate of real GDP per capita</td>
+			<td><input id="rZQRXUXUPaL-HllvX50cXC0-val" name="entryfield" title="SDG_8:Annual growth rate of real GDP per capita	" value="[ SDG_8:Annual growth rate of real GDP per capita	 ]" /></td>
+		</tr>
+		<tr class="I821">
+			<td>Annual growth rate of real GDP per employed person</td>
+			<td><input id="NlcSFvZFfjA-HllvX50cXC0-val" name="entryfield" title="SDG_8:Annual growth rate of real GDP per employed person	" value="[ SDG_8:Annual growth rate of real GDP per employed person	 ]" /></td>
+		</tr>
+		<tr class="I842">
+			<td>Domestic material consumption</td>
+			<td><input id="nQDrXyuARRa-HllvX50cXC0-val" name="entryfield" title="SDG_8:direct imports of material + domestic extraction of materials - direct exports of materials measured in metric tonnes." value="[ SDG_8:direct imports of material + domestic extraction of materials - direct exports of materials measured in metric tonnes. ]" /></td>
+		</tr>
+		<tr class="I852">
+			<td>Unemployment rate</td>
+			<td><input id="ePlRlJHXijB-HllvX50cXC0-val" name="entryfield" title="SDG_8:Unemployment rate	" value="[ SDG_8:Unemployment rate	 ]" /></td>
+		</tr>
+		<tr class="I861">
+			<td>Proportion of youth</td>
+			<td><input id="qVkMsM6gB9n-HllvX50cXC0-val" name="entryfield" title="SDG_8:Proportion of youth	" value="[ SDG_8:Proportion of youth	 ]" /></td>
+		</tr>
+		<tr class="I8101">
+			<td>Commercial bank and ATMs presence (per 100,000)</td>
+			<td><input id="E8M2iiHaKLh-HllvX50cXC0-val" name="entryfield" title="SDG_8:Commercial bank and ATMs presence (per 100,000)	" value="[ SDG_8:Commercial bank and ATMs presence (per 100,000)	 ]" /></td>
+		</tr>
+		<tr class="I8102">
+			<td>Bank account or mobile money service holders (% population)</td>
+			<td><input id="ACLqta1bLlC-HllvX50cXC0-val" name="entryfield" title="SDG_8:Bank account or mobile money service holders" value="[ SDG_8:Bank account or mobile money service holders ]" /></td>
+		</tr>
+		<tr class="I8a1">
+			<td>Aid for Trade commitments</td>
+			<td><input id="KltV9viaHHG-HllvX50cXC0-val" name="entryfield" title="SDG_8:Sum of ODA &amp; OOF flows frm all donors" value="[ SDG_8:Sum of ODA &amp; OOF flows frm all donors ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg8">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#A21942 !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="sdg8Header" colspan="2">Sex</th>
+			<th class="sdg8NoHeader">Value</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#A21942 !important;">
+			<th class="sdg8Header">Female</th>
+			<th class="sdg8Header">Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I811">
+			<td>GDP per capita in year t+1</td>
+			<td><input id="MpwayQltPTy-HllvX50cXC0-val" name="entryfield" title="SDG_8:GDP per capita in year t+1 at constant 2005 dollars- GDP per capita in year t at constant 2005 dollars" value="[ SDG_8:GDP per capita in year t+1 at constant 2005 dollars- GDP per capita in year t at constant 2005 dollars ]" /></td>
+		</tr>
+		<tr class="I811">
+			<td>GDP per capita in year t</td>
+			<td><input id="j6NGNhKM1jz-HllvX50cXC0-val" name="entryfield" title="SDG_8:GDP per capita in year t at constant 2005 dollars" value="[ SDG_8:GDP per capita in year t at constant 2005 dollars ]" /></td>
+		</tr>
+		<tr class="I821">
+			<td>Real GDP per employed person in year N -(N-1)</td>
+			<td><input id="xYjKHmNPMKu-HllvX50cXC0-val" name="entryfield" title="SDG_8:Real GDP per employed person in year, N - (N-1)" value="[ SDG_8:Real GDP per employed person in year, N - (N-1) ]" /></td>
+		</tr>
+		<tr class="I821">
+			<td>Real GDP per employed person in year N-1</td>
+			<td><input id="dX49L52V9WM-HllvX50cXC0-val" name="entryfield" title="SDG_8:Real GDP per employed person in year N-1" value="[ SDG_8:Real GDP per employed person in year N-1 ]" /></td>
+		</tr>
+		<tr class="I842">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I852">
+			<td>Unemployed persons</td>
+			<td><input id="bKFp3z7BOK7-sLKRSW7xmwp-val" name="entryfield" title="SDG_8:Unemployed persons Female" value="[ SDG_8:Unemployed persons Female ]" /></td>
+			<td><input id="bKFp3z7BOK7-sJUGNYho7Ey-val" name="entryfield" title="SDG_8:Unemployed persons Male" value="[ SDG_8:Unemployed persons Male ]" /></td>
+		</tr>
+		<tr class="I852">
+			<td>Persons in the labor force</td>
+			<td><input id="Gtrz0rkNIH9-sLKRSW7xmwp-val" name="entryfield" title="SDG_8:Persons in the labor force Female" value="[ SDG_8:Persons in the labor force Female ]" /></td>
+			<td><input id="Gtrz0rkNIH9-sJUGNYho7Ey-val" name="entryfield" title="SDG_8:Persons in the labor force Male" value="[ SDG_8:Persons in the labor force Male ]" /></td>
+		</tr>
+		<tr class="I861">
+			<td>Youth-Youth employed-Youth Training</td>
+			<td><input id="dAbyaqzPFQu-HllvX50cXC0-val" name="entryfield" title="SDG_8:Youth – Youth in employment – Youth not in employment but in education or training" value="[ SDG_8:Youth – Youth in employment – Youth not in employment but in education or training ]" /></td>
+		</tr>
+		<tr class="I861">
+			<td>Youth Population</td>
+			<td><input id="isVafLZvrzO-HllvX50cXC0-val" name="entryfield" title="SDG_8:Youth population" value="[ SDG_8:Youth population ]" /></td>
+		</tr>
+		<tr class="I8101">
+			<td>Number of commerical bank branches</td>
+			<td><input id="tl6Qlw1d0FB-HllvX50cXC0-val" name="entryfield" title="SDG_8:Commerical bank branches/ATMs" value="[ SDG_8:Commerical bank branches/ATMs ]" /></td>
+		</tr>
+		<tr class="I8101">
+			<td>Number of adults (divided by 100,000)</td>
+			<td><input id="ReqlS094zxC-HllvX50cXC0-val" name="entryfield" title="SDG_8:Adults (divided by 100,000)" value="[ SDG_8:Adults (divided by 100,000) ]" /></td>
+		</tr>
+		<tr class="I8102">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I8a1">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 8 End --><!-- Goal 9 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-9">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FD6925;text-align: center; "><strong>Goal 9. Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel9" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I912">9.1.2 Passenger and freight volumes</option><option value="I921">9.2.1 Proportion of manufacturing value added</option><option value="I922">9.2.2 Manufacturing employment as a proportion of total employment</option><option value="I941">9.4.1 CO2 emission per unit of value added</option><option value="I951">9.5.1 Research and development expenditure as a proportion of GDP</option><option value="I952">9.5.2 Researchers (in full-time equivalent) per million inhabitants</option><option value="I9a1">9.a.1 Total official international support to infrastructure</option><option value="I9b1">9.b.1 Proportion of medium and high-tech industry value added in total value added</option><option value="I9c1">9.c.1 Proportion of population covered by a mobile network</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations9" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg9">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg9">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg9">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#FD6925 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I912">
+			<td>Passenger and freight volumes</td>
+			<td><input id="rrjMth4f11Z-HllvX50cXC0-val" name="entryfield" title="SDG_9:Sum of passenger &amp; freight vl. reported" value="[ SDG_9:Sum of passenger &amp; freight vl. reported ]" /></td>
+		</tr>
+		<tr class="I921">
+			<td>Proportion of manufacturing value added</td>
+			<td><input id="D1xcT46JCVw-HllvX50cXC0-val" name="entryfield" title="SDG_9:Proportion of manufacturing value added	" value="[ SDG_9:Proportion of manufacturing value added	 ]" /></td>
+		</tr>
+		<tr class="I922">
+			<td>Manufacturing employment as a proportion of total employment</td>
+			<td><input id="sUHIdkbigKw-HllvX50cXC0-val" name="entryfield" title="SDG_9:Manufacturing employment as a proportion of total employment	" value="[ SDG_9:Manufacturing employment as a proportion of total employment	 ]" /></td>
+		</tr>
+		<tr class="I941">
+			<td>CO2 emission per unit of value added</td>
+			<td><input id="tvhODPVwvvV-HllvX50cXC0-val" name="entryfield" title="SDG_9:CO2 emission per unit of value added	" value="[ SDG_9:CO2 emission per unit of value added	 ]" /></td>
+		</tr>
+		<tr class="I951">
+			<td>Research and development expenditure as a proportion of GDP</td>
+			<td><input id="WCjZOCH6jPx-HllvX50cXC0-val" name="entryfield" title="SDG_9:Research and development expenditure as a proportion of GDP	" value="[ SDG_9:Research and development expenditure as a proportion of GDP	 ]" /></td>
+		</tr>
+		<tr class="I952">
+			<td>Researchers (in full-time equivalent) per million inhabitants</td>
+			<td><input id="y39BBEAsVXl-HllvX50cXC0-val" name="entryfield" title="SDG_9:Researchers (in full-time equivalent) per million inhabitants	" value="[ SDG_9:Researchers (in full-time equivalent) per million inhabitants	 ]" /></td>
+		</tr>
+		<tr class="I9a1">
+			<td>Total official international support to infrastructure</td>
+			<td><input id="HrnVSfYnHma-HllvX50cXC0-val" name="entryfield" title="SDG_9:Sum of ODA &amp; OOF flows frm donors" value="[ SDG_9:Sum of ODA &amp; OOF flows frm donors ]" /></td>
+		</tr>
+		<tr class="I9b1">
+			<td>Proportion of medium and high-tech industry value added in total value added</td>
+			<td><input id="NqFPQJkDE9I-HllvX50cXC0-val" name="entryfield" title="SDG_9:Proportion of medium and high-tech industry value added in total value added	" value="[ SDG_9:Proportion of medium and high-tech industry value added in total value added	 ]" /></td>
+		</tr>
+		<tr class="I9c1">
+			<td>Proportion of population covered by a mobile network</td>
+			<td><input id="oXdk88u7wtf-HllvX50cXC0-val" name="entryfield" title="SDG_9:Proportion of population covered by a mobile network	" value="[ SDG_9:Proportion of population covered by a mobile network	 ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg9">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#FD6925 !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I912">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I921">
+			<td>Manufacturing value added</td>
+			<td><input id="o8atQWjlEQ5-HllvX50cXC0-val" name="entryfield" title="SDG_9:Manufacturing value added" value="[ SDG_9:Manufacturing value added ]" /></td>
+		</tr>
+		<tr class="I921">
+			<td>GDP</td>
+			<td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:GDP" value="[ SDG_7:GDP ]" /></td>
+		</tr>
+		<tr class="I922">
+			<td>Total employment in manufacturing activities</td>
+			<td><input id="YKfRIUfnqaw-HllvX50cXC0-val" name="entryfield" title="SDG_9:Total employment in manufact. activ.." value="[ SDG_9:Total employment in manufact. activ.. ]" /></td>
+		</tr>
+		<tr class="I922">
+			<td>Total employment in all economic activities</td>
+			<td><input id="TQGrrzcVi9a-HllvX50cXC0-val" name="entryfield" title="SDG_9:Total employment in all economic activ.." value="[ SDG_9:Total employment in all economic activ.. ]" /></td>
+		</tr>
+		<tr class="I941">
+			<td>CO2 emission from manufacturing (kg)</td>
+			<td><input id="Djjg8FIvCKp-HllvX50cXC0-val" name="entryfield" title="SDG_9:CO2 emission from manufacturing (kg)" value="[ SDG_9:CO2 emission from manufacturing (kg) ]" /></td>
+		</tr>
+		<tr class="I941">
+			<td>Total manufacturing value added (constant 2010 USD)</td>
+			<td><input id="grluc6vgaSM-HllvX50cXC0-val" name="entryfield" title="SDG_9:Total manufacturing value added (USD)" value="[ SDG_9:Total manufacturing value added (USD) ]" /></td>
+		</tr>
+		<tr class="I951">
+			<td>Amount of Research and development (R&amp;D) expenditure</td>
+			<td><input id="R64mkjYs7B7-HllvX50cXC0-val" name="entryfield" title="SDG_9:Amount of Research and development (R&amp;D) expenditure" value="[ SDG_9:Amount of Research and development (R&amp;D) expenditure ]" /></td>
+		</tr>
+		<tr class="I951">
+			<td>GDP</td>
+			<td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:GDP" value="[ SDG_7:GDP ]" /></td>
+		</tr>
+		<tr class="I952">
+			<td>Researchers (in full-time equivalent)</td>
+			<td><input id="CXnbOm2RZE1-HllvX50cXC0-val" name="entryfield" title="SDG_9:Researchers (in full-time equivalent)" value="[ SDG_9:Researchers (in full-time equivalent) ]" /></td>
+		</tr>
+		<tr class="I952">
+			<td>Population (divided by one million)</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I9a1">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I9b1">
+			<td>Sum of value added in medium and high-tech industry economic activities</td>
+			<td><input id="fcy9TKaPBS0-HllvX50cXC0-val" name="entryfield" title="SDG_9:Sum of value added(industry econ activ.)" value="[ SDG_9:Sum of value added(industry econ activ.) ]" /></td>
+		</tr>
+		<tr class="I9b1">
+			<td>Total value added of manufacturing</td>
+			<td><input id="F8JgS20k6r7-HllvX50cXC0-val" name="entryfield" title="SDG_9:Total value added of manufacturing" value="[ SDG_9:Total value added of manufacturing ]" /></td>
+		</tr>
+		<tr class="I9c1">
+			<td>Number of inhabitants within range of a mobile-cellular signal</td>
+			<td><input id="U34Rhq28dIv-HllvX50cXC0-val" name="entryfield" title="SDG_9:Inhabitants mobi-cellular signal range" value="[ SDG_9:Inhabitants mobi-cellular signal range ]" /></td>
+		</tr>
+		<tr class="I9c1">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 9 End --><!-- Goal 10 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-10">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#DD1367;text-align: center; "><strong>Goal 10. Reduce inequality within and among countries </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel10" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I1061">10.6.1 Voting rights in developing countries</option><option value="I10a1">10.a.1 Tariff lines to import</option><option value="I10b1">10.b.1 Total resource flow for development</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations10" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg10">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg10">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg10">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#DD1367 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1061">
+			<td>Voting rights in developing countries</td>
+			<td><input id="UYfKX2Zko4k-HllvX50cXC0-val" name="entryfield" title="SDG_10:Voting rights in developing countries	" value="[ SDG_10:Voting rights in developing countries	 ]" /></td>
+		</tr>
+		<tr class="I10a1">
+			<td>Tariff lines to import</td>
+			<td><input id="LGR9NIOhJZN-HllvX50cXC0-val" name="entryfield" title="SDG_10:AVg share of national tariff lines(free of duty)" value="[ SDG_10:AVg share of national tariff lines(free of duty) ]" /></td>
+		</tr>
+		<tr class="I10b1">
+			<td>Total resource flow for development</td>
+			<td><input id="doGQYyiL5Xc-HllvX50cXC0-val" name="entryfield" title="SDG_10:Sum of official and private flows frm donors" value="[ SDG_10:Sum of official and private flows frm donors ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg10">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#DD1367 !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1061">
+			<td>No. of voting rights allocated to developing countries</td>
+			<td><input id="wgG0LeHPhme-HllvX50cXC0-val" name="entryfield" title="SDG_10:Voting rights allocated to developing countries" value="[ SDG_10:Voting rights allocated to developing countries ]" /></td>
+		</tr>
+		<tr class="I1061">
+			<td>Total number of voting rights</td>
+			<td><input id="VGcl0oGA3gQ-HllvX50cXC0-val" name="entryfield" title="SDG_10:Total number of voting rights" value="[ SDG_10:Total number of voting rights ]" /></td>
+		</tr>
+		<tr class="I10a1">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I10b1">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 10 End --><!-- Goal 11 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-11">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FD9D24;text-align: center; "><strong>Goal 11. Make cities and human settlements inclusive, safe, resilient and sustainable </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel11" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I1111">11.1.1 Urban population living in slums</option><option value="I1152">11.5.2 Direct economic loss attributed to disasters</option><option value="I1162">11.6.2 Annual urban mean concentration of PM2.5</option><option value="I11b1">11.b.1 Implementation of national disaster risk reduction strategies</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations11" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg11">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg11">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg11">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#FD9D24 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1111">
+			<td>Urban population living in slums</td>
+			<td><input id="QF7w41u2GJH-HllvX50cXC0-val" name="entryfield" title="SDG_11:Urban population living in slums	" value="[ SDG_11:Urban population living in slums	 ]" /></td>
+		</tr>
+		<tr class="I1152">
+			<td>Direct economic loss attributed to disasters</td>
+			<td><input id="LmtfIaGo0ze-HllvX50cXC0-val" name="entryfield" title="SDG_11:Direct economic loss attributed to disasters" value="[ SDG_11:Direct economic loss attributed to disasters ]" /></td>
+		</tr>
+		<tr class="I1162">
+			<td>Annual urban mean concentration of PM2.5</td>
+			<td><input id="lAJhTUbm4uq-HllvX50cXC0-val" name="entryfield" title="SDG_11:Annual Urban Mean Concentration of PM2.5" value="[ SDG_11:Annual Urban Mean Concentration of PM2.5 ]" /></td>
+		</tr>
+		<tr class="I11b1">
+			<td>Implementation of national disaster risk reduction strategies</td>
+			<td><input id="DYoyQl1eYOo-HllvX50cXC0-val" name="entryfield" title="SDG_11:Implementation of national disaster risk reduction strategies	" value="[ SDG_11:Implementation of national disaster risk reduction strategies	 ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg11">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#FD9D24 !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1111">
+			<td>Number of people living in Slum/Informal Settlements households</td>
+			<td><input id="ixPGl1NVAjc-HllvX50cXC0-val" name="entryfield" title="SDG_11:People living in Slum/Informal Settlements" value="[ SDG_11:People living in Slum/Informal Settlements ]" /></td>
+		</tr>
+		<tr class="I1111">
+			<td>Total city population</td>
+			<td><input id="M7BMX4KeItQ-HllvX50cXC0-val" name="entryfield" title="SDG_11:Total city population" value="[ SDG_11:Total city population ]" /></td>
+		</tr>
+		<tr class="I1152">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1162">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I11b1">
+			<td>Adopt and implement national disaster risk reduction strategies</td>
+			<td><input id="fT9njJ08ONo-HllvX50cXC0-val" name="entryfield" title="SDG_11:Does your country adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030" value="[ SDG_11:Does your country adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030 ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 11 End --><!-- Goal 12 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-12">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#BF8B2E;text-align: center; "><strong>Goal 12. Ensure sustainable consumption and production patterns </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel12" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="#">xyz</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations12" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg12">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg12">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg12">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#BF8B2E !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="xyz">
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg12">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#BF8B2E !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="xyz">
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 12 End--><!-- Goal 13 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-13">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#3F7E44;text-align: center; "><strong>Goal 13. Take urgent action to combat climate change and its impacts[a] </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel13" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="#">xyz</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations13" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg13">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg13">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg13">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#3F7E44 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="#">
+			<td>xyz</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg13">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#3F7E44 !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="#">
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 13 End--><!-- Goal 14 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-14">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#0A97D9;text-align: center; "><strong>Goal 14. Conserve and sustainably use the oceans, seas and marine resources for sustainable development </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel14" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I1441">14.4.1 Proportion of fish stocks within biologically sustainable levels</option><option value="I1451">14.5.1 Coverage of protected areas in relation to marine areas</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations14" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg14">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg14">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg14">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#0A97D9 !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1441">
+			<td>Proportion of fish stocks within biologically sustainable levels</td>
+			<td><input id="nhBNZvraNtR-HllvX50cXC0-val" name="entryfield" title="SDG_14:Sustainable fish stock" value="[ SDG_14:Sustainable fish stock ]" /></td>
+		</tr>
+		<tr class="I1451">
+			<td>Coverage of protected areas in relation to marine areas</td>
+			<td><input id="OI8W4V2UeCw-HllvX50cXC0-val" name="entryfield" title="SDG_14:Marine sites, mean protected area (%)" value="[ SDG_14:Marine sites, mean protected area (%) ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg14">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#0A97D9 !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1441">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1451">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 14 End--><!-- Goal 15 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-15">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#56C02B;text-align: center;"><strong>Goal 15. Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel15" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I1511">15.1.1 Forest area as a proportion of total land area</option><option value="I1512">15.1.2 Proportion of important sites for terrestrial and freshwater biodiversity</option><option value="I1521">15.2.1 Progress towards sustainable forest management</option><option value="I1541">15.4.1 Protection of mountain biodiversity sites</option><option value="I1542">15.4.2 Mountain Green Cover Index</option><option value="I1551">15.5.1 Red List Index</option><option value="I1561">15.6.1 Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</option><option value="I15a1">15.a.1 Public expenditure on conservation</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations15" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg15">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg15">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg15">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#56C02B !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1511">
+			<td>Forest area as a proportion of total land area</td>
+			<td><input id="cgp29l4lidD-HllvX50cXC0-val" name="entryfield" title="SDG_15:Forest area as a proportion of total land area	" value="[ SDG_15:Forest area as a proportion of total land area	 ]" /></td>
+		</tr>
+		<tr class="I1512">
+			<td>Proportion of important sites for terrestrial and freshwater biodiversity</td>
+			<td><input id="lWs0BXDInz8-HllvX50cXC0-val" name="entryfield" title="SDG_15:Proportion of important sites for terrestrial and freshwater biodiversity	" value="[ SDG_15:Proportion of important sites for terrestrial and freshwater biodiversity	 ]" /></td>
+		</tr>
+		<tr class="I1521">
+			<td>Progress towards sustainable forest management</td>
+			<td><input id="DC82t4TqvSt-HllvX50cXC0-val" name="entryfield" title="SDG_15:Progress towards sustainable forest management" value="[ SDG_15:Progress towards sustainable forest management ]" /></td>
+		</tr>
+		<tr class="I1541">
+			<td>Protection of mountain biodiversity sites</td>
+			<td><input id="lsR89zdhpE7-HllvX50cXC0-val" name="entryfield" title="SDG_15:Protection of mountain biodiversity sites" value="[ SDG_15:Protection of mountain biodiversity sites ]" /></td>
+		</tr>
+		<tr class="I1542">
+			<td>Mountain Green Cover Index</td>
+			<td><input id="jcWXxKiW0i4-HllvX50cXC0-val" name="entryfield" title="SDG_15:Mountain Green Cover Index" value="[ SDG_15:Mountain Green Cover Index ]" /></td>
+		</tr>
+		<tr class="I1551">
+			<td>Red List Index</td>
+			<td><input id="ynSFHBIYfAc-HllvX50cXC0-val" name="entryfield" title="SDG_15:Red List Index of species survival (0-1)" value="[ SDG_15:Red List Index of species survival (0-1) ]" /></td>
+		</tr>
+		<tr class="I1561">
+			<td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</td>
+			<td><input id="APPRHhMypTn-HllvX50cXC0-val" name="entryfield" title="SDG_15:Is Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources done?" value="[ SDG_15:Is Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources done? ]" /></td>
+		</tr>
+		<tr class="I15a1">
+			<td>Public expenditure on conservation</td>
+			<td><input id="KI4KGmBjeK5-HllvX50cXC0-val" name="entryfield" title="SDG_15:Sum of ODA flows from all donors-biodiversity" value="[ SDG_15:Sum of ODA flows from all donors-biodiversity ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg15">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#56C02B !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1511">
+			<td>Forest area (reference year)</td>
+			<td><input id="J6mhwkHXYRX-HllvX50cXC0-val" name="entryfield" title="SDG_15:Forest area (reference year)" value="[ SDG_15:Forest area (reference year) ]" /></td>
+		</tr>
+		<tr class="I1511">
+			<td>Land area (2015)</td>
+			<td><input id="Et4Jnj4Y0bx-HllvX50cXC0-val" name="entryfield" title="SDG_15:Land area (2015)" value="[ SDG_15:Land area (2015) ]" /></td>
+		</tr>
+		<tr class="I1512">
+			<td>Total protected area</td>
+			<td><input id="fg10UJuPwYW-HllvX50cXC0-val" name="entryfield" title="SDG_15:Total Protected Area" value="[ SDG_15:Total Protected Area ]" /></td>
+		</tr>
+		<tr class="I1512">
+			<td>Total territorial area</td>
+			<td><input id="V9ahdUlT8ak-HllvX50cXC0-val" name="entryfield" title="SDG_15:Total Territorial Area" value="[ SDG_15:Total Territorial Area ]" /></td>
+		</tr>
+		<tr class="I1521">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1541">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1542">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1551">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1561">
+			<td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources(Yes/No)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr class="I15a1">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 15 End --><!-- Goal 16 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-16">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#00689D; text-align: center;"><strong>Goal 16. Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel16" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I1611">16.1.1 Number of victims of intentional homicide</option><option value="I1632">16.3.2 Unsentenced detainees as a proportion of overall prison population</option><option value="I1661">16.6.1 Government expenditures as a proportion of original approved budget</option><option value="I1691">16.9.1 Registered births (%)</option><option value="I16a1">16.a.1 Independent human rights institutions</option> </select></div>
+<!-- Tab links -->
+
+<div id="disaggregations16" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg16">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg16">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg16">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#00689D !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1611">
+			<td>Number of victims of intentional homicide</td>
+			<td><input id="cx5zefVyAZC-HllvX50cXC0-val" name="entryfield" title="SDG_16:Number of victims of intentional homicide	" value="[ SDG_16:Number of victims of intentional homicide	 ]" /></td>
+		</tr>
+		<tr class="I1632">
+			<td>Unsentenced detainees as a proportion of overall prison population</td>
+			<td><input id="EsW7jXi2mNg-HllvX50cXC0-val" name="entryfield" title="SDG_16:Unsentenced detainees as a proportion of overall prison population	" value="[ SDG_16:Unsentenced detainees as a proportion of overall prison population	 ]" /></td>
+		</tr>
+		<tr class="I1661">
+			<td>Government expenditures as a proportion of original approved budget</td>
+			<td><input id="uM0hXE3jV3V-HllvX50cXC0-val" name="entryfield" title="SDG_16:Country score" value="[ SDG_16:Country score ]" /></td>
+		</tr>
+		<tr class="I1691">
+			<td>Registered births (%)</td>
+			<td><input id="XbyQiRu1Ut1-HllvX50cXC0-val" name="entryfield" title="SDG_16:Registered births (%)	" value="[ SDG_16:Registered births (%)	 ]" /></td>
+		</tr>
+		<tr class="I16a1">
+			<td>Independent human rights institutions</td>
+			<td><input id="f3HhCfTEkZh-HllvX50cXC0-val" name="entryfield" title="SDG_16:Independent human rights institutions	" value="[ SDG_16:Independent human rights institutions	 ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg16">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#00689D !important;">
+			<th rowspan="2">&nbsp;</th>
+			<th class="sdg16Header" colspan="2">Sex</th>
+			<th class="sdg16NoHeader">Value</th>
+		</tr>
+		<tr class="tableHeader" style="background-color:#00689D !important;">
+			<th class="sdg16Header">Female</th>
+			<th class="sdg16Header">Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1611">
+			<td>Total number of victims of intentional homicide recorded in a given year</td>
+			<td><input id="huEkNaUiiZS-sLKRSW7xmwp-val" name="entryfield" title="SDG_16:Total number of victims homicide Female" value="[ SDG_16:Total number of victims homicide Female ]" /></td>
+			<td><input id="huEkNaUiiZS-sJUGNYho7Ey-val" name="entryfield" title="SDG_16:Total number of victims homicide Male" value="[ SDG_16:Total number of victims homicide Male ]" /></td>
+		</tr>
+		<tr class="I1611">
+			<td>Total population in given year divided by 100,000</td>
+			<td><input id="KaRLMIg67ut-sLKRSW7xmwp-val" name="entryfield" title="SDG_16:Total yearly population/100,000 Female" value="[ SDG_16:Total yearly population/100,000 Female ]" /></td>
+			<td><input id="KaRLMIg67ut-sJUGNYho7Ey-val" name="entryfield" title="SDG_16:Total yearly population/100,000 Male" value="[ SDG_16:Total yearly population/100,000 Male ]" /></td>
+		</tr>
+		<tr class="I1632">
+			<td>Total number of unsentenced persons held in detention</td>
+			<td><input id="Yo5wu8Xtiss-HllvX50cXC0-val" name="entryfield" title="SDG_16:Persons held in detention" value="[ SDG_16:Persons held in detention ]" /></td>
+		</tr>
+		<tr class="I1632">
+			<td>Total number of persons held in detention</td>
+			<td><input id="LXBAztHs8GC-HllvX50cXC0-val" name="entryfield" title="SDG_16:Unsentenced persons in detention" value="[ SDG_16:Unsentenced persons in detention ]" /></td>
+		</tr>
+		<tr class="I1661">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1691">
+			<td>Number of children under age of five whose births are reported as being registered with the relevant national civil authorities</td>
+			<td><input id="h529oFxp0fz-HllvX50cXC0-val" name="entryfield" title="SDG_16:Registered Children &lt;5yrs" value="[ SDG_16:Registered Children &lt;5yrs ]" /></td>
+		</tr>
+		<tr class="I1691">
+			<td>Total number of children under age of five in the population</td>
+			<td><input id="jvfrnV2dyE6-HllvX50cXC0-val" name="entryfield" title="SDG_16:Total number of children &lt;5yrs" value="[ SDG_16:Total number of children &lt;5yrs ]" /></td>
+		</tr>
+		<tr class="I16a1">
+			<td>accreditation classification</td>
+			<td><input id="jtMK6hK3BnU-HllvX50cXC0-val" name="entryfield" title="SDG_16:accreditation classification of independent national human rights institutions" value="[ SDG_16:accreditation classification of independent national human rights institutions ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 16 End --><!-- Goal 17 Start -->
+
+<div class="col-xm-11 col-sm-10 col-md-11" id="sdg-17">
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#19486A;text-align: center;"><strong>Goal 17. Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development </strong></h3>
+
+<div><select class="dropdown" id="indicatorLevel17" name="indicators"><option disabled="disabled" selected="selected">Please select an indicator</option><option value="I1721">17.2.1 Net ODA as proportion of donors&#39;</option><option value="I1731">17.3.1 ODA distributions as proportion of total domestic budget (in USD)</option><option value="I1732">17.3.2 Volume of remittances (in USD)</option><option value="I1741">17.4.1 Debt service as a proportion of exports of goods and services</option><option value="I1762a">17.6.2 Broadband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</option><option value="I1762b">17.6.2 Broadband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</option><option value="I1762c">17.6.2 Broadband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</option><option value="I1781">17.8.1 Internet users (%)</option><option value="I1791">17.9.1 Total monetary flow for capacity building and national planning (in USD)</option><option value="I17101">17.10.1 Worldwide weighted tariff-average</option><option value="I17111">17.11.1 Share of global trade of total trade (%)</option><option value="I17121">17.12.1 Average import tariffs faced by products exported (%)</option><option value="I17183a">17.18.3 Fully Funded</option><option value="I17183b">17.18.3 Implementation stage</option><option value="I17191">17.19.1 Value of resources to strengthen statistical capacity (in USD)</option> </select></div>
+
+<div id="disaggregations17" style="margin-top: 10px;">
+<ul>
+	<li><a class="disaggTab" href="#NoDisagg17">No Disaggregation</a></li>
+	<li><a class="disaggTab" href="#Disagg17">Disaggregation</a></li>
+</ul>
+<!-- Tab content -->
+
+<div class="tabcontent2" id="NoDisagg17">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#19486A !important;">
+			<th>Indicator</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1721">
+			<td>Net ODA as proportion of donors&#39;</td>
+			<td><input id="OnvFPyD5WQ4-HllvX50cXC0-val" name="entryfield" title="SDG_17:Net ODA as proportion of donors" value="[ SDG_17:Net ODA as proportion of donors ]" /></td>
+		</tr>
+		<tr class="I1731">
+			<td>ODA distributions as proportion of total domestic budget (in USD)</td>
+			<td><input id="QIdqsSCdmSP-HllvX50cXC0-val" name="entryfield" title="SDG_17:ODA distributions as proportion of total domestic budget (in USD)	" value="[ SDG_17:ODA distributions as proportion of total domestic budget (in USD)	 ]" /></td>
+		</tr>
+		<tr class="I1732">
+			<td>Volume of remittances (in USD)</td>
+			<td><input id="L4YmBBm4RmP-HllvX50cXC0-val" name="entryfield" title="SDG_17:Volume of remittances (in USD)	" value="[ SDG_17:Volume of remittances (in USD)	 ]" /></td>
+		</tr>
+		<tr class="I1741">
+			<td>Debt service as a proportion of exports of goods and services</td>
+			<td><input id="NtkFpqrWUUz-HllvX50cXC0-val" name="entryfield" title="SDG_17:Debt services as a proportion of exports of goods and services (%)" value="[ SDG_17:Debt services as a proportion of exports of goods and services (%) ]" /></td>
+		</tr>
+		<tr class="I1762a">
+			<td>Broadband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
+			<td><input id="b2JULRR29Vr-HllvX50cXC0-val" name="entryfield" title="SDG_17:Number of fixed boardband subscription (256kbit/s to 2Mbit/s) / Population) x 100." value="[ SDG_17:Number of fixed boardband subscription (256kbit/s to 2Mbit/s) / Population) x 100. ]" /></td>
+		</tr>
+		<tr class="I1762b">
+			<td>Broadband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
+			<td><input id="bKVIl5DFvYH-HllvX50cXC0-val" name="entryfield" title="SDG_17:Number of Fixed Boardband Subscription (2Mbit/s to &lt;10 Mbit/s) / Population) x 100." value="[ SDG_17:Number of Fixed Boardband Subscription (2Mbit/s to &lt;10 Mbit/s) / Population) x 100. ]" /></td>
+		</tr>
+		<tr class="I1762c">
+			<td>Broadband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
+			<td><input id="j4w8plpRTl9-HllvX50cXC0-val" name="entryfield" title="SDG_17:Number of Fixed Boardband Subscription (=&gt; 10 Mbit/s) / Population) x 100." value="[ SDG_17:Number of Fixed Boardband Subscription (=&gt; 10 Mbit/s) / Population) x 100. ]" /></td>
+		</tr>
+		<tr class="I1781">
+			<td>Internet users (%)</td>
+			<td><input id="bkSUYeNHvXG-HllvX50cXC0-val" name="entryfield" title="SDG_17:Internet users (%)	" value="[ SDG_17:Internet users (%)	 ]" /></td>
+		</tr>
+		<tr class="I1791">
+			<td>Total monetary flow for capacity building and national planning (in USD)</td>
+			<td><input id="IifjkFPTvF9-HllvX50cXC0-val" name="entryfield" title="SDG_17:Total monetary flow for capacity building and national planning (in USD)" value="[ SDG_17:Total monetary flow for capacity building and national planning (in USD) ]" /></td>
+		</tr>
+		<tr class="I17101">
+			<td>Worldwide weighted tariff-average</td>
+			<td><input id="iXJmz0gayg2-HllvX50cXC0-val" name="entryfield" title="SDG_17:Weighted Tariff-average" value="[ SDG_17:Weighted Tariff-average ]" /></td>
+		</tr>
+		<tr class="I17111">
+			<td>Share of global trade of total trade (%)</td>
+			<td><input id="Uqj4TFaAjVJ-HllvX50cXC0-val" name="entryfield" title="SDG_17:Share of global trade of total trade (%)	" value="[ SDG_17:Share of global trade of total trade (%)	 ]" /></td>
+		</tr>
+		<tr class="I17121">
+			<td>Average import tariffs faced by products exported (%)</td>
+			<td><input id="umJef6viQsI-HllvX50cXC0-val" name="entryfield" title="SDG_17:Average import tariffs (%) faced by products exported from developing countries and least developed countries." value="[ SDG_17:Average import tariffs (%) faced by products exported from developing countries and least developed countries. ]" /></td>
+		</tr>
+		<tr class="I17183a">
+			<td>Fully Funded</td>
+			<td><input id="lzvT5c6XGaS-HllvX50cXC0-val" name="entryfield" title="SDG_17:Fully Funded	" value="[ SDG_17:Fully Funded	 ]" /></td>
+		</tr>
+		<tr class="I17183b">
+			<td>Implementation stage</td>
+			<td><input id="cIiBVaVnyqb-HllvX50cXC0-val" name="entryfield" title="SDG_17:Implementation stage	Indicator" value="[ SDG_17:Implementation stage	Indicator ]" /></td>
+		</tr>
+		<tr class="I17191">
+			<td>Value of resources to strengthen statistical capacity (in USD)</td>
+			<td><input id="upip89aqbWr-HllvX50cXC0-val" name="entryfield" title="SDG_17:Value of resources to strengthen statistical capacity (in USD)" value="[ SDG_17:Value of resources to strengthen statistical capacity (in USD) ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tabcontent2" id="Disagg17">
+<table>
+	<thead>
+		<tr class="tableHeader" style="background-color:#19486A !important;">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I1721">
+			<td>ODA distribution</td>
+			<td><input id="WNbwHJdi9fj-HllvX50cXC0-val" name="entryfield" title="SDG_17:ODA distribution" value="[ SDG_17:ODA distribution ]" /></td>
+		</tr>
+		<tr class="I1721">
+			<td>Gross national income</td>
+			<td><input id="fGrYKYgsz56-HllvX50cXC0-val" name="entryfield" title="SDG_17:Gross national income" value="[ SDG_17:Gross national income ]" /></td>
+		</tr>
+		<tr class="I1731">
+			<td>ODA distribution</td>
+			<td><input id="WNbwHJdi9fj-HllvX50cXC0-val" name="entryfield" title="SDG_17:ODA distribution" value="[ SDG_17:ODA distribution ]" /></td>
+		</tr>
+		<tr class="I1731">
+			<td>Total domestic budget</td>
+			<td><input id="R2mSVduTEHb-HllvX50cXC0-val" name="entryfield" title="SDG_17:Total domestic budget" value="[ SDG_17:Total domestic budget ]" /></td>
+		</tr>
+		<tr class="I1732">
+			<td>Personal transfers + Compensation of employees</td>
+			<td><input id="zrYzxKPMCUf-HllvX50cXC0-val" name="entryfield" title="SDG_17:Personal transfers &amp; employees compensation" value="[ SDG_17:Personal transfers &amp; employees compensation ]" /></td>
+		</tr>
+		<tr class="I1732">
+			<td>GDP</td>
+			<td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:GDP" value="[ SDG_7:GDP ]" /></td>
+		</tr>
+		<tr class="I1741">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1762a">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1762b">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1762c">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I1781">
+			<td>Number of internet users in the last 3 months</td>
+			<td><input id="OqkExkc8YQg-HllvX50cXC0-val" name="entryfield" title="SDG_17:Number of internet users in the last 3 months" value="[ SDG_17:Number of internet users in the last 3 months ]" /></td>
+		</tr>
+		<tr class="I1781">
+			<td>Total population</td>
+			<td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
+		</tr>
+		<tr class="I1791">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I17101">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I17111">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I17121">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I17183a">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+		<tr class="I17183b">
+			<td>Implementation stage</td>
+			<td><input id="NJiuosvvTqR-HllvX50cXC0-val" name="entryfield" title="SDG_17:Stage of implementation of national statistical plan" value="[ SDG_17:Stage of implementation of national statistical plan ]" /></td>
+		</tr>
+		<tr class="I17191">
+			<td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Goal 17 End --></div>
