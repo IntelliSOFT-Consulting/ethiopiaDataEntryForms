@@ -82,6 +82,17 @@
         if ((($("#pBeH3AFPieZ-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I211Disabled", "I211Enabled");
         }
+
+        if ((($("#Pj5bG3YTIuA-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("II212Disabled", "II212Enabled");
+        }
+
+        if ((($("#Z4MY98edt6O-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("II2a1Disabled", "II2a1Enabled");
+        }
+
+
+        //end of tier ii
         if ((($("#Bt7EwzXnP1B-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I221Disabled", "I221Enabled");
         }
@@ -1320,6 +1331,8 @@
         <div><select class="dropdown" id="indicatorLevel2" name="indicators">
             <option disabled="disabled" selected="selected">Please select an indicator</option>
             <option value="I211">2.1.1 Prevalence of undernourishment</option>
+            <option value="II212">2.1.2 Prevalence of moderate or severe food insecurity</option>
+            <option value="II2a1">2.a.1 The agriculture orientation index for government expenditures</option>
             <option value="I221">2.2.1 Prevalence of stunting among children under 5</option>
             <option value="I222a">2.2.2a Prevalence of overweight among children under 5</option>
             <option value="I251">2.5.1 Number of plant and animal genetic resources for food and agriculture secured
@@ -1354,6 +1367,33 @@
                                    value="[ SDG_2:% of the population whose food intake is insufficient to meet dietary energy requirements for minimum one year. ]"
                         /></td>
                     </tr>
+
+                    <tr class="II212 II212Enabled">
+                        <td>Prevalence of moderate or severe food insecurity</td>
+                        <td><input id="Pj5bG3YTIuA-HllvX50cXC0-val" name="entryfield"
+                                   title="Prevalence of moderate or severe food insecurity"
+                                   value="[ Prevalence of moderate or severe food insecurity ]"
+                        /></td>
+                    </tr>
+
+                    <tr class="II2a1 II2a1Enabled">
+                        <td>Agriculture Share of GDP (agriculture value added / GDP)</td>
+                        <td><input id="Z4MY98edt6O-HllvX50cXC0-val" name="entryfield"
+                                   title="Agriculture Share of GDP (agriculture value added / GDP)"
+                                   value="[ Agriculture Share of GDP (agriculture value added / GDP) ]"
+                        /></td>
+                    </tr>
+
+                    <tr class="II2a1 II2a1Enabled">
+                        <td>Agriculture Share of Government Expenditures (agriculture expenditures / total overlays)</td>
+                        <td><input id="s28QRqyjEzV-HllvX50cXC0-val" name="entryfield"
+                                   title="Agriculture Share of Government Expenditures (agriculture expenditures / total overlays)"
+                                   value="[ Agriculture Share of Government Expenditures (agriculture expenditures / total overlays) ]"
+                        /></td>
+                    </tr>
+
+
+
                     <tr class="I221 I221Enabled">
                         <td>Prevalence of stunting among children under 5</td>
                         <td><input id="Bt7EwzXnP1B-HllvX50cXC0-val" name="entryfield"
@@ -1419,6 +1459,13 @@
                     </thead>
                     <tbody>
                     <tr class="I211 I211Disabled">
+                        <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+                    </tr>
+                    <!-- tier ii -->
+                    <tr class="II212 II212Disabled">
+                        <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
+                    </tr>
+                    <tr class="II2a1 II2a1Disabled">
                         <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
                     </tr>
                     <tr class="I221 I221Disabled">
