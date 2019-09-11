@@ -670,11 +670,29 @@
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
-                if (($(this).val() == "I111b") || ($(this).val() == "I121")) {
+                // TODO : hide some tabs
+                if (($(this).val() == "I111b") || ($(this).val() == "I121") || ($(this).val() == "II131") || ($(this).val() == "II142") || ($(this).val() == "II151")) {
                     $('.I111x').hide();
                 } else {
                     $('.I111x').show();
                 }
+
+                if (($(this).val() == "II131") || ($(this).val() == "II142") || ($(this).val() == "II151")) {
+                    $('.1location').hide();
+                } else {
+                    $(".1location").show();
+                }
+
+                if ($(this).val() == "II151") {
+                    $(".1gender").hide();
+                    $(".null").show();
+                } else {
+                    $(".1gender").show()
+                    $(".null").hide();
+                }
+
+
+
             });
         });
         $(function() {
@@ -1082,16 +1100,19 @@
                         <tr class="tableHeader" style="background-color:#e5243b !important;">
                             <th rowspan="2">&nbsp;</th>
                             <th class="I111x" colspan="2">Employment status</th>
-                            <th colspan="2">Geographical location</th>
-                            <th colspan="2">Sex</th>
+                            <th class="1location" colspan="2">Geographical location</th>
+                            <th class="1location" colspan="2">Sex</th>
+                            <th class="null"></th>
                         </tr>
                         <tr class="tableHeader" id="tableHeader2" style="background-color:#e5243b !important;">
                             <th class="I111x">Employed</th>
                             <th class="I111x">Unemployed</th>
-                            <th>Rural</th>
-                            <th>Urban</th>
-                            <th>Female</th>
-                            <th>Male</th>
+                            <th class="1location">Rural</th>
+                            <th class="1location">Urban</th>
+                            <th class="1gender">Female</th>
+                            <th class="1gender">Male</th>
+                            <th class="null"></th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -1138,36 +1159,21 @@
                         <!-- sdg 1 tier ii -->
                         <tr class="II131 II131Disabled">
                             <td>Population covered by social protection</td>
-                            <!-- <td><input id="qXlW6yWdByW-ssMY53iFjYm-val" name="entryfield" title="SDG_1.3.1_II:Population covered by social protection Employed" value="[ SDG_1.3.1_II:Population covered by social protection Employed ]"/></td>
-                            <td><input id="qXlW6yWdByW-SOw3NHN47G7-val" name="entryfield" title="SDG_1.3.1_II:Population covered by social protection Unemployed" value="[ SDG_1.3.1_II:Population covered by social protection Unemployed ]"/></td>
-                            <td><input id="qXlW6yWdByW-iEgy3xKqVi5-val" name="entryfield" title="SDG_1.3.1_II:Population covered by social protection Rural" value="[ SDG_1.3.1_II:Population covered by social protection Rural ]"/></td>
-                            <td><input id="qXlW6yWdByW-r8hBd63qzn4-val" name="entryfield" title="SDG_1.3.1_II:Population covered by social protection Urban" value="[ SDG_1.3.1_II:Population covered by social protection Urban ]"/></td> -->
-                            <td colspan="4">&nbsp;</td>
+
+
                             <td><input id="qXlW6yWdByW-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.3.1_II:Population covered by social protection Female" value="[ SDG_1.3.1_II:Population covered by social protection Female ]" /></td>
                             <td><input id="qXlW6yWdByW-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.3.1_II:Population covered by social protection Male" value="[ SDG_1.3.1_II:Population covered by social protection Male ]" /></td>
                         </tr>
                         <tr class="II131 II131Disabled">
                             <td>Total population</td>
-                            <!-- <td><input id="pKT2NoNocIJ-ssMY53iFjYm-val" name="entryfield" title="SDG_1.3.1_II:Total Population Employed" value="[ SDG_1.3.1_II:Total Population Employed ]"/>
-                            </td>
-                            <td><input id="pKT2NoNocIJ-SOw3NHN47G7-val" name="entryfield" title="SDG_1.3.1_II:Total Population Unemployed" value="[ SDG_1.3.1_II:Total Population Unemployed ]"/></td>
-                            <td><input id="pKT2NoNocIJ-iEgy3xKqVi5-val" name="entryfield" title="SDG_1.3.1_II:Total Population Rural" value="[ SDG_1.3.1_II:Total Population Rural ]"/></td>
-                            <td><input id="pKT2NoNocIJ-r8hBd63qzn4-val" name="entryfield" title="SDG_1.3.1_II:Total Population Urban" value="[ SDG_1.3.1_II:Total Population Urban ]"/></td> -->
-                            <td colspan="4">&nbsp;</td>
+
+
                             <td><input id="pKT2NoNocIJ-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.3.1_II:Total Population Female" value="[ SDG_1.3.1_II:Total Population Female ]" /></td>
                             <td><input id="pKT2NoNocIJ-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.3.1_II:Total Population Male" value="[ SDG_1.3.1_II:Total Population Male ]" /></td>
                         </tr>
                         <tr class="II142 II142Disabled">
                             <td>Adult population with legally recognized documentation over land</td>
-                            <!-- <td><input id="WXQgRsAeXa9-ssMY53iFjYm-val" name="entryfield" title="" value=""
-                                /></td>
-                            <td><input id="WXQgRsAeXa9-SOw3NHN47G7-val" name="entryfield" title="" value=""
-                                /></td>
-                            <td><input id="WXQgRsAeXa9-iEgy3xKqVi5-val" name="entryfield" title="" value=""
-                                /></td>
-                            <td><input id="WXQgRsAeXa9-r8hBd63qzn4-val" name="entryfield" title="" value=""
-                                /></td> -->
-                            <td colspan="4">&nbsp;</td>
+
                             <td><input id="WXQgRsAeXa9-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.4.2_II:Adult population with legally recognized documentation over land Female" value="[ SDG_1.4.2_II:Adult population with legally recognized documentation over land Female ]"
                                 /></td>
                             <td><input id="WXQgRsAeXa9-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.4.2_II:Adult population with legally recognized documentation over land Male" value="[ SDG_1.4.2_II:Adult population with legally recognized documentation over land Male ]"
@@ -1175,39 +1181,20 @@
                         </tr>
                         <tr class="II142 II142Disabled">
                             <td>Total adult population</td>
-                            <!-- <td><input id="Og4XfD2cPvu-ssMY53iFjYm-val" name="entryfield" title="SDG_1.4.2_II:Total adult population Employed" value="[ SDG_1.4.2_II:Total adult population Employed ]"/>
-                            </td>
-                            <td><input id="Og4XfD2cPvu-SOw3NHN47G7-val" name="entryfield" title="SDG_1.4.2_II:Total adult population Unemployed" value="[ SDG_1.4.2_II:Total adult population Unemployed ]"/></td>
-                            <td><input id="Og4XfD2cPvu-iEgy3xKqVi5-val" name="entryfield" title="SDG_1.4.2_II:Total adult population Rural" value="[ SDG_1.4.2_II:Total adult population Rural ]"/></td>
-                            <td><input id="Og4XfD2cPvu-r8hBd63qzn4-val" name="entryfield" title="SDG_1.4.2_II:Total adult population Urban" value="[ SDG_1.4.2_II:Total adult population Urban ]"/></td> -->
-                            <td colspan="4">&nbsp;</td>
+
                             <td><input id="Og4XfD2cPvu-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.4.2_II:Total adult population Female" value="[ SDG_1.4.2_II:Total adult population Female ]" /></td>
                             <td><input id="Og4XfD2cPvu-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.4.2_II:Total adult population Male" value="[ SDG_1.4.2_II:Total adult population Male ]" /></td>
                         </tr>
                         <tr class="II151 II151Disabled">
                             <td>Number of deaths, missing persons and persons affected attributed to disasters</td>
-                            <td colspan="6"><input id="O7F9PcuM0eD-HllvX50cXC0-val" name="entryfield" title="SDG_1.5.1_II:Number of deaths, missing persons and persons affected attributed to disasters" value="[ SDG_1.5.1_II:Number of deaths, missing persons and persons affected attributed to disasters ]"
+                            <td><input id="O7F9PcuM0eD-HllvX50cXC0-val" name="entryfield" title="SDG_1.5.1_II:Number of deaths, missing persons and persons affected attributed to disasters" value="[ SDG_1.5.1_II:Number of deaths, missing persons and persons affected attributed to disasters ]"
                                 /></td>
-                            <!-- <td><input id="O7F9PcuM0eD-SOw3NHN47G7-val" name="entryfield" title="" value=""
-                                /></td>
-                            <td><input id="O7F9PcuM0eD-iEgy3xKqVi5-val" name="entryfield" title="" value=""
-                                /></td>
-                            <td><input id="O7F9PcuM0eD-r8hBd63qzn4-val" name="entryfield" title="" value=""
-                                /></td>
-                            <td><input id="O7F9PcuM0eD-sLKRSW7xmwp-val" name="entryfield" title="" value=""
-                                /></td>
-                            <td><input id="O7F9PcuM0eD-sJUGNYho7Ey-val" name="entryfield" title="" value=""
-                                /></td> -->
+
                         </tr>
                         <tr class="II151 II151Disabled">
                             <td>Total population</td>
-                            <td colspan="6"><input id="Cc8hzGkTDh2-HllvX50cXC0-val" name="entryfield" title="SDG_1.5.1_II:Total population" value="[ SDG_1.5.1_II:Total population ]" /></td>
-                            <!-- <td><input id="Cc8hzGkTDh2-SOw3NHN47G7-val" name="entryfield" title="undefined" value="[ undefined ]"/></td>
-                            <td><input id="Cc8hzGkTDh2-iEgy3xKqVi5-val" name="entryfield" title="undefined" value="[ undefined ]"/></td>
-                            <td><input id="Cc8hzGkTDh2-r8hBd63qzn4-val" name="entryfield" title="undefined" value="[ undefined ]"/></td>
-                            <td><input id="Cc8hzGkTDh2-sLKRSW7xmwp-val" name="entryfield" title="undefined" value="[ undefined ]"/>
-                            </td>
-                            <td><input id="Cc8hzGkTDh2-sJUGNYho7Ey-val" name="entryfield" title="undefined" value="[ undefined ]"/></td> -->
+                            <td><input id="Cc8hzGkTDh2-HllvX50cXC0-val" name="entryfield" title="SDG_1.5.1_II:Total population" value="[ SDG_1.5.1_II:Total population ]" /></td>
+
                         </tr>
                         <!-- sdg 1 tier ii -->
                         <tr class="I121 I121Disabled">
