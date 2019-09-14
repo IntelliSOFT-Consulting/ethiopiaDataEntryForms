@@ -733,6 +733,11 @@
                     $('.sdg4Header').hide();
                     $('.sdg4NoHeader').show();
                 }
+                // tier ii
+                if ($(this).val() == "II411bI" || $(this).val() == "II411bII" || $(this).val() == "II411cI" || $(this).val() == "II411cII") {
+                    $(".sdg4Header").show();
+                    $(".sdg4NoHeader").hide()
+                }
 
             })
         });
@@ -1829,6 +1834,10 @@
 
         <div><select class="dropdown" id="indicatorLevel4" name="indicators">
                 <option disabled="disabled" selected="selected">Please select an indicator</option>
+                <option value="II411bI">4.1.1b(i) Primary students proficient in reading (%)</option>
+                <option value="II411bII">4.1.1b(ii) Primary students proficient in mathematics (%)</option>
+                <option value="II411cI">4.1.1c(i) Lower secondary students proficient in mathematics (%)</option>
+                <option value="II411cII">4.1.1c(ii) Lower secondary students proficient in mathematics (%)</option>
                 <option value="I422">4.2.2 Organized learning one year before official primary entry age (%)</option>
                 <option value="I451a">4.5.1 Gender Parity Index - Primary Education Enrollment</option>
                 <option value="I451b">4.5.1 Gender Parity Index - Secondary Education Enrollment</option>
@@ -1852,6 +1861,28 @@
                         </tr>
                     </thead>
                     <tbody>
+
+                        <tr class="II411bI II411bIEnabled">
+                            <td>Primary students proficient in reading (%)</td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr class="II411bII II411bIIEnabled">
+                            <td>Primary students proficient in mathematics (%)</td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr class="II411cI II411cIEnabled">
+                            <td>Lower secondary students proficient in mathematics (%)</td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr class="II411cII II411cIIEnabled">
+                            <td>Lower secondary students proficient in mathematics (%)</td>
+                            <td><input type="text"></td>
+                        </tr>
+
+
                         <tr class="I422 I422Enabled">
                             <td>Organized learning one year before official primary entry age (%)</td>
                             <td><input id="ES8fQnz9u4A-HllvX50cXC0-val" name="entryfield" title="SDG_4:Organized learning one year before official primary entry age (%)	" value="[ SDG_4:Organized learning one year before official primary entry age (%)	 ]"
@@ -1888,6 +1919,43 @@
                         </tr>
                     </thead>
                     <tbody>
+
+                        <tr class="II411bI II411bIDisabled">
+                            <td>Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr class="II411bI II411bIDisabled">
+                            <td>All children and young people at the end of primary education</td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr class="II411bII II411bIIDisabled">
+                            <td>Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics/td>
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II411bII II411bIIDisabled">
+                            <td>All children and young people at the end of primary education</td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr class="II411cI II411cIDisabled">
+                            <td>Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in mathematics</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr class="II411cI II411cIDisabled">
+                            <td>All children and young people at the end of lower secondary education</td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr class="II411cII II411cIIDisabled">
+                            <td>Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in mathematics</td>
+                            <td><input type="text"> </td>
+                        </tr>
+                        <tr class="II411cII II411cIIDisabled">
+                            <td>All children and young people at the end of lower secondary education</td>
+                            <td><input type="text"></td>
+                        </tr>
+
                         <tr class="I422 I422Disabled">
                             <td>No. of children who participated in organized learning programs 1yr before official primary age.</td>
                             <td><input id="q8mm20cJoYs-sLKRSW7xmwp-val" name="entryfield" title="SDG_4:Number of children who participated in organized learning programs 1yr before entry age Female" value="[ SDG_4:Number of children who participated in organized learning programs 1yr before entry age Female ]"
