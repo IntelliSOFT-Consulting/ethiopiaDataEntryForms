@@ -798,7 +798,7 @@
                     $('.sdg8NoHeader').hide();
                 }
                 if (($(this).val() == "I821") || ($(this).val() == "I842") || ($(this).val() == "I811") ||
-                    ($(this).val() == "I861") || ($(this).val() == "I8101") || ($(this).val() == "I8102") || ($(this).val() == "I8a1")) {
+                    ($(this).val() == "I861") || ($(this).val() == "I8101") || ($(this).val() == "I8102") || ($(this).val() == "I8a1") || $(this).val() == "II831" || $(this).val() == "II851" || $(this).val() == "II871" || $(this).val() == "II881" || $(this).val() == "II891") {
                     $('.sdg8Header').hide();
                     $('.sdg8NoHeader').show();
                 }
@@ -3121,6 +3121,13 @@
                 <option value="I8101">8.10.1 Commercial bank and ATMs presence (per 100,000)</option>
                 <option value="I8102">8.10.2 Bank account or mobile money service holders (% population)</option>
                 <option value="I8a1">8.a.1 Aid for Trade commitments and disbursements</option>
+
+                <option value="II831">8.3.1 Proportion of informal employment in non‑agriculture employment, by sex</option>
+<option value="II851">8.5.1 Average hourly earnings of female and male employees, by occupation, age and persons with disabilities</option>
+<option value="II871">8.7.1 Proportion and number of children aged 5‑17 years engaged in child labour, by sex and age</option>
+<option value="II881">8.8.1 Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status</option>
+<option value="II891">8.9.1 Tourism direct GDP as a proportion of total GDP and in growth rate</option>
+
             </select></div>
         <!-- Tab links -->
 
@@ -3174,6 +3181,30 @@
                             <td>Aid for trade commitments</td>
                             <td><input id="KltV9viaHHG-HllvX50cXC0-val" name="entryfield" title="SDG_8:Sum of ODA &amp; OOF flows frm all donors" value="[ SDG_8:Sum of ODA &amp; OOF flows frm all donors ]" /></td>
                         </tr>
+
+                        <!-- tier ii -->
+
+                        <tr class="II831 II831Enabled">
+                            <td>Proportion of informal employment in non‑agriculture employment, by sex
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II851 II851Enabled">
+                            <td>Average hourly earnings of female and male employees, by occupation, age and persons with disabilities
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II871 II871Enabled">
+                            <td>Proportion and number of children aged 5‑17 years engaged in child labour, by sex and age
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II881 II881Enabled">
+                            <td>Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II891 II891Enabled">
+                            <td>Tourism direct GDP as a proportion of total GDP and in growth rate
+                                <td><input type="text"></td>
+                        </tr>
+                        <!-- tier ii end -->
                     </tbody>
                 </table>
             </div>
@@ -3248,6 +3279,57 @@
                         <tr class="I8a1">
                             <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
                         </tr>
+
+                        <!-- tier ii begine -->
+                        <tr class="II831 II831Enabled">
+                            <td>Informal employment in non-agricultural activities by sex
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II831 II831Enabled">
+                            <td>Total employment in non-agricultural activities by sex
+                                <td><input type="text"></td>
+                        </tr>
+
+
+                        <tr class="II851 II851Enabled">
+                            <td>Average hourly earnings of Men - Average hourly earnings of Women
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II851 II851Enabled">
+                            <td>Average hourly earnings of Men
+                                <td><input type="text"></td>
+                        </tr>
+
+
+                        <tr class="II871 II871Enabled">
+                            <td>Number of children aged 5-17 reported child labour during the week prior to the survey
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II871 II871Enabled">
+                            <td>Total number of children aged 15-17 in the population
+                                <td><input type="text"></td>
+                        </tr>
+
+
+                        <tr class="II881 II881Enabled">
+                            <td>number of new cases of fatal injury during the reference year, disaggregated by sex and migrant status
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II881 II881Enabled">
+                            <td>Average number of workers during the reference year disaggregated by sex and migrant status
+                                <td><input type="text"></td>
+                        </tr>
+
+
+                        <tr class="II891 II891Enabled">
+                            <td>Tourism contribution to the economy
+                                <td><input type="text"></td>
+                        </tr>
+                        <tr class="II891 II891Enabled">
+                            <td>GDP
+                                <td><input type="text"></td>
+                        </tr>
+                        <!-- tier ii end -->
                     </tbody>
                 </table>
             </div>
