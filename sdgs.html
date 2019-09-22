@@ -1,3 +1,4 @@
+<!-- TODO : Indicator 5.c.1 -->
 <meta charset="UTF-8">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
 </script>
@@ -6,8 +7,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
 <script>
     // Disable functions start
     function DisaggregationDisabled(disabled, enabled) {
@@ -56,26 +55,51 @@
         }
 
         //Tier II
-        if ((($("#qXlW6yWdByW-bJmK5mlfvQk-val").val()) != "")) {
+        if ((($("#nGDutPFRkzN-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("II131Disabled", "II131Enabled");
         }
-        if (($('input[id^="qXlW6yWdByW"]:not(#qXlW6yWdByW-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="pKT2NoNocIJ"]').val() != "")) {
+        if (($('#qXlW6yWdByW-sLKRSW7xmwp-val').val() != "") || ($('#qXlW6yWdByW-sJUGNYho7Ey-val').val() != "") || $("#pKT2NoNocIJ-sLKRSW7xmwp-val").val() != "" || $("#pKT2NoNocIJ-sJUGNYho7Ey-val").val() != "") {
             noDisaggregationDisabled("II131Disabled", "II131Enabled");
         }
 
-        if ((($("#WXQgRsAeXa9-bJmK5mlfvQk-val").val()) != "")) {
+        // ii142
+
+
+        if ((($("#EEpOlzGlBAv-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("II142Disabled", "II142Enabled");
         }
-        if (($('input[id^="WXQgRsAeXa9"]:not(#WXQgRsAeXa9-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="Og4XfD2cPvu"]').val() != "")) {
-            noDisaggregationDisabled("II142Disabled", "II142Enabled");
+
+
+        if ($("#WXQgRsAeXa9-sLKRSW7xmwp-val").val() != "" || $("#WXQgRsAeXa9-sJUGNYho7Ey-val").val() != "" || $("#Og4XfD2cPvu-sLKRSW7xmwp-val").val() != "" || $("#Og4XfD2cPvu-sJUGNYho7Ey-val").val() != "") {
+            noDisaggregationDisabled("II142Disabled", "II142Enabled")
         }
 
-        if ((($("#O7F9PcuM0eD-bJmK5mlfvQk-val").val()) != "")) {
+
+
+        // end ii142
+
+        // if ((($("#O7F9PcuM0eD-bJmK5mlfvQk-val").val()) != "")) {
+        //     DisaggregationDisabled("II151Disabled", "II151Enabled");
+        // }
+        // if (($('input[id^="O7F9PcuM0eD"]:not(#O7F9PcuM0eD-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="Cc8hzGkTDh2"]').val() != "")) {
+        //     noDisaggregationDisabled("II151Disabled", "II151Enabled");
+        // }
+
+
+        if ((($("#O7F9PcuM0eD-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("II151Disabled", "II151Enabled");
         }
-        if (($('input[id^="O7F9PcuM0eD"]:not(#O7F9PcuM0eD-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="Cc8hzGkTDh2"]').val() != "")) {
+
+
+        if (($('#ASTBz862Ehq-bJmK5mlfvQk-val').val() != "") || ($('#Cc8hzGkTDh2-HllvX50cXC0-val').val() != "")) {
             noDisaggregationDisabled("II151Disabled", "II151Enabled");
         }
+
+
+
+
+
+
 
 
         // SDG 2 Start
@@ -87,12 +111,25 @@
             DisaggregationDisabled("II212Disabled", "II212Enabled");
         }
 
-        if ((($("#Z4MY98edt6O-HllvX50cXC0-val").val()) != "")) {
+        if ((($("#gUZAUubtcrg-HllvX50cXC0-val").val()) != "")) {
+            noDisaggregationDisabled("II212Disabled", "II212Enabled");
+        }
+
+        // 2ai - tier ii
+
+        if ((($("#IVpEDiEkPEw-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("II2a1Disabled", "II2a1Enabled");
         }
 
+        if ($("#Z4MY98edt6O-HllvX50cXC0-val").val() != "" || $("#s28QRqyjEzV-HllvX50cXC0-val").val() != "") {
+            noDisaggregationDisabled("II2a1Disabled", "II2a1Enabled")
+        }
+
+
+
 
         //end of tier ii
+
         if ((($("#Bt7EwzXnP1B-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I221Disabled", "I221Enabled");
         }
@@ -162,12 +199,11 @@
 
         }
         //tier ii
-        if ((($("#Z9JVFEBUHaD-HllvX50cXC0-val").val()) != "")) {
+        if ((($("#iJ2uoRJ2kq5-HllvX50cXC0-val").val()) != "") || (($("#Pyu8SMBsSyY-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("II331Disabled", "II331Enabled");
         }
-        if (($("#oaqoqo4luEa-HllvX50cXC0-val").val() != "") || ($("#cIVJ6dWpOe9-HllvX50cXC0-val").val() != "")) {
+        if (($("#IemViZZdB8h-bJmK5mlfvQk-val").val() != "") || ($("#oaqoqo4luEa-bJmK5mlfvQk-val").val() != "") || ($("#cIVJ6dWpOe9-bJmK5mlfvQk-val").val() != "")) {
             noDisaggregationDisabled("II331Disabled", "II331Enabled");
-
         }
         // end of tier ii
         if ((($("#aGhDRO2S4Lu-HllvX50cXC0-val").val()) != "")) {
@@ -239,6 +275,7 @@
         if (($("#H2ICvPO88LD-HllvX50cXC0-val").val() != "") || ($("#hOWf7pMsfol-HllvX50cXC0-val").val() != "")) {
             noDisaggregationDisabled("II372Disabled", "II372Enabled");
         }
+
         // end of tier ii
         if ((($("#DtwIkKQchib-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I391Disabled", "I391Enabled");
@@ -665,7 +702,10 @@
 
     $(function() {
         $(document).ready(function() {
-            //Onload.
+            $("input").change(function() {
+                    disableOption();
+                })
+                //Onload.
             setTimeout(disableOption(), 1000);
             // Onchange Levels
             $("#indicatorLevel").change(function() {
@@ -702,6 +742,8 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel2").change(function() {
+
+                disableOption()
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -712,6 +754,7 @@
             $("#diseases").hide();
             // Onchange Levels
             $("#indicatorLevel3").change(function() {
+                disableOption()
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -719,9 +762,23 @@
                 if ($(this).val() == "I335") {
                     $("#diseases").show();
                     $("#no-diseases").hide();
+                    $("#ii372Header").hide();
+                    $("#ii331Header").hide();
+                } else if ($(this).val() == "II372") {
+                    $("#diseases").hide();
+                    $("#no-diseases").hide();
+                    $("#ii372Header").show();
+                    $("#ii331Header").hide()
+                } else if ($(this).val() == "II331") {
+                    $("#diseases").hide();
+                    $("#no-diseases").hide();
+                    $("#ii372Header").hide()
+                    $("#ii331Header").show()
                 } else {
                     $("#diseases").hide();
                     $("#no-diseases").show();
+                    $("#ii372Header").hide()
+                    $("#ii331Header").hide()
                 }
             })
 
@@ -731,6 +788,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel4").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -755,6 +813,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel5").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -772,6 +831,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel6").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -781,6 +841,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel7").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -799,6 +860,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel8").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -818,6 +880,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel9").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -827,6 +890,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel10").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -836,6 +900,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel11").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -845,6 +910,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel12").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -855,6 +921,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel13").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -865,6 +932,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel14").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -874,6 +942,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel15").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -883,6 +952,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel16").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -900,6 +970,7 @@
             $('.tabcontent2 tr').hide();
             // Onchange Levels
             $("#indicatorLevel17").change(function() {
+                disableOption();
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
@@ -1096,16 +1167,18 @@
                         </tr>
                         <tr class="II131 II131Enabled">
                             <td>Population covered by social protection</td>
-                            <td><input id="qXlW6yWdByW-bJmK5mlfvQk-val" name="entryfield" title="SDG_1.3.1_II:Population covered by social protection No Dissaggregation" value="[ SDG_1.3.1_II:Population covered by social protection No Dissaggregation ]" /></td>
+                            <td><input id="nGDutPFRkzN-HllvX50cXC0-val" name="entryfield" title="SDG_1.3.1_II: Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons," value="[ SDG_1.3.1_II: Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, ]"
+                                /></td>
                         </tr>
                         <tr class="II142 II142Enabled">
                             <td>Adult population with legally recognized documentation over land</td>
-                            <td><input id="WXQgRsAeXa9-bJmK5mlfvQk-val" name="entryfield" title="SDG_1.4.2_II:Adult population with legally recognized documentation over land No Dissaggregation" value="[ SDG_1.4.2_II:Adult population with legally recognized documentation over land No Dissaggregation ]"
+                            <td><input id="EEpOlzGlBAv-HllvX50cXC0-val" name="entryfield" title="SDG_1.4.2_II: 1.4.2 Proportion of total adult population with secure tenure rights to land, with legally recognized documentation and who perceive their rights to land as secure, by sex and by type of tenure"
+                                    value="[ SDG_1.4.2_II: 1.4.2 Proportion of total adult population with secure tenure rights to land, with legally recognized documentation and who perceive their rights to land as secure, by sex and by type of tenure ]"
                                 /></td>
                         </tr>
                         <tr class="II151 II151Enabled">
                             <td>Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population</td>
-                            <td><input id="ASTBz862Ehq-bJmK5mlfvQk-val" name="entryfield" title="SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population No Dissaggregation" value="[ SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population No Dissaggregation ]"
+                            <td><input id="O7F9PcuM0eD-HllvX50cXC0-val" name="entryfield" title="SDG_1.5.1_II:Number of deaths, missing persons and persons affected attributed to disasters" value="[ SDG_1.5.1_II:Number of deaths, missing persons and persons affected attributed to disasters ]"
                                 /></td>
                         </tr>
                     </tbody>
@@ -1188,9 +1261,9 @@
                         </tr>
                         <tr class="II142 II142Disabled">
                             <td>Adult population with legally recognized documentation over land</td>
-                            <td><input id="WXQgRsAeXa9-ssMY53iFjYm-val" name="entryfield" title="SDG_1.4.2_II:Adult population with legally recognized documentation over land Employed" value="[ SDG_1.4.2_II:Adult population with legally recognized documentation over land Employed ]"
+                            <td><input id="WXQgRsAeXa9-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.4.2_II:Adult population with legally recognized documentation over land Female" value="[ SDG_1.4.2_II:Adult population with legally recognized documentation over land Female ]"
                                 /></td>
-                            <td><input id="WXQgRsAeXa9-SOw3NHN47G7-val" name="entryfield" title="SDG_1.4.2_II:Adult population with legally recognized documentation over land Unemployed" value="[ SDG_1.4.2_II:Adult population with legally recognized documentation over land Unemployed ]"
+                            <td><input id="WXQgRsAeXa9-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.4.2_II:Adult population with legally recognized documentation over land Male" value="[ SDG_1.4.2_II:Adult population with legally recognized documentation over land Male ]"
                                 /></td>
                         </tr>
                         <tr class="II142 II142Disabled">
@@ -1200,7 +1273,8 @@
                         </tr>
                         <tr class="II151 II151Disabled">
                             <td>Number of deaths, missing persons and persons affected attributed to disasters</td>
-                            <td>&nbsp;</td>
+                            <td><input id="ASTBz862Ehq-bJmK5mlfvQk-val" name="entryfield" title="SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population No Dissaggregation" value="[ SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population No Dissaggregation ]"
+                                /></td>
                         </tr>
                         <tr class="II151 II151Disabled">
                             <td>Total population</td>
@@ -1314,16 +1388,19 @@
                         </tr>
                         <!-- tier ii -->
                         <tr class="II212 II212Disabled">
-                            <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
-                        </tr>
-                        <tr class="II2a1 II2a1Disabled">
-                            <td>Agriculture Share of GDP (agriculture value added / GDP)</td>
-                            <td><input id="Z4MY98edt6O-HllvX50cXC0-val" name="entryfield" title="SDG_2.a.1_II:Agriculture Share of GDP (agriculture value added / GDP)" value="[ SDG_2.a.1_II:Agriculture Share of GDP (agriculture value added / GDP) ]" /></td>
+                            <td>The prevalence of undernourishment is an estimate of the proportion of the population whose habitual food consumption is insufficient to provide the dietary energy levels that are required to maintain a normal active and healthy
+                                life. It is expressed as a percentage</td>
+                            <td><input id="gUZAUubtcrg-HllvX50cXC0-val" name="entryfield" title="SDG_2.1.2_II: The prevalence of undernourishment is an estimate of the proportion of the population whose habitual food consumption is insufficient to provide the dietary energy levels "
+                                    value="[ SDG_2.1.2_II: The prevalence of undernourishment is an estimate of the proportion of the population whose habitual food consumption is insufficient to provide the dietary energy levels  ]" /></td>
                         </tr>
                         <tr class="II2a1 II2a1Disabled">
                             <td>Agriculture Share of Government Expenditures (agriculture expenditures / total overlays)</td>
                             <td><input id="s28QRqyjEzV-HllvX50cXC0-val" name="entryfield" title="SDG_2.a.1_II:Agriculture Share of Government Expenditures (agriculture expenditures / total overlays)" value="[ SDG_2.a.1_II:Agriculture Share of Government Expenditures (agriculture expenditures / total overlays) ]"
                                 /></td>
+                        </tr>
+                        <tr class="II2a1 II2a1Disabled">
+                            <td>Agriculture Share of GDP (agriculture value added / GDP)</td>
+                            <td><input id="Z4MY98edt6O-HllvX50cXC0-val" name="entryfield" title="SDG_2.a.1_II:Agriculture Share of GDP (agriculture value added / GDP)" value="[ SDG_2.a.1_II:Agriculture Share of GDP (agriculture value added / GDP) ]" /></td>
                         </tr>
                         <tr class="I221 I221Disabled">
                             <td>No. of children under five whose weight for height is &gt; +2</td>
@@ -1420,9 +1497,14 @@
                             <td>Neonatal mortality rate</td>
                             <td><input id="iCihpG4jRzH-HllvX50cXC0-val" name="entryfield" title="SDG_3:Neonatal mortality rate	" value="[ SDG_3:Neonatal mortality rate	 ]" /></td>
                         </tr>
-                        <tr class="II331">
-                            <td>3.3.1 New HIV Infections (per 1,000 uninfected)</td>
-                            <td><input id="Z9JVFEBUHaD-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1_II: New HIV Infections (per 1,000 uninfected) No Dissaggregation" value="[ SDG_3.3.1_II: New HIV Infections (per 1,000 uninfected) No Dissaggregation ]"
+                        <tr class="II331 II331Enabled">
+                            <td>Number of new HIV infections per 1,000 uninfected population, by all sex and all ages</td>
+                            <td><input id="iJ2uoRJ2kq5-HllvX50cXC0-val" name="entryfield" title="SDG_3.3.1_II: Number of new HIV infections per 1,000 uninfected population, by all sex and all age" value="[ SDG_3.3.1_II: Number of new HIV infections per 1,000 uninfected population, by all sex and all age ]"
+                                /></td>
+                        </tr>
+                        <tr class="II331 II331Enabled">
+                            <td>Number of new HIV infections per 1,000 uninfected population, by both sex and 15 years and older</td>
+                            <td><input id="Pyu8SMBsSyY-HllvX50cXC0-val" name="entryfield" title="SDG_3.3.1_II: Number of new HIV infections per 1,000 uninfected population, by both sex and 15 years and older" value="[ SDG_3.3.1_II: Number of new HIV infections per 1,000 uninfected population, by both sex and 15 years and older ]"
                                 /></td>
                         </tr>
                         <tr class="I332">
@@ -1461,12 +1543,12 @@
                             <td>Family planning needs satisfied (%)</td>
                             <td><input id="mFeVazpypaZ-HllvX50cXC0-val" name="entryfield" title="SDG_3:Family planning needs satisfied (%)	" value="[ SDG_3:Family planning needs satisfied (%)	 ]" /></td>
                         </tr>
-                        <tr class="II372">
+                        <tr class="II372 II372Enabled">
                             <td>Adolescent birth rate (aged 10-14 years) per 1,000 women in that age group</td>
                             <td><input id="Ge3sQDztJrs-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Adolescent birth rate (aged 10-14 years) per 1,000 women in that age group" value="[ SDG_3.7.2_II:Adolescent birth rate (aged 10-14 years) per 1,000 women in that age group ]"
                                 /></td>
                         </tr>
-                        <tr class="II372">
+                        <tr class="II372 II372Enabled">
                             <td>Adolescent birth rate (aged 15-19 years) per 1,000 women in that age group</td>
                             <td><input id="ZyyQGpRCcs5-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Adolescent birth rate (aged 15-19 years) per 1,000 women in that age group" value="[ SDG_3.7.2_II:Adolescent birth rate (aged 15-19 years) per 1,000 women in that age group ]"
                                 /></td>
@@ -1525,7 +1607,7 @@
                         </tr>
                     </thead>
                     <thead id="diseases">
-                        <tr class="tableHeader diseases" style="background-color:#4C9F38 !important;">
+                        <tr class="tableHeader" style="background-color:#4C9F38 !important;">
                             <th>Changas Disease</th>
                             <th>Cysticercosis</th>
                             <th>Dengue</th>
@@ -1536,6 +1618,18 @@
                             <th>Leishmaniases</th>
                             <th>Rabies</th>
                             <th>Yaws</th>
+                        </tr>
+                    </thead>
+                    <thead id="ii372Header">
+                        <tr class="tableHeader" style="background-color: #4C9F38 !important">
+                            <th colspan="2">Adolescent birth rate (aged 10-14 years) per 1,000 women in that age group</th>
+                            <th colspan="2">Adolescent birth rate (aged 15-19 years) per 1,000 women in that age group</th>
+                        </tr>
+                    </thead>
+                    <thead id="ii331Header">
+                        <tr class="tableHeader" style="background-color: #4C9F38 !important">
+                            <th colspan="2">3.3.1 Number of new HIV infections per 1,000 uninfected population, by all sex and all ages</th>
+                            <th colspan="2">3.3.1 Number of new HIV infections per 1,000 uninfected population, by both sex and 15 years and older</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1571,20 +1665,35 @@
                             <td>Number of live births</td>
                             <td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="SDG_3:321_Number of live births" value="[ SDG_3:321_Number of live births ]" /></td>
                         </tr>
-                        <tr class="II331">
+                        <tr class="II331 II331Disabled">
+                            <td>Number of people who are newly infected in a specific time period x 1000</td>
+                            <td><input id="IemViZZdB8h-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1_II : Number of people who are newly infected in a specific time period x 1000 No Dissaggregation" value="[ SDG_3.3.1_II : Number of people who are newly infected in a specific time period x 1000 No Dissaggregation ]"
+                                /></td>
                             <td>Number of people (15 years and older) who are newly infected in a specific time period x 1000</td>
                             <td><input id="oaqoqo4luEa-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1_II:Number of people (15 years and older) who are newly infected in a specific time period x 1000  No Dissaggregation" value="[ SDG_3.3.1_II:Number of people (15 years and older) who are newly infected in a specific time period x 1000  No Dissaggregation ]"
                                 /></td>
                         </tr>
-                        <tr class="II331">
+                        <tr class="II331 II331Disabled">
+                            <td colspan="2">&nbsp;</td>
+                            <td>Total uninfected person-years of exposure</td>
+                            <td><input id="cIVJ6dWpOe9-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1_II:Total uninfected person-years of exposure No Dissaggregation" value="[ SDG_3.3.1_II:Total uninfected person-years of exposure No Dissaggregation ]"
+                                /></td>
+                        </tr>
+                        <!-- 
+                        <tr class="II331 II331Disabled">
+                            <td>Number of people (15 years and older) who are newly infected in a specific time period x 1000</td>
+                            <td><input id="oaqoqo4luEa-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1_II:Number of people (15 years and older) who are newly infected in a specific time period x 1000  No Dissaggregation" value="[ SDG_3.3.1_II:Number of people (15 years and older) who are newly infected in a specific time period x 1000  No Dissaggregation ]"
+                                /></td>
+                        </tr>
+                        <tr class="II331 II331Disabled">
                             <td>Total uninfected person-years of exposure</td>
                             <td><input id="K10M0TiP5Id-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total uninfected person-years of expsure" value="[ SDG_3:Total uninfected person-years of expsure ]" /></td>
-                        </tr>
-                        <tr class="I332">
+                        </tr> -->
+                        <tr class="I332 I332Disabled">
                             <td>Number of new and relapse TB cases arising in a specified time period</td>
                             <td><input id="mH9XBhoW1Cf-HllvX50cXC0-val" name="entryfield" title="SDG_3:New and relapse TB cases" value="[ SDG_3:New and relapse TB cases ]" /></td>
                         </tr>
-                        <tr class="I332">
+                        <tr class="I332 I332Disabled">
                             <td>Number of person-years of exposure</td>
                             <td><input id="JFvlTEuknXq-HllvX50cXC0-val" name="entryfield" title="SDG_3:Person-years of exposure" value="[ SDG_3:Person-years of exposure ]" /></td>
                         </tr>
@@ -1658,22 +1767,34 @@
                             <td><input id="ETzoIk2kLNK-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total demand for family planning" value="[ SDG_3:Total demand for family planning ]" /></td>
                         </tr>
                         <!--                    tier ii -->
-                        <tr class="II372">
+                        <tr class="II372 II372Disabled">
                             <td>Number of live births to women aged 10-14</td>
                             <td><input id="SEFh0NstvUS-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Number of live births to women aged 10-14" value="[ SDG_3.7.2_II:Number of live births to women aged 10-14 ]" /></td>
-                        </tr>
-                        <tr class="II372">
-                            <td>Exposure to childbearing by women aged 10-14 years</td>
-                            <td><input id="oNP8xYKgM9j-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years" value="[ SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years ]" /></td>
-                        </tr>
-                        <tr class="II372">
                             <td>Number of live births to women aged 15-19</td>
                             <td><input id="hOWf7pMsfol-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Number of live births to women aged 15-19" value="[ SDG_3.7.2_II:Number of live births to women aged 15-19 ]" /></td>
                         </tr>
-                        <tr class="II372">
+                        <tr class="II372 II372Disabled">
+                            <td>Exposure to childbearing by women aged 10-14 years</td>
+                            <td><input id="oNP8xYKgM9j-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years" value="[ SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years ]" /></td>
                             <td>Exposure to childbearing by women aged 15-19 years</td>
                             <td><input id="H2ICvPO88LD-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Exposure to childbearing by women aged 15-19 years" value="[ SDG_3.7.2_II:Exposure to childbearing by women aged 15-19 years ]" /></td>
                         </tr>
+                        <!-- <tr class="II372 II372Disabled">
+                            <td>Number of live births to women aged 10-14</td>
+                            <td><input id="SEFh0NstvUS-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Number of live births to women aged 10-14" value="[ SDG_3.7.2_II:Number of live births to women aged 10-14 ]" /></td>
+                        </tr>
+                        <tr class="II372 II372Disabled">
+                            <td>Exposure to childbearing by women aged 10-14 years</td>
+                            <td><input id="oNP8xYKgM9j-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years" value="[ SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years ]" /></td>
+                        </tr>
+                        <tr class="II372 II372Disabled">
+                            <td>Number of live births to women aged 15-19</td>
+                            <td><input id="hOWf7pMsfol-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Number of live births to women aged 15-19" value="[ SDG_3.7.2_II:Number of live births to women aged 15-19 ]" /></td>
+                        </tr>
+                        <tr class="II372 II372Disabled">
+                            <td>Exposure to childbearing by women aged 15-19 years</td>
+                            <td><input id="H2ICvPO88LD-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Exposure to childbearing by women aged 15-19 years" value="[ SDG_3.7.2_II:Exposure to childbearing by women aged 15-19 years ]" /></td>
+                        </tr> -->
                         <!--                    end of tier ii-->
                         <tr class="I391">
                             <td>Number of deaths attributable to the joint effects of household and ambient air pollution</td>
@@ -1903,7 +2024,7 @@
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Enabled">
-                            <td>4.a.1 Upper secondary schools with electricity (%)</td>
+                            <td>Upper secondary schools with electricity (%)</td>
                             <td><input id="wJIgU3Qb1xU-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Proportion of upper secondary schools with access to electricity" value="[ SDG_4.a.1_II: Proportion of upper secondary schools with access to electricity ]"
                                 /></td>
                         </tr>
@@ -2103,33 +2224,12 @@
                             <td><input id="pupwg0wvMIF-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of primary schools with access to electricity" value="[ SDG_4.a.1_II: Number of primary schools with access to electricity ]" /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of primary schools</td>
-                            <td><input id="lUVFn5fQ95X-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Total number of primary schools" value="[ SDG_4.a.1_II: Total number of primary schools ]" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of primary schools with access to internet</td>
                             <td><input id="RPxe05tDg6l-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of primary schools with access to internet" value="[ SDG_4.a.1_II: Number of primary schools with access to internet ]" /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of primary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of primary schools with access to computers</td>
                             <td><input id="ScJs0vw0ZZM-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of primary schools with access to computers" value="[ SDG_4.a.1_II: Number of primary schools with access to computers ]" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of primary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Number of primary schools with access to adapted infrastructure and materials for students with disabilities</td>
@@ -2137,35 +2237,14 @@
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of primary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of primary schools with access to basic drinking water</td>
                             <td><input id="kZIOEuAhOxS-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of primary schools with access to basic drinking water" value="[ SDG_4.a.1_II: Number of primary schools with access to basic drinking water ]"
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of primary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of primary schools with access to single-sex basic sanitation facilities</td>
                             <td><input id="nEjLCbQ11z8-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of primary schools with access to single-sex basic sanitation facilities" value="[ SDG_4.a.1_II: Number of primary schools with access to single-sex basic sanitation facilities ]"
                                 /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of primary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Number of primary schools with access to basic handwashing facilities</td>
@@ -2174,7 +2253,7 @@
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Total number of primary schools</td>
-                            <td><input type="text" /></td>
+                            <td><input id="lUVFn5fQ95X-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Total number of primary schools" value="[ SDG_4.a.1_II: Total number of primary schools ]" /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td colspan="2">&nbsp;</td>
@@ -2185,22 +2264,8 @@
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of lower secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of lower secondary schools with access to internet</td>
                             <td><input id="msHwc1gKsQs-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of lower secondary schools with access to internet" value="[ SDG_4.a.1_II: Number of lower secondary schools with access to internet ]" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of lower secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Number of lower secondary schools with access to computers</td>
@@ -2208,23 +2273,9 @@
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of lower secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of lower secondary schools with access to adapted infrastructure and materials for students with disabilities</td>
                             <td><input id="LECY8Sndk0K-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of lower secondary schools with access to adapted infrastructure and materials for students with disabilities" value="[ SDG_4.a.1_II: Number of lower secondary schools with access to adapted infrastructure and materials for students with disabilities ]"
                                 /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of lower secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Number of lower secondary schools with access to basic drinking water</td>
@@ -2232,23 +2283,9 @@
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of lower secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of lower secondary schools with access to single-sex basic sanitation facilities</td>
                             <td><input id="Ch0IeNVKdyX-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of lower secondary schools with access to single-sex basic sanitation facilities" value="[ SDG_4.a.1_II: Number of lower secondary schools with access to single-sex basic sanitation facilities ]"
                                 /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of lower secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Number of lower secondary schools with access to basic handwashing facilities</td>
@@ -2268,23 +2305,9 @@
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of upper secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of upper secondary schools with access to internet</td>
                             <td><input id="cNZxDQcnWzT-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of upper secondary schools with access to the Internet" value="[ SDG_4.a.1_II: Number of upper secondary schools with access to the Internet ]"
                                 /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of upper secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Number of upper secondary schools with access to computers</td>
@@ -2292,23 +2315,9 @@
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of upper secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of upper secondary schools with access to adapted infrastructure and materials for students with disabilities</td>
                             <td><input id="M8rdaNnjAAe-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of upper secondary schools with access to adapted infrastructure and materials for students with disabilities" value="[ SDG_4.a.1_II: Number of upper secondary schools with access to adapted infrastructure and materials for students with disabilities ]"
                                 /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of upper secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Number of upper secondary schools with access to basic drinking water</td>
@@ -2316,23 +2325,9 @@
                                 /></td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of upper secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
                             <td>Number of upper secondary schools with access to single-sex basic sanitation facilities</td>
                             <td><input id="bkd2gVRI81k-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Number of upper secondary schools with access to single-sex basic sanitation facilities" value="[ SDG_4.a.1_II: Number of upper secondary schools with access to single-sex basic sanitation facilities ]"
                                 /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td>Total number of upper secondary schools</td>
-                            <td><input type="text" /></td>
-                        </tr>
-                        <tr class="II4a1 II4a1Disabled">
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr class="II4a1 II4a1Disabled">
                             <td>Number of upper secondary schools with access to basic handwashing facilities</td>
