@@ -653,11 +653,6 @@
         }
 
 
-
-
-
-
-
         // tier ii end
         // SDG 4 End
 
@@ -669,6 +664,14 @@
         if (($('#q534i5qtxG2-HllvX50cXC0-val').val() != "") || ($('#UTKJklNQim3-HllvX50cXC0-val').val() != "")) {
             noDisaggregationDisabled("I551aDisabled", "I551aEnabled");
         }
+
+        if ((($("I551aEnabled td input").val()) != "")) {
+            DisaggregationDisabled("I551aDisabled", "I551aEnabled");
+        }
+        if (($(".I551aDisabled td input").val() != "")) {
+            noDisaggregationDisabled("I551aDisabled", "I551aEnabled");
+        }
+
         if ((($("#ofjriq3zC1Y-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I552Disabled", "I552Enabled");
         }
@@ -1613,11 +1616,18 @@
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
 
-                if ($(this).val() == 'I5b1') {
+                if ($(this).val() == 'I5b1' || $(this).val() == "II541" || $(this).val() == "I551a") {
                     $('.sexDisagg').show();
                     $('.noDisagg').hide();
+                    $(".locationDisagg").hide();
+
+                } else if ($(this).val() == "II522") {
+                    $(".sexDisagg").hide();
+                    $(".noDisagg").hide();
+                    $(".locationDisagg").show();
                 } else {
                     $('.sexDisagg').hide();
+                    $(".locationDisagg").hide();
                     $('.noDisagg').show();
                 }
             })
@@ -3634,7 +3644,7 @@
                 <option value="II531-2">5.3.1(ii) Child marriage, before 18 (%)</option>
                 <option value="II532">5.3.2 Female genital mutilation (%)</option>
                 <option value="II541">5.4.1 Unpaid domestic work, time</option>
-                <option value="I551a">5.5.1a Women in elected government (%)</option>
+                <option value="I551a">5.5.1(a) Women in elected government (%)</option>
                 <option value="I552">5.5.2 Proportion of women in managerial positions</option>
                 <option value="II561">5.6.1 Women making informed decisions on sexual health (%)</option>
                 <option value="II5a1a">5.a.1(a) Agricultural population with ownership rights (%)</option>
@@ -3674,13 +3684,15 @@
                             </td>
                         </tr>
                         <tr class="II531-1 II531-1Enabled">
-                            <td>Proportion of women aged 20-24 years who were married or in a union before age 15</td>
+                            <td>5.3.1(i) Proportion of women aged 20-24 years who were married or in a union before age 15
+                            </td>
                             <td><input id="UjzDoreFKHg-HllvX50cXC0-val" name="entryfield" title="SDG_5.3.1_II: Proportion of women aged 20-24 years who were married or in a union before age 15" value="[ SDG_5.3.1_II: Proportion of women aged 20-24 years who were married or in a union before age 15 ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II531-2 II531-1Enabled">
-                            <td>Proportion of women aged 20-24 years who were married or in a union before age 18</td>
+                            <td>5.3.1(ii) Proportion of women aged 20-24 years who were married or in a union before age 18
+                            </td>
                             <td><input id="MvH5wN3SqAc-HllvX50cXC0-val" name="entryfield" title="SDG_5.3.1_II: Proportion of women aged 20-24 years who were married or in a union before age 18" value="[ SDG_5.3.1_II: Proportion of women aged 20-24 years who were married or in a union before age 18 ]"
                                 />
                             </td>
@@ -3744,11 +3756,14 @@
                         <tr class="tableHeader" style="background-color:#FF3A21 !important;">
                             <th rowspan="2">&nbsp;</th>
                             <th class="sexDisagg" colspan="2">Sex</th>
+                            <th class="locationDisagg" colspan="2">Geographical Location</th>
                             <th class="noDisagg">Value</th>
                         </tr>
                         <tr class="tableHeader" style="background-color:#FF3A21 !important;">
                             <th class="sexDisagg">Female</th>
                             <th class="sexDisagg">Male</th>
+                            <th class="locationDisagg">Rural</th>
+                            <th class="locationDisagg">Urban</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -3786,14 +3801,20 @@
                         </tr>
                         <tr class="II522 II522Disabled">
                             <td>Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months</td>
-                            <td><input id="QHnGxyUmBrZ-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months"
-                                    value="[ SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months ]" />
+                            <td><input id="QHnGxyUmBrZ-iEgy3xKqVi5-val" name="entryfield" title="SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months Rural"
+                                    value="[ SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months Rural ]" />
+                            </td>
+                            <td><input id="QHnGxyUmBrZ-r8hBd63qzn4-val" name="entryfield" title="SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months Urban"
+                                    value="[ SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months Urban]" />
                             </td>
                         </tr>
                         <tr class="II522 II522Disabled">
                             <td>number of women and girls aged 15 years and above in the population multiplied by 100
                             </td>
-                            <td><input id="YlM81C9I2I3-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100" value="[ SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 ]"
+                            <td><input id="YlM81C9I2I3-iEgy3xKqVi5-val" name="entryfield" title="SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 Rural" value="[ SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 Rural]"
+                                />
+                            </td>
+                            <td><input id="YlM81C9I2I3-r8hBd63qzn4-val" name="entryfield" title="SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 Urban" value="[ SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 Urban]"
                                 />
                             </td>
                         </tr>
@@ -3829,23 +3850,29 @@
                             <td><input id="BF5pvCCd6vW-HllvX50cXC0-val" name="entryfield" title="SDG_5.3.2_II: Total number of women aged 15-49 in the population" value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population ]" /></td>
                         </tr>
                         <tr class="II541 II541Disabled">
-                            <td>Daily average number of hours spent on unpaid domestic work, disaggregated by sex</td>
-                            <td><input id="RybzJbwFbgd-bJmK5mlfvQk-val" name="entryfield" title="SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work, disaggregated by sex No Dissaggregation" value="[ SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work, disaggregated by sex No Dissaggregation ]"
+                            <td>Daily average number of hours spent on unpaid domestic work</td>
+                            <td><input id="RybzJbwFbgd-sLKRSW7xmwp-val" name="entryfield" title="SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work Female" value="[ SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work Female ]"
+                                />
+                            </td>
+                            <td><input id="RybzJbwFbgd-sJUGNYho7Ey-val" name="entryfield" title="SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work Male" value="[ SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work Male ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II541 II541Disabled">
-                            <td>24</td>
-                            <td>&nbsp;</td>
+                            <td colspan="3">24 Hours</td>
+
                         </tr>
-                        <tr class="I551a">
+                        <tr class="I551a I551aDisabled">
                             <td>Number of seats held by women members in single or lower chambers of national parliaments
                             </td>
-                            <td><input id="q534i5qtxG2-HllvX50cXC0-val" name="entryfield" title="SDG_5:Seats held by women members in parliaments" value="[ SDG_5:Seats held by women members in parliaments ]" /></td>
+                            <td><input id="q534i5qtxG2-sLKRSW7xmwp-val" name="entryfield" title="SDG_5:Seats held by women members in parliaments Female" value="[ SDG_5:Seats held by women members in parliaments Female ]" /></td>
+                            <td><input id="q534i5qtxG2-sJUGNYho7Ey-val" name="entryfield" title="SDG_5:Seats held by women members in parliaments Male " value="[ SDG_5:Seats held by women members in parliaments Male]" /></td>
                         </tr>
-                        <tr class="I551a">
+                        <tr class="I551a I551aDisabled">
                             <td>Total number of seats</td>
-                            <td><input id="UTKJklNQim3-HllvX50cXC0-val" name="entryfield" title="SDG_5:Total number of seats" value="[ SDG_5:Total number of seats ]" /></td>
+                            <td><input id="UTKJklNQim3-sLKRSW7xmwp-val" name="entryfield" title="SDG_5:Total number of seats" value="[ SDG_5:Total number of seats Female ]" /></td>
+                            <td><input id="UTKJklNQim3-sJUGNYho7Ey-val" name="entryfield" title="SDG_5:Total number of seats" value="[ SDG_5:Total number of seats Male ]" />
+                            </td>
                         </tr>
                         <!-- <tr class="I552">
                             <td>Women employed in ISCO-08 category 1</td>
