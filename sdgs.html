@@ -427,19 +427,21 @@
         }
 
         // tier ii start
-        if ((($("#EaEZ5VBb282-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("II411bIDisabled", "II411bIEnabled");
+
+        if ($(".II411bIEnabled td input").val() != "") {
+            DisaggregationDisabled("II411bIDisabled", "II411bIEnabled")
         }
-        if (($("#xAzxJEyieEZ-HllvX50cXC0-val").val() != "") || ($("#eSB3CFkazsJ-HllvX50cXC0-val").val() != "")) {
-            noDisaggregationDisabled("II411bIDisabled", "II411bIEnabled");
+        if ($(".II411bIDisabled td input").val() != "") {
+            noDisaggregationDisabled("II411bIDisabled", "II411bIEnabled")
         }
 
-        if ((($("#u93cl2SJv4A-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("II411bIIDisabled", "II411bIIEnabled");
+        if ($(".II411bIIEnabled td input").val() != "") {
+            DisaggregationDisabled("II411bIIDisabled", "II411bIIEnabled")
         }
-        if (($("#XmGmheSJErW-HllvX50cXC0-val").val() != "") || ($("#PP9DV45BSTo-HllvX50cXC0-val").val() != "")) {
-            noDisaggregationDisabled("II411bIIDisabled", "II411bIIEnabled");
+        if ($(".II411bIIDisabled td input").val() != "") {
+            noDisaggregationDisabled("II411bIIDisabled", "II411bIIEnabled")
         }
+
 
         if ((($("#M1wiDRTEgG3-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("II411cIDisabled", "II411cIEnabled");
@@ -1588,12 +1590,12 @@
                     $('.sdg4NoHeader').hide();
                     $('.sdg4Header').show();
                 }
-                if (($(this).val() == "I422") || ($(this).val() == "I451a") || ($(this).val() == "I451b")) {
+                if (($(this).val() == "I422") || ($(this).val() == "I451a") || ($(this).val() == "I451b") || $(this).val() == "II411bII" || $(this).val() == "II411bI") {
                     $('.sdg4Header').hide();
                     $('.sdg4NoHeader').show();
                 }
                 // tier ii
-                if (["II411bI", "II411bII", "II411cI", "II411cII", "II431-1", "II431-2", "II461-1", "II461-2", "II4c1-1", "II4c1-2", "II4c1-3", "II4c1-4", "II4a1-1", "II4a1-2", "II4a1-3", "II4a1-4", "II4a1-5", "II4a1-6", "II4a1-7", "II4a1-8", "II4a1-9", "II4a1-10", "II4a1-11", "II4a1-12", "II4a1-13", "II4a1-14", "II4a1-5", "II4a1-16", "II4a1-17", "II4a1-18", "II4a1-19", "II4a1-20", "II4a1-21", "II4c1"].includes($(this).val())) {
+                if (["II411cI", "II411cII", "II431-1", "II431-2", "II461-1", "II461-2", "II4c1-1", "II4c1-2", "II4c1-3", "II4c1-4", "II4a1-1", "II4a1-2", "II4a1-3", "II4a1-4", "II4a1-5", "II4a1-6", "II4a1-7", "II4a1-8", "II4a1-9", "II4a1-10", "II4a1-11", "II4a1-12", "II4a1-13", "II4a1-14", "II4a1-5", "II4a1-16", "II4a1-17", "II4a1-18", "II4a1-19", "II4a1-20", "II4a1-21", "II4c1"].includes($(this).val())) {
                     $(".sdg4Header").show();
                     $(".sdg4NoHeader").hide()
                 }
@@ -2524,7 +2526,8 @@
                         </tr>
                         <tr>
                             <td>Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable
-                                diseases and service capacity and access, among the general and the most disadvantaged population)</td>
+                                diseases and service capacity and access, among the general and the most disadvantaged population)
+                            </td>
                             <td><input id="ZOHZQ0zL3xu-HllvX50cXC0-val" name="entryfield" title="SDG_3.8.1_II:  Coverage of essential health services" value="[ SDG_3.8.1_II:  Coverage of essential health services ]" /></td>
                         </tr>
                     </tbody>
@@ -3220,32 +3223,44 @@
                     <tbody>
                         <tr class="II411bI II411bIDisabled">
                             <td>Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading</td>
-                            <td><input id="xAzxJEyieEZ-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading" value="[ SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading ]"
+                            <td><input id="xAzxJEyieEZ-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Female" value="[ SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Female]"
+                                />
+                            </td>
+                            <td><input id="xAzxJEyieEZ-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Male" value="[ SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Male]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411bI II411bIDisabled">
                             <td>All children and young people at the end of primary education</td>
-                            <td><input id="eSB3CFkazsJ-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1b(i)_II: All children and young people at the end of primary education" value="[ SDG_4.1.1b(i)_II: All children and young people at the end of primary education ]"
+                            <td><input id="eSB3CFkazsJ-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(i)_II: All children and young people at the end of primary education Female" value="[ SDG_4.1.1b(i)_II: All children and young people at the end of primary education Female]"
+                                />
+                            </td>
+                            <td><input id="eSB3CFkazsJ-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(i)_II: All children and young people at the end of primary education Male" value="[ SDG_4.1.1b(i)_II: All children and young people at the end of primary education Male]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411bII II411bIIDisabled">
-                            <td>Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics/td&gt;</td>
-                            <td><input id="XmGmheSJErW-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics" value="[ SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics ]"
+                            <td>Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics</td>
+                            <td><input id="XmGmheSJErW-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Female"
+                                    value="[ SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Female]" />
+                            </td>
+                            <td><input id="XmGmheSJErW-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Male" value="[ SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Male]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411bII II411bIIDisabled">
                             <td>All children and young people at the end of primary education</td>
-                            <td><input id="PP9DV45BSTo-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1b(ii)_II: All children and young people at the end of primary education" value="[ SDG_4.1.1b(ii)_II: All children and young people at the end of primary education ]"
+                            <td><input id="PP9DV45BSTo-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Female" value="[ SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Female]"
+                                />
+                            </td>
+                            <td><input id="PP9DV45BSTo-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Male" value="[ SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Male]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411cI II411cIDisabled">
-                            <td>Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in mathematics</td>
-                            <td><input id="WWVZ23AKEMs-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1c(i)_II:Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in mathematics"
-                                    value="[ SDG_4.1.1c(i)_II:Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in mathematics ]" />
+                            <td>Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in reading</td>
+                            <td><input id="WWVZ23AKEMs-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1c(i)_II:Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in reading" value="[ SDG_4.1.1c(i)_II:Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in reading ]"
+                                />
                             </td>
                         </tr>
                         <tr class="II411cI II411cIDisabled">
@@ -3613,12 +3628,12 @@
 
         <div><select class="dropdown" id="indicatorLevel5" name="indicators">
                 <option disabled="disabled" selected="selected">Please select an indicator</option>
-                <option value="">5.2.1 Domestic violence (%)</option>
+                <option value="II521">5.2.1 Domestic violence (%)</option>
                 <option value="II522">5.2.2 Sexual violence (%)</option>
                 <option value="II531-1">5.3.1(i) Child marriage, before 15 (%)</option>
                 <option value="II531-2">5.3.1(ii) Child marriage, before 18 (%)</option>
                 <option value="II532">5.3.2 Female genital mutilation (%)</option>
-                <option value="II541">5.4.1  Unpaid domestic work, time</option>
+                <option value="II541">5.4.1 Unpaid domestic work, time</option>
                 <option value="I551a">5.5.1a Women in elected government (%)</option>
                 <option value="I552">5.5.2 Proportion of women in managerial positions</option>
                 <option value="II561">5.6.1 Women making informed decisions on sexual health (%)</option>
@@ -3645,7 +3660,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="Enabled">
+                        <tr class="II521 II521Enabled">
                             <td>Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age</td>
                             <td><input id="u8wrisAWtNB-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and "
                                     value="[ SDG_5.2.1_II: Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and  ]"
@@ -3738,10 +3753,29 @@
                     </thead>
                     <tbody>
                         <tr class="II521 II521Disabled">
-                            <td>[Number of ever-partnered women and girls (aged 15+) who experienced 1) PHYSICAL VIOLENCE; 2) SEXUAL VIOLENCE; 3) PHYSICAL AND/OR SEXUAL VIOLENCE; 4) PSYCHOLOGICAL VIOLENCE by a current or former intimate partner in the previous
-                                12 months] x 100</td>
-                            <td><input id="P59jnQiHtwA-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: [Number of ever-partnered women and girls (aged 15+) who experienced 1) PHYSICAL VIOLENCE; 2) SEXUAL VIOLENCE; 3) PHYSICAL AND/OR SEXUAL VIOLENCE; 4) PSYCHOLOGICAL VIOLENCE  by a current or former intimate partner in"
-                                    value="[ SDG_5.2.1_II: [Number of ever-partnered women and girls (aged 15+) who experienced 1) PHYSICAL VIOLENCE; 2) SEXUAL VIOLENCE; 3) PHYSICAL AND/OR SEXUAL VIOLENCE; 4) PSYCHOLOGICAL VIOLENCE  by a current or former intimate partner in ]"
+                            <td colspan="2">[Number of ever-partnered women and girls (aged 15+) who experienced 1) PHYSICAL VIOLENCE; 2) SEXUAL VIOLENCE; 3) PHYSICAL AND/OR SEXUAL VIOLENCE; 4) PSYCHOLOGICAL VIOLENCE by a current or former intimate partner in the previous
+                                12 months]</td>
+                        </tr>
+                        <tr class="II521">
+                            <td>Physical Violence</td>
+                            <td><input id="jYrXBXPPb0Q-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Physical Violence" value="[ SDG_5.2.1_II: Physical Violence ]" /></td>
+                        </tr>
+                        <tr class="II521">
+                            <td>Sexual Violence</td>
+                            <td><input id="mOas6mHCEvK-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Sexual Violence" value="[ SDG_5.2.1_II: Sexual Violence ]" />
+                            </td>
+                        </tr>
+                        <tr class="II521">
+                            <td>Psychological Violence</td>
+                            <td><input id="OqfcKJ0zRrr-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Psychological Violence" value="[ SDG_5.2.1_II: Psychological Violence ]" /></td>
+                        </tr>
+                        <tr class="II521">
+                            <td>Any form of physical and/or sexual violence</td>
+                            <td><input id="zMSYzbOWYSg-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Any form of physical and/or sexual violence" value="[ SDG_5.2.1_II: Any form of physical and/or sexual violence ]" /></td>
+                        </tr>
+                        <tr class="II521">
+                            <td>Any form of physical, sexual and/or psychological violence</td>
+                            <td><input id="lZNKqTqFFig-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Any form of physical, sexual and/or psychological violence" value="[ SDG_5.2.1_II: Any form of physical, sexual and/or psychological violence ]"
                                 />
                             </td>
                         </tr>
@@ -3910,7 +3944,8 @@
                 <option value="I642">6.4.2 Level of water stress</option>
                 <option value="I651">6.5.1 Degree of integrated water resources management implementation (0-100)
                 </option>
-                <option value="II652">6.5.2 Proportion of transboundary basin area with an operational arrangement for water cooperation</option>
+                <option value="II652">6.5.2 Proportion of transboundary basin area with an operational arrangement for
+                    water cooperation</option>
                 <option value="II661">6.6.1 Change in extend of water-related ecosystems</option>
                 <option value="I6a1">6.a.1 Proportion of water and sanitation ODA on spending plan</option>
                 <option value="I6b1">6.b.1 Proportion of local admin units with local community participation on water
@@ -4067,8 +4102,7 @@
                         </tr>
                         <tr class="II641 II641Disabled">
                             <td>𝑊𝑈𝐸=𝐴𝑤𝑒&times;𝑃𝐴+𝑀𝑤𝑒&times;𝑃𝑀+𝑆𝑤𝑒&times;𝑃𝑆; where: WUE = Water use efficiency Awe = Irrigated agriculture water use efficiency [USD/m3] Mwe = MIMEC water use efficiency [USD/m3] Swe = Services water use efficiency
-                                [USD/m3] PA = Proportion of water used by the agricultural sector over the total use PM = Proportion of water used by the MIMEC sector over the total use PS = Proportion of water used by the service sector
-                            </td>
+                                [USD/m3] PA = Proportion of water used by the agricultural sector over the total use PM = Proportion of water used by the MIMEC sector over the total use PS = Proportion of water used by the service sector</td>
                             <td><input id="nrwxPCmBg0W-HllvX50cXC0-val" name="entryfield" title="SDG_6.4.1_II: 𝑊𝑈𝐸=𝐴𝑤𝑒×𝑃𝐴+𝑀𝑤𝑒×𝑃𝑀+𝑆𝑤𝑒×𝑃𝑆; where: WUE = Water use efficiency Awe = Irrigated agriculture water use efficiency [USD/m3] Mwe = MIMEC water use efficiency [USD/m3] Swe = Services water use efficiency [U"
                                     value="[ SDG_6.4.1_II: 𝑊𝑈𝐸=𝐴𝑤𝑒×𝑃𝐴+𝑀𝑤𝑒×𝑃𝑀+𝑆𝑤𝑒×𝑃𝑆; where: WUE = Water use efficiency Awe = Irrigated agriculture water use efficiency [USD/m3] Mwe = MIMEC water use efficiency [USD/m3] Swe = Services water use efficiency [U ]"
                                 />
@@ -4560,8 +4594,8 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                 <option value="I921a">9.2.1(a) Manufacturing value added as a proportion of GDP</option>
                 <option value="I921b">9.2.1(b) Manufacturing value added per capita</option>
                 <option value="I922">9.2.2 Manufacturing employment as a proportion of total employment</option>
-                <option value="II931">9.3.1  Small-scale industries in total industry value added </option>
-                <option value="II932">9.3.2  Small-scale industries with a loan or line of credit</option>
+                <option value="II931">9.3.1 Small-scale industries in total industry value added</option>
+                <option value="II932">9.3.2 Small-scale industries with a loan or line of credit</option>
                 <option value="I941">9.4.1 CO2 emission per unit of value added</option>
                 <option value="I951">9.5.1 Research and development expenditure as a proportion of GDP</option>
                 <option value="I952">9.5.2 Researchers in full-time equivalent per million inhabitants</option>
@@ -4773,12 +4807,14 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
 
         <div><select class="dropdown" id="indicatorLevel10" name="indicators">
                 <option disabled="disabled" selected="selected">Please select an indicator</option>
-                <option value="II1011">10.1.1 Growth rates of household expenditure (bottom 40 % and total population) </option>
+                <option value="II1011">10.1.1 Growth rates of household expenditure (bottom 40 % and total population)
+                </option>
                 <option value="II1041">10.4.1 Labour share of GDP</option>
                 <option value="I1061">10.6.1 Voting rights in developing countries</option>
                 <option value="I10a1">10.a.1 Tariff lines to import</option>
                 <option value="I10b1">10.b.1 Total resource flow for development</option>
-                <option value="II10b1">10.b.1 Total resource flow for development (ODA or FDI, by recipient and donor)</option>
+                <option value="II10b1">10.b.1 Total resource flow for development (ODA or FDI, by recipient and donor)
+                </option>
             </select></div>
         <!-- Tab links -->
 
@@ -4896,7 +4932,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                 <option disabled="disabled" selected="selected">Please select an indicator</option>
                 <option value="I1111">11.1.1 Urban population living in slums</option>
                 <option value="II1121">11.2.1 Population with convenient access to public transport</option>
-                <option value="II1131">11.3.1 Land consumption </option>
+                <option value="II1131">11.3.1 Land consumption</option>
                 <option value="II1151">11.5.1 Deaths, missing persons and persons affected by disaster</option>
                 <option value="I1152">11.5.2 Direct economic loss attributed to disasters (in USD)</option>
                 <option value="II1161">11.6.1 Urban solid waste</option>
@@ -5358,13 +5394,15 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                 <option value="I1551">15.5.1 Red List Index</option>
                 <option value="I1561">15.6.1 Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources
                 </option>
-                <option value="II1571">15.7.1 Proportion of traded wildlife that was poached or illicitly trafficked</option>
+                <option value="II1571">15.7.1 Proportion of traded wildlife that was poached or illicitly trafficked
+                </option>
                 <option value="II1581">15.8.1 Legislation and resourcing for invasive alien species prevention</option>
                 <option value="III1591">15.9.1 Aichi Biodiversity Target 2 progress</option>
                 <option value="I15a1">15.a.1 Public expenditure on conservation (in USD)</option>
                 <option value="III15a1">15.a.1 Public expenditure on conservation</option>
                 <option value="III15b1">15.b.1 Public expenditure on conservation</option>
-                <option value="II15c1">15.c.1 Proportion of traded wildlife that was poached or illicitly trafficked</option>
+                <option value="II15c1">15.c.1 Proportion of traded wildlife that was poached or illicitly trafficked
+                </option>
             </select></div>
         <!-- Tab links -->
 
@@ -5816,8 +5854,7 @@ imports of analogous species product units) ]" /></td>
                         </tr>
                         <tr class="II1622 II1622Disabled">
                             <td>Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected victims (methodology
-                                under development)
-                            </td>
+                                under development)</td>
                             <td><input id="C8gGTrrMdG6-HllvX50cXC0-val" name="entryfield" title="SDG_16.2.2_II:Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected vi"
                                     value="[ SDG_16.2.2_II:Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected vi ]"
                                 />
@@ -5939,8 +5976,10 @@ imports of analogous species product units) ]" /></td>
                 <option value="I17121">17.12.1 Average import tariffs faced by products exported (%)</option>
                 <option value="I17183b">17.18.3 Implementation stage</option>
                 <option value="I17191">17.19.1 Value of resources to strengthen statistical capacity (in USD)</option>
-                <option value="II17151">17.15.1 Extent of use of country-owned results frameworks and planning tools</option>
-                <option value="II17161">17.16.1 Countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks</option>
+                <option value="II17151">17.15.1 Extent of use of country-owned results frameworks and planning tools
+                </option>
+                <option value="II17161">17.16.1 Countries reporting progress in multi-stakeholder development
+                    effectiveness monitoring frameworks</option>
             </select></div>
 
         <div id="disaggregations17" style="margin-top: 10px;">
