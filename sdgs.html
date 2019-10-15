@@ -883,6 +883,19 @@
             DisaggregationDisabled("I8a1Disabled", "I8a1Enabled");
         }
 
+        if ($(".I8101aEnabled td input").val() != "") {
+            DisaggregationDisabled("I8101aDisabled", "I8101aEnabled")
+        }
+        if ($(".I8101aDisabled td input").val() != "") {
+            noDisaggregationDisabled("I8101aDisabled", "I8101aEnabled")
+        }
+        if ($(".I8101bEnabled td input").val() != "") {
+            DisaggregationDisabled("I8101bDisabled", "I8101bEnabled")
+        }
+        if ($(".I8101bDisabled td input").val() != "") {
+            noDisaggregationDisabled("I8101bDisabled", "I8101bEnabled")
+        }
+
         // tier ii
 
         if ($(".II831Enabled td input").val() != "") {
@@ -938,11 +951,17 @@
         if ((($("#rrjMth4f11Z-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I912Disabled", "I912Enabled");
         }
-        if ((($("#D1xcT46JCVw-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I921Disabled", "I921Enabled");
+        if ($(".I921aEnabled td input").val() != "") {
+            DisaggregationDisabled("I921aDisabled", "I921aEnabled")
         }
-        if (($("#o8atQWjlEQ5-HllvX50cXC0-val").val() != "") || ($("#RiN9u844TAI-HllvX50cXC0-val").val() != "")) {
-            noDisaggregationDisabled("I921Disabled", "I921Enabled");
+        if ($(".I921aDisabled td input").val() != "") {
+            noDisaggregationDisabled("I921aDisabled", "I921aEnabled")
+        }
+        if ($(".I921bEnabled td input").val() != "") {
+            DisaggregationDisabled("I921bDisabled", "I921bEnabled")
+        }
+        if ($(".I921bDisabled td input").val() != "") {
+            noDisaggregationDisabled("I921bDisabled", "I921bEnabled")
         }
         if ((($("#sUHIdkbigKw-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I922Disabled", "I922Enabled");
@@ -1104,6 +1123,14 @@
         if ($(".II1211Disabled td input").val() != "") {
             noDisaggregationDisabled("II1211Disabled", "II1211Enabled")
         }
+
+        if ($(".I1222Enabled td input").val() != "") {
+            DisaggregationDisabled("I1222Disabled", "I1222Enabled")
+        }
+        if ($(".I1222Disabled td input").val() != "") {
+            noDisaggregationDisabled("I1222Disabled", "I1222Enabled")
+        }
+
         // tier iii
         if ($(".III1221Enabled td input").val() != "") {
             DisaggregationDisabled("III1221Disabled", "III1221Enabled")
@@ -1111,6 +1138,8 @@
         if ($(".III1221Disabled td input").val() != "") {
             noDisaggregationDisabled("III1221Disabled", "III1221Enabled")
         }
+
+
         // tier iii end
 
 
@@ -1622,7 +1651,7 @@
                     $('.sdg8NoHeader').hide();
                 }
                 if (($(this).val() == "I821") || ($(this).val() == "I842") || ($(this).val() == "I811") ||
-                    ($(this).val() == "I861") || ($(this).val() == "I8101") || ($(this).val() == "I8102") || ($(this).val() == "I8a1") || $(this).val() == "II831" || $(this).val() == "II851" || $(this).val() == "II871" || $(this).val() == "II881" || $(this).val() == "II891") {
+                    ($(this).val() == "I861") || ($(this).val() == "I8101") || ($(this).val() == "I8102") || ($(this).val() == "I8a1") || $(this).val() == "II831" || $(this).val() == "II851" || $(this).val() == "II871" || $(this).val() == "II881" || $(this).val() == "II891" || $(this).val() == "I8101a" || $(this).val() == "I8101b") {
                     $('.sdg8Header').hide();
                     $('.sdg8NoHeader').show();
                 }
@@ -2717,31 +2746,19 @@
                             <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
                         </tr>
                         <tr class="II3b1I II3b1IDisabled">
-                            <td>Percentage of surviving infants who received the 3 doses of diphtheria and tetanus toxoid with pertussis containing vaccine in a given year.</td>
-                            <td><input id="aQL8gQA3DeY-HllvX50cXC0-val" name="entryfield" title="SDG_3.b.1 (i)_II: Percentage of surviving infants who received the 3 doses of diphtheria and tetanus toxoid with pertussis containing vaccine in a given year."
-                                    value="[ SDG_3.b.1 (i)_II: Percentage of surviving infants who received the 3 doses of diphtheria and tetanus toxoid with pertussis containing vaccine in a given year. ]" />
-                            </td>
+                            <td colspan="2">Use &#39;No Disaggregation Tab&#39;</td>
                         </tr>
                         <tr class="II3b1II II3b1IIDisabled">
-                            <td>Percentage of children who received two dose of measles containing vaccine according to nationally recommended schedule through routine immunization services.</td>
-                            <td><input id="DMCU3R2M3vt-HllvX50cXC0-val" name="entryfield" title="SDG_3.b.1(ii)_II: Percentage of children who received two dose of measles containing vaccine according to nationally recommended schedule through routine immunization services."
-                                    value="[ SDG_3.b.1(ii)_II: Percentage of children who received two dose of measles containing vaccine according to nationally recommended schedule through routine immunization services. ]" />
-                            </td>
+                            <td colspan="2">Use &#39;No Disaggregation Tab&#39;</td>
                         </tr>
                         <tr class="II3b1III II3b1IIIDisabled">
-                            <td>Percentage of surviving infants who received the recommended doses of pneumococcal conjugate vaccine.</td>
-                            <td><input id="AfSwhq65emB-HllvX50cXC0-val" name="entryfield" title="SDG_3.b.1(iii)_II: Percentage of surviving infants who received the recommended doses of pneumococcal conjugate vaccine." value="[ SDG_3.b.1(iii)_II: Percentage of surviving infants who received the recommended doses of pneumococcal conjugate vaccine. ]"
-                                />
-                            </td>
+                            <td colspan="2">Use &#39;No Disaggregation Tab&#39;</td>
                         </tr>
                         <tr class="II3b1IV II3b1IVDisabled">
-                            <td>Percentage of 15 years old girls received the recommended doses of HPV vaccine.</td>
-                            <td><input id="xPqF66NHhAU-HllvX50cXC0-val" name="entryfield" title="SDG_3.b.1(iv)_II: Percentage of 15 years old girls received the recommended doses of HPV vaccine." value="[ SDG_3.b.1(iv)_II: Percentage of 15 years old girls received the recommended doses of HPV vaccine. ]"
-                                />
-                            </td>
+                            <td colspan="2">Use &#39;No Disaggregation Tab&#39;</td>
                         </tr>
                         <tr class="I3b2 I3b2Disabled">
-                            <td colspan="2">Use 'No Disaggregation Tab'</td>
+                            <td colspan="2">Use &#39;No Disaggregation Tab&#39;</td>
                         </tr>
                         <tr class="I3c1a">
                             <td>Number of physicians</td>
@@ -3971,8 +3988,8 @@
                             <td><input id="aXgQjzyBOHY-HllvX50cXC0-val" name="entryfield" title="SDG_6:Total number of local admin units in the country" value="[ SDG_6:Total number of local admin units in the country ]" /></td>
                         </tr>
                         <tr class="I651 I651Disabled">
-                            <td colspan="2">Use 'No Disaggregation Tab'
-                                <td>
+                            <td colspan="2">Use &#39;No Disaggregation Tab&#39;</td>
+                            <td>&nbsp;</td>
                         </tr>
                         <tr class="II611 II611Disabled">
                             <td>Population for whom drinking water is available AND has been tested as clean AND administrative bodies have acceptable standards of drinking water quality regulation
@@ -4007,7 +4024,8 @@
                         </tr>
                         <tr class="II641 II641Disabled">
                             <td>𝑊𝑈𝐸=𝐴𝑤𝑒&times;𝑃𝐴+𝑀𝑤𝑒&times;𝑃𝑀+𝑆𝑤𝑒&times;𝑃𝑆; where: WUE = Water use efficiency Awe = Irrigated agriculture water use efficiency [USD/m3] Mwe = MIMEC water use efficiency [USD/m3] Swe = Services water use efficiency
-                                [USD/m3] PA = Proportion of water used by the agricultural sector over the total use PM = Proportion of water used by the MIMEC sector over the total use PS = Proportion of water used by the service sector</td>
+                                [USD/m3] PA = Proportion of water used by the agricultural sector over the total use PM = Proportion of water used by the MIMEC sector over the total use PS = Proportion of water used by the service sector
+                            </td>
                             <td><input id="nrwxPCmBg0W-HllvX50cXC0-val" name="entryfield" title="SDG_6.4.1_II: 𝑊𝑈𝐸=𝐴𝑤𝑒×𝑃𝐴+𝑀𝑤𝑒×𝑃𝑀+𝑆𝑤𝑒×𝑃𝑆; where: WUE = Water use efficiency Awe = Irrigated agriculture water use efficiency [USD/m3] Mwe = MIMEC water use efficiency [USD/m3] Swe = Services water use efficiency [U"
                                     value="[ SDG_6.4.1_II: 𝑊𝑈𝐸=𝐴𝑤𝑒×𝑃𝐴+𝑀𝑤𝑒×𝑃𝑀+𝑆𝑤𝑒×𝑃𝑆; where: WUE = Water use efficiency Awe = Irrigated agriculture water use efficiency [USD/m3] Mwe = MIMEC water use efficiency [USD/m3] Swe = Services water use efficiency [U ]"
                                 />
@@ -4203,7 +4221,9 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                     and collective bargaining) based on International Labour Organization (ILO) textual sources and
                     national legislation, by sex and migrant status</option>
                 <option value="II891">8.9.1 Tourism direct GDP as a proportion of total GDP and in growth rate</option>
-                <option value="I8101">8.10.1 Commercial bank and ATMs presence (per 100,000)</option>
+                <!-- <option value="I8101">8.10.1 Commercial bank and ATMs presence (per 100,000)</option> -->
+                <option value="I8101a">8.10.1 (a) Commercial bank presence (per 100,000)</option>
+                <option value="I8101b">9.10.1 (b) ATMs presence (per 100,000)</option>
                 <option value="I8102">8.10.2 Bank account or mobile money service holders (% population)</option>
                 <option value="I8a1">8.a.1 Aid for Trade commitments and disbursements (in USD)</option>
             </select></div>
@@ -4247,9 +4267,20 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             <td>Proportion of youth</td>
                             <td><input id="qVkMsM6gB9n-HllvX50cXC0-val" name="entryfield" title="SDG_8:Proportion of youth	" value="[ SDG_8:Proportion of youth	 ]" /></td>
                         </tr>
-                        <tr class="I8101 I8101Enabled">
+                        <!-- <tr class="I8101 I8101Enabled">
                             <td>Commercial bank and ATMs presence (per 100,000)</td>
                             <td><input id="E8M2iiHaKLh-HllvX50cXC0-val" name="entryfield" title="SDG_8:Commercial bank and ATMs presence (per 100,000)	" value="[ SDG_8:Commercial bank and ATMs presence (per 100,000)	 ]" /></td>
+                        </tr> -->
+                        <tr class="I8101a I8101aEnabled">
+                            <td>Number of commercial bank branches per 100,000 adults</td>
+                            <td><input id="tHe9yv8aY5h-HllvX50cXC0-val" name="entryfield" title="SDG_8.10.1 (a) Number of commercial bank branches per 100,000 adults" value="[ SDG_8.10.1 (a) Number of commercial bank branches per 100,000 adults ]" />
+                            </td>
+                        </tr>
+                        <tr class="I8101a I8101aEnabled">
+                            <td>Number of automated teller machines (ATMs) per 100,000 adults</td>
+                            <td><input id="J72h8r9jPpi-HllvX50cXC0-val" name="entryfield" title="SDG_8.10.1 (b) Number of automated teller machines (ATMs) per 100,000 adults" value="[ SDG_8.10.1 (b) Number of automated teller machines (ATMs) per 100,000 adults ]"
+                                />
+                            </td>
                         </tr>
                         <tr class="I8102 I8102Enabled">
                             <td>Bank account or mobile money service holders (% population)</td>
@@ -4372,9 +4403,26 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             <td>Number of commerical bank branches</td>
                             <td><input id="tl6Qlw1d0FB-HllvX50cXC0-val" name="entryfield" title="SDG_8:Commerical bank branches/ATMs" value="[ SDG_8:Commerical bank branches/ATMs ]" /></td>
                         </tr>
-                        <tr class="I8101">
+                        <!-- <tr class="I8101">
                             <td>Number of adults (divided by 100,000)</td>
                             <td><input id="ReqlS094zxC-HllvX50cXC0-val" name="entryfield" title="SDG_8:Adults (divided by 100,000)" value="[ SDG_8:Adults (divided by 100,000) ]" /></td>
+                        </tr> -->
+                        <tr class="I8101a I810aDisabled">
+                            <td>Number of commerical bank branches</td>
+                            <td><input id="SsIsMjXcz7N-HllvX50cXC0-val" name="entryfield" title="SDG_8.10.1 (a) Number of commerical bank branches" value="[ SDG_8.10.1 (a) Number of commerical bank branches ]" /></td>
+                        </tr>
+                        <tr class="I8101a I810aDisabled">
+                            <td>Adult population</td>
+                            <td><input id="C3AVS5dvrvy-HllvX50cXC0-val" name="entryfield" title="SDG_8.10.1 (a) Adult Population" value="[ SDG_8.10.1 (a) Adult Population ]" /></td>
+                        </tr>
+                        <tr class="I8101b I8101bDisabed">
+                            <td>Number of ATMs</td>
+                            <td><input id="aHm5bD1MyC1-HllvX50cXC0-val" name="entryfield" title="SDG_8.10.1 (b): Number of ATMs" value="[ SDG_8.10.1 (b): Number of ATMs ]" />
+                            </td>
+                        </tr>
+                        <tr class="I8101b I8101bDisabed">
+                            <td>Adult population</td>
+                            <td><input id="o6Y3F8EcM1P-HllvX50cXC0-val" name="entryfield" title="SDG_8.10.1 (b): Adult Population" value="[ SDG_8.10.1 (b): Adult Population ]" /></td>
                         </tr>
                         <tr class="I8102">
                             <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
@@ -4474,7 +4522,9 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
         <div><select class="dropdown" id="indicatorLevel9" name="indicators">
                 <option disabled="disabled" selected="selected">Please select an indicator</option>
                 <option value="">9.1.2 Passenger and freight volumes</option>
-                <option value="I921">9.2.1 Proportion of manufacturing value added</option>
+                <!-- <option value="I921">9.2.1 Proportion of manufacturing value added</option> -->
+                <option value="I921a">9.2.1(a) Manufacturing value added as a proportion of GDP</option>
+                <option value="I921b">9.2.1(b) Manufacturing value added per capita</option>
                 <option value="I922">9.2.2 Manufacturing employment as a proportion of total employment</option>
                 <option value="II931">9.3.1 Proportion of small-scale industries in total industry value added</option>
                 <option value="II932">9.3.2 Proportion of small-scale industries with a loan or line of credit</option>
@@ -4508,9 +4558,19 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             <td>Passenger and freight volumes</td>
                             <td><input id="rrjMth4f11Z-HllvX50cXC0-val" name="entryfield" title="SDG_9:Sum of passenger &amp; freight vl. reported" value="[ SDG_9:Sum of passenger &amp; freight vl. reported ]" /></td>
                         </tr>
-                        <tr class="I921 I921Enabled">
+                        <!-- <tr class="I921 I921Enabled">
                             <td>Proportion of manufacturing value added</td>
-                            <td><input id="D1xcT46JCVw-HllvX50cXC0-val" name="entryfield" title="SDG_9:Proportion of manufacturing value added	" value="[ SDG_9:Proportion of manufacturing value added	 ]" /></td>
+                            <td><input id="D1xcT46JCVw-HllvX50cXC0-val" name="entryfield"
+                                    title="SDG_9:Proportion of manufacturing value added	"
+                                    value="[ SDG_9:Proportion of manufacturing value added	 ]" /></td>
+                        </tr> -->
+                        <tr class="I921a I921aEnabled">
+                            <td>Manufacturing value added as a proportion of GDP</td>
+                            <td><input id="TY9P4Xy0Sg6-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(a) Manufacturing value added as a proportion of GDP" value="[ SDG_9.2.1(a) Manufacturing value added as a proportion of GDP ]" /></td>
+                        </tr>
+                        <tr class="I921b I921bEnabled">
+                            <td>Manufacturing value added per capita</td>
+                            <td><input id="EtS9NYcVs7r-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(b) Manufacturing value added per capita" value="[ SDG_9.2.1(b) Manufacturing value added per capita ]" /></td>
                         </tr>
                         <tr class="I922 I922Enabled">
                             <td>Manufacturing employment as a proportion of total employment</td>
@@ -4573,13 +4633,29 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         <tr class="I912">
                             <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
                         </tr>
-                        <tr class="I921">
+                        <!-- <tr class="I921">
                             <td>Manufacturing value added</td>
                             <td><input id="o8atQWjlEQ5-HllvX50cXC0-val" name="entryfield" title="SDG_9:Manufacturing value added" value="[ SDG_9:Manufacturing value added ]" /></td>
                         </tr>
                         <tr class="I921">
                             <td>GDP</td>
                             <td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:731_GDP" value="[ SDG_7:731_GDP ]" /></td>
+                        </tr> -->
+                        <tr class="I921a I921aDisabled">
+                            <td>Manufacturing value added</td>
+                            <td><input id="ZjJ9TZKg0xJ-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(a) Manufacturing value added" value="[ SDG_9.2.1(a) Manufacturing value added ]" /></td>
+                        </tr>
+                        <tr class="I921a I921aDisabled">
+                            <td>GDP</td>
+                            <td><input id="ps2XShEkOMK-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(a) GDP" value="[ SDG_9.2.1(a) GDP ]" /></td>
+                        </tr>
+                        <tr class="I921b I921bDisabled">
+                            <td>Manufacturing value added</td>
+                            <td><input id="URzgmbFQia6-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(b) Manufacturing value added" value="[ SDG_9.2.1(b) Manufacturing value added ]" /></td>
+                        </tr>
+                        <tr class="I921b I921bDisabled">
+                            <td>GDP</td>
+                            <td><input id="Rm82yhsrphU-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(b) GDP" value="[ SDG_9.2.1(b) GDP ]" /></td>
                         </tr>
                         <tr class="I922">
                             <td>Total employment in manufacturing activities</td>
@@ -4991,7 +5067,9 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                     <tbody>
                         <tr class="I1222 I1222Enabled">
                             <td>12.2.2 Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP</td>
-                            <td><input type="text" /></td>
+                            <td><input id="jJfZBXyBuhg-HllvX50cXC0-val" name="entryfield" title="SDG_12.2.2 Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP" value="[ SDG_12.2.2 Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP ]"
+                                />
+                            </td>
                         </tr>
                         <tr class="II1211 II1211Enabled">
                             <td>Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies</td>
@@ -5020,17 +5098,16 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                     <tbody>
                         <tr class="I1222 I1222Disabled">
                             <td>Direct imports (IM) of material</td>
-                            <td><input type="text"></td>
+                            <td><input id="K2UVU2bGc0w-HllvX50cXC0-val" name="entryfield" title="SDG_12.2.2: Direct imports (IM) of material" value="[ SDG_12.2.2: Direct imports (IM) of material ]" /></td>
                         </tr>
-
                         <tr class="I1222 I1222Disabled">
                             <td>Domestic extraction (DE) of materials</td>
-                            <td><input type="text"></td>
+                            <td><input id="o1HLoEcJltl-HllvX50cXC0-val" name="entryfield" title="SDG_12.2.2 Domestic extraction (DE) of materials" value="[ SDG_12.2.2 Domestic extraction (DE) of materials ]" /></td>
                         </tr>
-
                         <tr class="I1222 I1222Disabled">
                             <td>Direct exports (EX) of materials measured in metric tonnes</td>
-                            <td><input type="text"></td>
+                            <td><input id="huaKSxcg37b-HllvX50cXC0-val" name="entryfield" title="SDG_12.2.2 Direct exports (EX) of materials measured in metric tonnes" value="[ SDG_12.2.2 Direct exports (EX) of materials measured in metric tonnes ]" />
+                            </td>
                         </tr>
                         <tr class="II1211 II1211Disabled">
                             <td colspan="2">Use &quot;No Disaggregation Tab&quot;</td>
@@ -5744,7 +5821,8 @@ imports of analogous species product units) ]" /></td>
                         </tr>
                         <tr class="II1622 II1622Disabled">
                             <td>Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected victims (methodology
-                                under development)</td>
+                                under development)
+                            </td>
                             <td><input id="C8gGTrrMdG6-HllvX50cXC0-val" name="entryfield" title="SDG_16.2.2_II:Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected vi"
                                     value="[ SDG_16.2.2_II:Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected vi ]"
                                 />
