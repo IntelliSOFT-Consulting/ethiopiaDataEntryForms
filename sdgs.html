@@ -198,24 +198,13 @@
 
         }
         //tier ii
-        /*if ((($("#iJ2uoRJ2kq5-HllvX50cXC0-val").val()) != "") || (($("#Pyu8SMBsSyY-HllvX50cXC0-val").val()) != "")) {
+
+
+        if ((($(".II331Enabled td input").val()) != "")) {
             DisaggregationDisabled("II331Disabled", "II331Enabled");
         }
-        if (($("#IemViZZdB8h-bJmK5mlfvQk-val").val() != "") || ($("#oaqoqo4luEa-bJmK5mlfvQk-val").val() != "") || ($("#cIVJ6dWpOe9-bJmK5mlfvQk-val").val() != "")) {
+        if (($(".II331Disabled td input").val() != "")) {
             noDisaggregationDisabled("II331Disabled", "II331Enabled");
-        }*/
-
-        if ((($(".II331IEnabled td input").val()) != "")) {
-            DisaggregationDisabled("II331IDisabled", "II331IEnabled");
-        }
-        if (($(".II331IDisabled td input").val() != "")) {
-            noDisaggregationDisabled("II331IDisabled", "II331IEnabled");
-        }
-        if ((($(".II331IIEnabled td input").val()) != "")) {
-            DisaggregationDisabled("II331IIDisabled", "II331IIEnabled");
-        }
-        if (($(".II331IIDisabled td input").val() != "")) {
-            noDisaggregationDisabled("II331IIDisabled", "II331IIEnabled");
         }
 
         if ((($(".II381Enabled td input").val()) != "")) {
@@ -1560,6 +1549,12 @@
                     $("#ii372Header").hide();
                     $("#ii331Header").hide();
                 } else */
+
+                $("#diseases").hide();
+                $("#no-diseases").hide();
+                $("#ii372Header").hide();
+                $("#ii331Header").hide()
+
                 if ($(this).val() == "II372") {
                     $("#diseases").hide();
                     $("#no-diseases").hide();
@@ -1620,12 +1615,22 @@
                     $('.sexDisagg').show();
                     $('.noDisagg').hide();
                     $(".locationDisagg").hide();
+                    $(".countryDisagg").hide();
+
 
                 } else if ($(this).val() == "II522") {
                     $(".sexDisagg").hide();
                     $(".noDisagg").hide();
+                    $(".countryDisagg").hide();
+
                     $(".locationDisagg").show();
+                } else if ($(this).val() == "II5c1") {
+                    $(".countryDisagg").show();
+                    $('.sexDisagg').hide();
+                    $(".locationDisagg").hide();
+                    $('.noDisagg').hide();
                 } else {
+                    $(".countryDisagg").hide();
                     $('.sexDisagg').hide();
                     $(".locationDisagg").hide();
                     $('.noDisagg').show();
@@ -1670,14 +1675,23 @@
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
 
-                if ($(this).val() == "I852") {
+                if ($(this).val() == "I852" || $(this).val() == "II881") {
                     $('.sdg8Header').show();
                     $('.sdg8NoHeader').hide();
+                    $(".sdg831Header").hide();
                 }
+
+                if ($(this).val() == "II831") {
+                    $('.sdg8Header').hide();
+                    $('.sdg8NoHeader').hide();
+                    $(".sdg831Header").show();
+                }
+
                 if (($(this).val() == "I821") || ($(this).val() == "I842") || ($(this).val() == "I811") ||
-                    ($(this).val() == "I861") || ($(this).val() == "I8101") || ($(this).val() == "I8102") || ($(this).val() == "I8a1") || $(this).val() == "II831" || $(this).val() == "II851" || $(this).val() == "II871" || $(this).val() == "II881" || $(this).val() == "II891" || $(this).val() == "I8101a" || $(this).val() == "I8101b") {
+                    ($(this).val() == "I861") || ($(this).val() == "I8101") || ($(this).val() == "I8102") || ($(this).val() == "I8a1") || $(this).val() == "II851" || $(this).val() == "II871" || $(this).val() == "II891" || $(this).val() == "I8101a" || $(this).val() == "I8101b") {
                     $('.sdg8Header').hide();
                     $('.sdg8NoHeader').show();
+                    $(".sdg831Header").hide();
                 }
             })
         });
@@ -1709,6 +1723,16 @@
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
+
+
+                if ($(this).val() == "II1121") {
+                    $(".11Header").show();
+                    $(".11NoHeader").hide();
+                } else {
+                    $(".11Header").hide();
+                    $(".11NoHeader").show();
+                }
+
             })
         });
         $(function() {
@@ -2099,17 +2123,17 @@
                         </tr>
                         <tr class="II151 II151Disabled">
                             <td>Number of deaths, missing persons and persons affected attributed to disasters</td>
-                            <td><input id="O7F9PcuM0eD.sLKRSW7xmwp-val" name="entryfield" title="SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters Female" type="text" value="[SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters Female]"
+                            <td><input id="ASTBz862Ehq-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population Female" value="[ SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population Female ]"
                                 />
                             </td>
-                            <td><input id="O7F9PcuM0eD.sJUGNYho7Ey-val" name="entryfield" title="SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters Male" type="text" value="[SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters Male]"
+                            <td><input id="ASTBz862Ehq-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population Male" value="[ SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population Male ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II151 II151Disabled">
                             <td>Total population</td>
-                            <td><input id="Cc8hzGkTDh2.sLKRSW7xmwp" name="entryfield" title="SDG_1.5.1_II: Total Population Female" type="text" value="[SDG_1.5.1_II: Total Population Female]" /></td>
-                            <td><input id="Cc8hzGkTDh2.sJUGNYho7Ey" name="entryfield" title="SDG_1.5.1_II: Total Population Female" type="text" value="[SDG_1.5.1_II: Total Population Female]" /></td>
+                            <td><input id="Cc8hzGkTDh2-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.5.1_II:Total population Female" value="[ SDG_1.5.1_II:Total population Female]" /></td>
+                            <td><input id="Cc8hzGkTDh2-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.5.1_II:Total population Male" value="[ SDG_1.5.1_II:Total population ale]" /></td>
                         </tr>
                         <!-- sdg 1 tier ii -->
                         <tr class="I121 I121Disabled">
@@ -2322,18 +2346,14 @@
                 <option value="I312">3.1.2 Proportion of births attended by skilled health personnel</option>
                 <option value="I321">3.2.1 Under-five mortality rate</option>
                 <option value="I322">3.2.2 Neonatal mortality rate</option>
-                <option value="II331I">3.3.1(i) Number of new HIV infections per 1,000 uninfected population, by all sex
-                    and all ages</option>
-                <option value="II331II">3.3.1(ii) Number of new HIV infections per 1,000 uninfected population, by both
-                    sex and 15 years and older</option>
+                <option value="II331">3.3.1 New HIV Infections (per 1,000 uninfected)</option>
                 <option value="I332">3.3.2 Tuberculosis incidence per 1,000 population</option>
                 <option value="I333">3.3.3 Malaria incidence per 1,000 population</option>
                 <option value="II334">3.3.4 Hepatitis B incidence (per 100,000)</option>
                 <option value="I335">3.3.5 Requiring intervention against NTDs</option>
                 <option value="I341">3.4.1 Death rate from NCDs (per 100,000)</option>
                 <option value="I342">3.4.2 Suicide mortality rate</option>
-                <option value="III351">3.5.1 Coverage of treatment interventions (pharmacological, psychosocial and
-                    rehabilitation and aftercare services) for substance use disorders</option>
+                <option value="III351">3.5.1 Coverage of treatment interventions</option>
                 <option value="I352">3.5.2 Alcoholic consumption (in liters)</option>
                 <option value="I361">3.6.1 Traffic deaths (per 100,000)</option>
                 <option value="I371">3.7.1 Family planning needs satisfied (%)</option>
@@ -2349,7 +2369,7 @@
                 <option value="II3b1I">3.b.1(i) Coverage of DTP containing vaccine (3rd dose)</option>
                 <option value="II3b1II">3.b.1(ii) Coverage of Measles containing vaccine (2nd dose)</option>
                 <option value="II3b1III">3.b.1(iii) Coverage of Pneumococcal conjugate vaccine (last dose in the
-                    schedule</option>
+                    schedule)</option>
                 <option value="II3b1IV">3.b.1(iv) Coverage of HPV vaccine (last dose in the schedule)</option>
                 <option value="I3b2">3.b.2 Total net official development assistance to medical research and basic
                     health sectors</option>
@@ -2394,16 +2414,10 @@
                             <td><input id="iCihpG4jRzH-HllvX50cXC0-val" name="entryfield" title="SDG_3:Neonatal mortality rate	" value="[ SDG_3:Neonatal mortality rate	 ]" />
                             </td>
                         </tr>
-                        <tr class="II331I II331IEnabled">
+                        <tr class="II331 II331Enabled">
                             <td>Number of new HIV infections per 1,000 uninfected population, by all sex and all ages
                             </td>
-                            <td><input id="iJ2uoRJ2kq5-HllvX50cXC0-val" name="entryfield" title="SDG_3.3.1_II: Number of new HIV infections per 1,000 uninfected population, by all sex and all age" value="[ SDG_3.3.1_II: Number of new HIV infections per 1,000 uninfected population, by all sex and all age ]"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="II331II II331IIEnabled">
-                            <td>Number of new HIV infections per 1,000 uninfected population, by both sex and 15 years and older</td>
-                            <td><input id="Pyu8SMBsSyY-HllvX50cXC0-val" name="entryfield" title="SDG_3.3.1_II: Number of new HIV infections per 1,000 uninfected population, by both sex and 15 years and older" value="[ SDG_3.3.1_II: Number of new HIV infections per 1,000 uninfected population, by both sex and 15 years and older ]"
+                            <td><input id="iZ7hv783Q05-HllvX50cXC0-val" name="entryfield" title="SDG_3.3.1: Number of new HIV infections per 1,000 uninfected population, by all sex and all ages" value="[ SDG_3.3.1: Number of new HIV infections per 1,000 uninfected population, by all sex and all ages ]"
                                 />
                             </td>
                         </tr>
@@ -2576,8 +2590,22 @@
                     </thead>
                     <thead id="ii331Header">
                         <tr class="tableHeader" style="background-color: #4C9F38 !important">
-                            <th colspan="2">3.3.1 Number of new HIV infections per 1,000 uninfected population, by all sex and all ages</th>
-                            <th colspan="2">3.3.1 Number of new HIV infections per 1,000 uninfected population, by both sex and 15 years and older</th>
+                            <th>&nbsp;</th>
+                            <th colspan="2">Age</th>
+                            <th colspan="2">Sex</th>
+                            <th colspan="5">Key Population</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#4C9F38 !important">
+                            <th>&nbsp;</th>
+                            <th>&lt;25</th>
+                            <th>+25</th>
+                            <th>Male</th>
+                            <th>Female</th>
+                            <th>Men who have sex with men</th>
+                            <th>Sex workers</th>
+                            <th>People who inject drugs</th>
+                            <th>Transgender people</th>
+                            <th>Prisoners</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2613,42 +2641,40 @@
                             <td>Number of live births</td>
                             <td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="SDG_3:321_Number of live births" value="[ SDG_3:321_Number of live births ]" /></td>
                         </tr>
-                        <tr class="II331I II331IDisabled">
-                            <td>Number of people who are newly infected (by sex, age ( &lt; 25, 25+ years), key population (men who have sex with men, sex workers, people who inject drugs, transgender people, prisoners)in a specific time period x 1000</td>
-                            <td><input id="IemViZZdB8h-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1_II : Number of people who are newly infected (by sex, age (&lt; 25, 25+ years), key population (men who have sex with men, sex workers, people who inject drugs, transgender people, prisoners)in a specific time period x 1000 No Disaggregation"
-                                    value="[ SDG_3.3.1_II : Number of people who are newly infected (by sex, age (&lt; 25, 25+ years), key population (men who have sex with men, sex workers, people who inject drugs, transgender people, prisoners)in a specific time period x 1000 No Dissaggregation ]"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="II331I II331IDisabled">
-                            <td>Total uninfected person-years of exposure</td>
-                            <td><input id="cIVJ6dWpOe9-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1_II:Total uninfected person-years of exposure No Dissaggregation" value="[ SDG_3.3.1_II:Total uninfected person-years of exposure No Dissaggregation ]"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="II331II II331IIDisabled">
-                            <td>Number of people (15 years and older) who are newly infected in a specific time period x 1000
-                            </td>
-                            <td><input id="oaqoqo4luEa-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1_II:Number of people (15 years and older) who are newly infected in a specific time period x 1000  No Dissaggregation" value="[ SDG_3.3.1_II:Number of people (15 years and older) who are newly infected in a specific time period x 1000  No Dissaggregation ]"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="II331II II331IIDisabled">
-                            <td>Total uninfected person-years of exposure</td>
-                            <td><input id="JmK3dHd0UvI-bJmK5mlfvQk-val" name="entryfield" title="SDG_3.3.1(ii)_Total uninfected person-years of exposure No Dissaggregation" value="[ SDG_3.3.1(ii)_Total uninfected person-years of exposure No Dissaggregation ]"
-                                />
-                            </td>
-                        </tr>
-                        <!-- 
                         <tr class="II331 II331Disabled">
-                            <td>Number of people (15 years and older) who are newly infected in a specific time period x 1000</td>
-                            <td><input id="oaqoqo4luEa-bJmK5mlfvQk-val" name="entryfield" title="" value=""
-                                /></td>
+                            <td>Number of people who are newly infected</td>
+                            <td><input id="ZbDhzDEUP4l-Yj666plLUsm-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected &lt;25" value="[ SDG_3.3.1: Number of people who are newly infected &lt;25 ]" /></td>
+                            <td><input id="ZbDhzDEUP4l-geV0GS9Fg9z-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected +25" value="[ SDG_3.3.1: Number of people who are newly infected +25 ]" /></td>
+                            <td><input id="ZbDhzDEUP4l-sJUGNYho7Ey-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected Male" value="[ SDG_3.3.1: Number of people who are newly infected Male ]" /></td>
+                            <td><input id="ZbDhzDEUP4l-sLKRSW7xmwp-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected Female" value="[ SDG_3.3.1: Number of people who are newly infected Female ]" /></td>
+                            <td><input id="ZbDhzDEUP4l-U4ijqcMNltY-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected Men who have sex with men" value="[ SDG_3.3.1: Number of people who are newly infected Men who have sex with men ]"
+                                />
+                            </td>
+                            <td><input id="ZbDhzDEUP4l-FTkGfOSKzH4-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected Sex workers" value="[ SDG_3.3.1: Number of people who are newly infected Sex workers ]" /></td>
+                            <td><input id="ZbDhzDEUP4l-NpsqiM3gmGZ-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected People who inject drugs" value="[ SDG_3.3.1: Number of people who are newly infected People who inject drugs ]"
+                                />
+                            </td>
+                            <td><input id="ZbDhzDEUP4l-jA1UZk4LsMq-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected Transgender people" value="[ SDG_3.3.1: Number of people who are newly infected Transgender people ]" />
+                            </td>
+                            <td><input id="ZbDhzDEUP4l-hKZlCUP9HHk-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected Prisoners" value="[ SDG_3.3.1: Number of people who are newly infected Prisoners ]" /></td>
                         </tr>
                         <tr class="II331 II331Disabled">
                             <td>Total uninfected person-years of exposure</td>
-                            <td><input id="K10M0TiP5Id-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total uninfected person-years of expsure" value="[ SDG_3:Total uninfected person-years of expsure ]"/></td>
-                        </tr> -->
+                            <td><input id="N14ZAt5js3h-Yj666plLUsm-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure &lt;25" value="[ SDG_3.3.1: total uninfected person-years of exposure &lt;25 ]" /></td>
+                            <td><input id="N14ZAt5js3h-geV0GS9Fg9z-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure +25" value="[ SDG_3.3.1: total uninfected person-years of exposure +25 ]" /></td>
+                            <td><input id="N14ZAt5js3h-sJUGNYho7Ey-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Male" value="[ SDG_3.3.1: total uninfected person-years of exposure Male ]" /></td>
+                            <td><input id="N14ZAt5js3h-sLKRSW7xmwp-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Female" value="[ SDG_3.3.1: total uninfected person-years of exposure Female ]" /></td>
+                            <td><input id="N14ZAt5js3h-U4ijqcMNltY-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Men who have sex with men" value="[ SDG_3.3.1: total uninfected person-years of exposure Men who have sex with men ]"
+                                />
+                            </td>
+                            <td><input id="N14ZAt5js3h-FTkGfOSKzH4-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Sex workers" value="[ SDG_3.3.1: total uninfected person-years of exposure Sex workers ]" /></td>
+                            <td><input id="N14ZAt5js3h-NpsqiM3gmGZ-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure People who inject drugs" value="[ SDG_3.3.1: total uninfected person-years of exposure People who inject drugs ]"
+                                />
+                            </td>
+                            <td><input id="N14ZAt5js3h-jA1UZk4LsMq-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Transgender people" value="[ SDG_3.3.1: total uninfected person-years of exposure Transgender people ]" />
+                            </td>
+                            <td><input id="N14ZAt5js3h-hKZlCUP9HHk-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Prisoners" value="[ SDG_3.3.1: total uninfected person-years of exposure Prisoners ]" /></td>
+                        </tr>
                         <tr class="I332 I332Disabled">
                             <td>Number of new and relapse TB cases arising in a specified time period</td>
                             <td><input id="mH9XBhoW1Cf-HllvX50cXC0-val" name="entryfield" title="SDG_3:New and relapse TB cases" value="[ SDG_3:New and relapse TB cases ]" />
@@ -2765,12 +2791,20 @@
                         </tr>
                         <!--                    tier ii -->
                         <tr class="II372-1 II372-1Disabled">
+                            <td colspan="2">Adolescent birth rate (aged 10-14 years) per 1,000 women in that age group
+                            </td>
+                        </tr>
+                        <tr class="II372-1 II372-1Disabled">
                             <td>Number of live births to women aged 10-14</td>
                             <td><input id="SEFh0NstvUS-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Number of live births to women aged 10-14" value="[ SDG_3.7.2_II:Number of live births to women aged 10-14 ]" /></td>
                         </tr>
                         <tr class="II372-1 II372-1Disabled">
                             <td>Exposure to childbearing by women aged 10-14 years</td>
                             <td><input id="oNP8xYKgM9j-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years" value="[ SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years ]" /></td>
+                        </tr>
+                        <tr class="II372-2 II372-2Disabled">
+                            <td colspan="2">Adolescent birth rate (aged 15-19 years) per 1,000 women in that age group
+                            </td>
                         </tr>
                         <tr class="II372-2 II372-2Disabled">
                             <td>Number of live births to women aged 15-19</td>
@@ -2922,48 +2956,34 @@
                 <option value="I451b">4.5.1 Gender Parity Index - Secondary Education Enrollment</option>
                 <option value="II461-1">4.6.1 Proficiency in literacy (%)</option>
                 <option value="II461-2">4.6.1 Proficiency in numeracy (%)</option>
-                <!-- <option value="II4a1">4.a.1 Build and upgrade education facilities that are child, disability and gender
-                    sensitive and provide safe, non-violent, inclusive and effective learning environments for all
-                </option> -->
-                <option value="II4a1-1">4.a.1 Proportion of primary schools with access to&nbsp;electricity</option>
-                <option value="II4a1-2">4.a.1 Proportion of primary schools with access to the Internet for pedagogical
-                    purposes</option>
-                <option value="II4a1-3">4.a.1 Proportion of primary schools with access to computers for pedagogical
-                    purposes</option>
-                <option value="II4a1-4">4.a.1 Proportion of primary schools with access to adapted infrastructure and
-                    materials for students with disabilities</option>
-                <option value="II4a1-5">4.a.1 Proportion of primary schools with access to basic drinking water</option>
-                <option value="II4a1-6">4.a.1 Proportion of primary schools with access to single-sex basic sanitation
-                    facilities</option>
-                <option value="II4a1-7">4.a.1 Proportion of primary schools with access to basic handwashing facilities
-                    (as per the WASH indicator definitions)</option>
-                <option value="II4a1-8">4.a.1 Proportion of lower secondary schools with access to electricity</option>
-                <option value="II4a1-9">4.a.1 Proportion of lower secondary schools with access to the Internet for
-                    pedagogical purposes</option>
-                <option value="II4a1-10">4.a.1 Proportion of lower secondary schools with access to computers for
-                    pedagogical purposes</option>
-                <option value="II4a1-11">4.a.1 Proportion of lower secondary schools with access to adapted
-                    infrastructure and materials for students with disabilities</option>
-                <option value="II4a1-12">4.a.1 Proportion of lower secondary schools with access to basic drinking water
+
+
+
+                <option value="II4a1-1">4.a.1 Primary schools with electricity (%)</option>
+                <option value="II4a1-2">4.a.1 Primary schools with internet (%)</option>
+                <option value="II4a1-3">4.a.1 Primary schools with computers (%)</option>
+                <option value="II4a1-4">4.a.1 Primary schools with adapted disability infrastructure and materials (%)
                 </option>
-                <option value="II4a1-13">4.a.1 Proportion of lower secondary schools with access to single-sex basic
-                    sanitation facilities</option>
-                <option value="II4a1-14">4.a.1 Proportion of lower secondary schools with access to basic handwashing
-                    facilities (as per the WASH indicator definitions)</option>
-                <option value="II4a1-15">4.a.1 Proportion of upper secondary schools with access to&nbsp;electricity
-                </option>
-                <option value="II4a1-16">4.a.1 Proportion of upper secondary schools with access to the Internet for
-                    pedagogical purposes</option>
-                <option value="II4a1-17">4.a.1 Proportion of upper secondary schools with access to computers for
-                    pedagogical purposes</option>
-                <option value="II4a1-18">4.a.1 Proportion of upper secondary schools with access to adapted
-                    infrastructure and materials for students with disabilities</option>
-                <option value="II4a1-19">4.a.1 Proportion of upper secondary schools with access to basic drinking water
-                </option>
-                <option value="II4a1-20">4.a.1 Proportion of upper secondary schools with access to single-sex basic
-                    sanitation facilities</option>
-                <option value="II4a1-21">4.a.1 Proportion of upper secondary schools with access to basic handwashing
-                    facilities (as per the WASH indicator definitions)</option>
+                <option value="II4a1-5">4.a.1 Primary schools with basic drinking water (%)</option>
+                <option value="II4a1-6">4.a.1 Primary schools with single-sex bathrooms (%)</option>
+                <option value="II4a1-7">4.a.1 Primary schools with basic handwashing facilities (%)</option>
+                <option value="II4a1-8">4.a.1 Lower secondary schools with electricity (%)</option>
+                <option value="II4a1-9">4.a.1 Lower secondary schools with internet (%)</option>
+                <option value="II4a1-10">4.a.1 Lower secondary schools with computers (%)</option>
+                <option value="II4a1-11">4.a.1 Lower secondary schools with adapted disability infrastructure and
+                    materials (%)</option>
+                <option value="II4a1-12">4.a.1 Lower secondary schools with basic drinking water (%)</option>
+                <option value="II4a1-13">4.a.1 Lower secondary schools with single-sex bathrooms (%)</option>
+                <option value="II4a1-14">4.a.1 Lower secondary schools with basic handwashing facilities (%)</option>
+                <option value="II4a1-15">4.a.1 Upper secondary schools with electricity (%)</option>
+                <option value="II4a1-16">4.a.1 Upper secondary schools with internet (%)</option>
+                <option value="II4a1-17">4.a.1 Upper secondary schools with computers (%)</option>
+                <option value="II4a1-18">4.a.1 Upper secondary schools with adapted disability infrastructure and
+                    materials (%)</option>
+                <option value="II4a1-19">4.a.1 Upper secondary schools with basic drinking water (%)</option>
+                <option value="II4a1-20">4.a.1 Upper secondary schools with single-sex bathrooms (%)</option>
+                <option value="II4a1-21">4.a.1 Upper secondary schools with basic handwashing facilities (%)</option>
+
                 <option value="I4b1">4.b.1 Total ODA for scholarships (in USD)</option>
                 <option value="II4c1-1">4.c.1 Trained pre-primary teachers (%)</option>
                 <option value="II4c1-2">4.c.1 Trained primary teachers (%)</option>
@@ -3236,41 +3256,41 @@
                             <td><input id="xAzxJEyieEZ-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Female" value="[ SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Female]"
                                 />
                             </td>
-                            <td><input id="xAzxJEyieEZ-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Male" value="[ SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Male]"
+                            <td><input id="xAzxJEyieEZ-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Male" value="[ SDG_4.1.1b(i)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in reading Female]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411bI II411bIDisabled">
                             <td>All children and young people at the end of primary education</td>
-                            <td><input id="eSB3CFkazsJ-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(i)_II: All children and young people at the end of primary education Female" value="[ SDG_4.1.1b(i)_II: All children and young people at the end of primary education Female]"
+                            <td><input id="eSB3CFkazsJ-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(i)_II: All children and young people at the end of primary education Female" value="[ SDG_4.1.1b(i)_II: All children and young people at the end of primary education Female ]"
                                 />
                             </td>
-                            <td><input id="eSB3CFkazsJ-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(i)_II: All children and young people at the end of primary education Male" value="[ SDG_4.1.1b(i)_II: All children and young people at the end of primary education Male]"
+                            <td><input id="eSB3CFkazsJ-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(i)_II: All children and young people at the end of primary education Male" value="[ SDG_4.1.1b(i)_II: All children and young people at the end of primary education Male ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411bII II411bIIDisabled">
                             <td>Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics</td>
                             <td><input id="XmGmheSJErW-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Female"
-                                    value="[ SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Female]" />
+                                    value="[ SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Female ]" />
                             </td>
-                            <td><input id="XmGmheSJErW-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Male" value="[ SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Male]"
+                            <td><input id="XmGmheSJErW-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Male" value="[ SDG_4.1.1b(ii)_II:Number of children and young people at the end of primary education achieving or exceeding minimum proficiency level in mathematics Male ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411bII II411bIIDisabled">
                             <td>All children and young people at the end of primary education</td>
-                            <td><input id="PP9DV45BSTo-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Female" value="[ SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Female]"
+                            <td><input id="PP9DV45BSTo-sLKRSW7xmwp-val" name="entryfield" title="SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Female" value="[ SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Female ]"
                                 />
                             </td>
-                            <td><input id="PP9DV45BSTo-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Male" value="[ SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Male]"
+                            <td><input id="PP9DV45BSTo-sJUGNYho7Ey-val" name="entryfield" title="SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Male" value="[ SDG_4.1.1b(ii)_II: All children and young people at the end of primary education Male ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411cI II411cIDisabled">
                             <td>Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in reading</td>
-                            <td><input id="WWVZ23AKEMs-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1c(i)_II:Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in reading" value="[ SDG_4.1.1c(i)_II:Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in reading ]"
-                                />
+                            <td><input id="WWVZ23AKEMs-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1c(i)_II:Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in reading Female"
+                                    value="[ SDG_4.1.1c(i)_II:Number of children and young people at the end of lower secondary education achieving or exceeding minimum proficiency level in reading Female]" />
                             </td>
                         </tr>
                         <tr class="II411cI II411cIDisabled">
@@ -3757,6 +3777,9 @@
                             <th rowspan="2">&nbsp;</th>
                             <th class="sexDisagg" colspan="2">Sex</th>
                             <th class="locationDisagg" colspan="2">Geographical Location</th>
+                            <th class="countryDisagg">Number of countries that fully meet requirements</th>
+                            <th class="countryDisagg">Number of countries that approach requirements</th>
+                            <th class="countryDisagg">Number of countries that do not meet requirement</th>
                             <th class="noDisagg">Value</th>
                         </tr>
                         <tr class="tableHeader" style="background-color:#FF3A21 !important;">
@@ -3768,27 +3791,23 @@
                     </thead>
                     <tbody>
                         <tr class="II521 II521Disabled">
-                            <td colspan="2">[Number of ever-partnered women and girls (aged 15+) who experienced 1) PHYSICAL VIOLENCE; 2) SEXUAL VIOLENCE; 3) PHYSICAL AND/OR SEXUAL VIOLENCE; 4) PSYCHOLOGICAL VIOLENCE by a current or former intimate partner in the previous
-                                12 months]</td>
-                        </tr>
-                        <tr class="II521">
                             <td>Physical Violence</td>
                             <td><input id="jYrXBXPPb0Q-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Physical Violence" value="[ SDG_5.2.1_II: Physical Violence ]" /></td>
                         </tr>
-                        <tr class="II521">
+                        <tr class="II521 II521Disabled">
                             <td>Sexual Violence</td>
                             <td><input id="mOas6mHCEvK-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Sexual Violence" value="[ SDG_5.2.1_II: Sexual Violence ]" />
                             </td>
                         </tr>
-                        <tr class="II521">
+                        <tr class="II521 II521Disabled">
                             <td>Psychological Violence</td>
                             <td><input id="OqfcKJ0zRrr-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Psychological Violence" value="[ SDG_5.2.1_II: Psychological Violence ]" /></td>
                         </tr>
-                        <tr class="II521">
+                        <tr class="II521 II521Disabled">
                             <td>Any form of physical and/or sexual violence</td>
                             <td><input id="zMSYzbOWYSg-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Any form of physical and/or sexual violence" value="[ SDG_5.2.1_II: Any form of physical and/or sexual violence ]" /></td>
                         </tr>
-                        <tr class="II521">
+                        <tr class="II521 II521Disabled">
                             <td>Any form of physical, sexual and/or psychological violence</td>
                             <td><input id="lZNKqTqFFig-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.1_II: Any form of physical, sexual and/or psychological violence" value="[ SDG_5.2.1_II: Any form of physical, sexual and/or psychological violence ]"
                                 />
@@ -3801,22 +3820,18 @@
                         </tr>
                         <tr class="II522 II522Disabled">
                             <td>Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months</td>
-                            <td><input id="QHnGxyUmBrZ-iEgy3xKqVi5-val" name="entryfield" title="SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months Rural"
-                                    value="[ SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months Rural ]" />
+                            <td><input id="QHnGxyUmBrZ-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months"
+                                    value="[ SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months ]" />
                             </td>
-                            <td><input id="QHnGxyUmBrZ-r8hBd63qzn4-val" name="entryfield" title="SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months Urban"
-                                    value="[ SDG_5.2.2_II: Number of women and girls aged 15 years and above who experience sexual violence by persons other than an intimate partner in the previous 12 months Urban]" />
-                            </td>
+                            <td>&nbsp;</td>
                         </tr>
                         <tr class="II522 II522Disabled">
                             <td>number of women and girls aged 15 years and above in the population multiplied by 100
                             </td>
-                            <td><input id="YlM81C9I2I3-iEgy3xKqVi5-val" name="entryfield" title="SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 Rural" value="[ SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 Rural]"
+                            <td><input id="YlM81C9I2I3-HllvX50cXC0-val" name="entryfield" title="SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100" value="[ SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 ]"
                                 />
                             </td>
-                            <td><input id="YlM81C9I2I3-r8hBd63qzn4-val" name="entryfield" title="SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 Urban" value="[ SDG_5.2.2_II: number of women and girls aged 15 years and above in the population multiplied by 100 Urban]"
-                                />
-                            </td>
+                            <td>&nbsp;</td>
                         </tr>
                         <tr class="II531-1 II531-1Disabled">
                             <td>Number of women aged 20-24 who were first married or in union before age 15</td>
@@ -3851,28 +3866,30 @@
                         </tr>
                         <tr class="II541 II541Disabled">
                             <td>Daily average number of hours spent on unpaid domestic work</td>
-                            <td><input id="RybzJbwFbgd-sLKRSW7xmwp-val" name="entryfield" title="SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work Female" value="[ SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work Female ]"
+                            <td><input id="RybzJbwFbgd-sLKRSW7xmwp-val" name="entryfield" title="SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work, disaggregated by sex Female" value="[ SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work, disaggregated by sex Female ]"
                                 />
                             </td>
-                            <td><input id="RybzJbwFbgd-sJUGNYho7Ey-val" name="entryfield" title="SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work Male" value="[ SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work Male ]"
+                            <td><input id="RybzJbwFbgd-sJUGNYho7Ey-val" name="entryfield" title="SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work, disaggregated by sex Male" value="[ SDG_5.4.1_II: Daily average number of hours spent on unpaid domestic work, disaggregated by sex Male ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II541 II541Disabled">
                             <td colspan="3">24 Hours</td>
-
                         </tr>
                         <tr class="I551a I551aDisabled">
                             <td>Number of seats held by women members in single or lower chambers of national parliaments
                             </td>
-                            <td><input id="q534i5qtxG2-sLKRSW7xmwp-val" name="entryfield" title="SDG_5:Seats held by women members in parliaments Female" value="[ SDG_5:Seats held by women members in parliaments Female ]" /></td>
-                            <td><input id="q534i5qtxG2-sJUGNYho7Ey-val" name="entryfield" title="SDG_5:Seats held by women members in parliaments Male " value="[ SDG_5:Seats held by women members in parliaments Male]" /></td>
+                            <td><input id="q534i5qtxG2-sLKRSW7xmwp-val" name="entryfield" title="Number of seats held by women members in single or lower chambers of national parliaments Female" value="[ Number of seats held by women members in single or lower chambers of national parliaments Female]"
+                                />
+                            </td>
+                            <td><input id="q534i5qtxG2-sJUGNYho7Ey-val" name="entryfield" title="Number of seats held by women members in single or lower chambers of national parliaments Male" value="[ Number of seats held by women members in single or lower chambers of national parliaments Male]"
+                                />
+                            </td>
                         </tr>
                         <tr class="I551a I551aDisabled">
                             <td>Total number of seats</td>
-                            <td><input id="UTKJklNQim3-sLKRSW7xmwp-val" name="entryfield" title="SDG_5:Total number of seats" value="[ SDG_5:Total number of seats Female ]" /></td>
-                            <td><input id="UTKJklNQim3-sJUGNYho7Ey-val" name="entryfield" title="SDG_5:Total number of seats" value="[ SDG_5:Total number of seats Male ]" />
-                            </td>
+                            <td><input id="UTKJklNQim3-sLKRSW7xmwp-val" name="entryfield" title="Total number of seats Female" value="[ Total number of seats Female]" /></td>
+                            <td><input id="UTKJklNQim3-sJUGNYho7Ey-val" name="entryfield" title="Total number of seats Male" value="[ Total number of seats Male]" /></td>
                         </tr>
                         <!-- <tr class="I552">
                             <td>Women employed in ISCO-08 category 1</td>
@@ -3934,20 +3951,28 @@
                             <td><input id="pTOpNf6zkTv-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Total population Male" value="[ SDG_1:Total population Male ]" /></td>
                         </tr>
                         <tr class="II5c1 II5c1Disabled">
-                            <td>Number of countries that fully meet requirements</td>
-                            <td><input id="Zs4JLsi1joQ-HllvX50cXC0-val" name="entryfield" title="SDG_5.c.1_II:Number of countries that fully meet requirements" value="[ SDG_5.c.1_II:Number of countries that fully meet requirements ]" /></td>
-                        </tr>
-                        <tr class="II5c1 II5c1Disabled">
-                            <td>Number of countries that approach requirements</td>
-                            <td><input id="Abm7Ue8Od8o-HllvX50cXC0-val" name="entryfield" title="SDG_5.c.1_II:Number of countries that approach requirements" value="[ SDG_5.c.1_II:Number of countries that approach requirements ]" /></td>
-                        </tr>
-                        <tr class="II5c1 II5c1Disabled">
-                            <td>Number of countries that do not meet requirements</td>
-                            <td><input id="xjNdcCiy8cu-HllvX50cXC0-val" name="entryfield" title="SDG_5.c.1_II:Number of countries that do not meet requirements" value="[ SDG_5.c.1_II:Number of countries that do not meet requirements ]" /></td>
+                            <td>Country has systems to track and make public allocations for gender equality and women&rsquo;s empowerment</td>
+                            <td><input id="XBeCjaxia6C-EEjN7kSQtjO-val" name="entryfield" title="SDG_5.c.1_II: Country has systems to track and make public allocations for gender equality and women’s empowerment Number of countries that fully meet requirements"
+                                    value="[ SDG_5.c.1_II: Country has systems to track and make public allocations for gender equality and women’s empowerment Number of countries that fully meet requirements ]" />
+                            </td>
+                            <td><input id="XBeCjaxia6C-RMnUabjbBk5-val" name="entryfield" title="SDG_5.c.1_II: Country has systems to track and make public allocations for gender equality and women’s empowerment Number of countries that approach requirements"
+                                    value="[ SDG_5.c.1_II: Country has systems to track and make public allocations for gender equality and women’s empowerment Number of countries that approach requirements ]" />
+                            </td>
+                            <td><input id="XBeCjaxia6C-hlqY80jxCy1-val" name="entryfield" title="SDG_5.c.1_II: Country has systems to track and make public allocations for gender equality and women’s empowerment Number of countries that do not meet requirements"
+                                    value="[ SDG_5.c.1_II: Country has systems to track and make public allocations for gender equality and women’s empowerment Number of countries that do not meet requirements ]" />
+                            </td>
                         </tr>
                         <tr class="II5c1 II5c1Disabled">
                             <td>Total number of countries</td>
-                            <td><input id="glJWvm2OCAW-HllvX50cXC0-val" name="entryfield" title="SDG_5.c.1_II:Total number of countries" value="[ SDG_5.c.1_II:Total number of countries ]" /></td>
+                            <td><input id="Js0GN7K1cGx-EEjN7kSQtjO-val" name="entryfield" title="SDG_5.c.1_II: Total number of countries Number of countries that fully meet requirements" value="[ SDG_5.c.1_II: Total number of countries Number of countries that fully meet requirements ]"
+                                />
+                            </td>
+                            <td><input id="Js0GN7K1cGx-RMnUabjbBk5-val" name="entryfield" title="SDG_5.c.1_II: Total number of countries Number of countries that approach requirements" value="[ SDG_5.c.1_II: Total number of countries Number of countries that approach requirements ]"
+                                />
+                            </td>
+                            <td><input id="Js0GN7K1cGx-hlqY80jxCy1-val" name="entryfield" title="SDG_5.c.1_II: Total number of countries Number of countries that do not meet requirements" value="[ SDG_5.c.1_II: Total number of countries Number of countries that do not meet requirements ]"
+                                />
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -4162,8 +4187,7 @@
                             <td><input id="fVTaPqRVnXi-HllvX50cXC0-val" name="entryfield" title="SDG_6.3.2_II: total number of assessed water bodies" value="[ SDG_6.3.2_II: total number of assessed water bodies ]" /></td>
                         </tr>
                         <tr class="II661 II661Disabled">
-                            <td>Compounded 5 methodologies of Change in extend of water-related ecosystems</td>
-                            <td><input type="text" /></td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
                     </tbody>
                 </table>
@@ -4179,7 +4203,7 @@
 
         <div><select class="dropdown" id="indicatorLevel7" name="indicators">
                 <option disabled="disabled" selected="selected">Please select an indicator</option>
-                <option value="">7.1.1 Access to electricity (% population)</option>
+                <option value="I711">7.1.1 Access to electricity (% population)</option>
                 <option value="I712">7.1.2 Access to clean energy (% population)</option>
                 <option value="I721">7.2.1 Renewable energy consumption</option>
                 <option value="I731">7.3.1 Energy intensity</option>
@@ -4203,7 +4227,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="Enabled">
+                        <tr class="I711 I711Enabled">
                             <td>access to electricity (% population)</td>
                             <td><input id="EvxREEMoa5E-HllvX50cXC0-val" name="entryfield" title="SDG_7:Access to electricity (% population)	" value="[ SDG_7:Access to electricity (% population)	 ]" /></td>
                         </tr>
@@ -4283,11 +4307,23 @@
                             <td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:731_GDP" value="[ SDG_7:731_GDP ]" /></td>
                         </tr>
                         <tr class="II7a1 II7a1Disabled">
-                            <td>Total official flows (ODA and OOF) from DAC member countries, multilateral organisations and other providers + (total public investment flows from IRENA&rsquo;s Public Renewable Energy Investment Database - domestic financial
-                                flows; international flows to countries outside developing regions; and flows reported by OECD) in USD</td>
-                            <td><input id="S7m8qcN11Iw-HllvX50cXC0-val" name="entryfield" title="SDG_7.a.1_II:total official flows (ODA and OOF) from DAC member countries, multilateral organisations and other providers + (total public investment flows from
-IRENA’s Public Renewable Energy Investment Database - domestic financi" value="[ SDG_7.a.1_II:total official flows (ODA and OOF) from DAC member countries, multilateral organisations and other providers + (total public investment flows from
-IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></td>
+                            <td>Total official flows (ODA and OOF) from DAC member countries, multilateral organisations and other providers</td>
+                            <td><input id="AZRPvjQuGkY-HllvX50cXC0-val" name="entryfield" title="SDG_7.a.1_II: Total official flows (ODA and OOF) from DAC member countries, multilateral organisations and other providers" value="[ SDG_7.a.1_II: Total official flows (ODA and OOF) from DAC member countries, multilateral organisations and other providers ]"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="II7a1 II7a1Disabled">
+                            <td>total public investment flows from IRENA&rsquo;s Public Renewable Energy Investment Database
+                            </td>
+                            <td><input id="GmwCM1oGkST-HllvX50cXC0-val" name="entryfield" title="SDG_7.a.1_II: total public investment flows from IRENA’s Public Renewable Energy Investment Database" value="[ SDG_7.a.1_II: total public investment flows from IRENA’s Public Renewable Energy Investment Database ]"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="II7a1 II7a1Disabled">
+                            <td>domestic financial flows; international flows to countries outside developing regions; and flows reported by OECD in USD</td>
+                            <td><input id="zYGWKi526H5-HllvX50cXC0-val" name="entryfield" title="SDG_7.a.1_II: domestic financial flows; international flows to countries outside developing regions; and flows reported by OECD in USD" value="[ SDG_7.a.1_II: domestic financial flows; international flows to countries outside developing regions; and flows reported by OECD in USD ]"
+                                />
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -4318,7 +4354,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                 <option value="II891">8.9.1 Tourism share and growth ( % GDP)</option>
                 <!-- <option value="I8101">8.10.1 Commercial bank and ATMs presence (per 100,000)</option> -->
                 <option value="I8101a">8.10.1 (a) Commercial bank presence (per 100,000)</option>
-                <option value="I8101b">9.10.1 (b) ATMs presence (per 100,000)</option>
+                <option value="I8101b">8.10.1 (b) ATMs presence (per 100,000)</option>
                 <option value="I8102">8.10.2 Bank account or mobile money service holders (% population)</option>
                 <option value="I8a1">8.a.1 Aid for Trade commitments and disbursements (in USD)</option>
             </select></div>
@@ -4364,14 +4400,14 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <!-- <tr class="I8101 I8101Enabled">
                             <td>Commercial bank and ATMs presence (per 100,000)</td>
-                            <td><input id="E8M2iiHaKLh-HllvX50cXC0-val" name="entryfield" title="SDG_8:Commercial bank and ATMs presence (per 100,000)	" value="[ SDG_8:Commercial bank and ATMs presence (per 100,000)	 ]" /></td>
+                            <td><input id="E8M2iiHaKLh-HllvX50cXC0-val" name="entryfield" title="SDG_8:Commercial bank and ATMs presence (per 100,000)	" value="[ SDG_8:Commercial bank and ATMs presence (per 100,000)	 ]"/></td>
                         </tr> -->
                         <tr class="I8101a I8101aEnabled">
                             <td>Number of commercial bank branches per 100,000 adults</td>
                             <td><input id="tHe9yv8aY5h-HllvX50cXC0-val" name="entryfield" title="SDG_8.10.1 (a) Number of commercial bank branches per 100,000 adults" value="[ SDG_8.10.1 (a) Number of commercial bank branches per 100,000 adults ]" />
                             </td>
                         </tr>
-                        <tr class="I8101a I8101aEnabled">
+                        <tr class="I8101b I8101bEnabled">
                             <td>Number of automated teller machines (ATMs) per 100,000 adults</td>
                             <td><input id="J72h8r9jPpi-HllvX50cXC0-val" name="entryfield" title="SDG_8.10.1 (b) Number of automated teller machines (ATMs) per 100,000 adults" value="[ SDG_8.10.1 (b) Number of automated teller machines (ATMs) per 100,000 adults ]"
                                 />
@@ -4441,11 +4477,21 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         <tr class="tableHeader" style="background-color:#A21942 !important;">
                             <th rowspan="2">&nbsp;</th>
                             <th class="sdg8Header" colspan="2">Sex</th>
+                            <th class="sdg831Header" colspan="2">Sex</th>
+                            <th class="sdg831Header" colspan="2">Employment Statistics</th>
+                            <th class="sdg831Header" colspan="3">Economic activity</th>
                             <th class="sdg8NoHeader">Value</th>
                         </tr>
                         <tr class="tableHeader" style="background-color:#A21942 !important;">
                             <th class="sdg8Header">Female</th>
                             <th class="sdg8Header">Male</th>
+                            <th class="sdg831Header">Male</th>
+                            <th class="sdg831Header">Female</th>
+                            <th class="sdg831Header">Formal</th>
+                            <th class="sdg831Header">Informal</th>
+                            <th class="sdg831Header">Agriculture</th>
+                            <th class="sdg831Header">Industry</th>
+                            <th class="sdg831Header">Services</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -4488,11 +4534,14 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <tr class="I861">
                             <td>Youth not in education, employed or training</td>
-                            <td><input id="dAbyaqzPFQu-HllvX50cXC0-val" name="entryfield" title="SDG_8:Youth not in education, employed or training" value="[ SDG_8:Youth not in education, employed or training ]" /></td>
+                            <td><input id="dAbyaqzPFQu-HllvX50cXC0-val" name="entryfield" title="SDG_8:Youth – Youth in employment – Youth not in employment but in education or training" value="[ SDG_8:Youth – Youth in employment – Youth not in employment but in education or training ]"
+                                />
+                            </td>
                         </tr>
                         <tr class="I861">
                             <td>Youth Population (15-24)</td>
-                            <td><input id="isVafLZvrzO-HllvX50cXC0-val" name="entryfield" title="SDG_8:Youth population" value="[ SDG_8:Youth population ]" /></td>
+                            <td><input id="isVafLZvrzO-HllvX50cXC0-val" name="entryfield" title="SDG_8:Youth population (15-24)" value="[ SDG_8:Youth population (15-24) ]" />
+                            </td>
                         </tr>
                         <tr class="I8101">
                             <td>Number of commerical bank branches</td>
@@ -4500,7 +4549,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <!-- <tr class="I8101">
                             <td>Number of adults (divided by 100,000)</td>
-                            <td><input id="ReqlS094zxC-HllvX50cXC0-val" name="entryfield" title="SDG_8:Adults (divided by 100,000)" value="[ SDG_8:Adults (divided by 100,000) ]" /></td>
+                            <td><input id="ReqlS094zxC-HllvX50cXC0-val" name="entryfield" title="SDG_8:Adults (divided by 100,000)" value="[ SDG_8:Adults (divided by 100,000) ]"/></td>
                         </tr> -->
                         <tr class="I8101a I810aDisabled">
                             <td>Number of commerical bank branches</td>
@@ -4528,25 +4577,59 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         <!-- tier ii begine -->
                         <tr class="II831 II831Disabled">
                             <td>Informal employment in non-agricultural activities by sex</td>
-                            <td><input id="iteJJVDLbcg-bJmK5mlfvQk-val" name="entryfield" title="SDG_8.3.1_II: Informal employment in non-agricultural activities by sex No Dissaggregation" value="[ SDG_8.3.1_II: Informal employment in non-agricultural activities by sex No Dissaggregation ]"
+                            <td><input id="iteJJVDLbcg-sJUGNYho7Ey-val" name="entryfield" title="SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Male" value="[ SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Male ]"
+                                />
+                            </td>
+                            <td><input id="iteJJVDLbcg-sLKRSW7xmwp-val" name="entryfield" title="SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Female" value="[ SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Female ]"
+                                />
+                            </td>
+                            <td><input id="iteJJVDLbcg-CGGQjEhsUwi-val" name="entryfield" title="SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Formal" value="[ SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Formal ]"
+                                />
+                            </td>
+                            <td><input id="iteJJVDLbcg-irVhxNqYdDx-val" name="entryfield" title="SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Informal" value="[ SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Informal ]"
+                                />
+                            </td>
+                            <td><input id="iteJJVDLbcg-th9sQrICU62-val" name="entryfield" title="SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Agriculture" value="[ SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Agriculture ]"
+                                />
+                            </td>
+                            <td><input id="iteJJVDLbcg-SOdaqCbXVHH-val" name="entryfield" title="SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Industry" value="[ SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Industry ]"
+                                />
+                            </td>
+                            <td><input id="iteJJVDLbcg-ON7ixdcUpIg-val" name="entryfield" title="SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Services" value="[ SDG_8.3.1_II: Informal employment in non-agricultural activities by sex Services ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II831 II831Disabled">
                             <td>Total employment in non-agricultural activities by sex</td>
-                            <td><input id="ayGIIEGSUnm-bJmK5mlfvQk-val" name="entryfield" title="SDG_8.3.1_II: Total employment in non-agricultural activities by sex No Dissaggregation" value="[ SDG_8.3.1_II: Total employment in non-agricultural activities by sex No Dissaggregation ]"
+                            <td><input id="ayGIIEGSUnm-sJUGNYho7Ey-val" name="entryfield" title="SDG_8.3.1_II: Total employment in non-agricultural activities by sex Male" value="[ SDG_8.3.1_II: Total employment in non-agricultural activities by sex Male ]"
                                 />
                             </td>
-                        </tr>
-                        <tr class="II851 II851Disabled">
-                            <td>Average hourly earnings of Men - Average hourly earnings of Women</td>
-                            <td><input id="CxJfY3Nbbi2-HllvX50cXC0-val" name="entryfield" title="SDG_8.5.1_II: Average hourly earnings of Men - Average hourly earnings of Women" value="[ SDG_8.5.1_II: Average hourly earnings of Men - Average hourly earnings of Women ]"
+                            <td><input id="ayGIIEGSUnm-sLKRSW7xmwp-val" name="entryfield" title="SDG_8.3.1_II: Total employment in non-agricultural activities by sex Female" value="[ SDG_8.3.1_II: Total employment in non-agricultural activities by sex Female ]"
+                                />
+                            </td>
+                            <td><input id="ayGIIEGSUnm-CGGQjEhsUwi-val" name="entryfield" title="SDG_8.3.1_II: Total employment in non-agricultural activities by sex Formal" value="[ SDG_8.3.1_II: Total employment in non-agricultural activities by sex Formal ]"
+                                />
+                            </td>
+                            <td><input id="ayGIIEGSUnm-irVhxNqYdDx-val" name="entryfield" title="SDG_8.3.1_II: Total employment in non-agricultural activities by sex Informal" value="[ SDG_8.3.1_II: Total employment in non-agricultural activities by sex Informal ]"
+                                />
+                            </td>
+                            <td><input id="ayGIIEGSUnm-th9sQrICU62-val" name="entryfield" title="SDG_8.3.1_II: Total employment in non-agricultural activities by sex Agriculture" value="[ SDG_8.3.1_II: Total employment in non-agricultural activities by sex Agriculture ]"
+                                />
+                            </td>
+                            <td><input id="ayGIIEGSUnm-SOdaqCbXVHH-val" name="entryfield" title="SDG_8.3.1_II: Total employment in non-agricultural activities by sex Industry" value="[ SDG_8.3.1_II: Total employment in non-agricultural activities by sex Industry ]"
+                                />
+                            </td>
+                            <td><input id="ayGIIEGSUnm-ON7ixdcUpIg-val" name="entryfield" title="SDG_8.3.1_II: Total employment in non-agricultural activities by sex Services" value="[ SDG_8.3.1_II: Total employment in non-agricultural activities by sex Services ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II851 II851Disabled">
                             <td>Average hourly earnings of Men</td>
-                            <td><input id="LYumUgoCaAf-HllvX50cXC0-val" name="entryfield" title="SDG_8.5.1_II: Average hourly earnings of Men" value="[ SDG_8.5.1_II: Average hourly earnings of Men ]" /></td>
+                            <td><input id="CxJfY3Nbbi2-HllvX50cXC0-val" name="entryfield" title="SDG_8.5.1_II: Average hourly earnings of Men" value="[ SDG_8.5.1_II: Average hourly earnings of Men ]" /></td>
+                        </tr>
+                        <tr class="II851 II851Disabled">
+                            <td>Average hourly earnings of Women</td>
+                            <td><input id="LYumUgoCaAf-HllvX50cXC0-val" name="entryfield" title="SDG_8.5.1_II: Average hourly earnings of Women" value="[ SDG_8.5.1_II: Average hourly earnings of Women ]" /></td>
                         </tr>
                         <tr class="II871 II871Disabled">
                             <td>Number of children aged 5-17 reported child labour during the week prior to the survey
@@ -4556,22 +4639,25 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             </td>
                         </tr>
                         <tr class="II871 II871Disabled">
-                            <td>Total number of children aged 15-17 in the population</td>
-                            <td><input id="XUfWGTRKO8w-bJmK5mlfvQk-val" name="entryfield" title="SDG_8.7.1_II:Total number of children aged 15-17 in the population No Dissaggregation" value="[ SDG_8.7.1_II:Total number of children aged 15-17 in the population No Dissaggregation ]"
+                            <td>Total number of children aged 5-17 in the population</td>
+                            <td><input id="XUfWGTRKO8w-bJmK5mlfvQk-val" name="entryfield" title="SDG_8.7.1_II:Total number of children aged 5-17 in the population No Dissaggregation" value="[ SDG_8.7.1_II:Total number of children aged 5-17 in the population No Dissaggregation ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II881 II881Disabled">
-                            <td>number of new cases of fatal injury during the reference year, disaggregated by sex and migrant status</td>
-                            <td><input id="CpC2Hda55Hr-bJmK5mlfvQk-val" name="entryfield" title="SDG_8.8.1_II: number of new cases of fatal injury during the reference year, disaggregated by sex and migrant status No Dissaggregation" value="[ SDG_8.8.1_II: number of new cases of fatal injury during the reference year, disaggregated by sex and migrant status No Dissaggregation ]"
+                            <td>number of new cases of fatal injury during the reference year</td>
+                            <td><input id="CpC2Hda55Hr-sLKRSW7xmwp-val" name="entryfield" title="SDG_8.8.1_II: number of new cases of fatal injury during the reference year Female" value="[ SDG_8.8.1_II: number of new cases of fatal injury during the reference year Female ]"
+                                />
+                            </td>
+                            <td><input id="CpC2Hda55Hr-sJUGNYho7Ey-val" name="entryfield" title="SDG_8.8.1_II: number of new cases of fatal injury during the reference year Male" value="[ SDG_8.8.1_II: number of new cases of fatal injury during the reference year Male ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II881 II881Disabled">
-                            <td>Average number of workers during the reference year disaggregated by sex and migrant status
+                            <td>Total employment in non-agricultural activities</td>
+                            <td><input id="Aoj0WrsgHyn-sLKRSW7xmwp-val" name="entryfield" title="SDG_8.8.1_II: Total employment in non-agricultural activities Female" value="[ SDG_8.8.1_II: Total employment in non-agricultural activities Female ]" />
                             </td>
-                            <td><input id="Aoj0WrsgHyn-bJmK5mlfvQk-val" name="entryfield" title="SDG_8.8.1_II: Average number of workers during the reference year disaggregated by sex and migrant status No Dissaggregation" value="[ SDG_8.8.1_II: Average number of workers during the reference year disaggregated by sex and migrant status No Dissaggregation ]"
-                                />
+                            <td><input id="Aoj0WrsgHyn-sJUGNYho7Ey-val" name="entryfield" title="SDG_8.8.1_II: Total employment in non-agricultural activities Male" value="[ SDG_8.8.1_II: Total employment in non-agricultural activities Male ]" />
                             </td>
                         </tr>
                         <tr class="II891 II891Disabled">
@@ -4595,10 +4681,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             <td><input id="TEyLb8KeVw6-HllvX50cXC0-val" name="entryfield" title="SDG_8.4.1_III: Raw material for export" value="[ SDG_8.4.1_III: Raw material for export ]" /></td>
                         </tr>
                         <tr class="III882 III882Disabled">
-                            <td>Scores are assigned based on coding of freedom of association and collective bargaining rights violations in ILO textual sources according to the 108 evaluation criteria</td>
-                            <td><input id="AEONgwMcGFP-HllvX50cXC0-val" name="entryfield" title="SDG_8.8.2_III: Scores are assigned based on coding of freedom of association and collective bargaining rights violations in ILO textual sources according to the 108 evaluation criteria"
-                                    value="[ SDG_8.8.2_III: Scores are assigned based on coding of freedom of association and collective bargaining rights violations in ILO textual sources according to the 108 evaluation criteria ]" />
-                            </td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
                         <!-- tier ii end -->
                     </tbody>
@@ -4656,8 +4739,8 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         <!-- <tr class="I921 I921Enabled">
                             <td>Proportion of manufacturing value added</td>
                             <td><input id="D1xcT46JCVw-HllvX50cXC0-val" name="entryfield"
-                                    title="SDG_9:Proportion of manufacturing value added	"
-                                    value="[ SDG_9:Proportion of manufacturing value added	 ]" /></td>
+                                    title=""
+                                    value="" /></td>
                         </tr> -->
                         <tr class="I921a I921aEnabled">
                             <td>Manufacturing value added as a proportion of GDP</td>
@@ -4683,7 +4766,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <tr class="I952 I952Enabled">
                             <td>Researchers in full-time equivalent per million inhabitants</td>
-                            <td><input id="y39BBEAsVXl-HllvX50cXC0-val" name="entryfield" title="SDG_9:Researchers (in full-time equivalent) per million inhabitants	" value="[ SDG_9:Researchers (in full-time equivalent) per million inhabitants	 ]" />
+                            <td><input id="y39BBEAsVXl-HllvX50cXC0-val" name="entryfield" title="SDG_9:Researchers in full-time equivalent per million inhabitants	" value="[ SDG_9:Researchers in full-time equivalent per million inhabitants	 ]" />
                             </td>
                         </tr>
                         <tr class="I9a1 I9a1Enabled">
@@ -4730,11 +4813,11 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <!-- <tr class="I921">
                             <td>Manufacturing value added</td>
-                            <td><input id="o8atQWjlEQ5-HllvX50cXC0-val" name="entryfield" title="SDG_9:Manufacturing value added" value="[ SDG_9:Manufacturing value added ]" /></td>
+                            <td><input id="o8atQWjlEQ5-HllvX50cXC0-val" name="entryfield" title="SDG_9:Manufacturing value added" value="[ SDG_9:Manufacturing value added ]"/></td>
                         </tr>
                         <tr class="I921">
                             <td>GDP</td>
-                            <td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:731_GDP" value="[ SDG_7:731_GDP ]" /></td>
+                            <td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:731_GDP" value="[ SDG_7:731_GDP ]"/></td>
                         </tr> -->
                         <tr class="I921a I921aDisabled">
                             <td>Manufacturing value added</td>
@@ -4749,8 +4832,9 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             <td><input id="URzgmbFQia6-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(b) Manufacturing value added" value="[ SDG_9.2.1(b) Manufacturing value added ]" /></td>
                         </tr>
                         <tr class="I921b I921bDisabled">
-                            <td>GDP</td>
-                            <td><input id="Rm82yhsrphU-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(b) GDP" value="[ SDG_9.2.1(b) GDP ]" /></td>
+                            <td>Total Population</td>
+                            <td><input id="Rm82yhsrphU-HllvX50cXC0-val" name="entryfield" title="SDG_9.2.1(b) Total Population" value="[ SDG_9.2.1(b) Total Population ]" />
+                            </td>
                         </tr>
                         <tr class="I922">
                             <td>Total employment in manufacturing activities</td>
@@ -4766,7 +4850,8 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <tr class="I941">
                             <td>Total manufacturing value added (en dollars constants de 2010)</td>
-                            <td><input id="grluc6vgaSM-HllvX50cXC0-val" name="entryfield" title="SDG_9:Total manufacturing value added (USD)" value="[ SDG_9:Total manufacturing value added (USD) ]" /></td>
+                            <td><input id="grluc6vgaSM-HllvX50cXC0-val" name="entryfield" title="SDG_9:Total manufacturing value added (en dollars constants de 2010)" value="[ SDG_9:Total manufacturing value added (en dollars constants de 2010) ]" />
+                            </td>
                         </tr>
                         <tr class="I951">
                             <td>Amount of Research and development (R&amp;D) expenditure</td>
@@ -4778,7 +4863,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <tr class="I952">
                             <td>Researchers in full-time equivalent</td>
-                            <td><input id="CXnbOm2RZE1-HllvX50cXC0-val" name="entryfield" title="SDG_9:Researchers (in full-time equivalent)" value="[ SDG_9:Researchers (in full-time equivalent) ]" /></td>
+                            <td><input id="CXnbOm2RZE1-HllvX50cXC0-val" name="entryfield" title="SDG_9:Researchers in full-time equivalent" value="[ SDG_9:Researchers in full-time equivalent ]" /></td>
                         </tr>
                         <tr class="I952">
                             <td>Population divided by one million</td>
@@ -5039,8 +5124,19 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#FD9D24 !important;">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th class="11NoHeader">Value</th>
+                            <th class="11Header" colspan="2">Sex</th>
+                            <th class="11Header" colspan="2">Age</th>
+                            <th class="11Header" colspan="2">Disability</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#FD9D24 !important;">
+                            <th class="11Header">Male</th>
+                            <th class="11Header">Female</th>
+                            <th class="11Header">&lt;18</th>
+                            <th class="11Header">+18</th>
+                            <th class="11Header">Disability</th>
+                            <th class="11Header">No Disability</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -5067,13 +5163,32 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <tr class="II1121 II1121Disabled">
                             <td>Population with convenient access to public transport</td>
-                            <td><input id="pdPOsfQXESt-bJmK5mlfvQk-val" name="entryfield" title="SDG_11.2.1_II:Population with convenient access to public transport No Dissaggregation" value="[ SDG_11.2.1_II:Population with convenient access to public transport No Dissaggregation ]"
+                            <td><input id="pdPOsfQXESt-sJUGNYho7Ey-val" name="entryfield" title="SDG_11.2.1_II:Population with convenient access to public transport Male" value="[ SDG_11.2.1_II:Population with convenient access to public transport Male ]"
+                                />
+                            </td>
+                            <td><input id="pdPOsfQXESt-sLKRSW7xmwp-val" name="entryfield" title="SDG_11.2.1_II:Population with convenient access to public transport Female" value="[ SDG_11.2.1_II:Population with convenient access to public transport Female ]"
+                                />
+                            </td>
+                            <td><input id="pdPOsfQXESt-TDfadLUCEdm-val" name="entryfield" title="SDG_11.2.1_II:Population with convenient access to public transport &lt;18" value="[ SDG_11.2.1_II:Population with convenient access to public transport &lt;18 ]"
+                                />
+                            </td>
+                            <td><input id="pdPOsfQXESt-Er5dCmduDun-val" name="entryfield" title="SDG_11.2.1_II:Population with convenient access to public transport +18" value="[ SDG_11.2.1_II:Population with convenient access to public transport +18 ]" />
+                            </td>
+                            <td><input id="pdPOsfQXESt-yMrprYAGvBW-val" name="entryfield" title="SDG_11.2.1_II:Population with convenient access to public transport Disability" value="[ SDG_11.2.1_II:Population with convenient access to public transport Disability ]"
+                                />
+                            </td>
+                            <td><input id="pdPOsfQXESt-Ergn2fy4ktG-val" name="entryfield" title="SDG_11.2.1_II:Population with convenient access to public transport No Disability" value="[ SDG_11.2.1_II:Population with convenient access to public transport No Disability ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II1121 II1121Disabled">
                             <td>Total city population</td>
-                            <td><input id="joMJzDHiGvR-bJmK5mlfvQk-val" name="entryfield" title="SDG_11.2.1_II:Total city population No Dissaggregation" value="[ SDG_11.2.1_II:Total city population No Dissaggregation ]" /></td>
+                            <td><input id="joMJzDHiGvR-sJUGNYho7Ey-val" name="entryfield" title="SDG_11.2.1_II:Total city population Male" value="[ SDG_11.2.1_II:Total city population Male ]" /></td>
+                            <td><input id="joMJzDHiGvR-sLKRSW7xmwp-val" name="entryfield" title="SDG_11.2.1_II:Total city population Female" value="[ SDG_11.2.1_II:Total city population Female ]" /></td>
+                            <td><input id="joMJzDHiGvR-TDfadLUCEdm-val" name="entryfield" title="SDG_11.2.1_II:Total city population &lt;18" value="[ SDG_11.2.1_II:Total city population &lt;18 ]" /></td>
+                            <td><input id="joMJzDHiGvR-Er5dCmduDun-val" name="entryfield" title="SDG_11.2.1_II:Total city population +18" value="[ SDG_11.2.1_II:Total city population +18 ]" /></td>
+                            <td><input id="joMJzDHiGvR-yMrprYAGvBW-val" name="entryfield" title="SDG_11.2.1_II:Total city population Disability" value="[ SDG_11.2.1_II:Total city population Disability ]" /></td>
+                            <td><input id="joMJzDHiGvR-Ergn2fy4ktG-val" name="entryfield" title="SDG_11.2.1_II:Total city population No Disability" value="[ SDG_11.2.1_II:Total city population No Disability ]" /></td>
                         </tr>
                         <tr class="II1131 II1131Disabled">
                             <td>Land consumption rate</td>
@@ -5106,10 +5221,12 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             <td><input id="ntWGrkQ3Zov-HllvX50cXC0-val" name="entryfield" title="SDG_11.6.1_II:Total municipal solid waste generated by the city" value="[ SDG_11.6.1_II:Total municipal solid waste generated by the city ]" /></td>
                         </tr>
                         <tr class="III1171 III1171Disabled">
-                            <td>Total surface of open public space + total surface of land allocated to streets</td>
-                            <td><input id="rGn1b3jkUuC-HllvX50cXC0-val" name="entryfield" title="SDG_11.7.1_III: Total surface of open public space + total surface of land allocated to streets" value="[ SDG_11.7.1_III: Total surface of open public space + total surface of land allocated to streets ]"
-                                />
-                            </td>
+                            <td>Total surface of open public space</td>
+                            <td><input id="rGn1b3jkUuC-HllvX50cXC0-val" name="entryfield" title="SDG_11.7.1_III: Total surface of open public space" value="[ SDG_11.7.1_III: Total surface of open public space ]" /></td>
+                        </tr>
+                        <tr class="III1171 III1171Disabled">
+                            <td>Total surface of land allocated to streets</td>
+                            <td><input id="kSuwnZESbRK-HllvX50cXC0-val" name="entryfield" title="SDG_11.7.1_III: Total surface of land allocated to streets" type="text" value="[ SDG_11.7.1_III: Total surface of land allocated to streets ]" /></td>
                         </tr>
                         <tr class="III1171 III1171Disabled">
                             <td>Total surface of built up area of the urban agglomeration</td>
@@ -5291,11 +5408,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             </td>
                         </tr>
                         <tr class="III1321 III1321Disabled">
-                            <td>stock assessment that uses fish catch statistics, fishing effort data and biological information and fit the data to a population dynamics model, then compared to calculated maximum sustainable yield</td>
-                            <td><input id="Sr8yiALLQV3-HllvX50cXC0-val" name="entryfield" title="SDG_13.2.1_III: stock assessment that uses fish catch statistics, fishing effort data and biological information and fit the data to a population dynamics model, then compared to calculated maximum sustainable yield"
-                                    value="[ SDG_13.2.1_III: stock assessment that uses fish catch statistics, fishing effort data and biological information and fit the data to a population dynamics model, then compared to calculated maximum sustainable yield ]"
-                                />
-                            </td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
                     </tbody>
                 </table>
@@ -5378,22 +5491,20 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         <tr class="I1451">
                             <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
                         </tr>
-                        <tr class="II14a1 II14a1Disabled">
+                        <!-- <tr class="II14a1 II14a1Disabled">
                             <td>Data will be compiled via country questionnaire, coutry databases, and possibly joint surveys and compilations between the national agency and an international entity</td>
                             <td><input id="J4QxUO8aqcr-HllvX50cXC0-val" name="entryfield" title="SDG_14.a.1_II:Data will be compiled via country questionnaire, country databases, and possibly joint surveys and compilations between the national agency and an international entity"
-                                    value="[ SDG_14.a.1_II:Data will be compiled via country questionnaire, country databases, and possibly joint surveys and compilations between the national agency and an international entity ]" />
-                            </td>
+                                    value="[ SDG_14.a.1_II:Data will be compiled via country questionnaire, country databases, and possibly joint surveys and compilations between the national agency and an international entity ]" /></td>
                         </tr>
                         <tr class="II14a1 II14a1Disabled">
                             <td>Total population</td>
                             <td><input id="T7SajtoCcWa-bJmK5mlfvQk-val" name="entryfield" title="SDG_14.a.1_II Total Populatoin No Dissaggregation" value="[ SDG_14.a.1_II Total Populatoin No Dissaggregation ]" /></td>
+                        </tr> -->
+                        <tr class="II14a1 II14a1Disabled">
+                            <td colspan="2">Use &#39;No Disaggregation Tab&#39;</td>
                         </tr>
                         <tr class="III14c1 III14c1Disabled">
-                            <td>The number of countries that have ratified the ILO Maritime Labour Convention of 2006
-                            </td>
-                            <td><input id="LPO01DjfNgH-HllvX50cXC0-val" name="entryfield" title="SDG_14.c.1_III: The number of countries that have ratified the ILO Maritime Labour Convention of 2006" value="[ SDG_14.c.1_III: The number of countries that have ratified the ILO Maritime Labour Convention of 2006 ]"
-                                />
-                            </td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
                     </tbody>
                 </table>
@@ -5426,7 +5537,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                 <option value="II1581">15.8.1 Legislation and resourcing for invasive alien species prevention</option>
                 <option value="III1591">15.9.1 Aichi Biodiversity Target 2 progress</option>
                 <option value="I15a1">15.a.1 Public expenditure on conservation (in USD)</option>
-                <option value="III15a1">15.a.1 Public expenditure on conservation</option>
+
                 <option value="III15b1">15.b.1 Public expenditure on conservation</option>
                 <option value="II15c1">15.c.1 Proportion of traded wildlife that was poached or illicitly trafficked
                 </option>
@@ -5465,7 +5576,7 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                         </tr>
                         <tr class="I1541 I1541Enabled">
                             <td>Protection of mountain biodiversity sites (%)</td>
-                            <td><input id="lsR89zdhpE7-HllvX50cXC0-val" name="entryfield" title="SDG_15:Protection of mountain biodiversity sites" value="[ SDG_15:Protection of mountain biodiversity sites ]" /></td>
+                            <td><input id="lsR89zdhpE7-HllvX50cXC0-val" name="entryfield" title="SDG_15:Protection of mountain biodiversity sites (%)" value="[ SDG_15:Protection of mountain biodiversity sites (%) ]" /></td>
                         </tr>
                         <tr class="I1542 I1542Enabled">
                             <td>Mountain Green Cover Index</td>
@@ -5591,18 +5702,13 @@ IRENA’s Public Renewable Energy Investment Database - domestic financi ]" /></
                             </td>
                         </tr>
                         <tr class="II1571 II1571Disabled">
-                            <td>&quot;Illegal trade + legal trade (weighted average of prices declared for legal imports of analogous species product units)&quot;</td>
-                            <td><input id="eBK4nat88tP-HllvX50cXC0-val" name="entryfield" title="SDG_15.7.1_II:Illegal trade + legal trade (weighted average of prices declared for legal
-imports of analogous species product units)" value="[ SDG_15.7.1_II:Illegal trade + legal trade (weighted average of prices declared for legal
-imports of analogous species product units) ]" /></td>
-                        </tr>
-                        <tr class="II1581 II1581Disabled">
-                            <td>15.8.1. c) number of national respondents to the annual survey on invasive alien species response financing reporting availability of sufficient resources, divided by the total number of countries (79 to date) for which data
-                                are available</td>
-                            <td><input id="zEfkcp1vYvB-HllvX50cXC0-val" name="entryfield" title="SDG_15.8.1.(c)_II:number of national respondents to the annual survey on invasive alien species response financing reporting availability of sufficient resources, divided by the total number of countries (79 to date) for which dat"
-                                    value="[ SDG_15.8.1.(c)_II:number of national respondents to the annual survey on invasive alien species response financing reporting availability of sufficient resources, divided by the total number of countries (79 to date) for which dat ]"
+                            <td>Legal trade (weighted average of prices declared for legal imports of analogous species product units)</td>
+                            <td><input id="eBK4nat88tP-HllvX50cXC0-val" name="entryfield" title="SDG_15.7.1_II:Legal trade (weighted average of prices declared for legal imports of analogous species product units)" value="[ SDG_15.7.1_II:Legal trade (weighted average of prices declared for legal imports of analogous species product units) ]"
                                 />
                             </td>
+                        </tr>
+                        <tr class="II1581 II1581Disabled">
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
                         <tr class="II15c1 II15c1Disabled">
                             <td>Illegal trade: sum of all species-product units documented in the World WISE seizure database times the species-product unit prices</td>
@@ -5611,9 +5717,8 @@ imports of analogous species product units) ]" /></td>
                             </td>
                         </tr>
                         <tr class="II15c1 II15c1Disabled">
-                            <td>Illegal trade + legal trade (sum of all species-product units documented in CITES export permits)
-                            </td>
-                            <td><input id="Tr4QHr2VRi7-HllvX50cXC0-val" name="entryfield" title="SDG_15.c.1_II:Illegal trade + legal trade (sum of all species-product units documented in CITES export permits)" value="[ SDG_15.c.1_II:Illegal trade + legal trade (sum of all species-product units documented in CITES export permits) ]"
+                            <td>legal trade (sum of all species-product units documented in CITES export permits)</td>
+                            <td><input id="Tr4QHr2VRi7-HllvX50cXC0-val" name="entryfield" title="SDG_15.c.1_II:legal trade (sum of all species-product units documented in CITES export permits)" value="[ SDG_15.c.1_II:legal trade (sum of all species-product units documented in CITES export permits) ]"
                                 />
                             </td>
                         </tr>
@@ -5627,10 +5732,8 @@ imports of analogous species product units) ]" /></td>
                             </td>
                         </tr>
                         <tr class="III15b1 III15b1Disabled">
-                            <td>The sum of ODA flows from all donors to developing countries that have biodiversity as a principal or significant objective.</td>
-                            <td><input id="mQBYpupryLq-HllvX50cXC0-val" name="entryfield" title="SDG_15.b.1_III: The sum of ODA flows from all donors to developing countries that have biodiversity as a principal or significant objective." value="[ SDG_15.b.1_III: The sum of ODA flows from all donors to developing countries that have biodiversity as a principal or significant objective. ]"
-                                />
-                            </td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
+
                         </tr>
                     </tbody>
                 </table>
@@ -5692,7 +5795,7 @@ imports of analogous species product units) ]" /></td>
                         </tr>
                         <tr class="I1632 I1632Enabled">
                             <td>Unsentenced detainees as a proportion of overall prison population (%)</td>
-                            <td><input id="EsW7jXi2mNg-HllvX50cXC0-val" name="entryfield" title="SDG_16:Unsentenced detainees as a proportion of overall prison population	" value="[ SDG_16:Unsentenced detainees as a proportion of overall prison population	 ]"
+                            <td><input id="EsW7jXi2mNg-HllvX50cXC0-val" name="entryfield" title="SDG_16:Unsentenced detainees as a proportion of overall prison population	(%)" value="[ SDG_16:Unsentenced detainees as a proportion of overall prison population	(%) ]"
                                 />
                             </td>
                         </tr>
@@ -5798,7 +5901,7 @@ imports of analogous species product units) ]" /></td>
                 </table>
             </div>
 
-            <div class="tabcontent2" id="Disagg16"><input type="text" />
+            <div class="tabcontent2" id="Disagg16">
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#00689D !important;">
@@ -5880,10 +5983,14 @@ imports of analogous species product units) ]" /></td>
                             </td>
                         </tr>
                         <tr class="II1622 II1622Disabled">
-                            <td>Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected victims (methodology
-                                under development)</td>
-                            <td><input id="C8gGTrrMdG6-HllvX50cXC0-val" name="entryfield" title="SDG_16.2.2_II:Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected vi"
-                                    value="[ SDG_16.2.2_II:Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities + number of undetected vi ]"
+                            <td>Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities</td>
+                            <td><input id="C8gGTrrMdG6-HllvX50cXC0-val" name="entryfield" title="SDG_16.2.2_II:Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities"
+                                    value="[ SDG_16.2.2_II:Number of detected trafficking victims, as resulting from investigation and prosecution activities of criminal justice system, is counted and reported by national law enforcement authorities  ]" />
+                            </td>
+                        </tr>
+                        <tr class="II1622 II1622Disable">
+                            <td>The number of undetected victims (methodology under development)</td>
+                            <td><input id="w1VIgE5hyDC-HllvX50cXC0-val" name="entryfield" title="SDG_16.2.2_II: The number of undetected victims (methodology under development)" type="text" value="[ SDG_16.2.2_II: The number of undetected victims (methodology under development) ]"
                                 />
                             </td>
                         </tr>
@@ -5924,49 +6031,24 @@ imports of analogous species product units) ]" /></td>
                             </td>
                         </tr>
                         <tr class="II1652 II1652Disabled">
-                            <td>Proportion of firms which answered &lsquo;yes&rsquo; to World Bank-administered Enterprise Survey question regarding informal payment to government officials, then weighted
-                            </td>
-                            <td><input id="vdEv06qdbwl-HllvX50cXC0-val" name="entryfield" title="SDG_16.5.2_II:Proportion of firms which answered ‘yes’ to World Bank-administered Enterprise Survey question regarding informal payment to government officials, then weighted"
-                                    value="[ SDG_16.5.2_II:Proportion of firms which answered ‘yes’ to World Bank-administered Enterprise Survey question regarding informal payment to government officials, then weighted ]" />
-                            </td>
+                            <td colspan="2"> Use "No Disaggregation" Tab</td>
                         </tr>
                         <tr class="II16102 II16102Disabled">
-                            <td>both quantitative and qualitative, with data generated from a global review of existing surveys, administrative records, and expert assessments</td>
-                            <td><input id="X3gYgYcUbQV-HllvX50cXC0-val" name="entryfield" title="SDG_16.10.2_II:both quantitative and qualitative, with data generated from a global review of existing surveys, administrative records, and expert assessments"
-                                    value="[ SDG_16.10.2_II:both quantitative and qualitative, with data generated from a global review of existing surveys, administrative records, and expert assessments ]" />
-                            </td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
                         <tr class="III1662 III1662Disabled">
-                            <td>Number of respondents replying that they were satisfied or very satisfied with their last experience of accessing a public service</td>
-                            <td><input id="T6p7aqofbSO-HllvX50cXC0-val" name="entryfield" title="SDG_16.6.2_III: Number of respondents replying that they were satisfied or very satisfied with their last experience of accessing a public service" value="[ SDG_16.6.2_III: Number of respondents replying that they were satisfied or very satisfied with their last experience of accessing a public service ]"
-                                />
-                            </td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
-                        <tr class="III1662 III1662Disabled">
-                            <td>Total number of respondents (weighted for population)</td>
-                            <td><input id="eL6cldEChPo-HllvX50cXC0-val" name="entryfield" title="SDG_16.6.2_III: Total number of respondents (weighted for population)" value="[ SDG_16.6.2_III: Total number of respondents (weighted for population) ]" />
-                            </td>
-                        </tr>
+
                         <tr class="III1671 III1671Disabled">
-                            <td>The number of public service positions held by members of the target group</td>
-                            <td><input id="UFf2mhCnAbv-HllvX50cXC0-val" name="entryfield" title="SDG_16.7.1_III: The number of public service positions held by members of the target group" value="[ SDG_16.7.1_III: The number of public service positions held by members of the target group ]"
-                                />
-                            </td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
-                        <tr class="III1671 III1671Disabled">
-                            <td>Total number of such public service positions</td>
-                            <td><input id="N8x7CBtChSk-HllvX50cXC0-val" name="entryfield" title="SDG_16.7.1_III: Total number of such public service positions" value="[ SDG_16.7.1_III: Total number of such public service positions ]" /></td>
-                        </tr>
+
                         <tr class="III16b1 III16b1Disabled">
-                            <td>Survey Results</td>
-                            <td><input id="vqOzOGV4yXB-HllvX50cXC0-val" name="entryfield" title="SDG_16.b.1_III: Survey results." value="[ SDG_16.b.1_III: Survey results. ]" /></td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
                         <tr class="II16101 II16101Disabled">
-                            <td>Total count of victims of reported incident (Killing, Torture. Enforced disappearance, Arbitrary detention, Kidnapping, Other harmful acts)s occurring within the preceding 12 months
-                            </td>
-                            <td><input id="MFw0hMJrWVc-HllvX50cXC0-val" name="entryfield" title="SDG_16.10.1_II: Total count of victims of reported incident (Killing, Torture. Enforced disappearance, Arbitrary detention, Kidnapping, Other harmful acts)s occurring within the preceding 12 months "
-                                    value="[ SDG_16.10.1_II: Total count of victims of reported incident (Killing, Torture. Enforced disappearance, Arbitrary detention, Kidnapping, Other harmful acts)s occurring within the preceding 12 months  ]" />
-                            </td>
+                            <td colspan="2">Use "No Disaggregation" Tab</td>
                         </tr>
                     </tbody>
                 </table>
