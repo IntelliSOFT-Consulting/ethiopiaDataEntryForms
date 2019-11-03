@@ -1,0 +1,2487 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<script>
+  $(function() {
+    $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+    $("#tabs > .tabs > li").removeClass("ui-corner-top").addClass("ui-corner-left");
+    $("#goals").tabs();
+    $("#goals2").tabs();
+    $("#goals3").tabs();
+    $("#goals4").tabs();
+    $("#goals5").tabs();
+    $("#goals6").tabs();
+    $("#goals7").tabs();
+    $("#disaggregations").tabs();
+    $("#disaggregations2").tabs();
+    $("#disaggregations3").tabs();
+    $("#disaggregations4").tabs();
+    $("#disaggregations5").tabs();
+    $("#disaggregations6").tabs();
+    $("#disaggregations7").tabs();
+    $("#disaggregations8").tabs();
+    $("#disaggregations9").tabs();
+    $("#disaggregations10").tabs();
+    $("#disaggregations11").tabs();
+    $("#disaggregations12").tabs();
+    $("#disaggregations13").tabs();
+    $("#disaggregations14").tabs();
+    $("#disaggregations15").tabs();
+    $("#disaggregations16").tabs();
+    $("#disaggregations17").tabs();
+    $("#disaggregations18").tabs();
+    $("#disaggregations19").tabs();
+    $("#disaggregations20").tabs();
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+      if (($(this).val() == "I111") || ($(this).val() == "I113")) {
+        $('.goal1NoHeaderSex').hide();
+        $('.goal1NoHeaderValue').show();
+        $('.goal1HeaderLoc').hide();
+      } else if (($(this).val() == "I112")) {
+        $('.goal1NoHeaderSex').show();
+        $('.goal1NoHeaderValue').hide();
+        $('.goal1HeaderLoc').hide();
+      } else {
+        $('.goal1NoHeaderSex').hide();
+        $('.goal1NoHeaderValue').hide();
+        $('.goal1HeaderLoc').show();
+      }
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel2").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel3").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+
+      if (($(this).val() == "I34")) {
+        $('.goal3NoHeader').hide();
+        $('.goal3NoHeaderSex').show();
+        $('.goal3NoHeaderValue').hide();
+      } else if (($(this).val() == "I32") || ($(this).val() == "I33")) {
+        $('.goal3NoHeader').hide();
+        $('.goal3NoHeaderSex').hide();
+        $('.goal3NoHeaderValue').show();
+      } else if ($(this).val() == "I31") {
+        $('.goal3NoHeader').show();
+        $('.goal3NoHeaderSex').show();
+        $('.goal3NoHeaderValue').hide();
+      } else {
+        $('.goal3NoHeader').hide();
+        $('.goal3NoHeaderSex').hide();
+        $('.goal3NoHeaderValue').show();
+      }
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel4").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel5").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+
+      if (($(this).val() == "I52")) {
+        $('.goal5NoHeader').show();
+        $('.goal5Header').hide();
+      } else {
+        $('.goal5NoHeader').hide();
+        $('.goal5Header').show();
+      }
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel6").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel7").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel8").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel9").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel10").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+
+      if ($(this).val() == "I104") {
+        $('.goal10Header').show();
+        $('.goal10HeaderValue').hide();
+        $('.goal10HeaderSex').hide();
+      } else if ($(this).val() == "I105") {
+        $('.goal10HeaderSex').show();
+        $('.goal10HeaderValue').hide();
+        $('.goal10Header').hide();
+      } else {
+        $('.goal10Header').hide();
+        $('.goal10HeaderValue').show();
+        $('.goal10HeaderSex').hide();
+      }
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel11").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel12").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel13").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel14").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel15").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel16").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+
+      if (($(this).val() == "I1611")) {
+        $('.goal16Header').show();
+        $('.goal16NoHeader').hide();
+      } else {
+        $('.goal16Header').hide();
+        $('.goal16NoHeader').show();
+      }
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel17").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+
+      if (($(this).val() == "I171")) {
+        $('.sexDisagg').show();
+        $('.geoDisagg').hide();
+        $('.noDisagg').hide();
+      } else if (($(this).val() == "I172") || ($(this).val() == "I175")) {
+        $('.sexDisagg').hide();
+        $('.geoDisagg').hide();
+        $('.noDisagg').show();
+      } else {
+        $('.sexDisagg').hide();
+        $('.geoDisagg').show();
+        $('.noDisagg').hide();
+      }
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel18").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+
+      if (($(this).val() == "I181") || ($(this).val() == "I182") || ($(this).val() == "I184")) {
+        $('.sexDisagg').show();
+        $('.geoDisagg').hide();
+        $('.noDisagg').hide();
+      } else if (($(this).val() == "I183")) {
+        $('.sexDisagg').show();
+        $('.geoDisagg').show();
+        $('.noDisagg').hide();
+      } else {
+        $('.sexDisagg').hide();
+        $('.geoDisagg').hide();
+        $('.noDisagg').show();
+      }
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel19").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+  $(function() {
+    $('.tabcontent2 tr').hide();
+    // Onchange Levels
+    $("#indicatorLevel20").change(function() {
+      $('.' + $(this).val()).show();
+      $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+      $('.tableHeader').show();
+    })
+  });
+</script>
+<style type="text/css">
+  /*Styling for the outter tab Start*/
+  
+  * {
+    box-sizing: border-box
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  /*Styling the Inner Tabs For Disaggregation*/
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  .tableHeader {
+    background-color: #9ACD32 !important;
+  }
+  
+  th {
+    text-align: center !important;
+    color: #ffffff !important;
+  }
+  
+  h1 {
+    color: #ffffff !important;
+  }
+  
+  input {
+    width: 4em;
+  }
+  
+  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    opacity: 2;
+  }
+  
+  .asp {
+    padding: 22px 30px !important;
+    width: 100% !important;
+  }
+  
+  .tab2 li {
+    opacity: 0.5;
+    transition: transform .5s;
+    /* Animation */
+    z-index: 0;
+  }
+  
+  .tab2 ul {
+    /* width: 135% !important */
+    width: 106px !important
+  }
+  
+  .tab2 li:hover {
+    opacity: 2;
+    position: relative;
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+    z-index: 200;
+  }
+  /* Outer Tab start */
+  
+  .tab {
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding: 0px;
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    z-index: 0;
+  }
+  
+  .aspirations:hover {
+    opacity: 2;
+    position: relative;
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+    z-index: 200;
+  }
+  /* Outer Tab start */
+  /* Inner Tab Start */
+  
+  .disaggTab {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  }
+  
+  .disaggTab:hover {
+    position: relative;
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+    z-index: 200;
+    background-color: #337ab7;
+    color: white !important;
+  }
+  /* Inner Tab End */
+  
+  .tab ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .tab li {
+    display: inline-block;
+    padding: 2px;
+    float: none !important;
+  }
+</style>
+<div class="row" id="tabs">
+  <div class="tab2 col-xm-1 col-sm-2 col-md-1" style="z-index: 200">
+    <ul>
+      <li><a class="asp" href="#asp-1" style="background-color:#9ACD32; color: white; font-weight: bold;">ASP1</a></li>
+      <li><a class="asp" href="#asp-2" style="background-color:#FF9933; color: white; font-weight: bold;">ASP2</a></li>
+      <li><a class="asp" href="#asp-3" style="background-color:#ff4c4c; color: white; font-weight: bold;">ASP3</a></li>
+      <li><a class="asp" href="#asp-4" style="background-color:#6666ff; color: white; font-weight: bold;">ASP4</a></li>
+      <li><a class="asp" href="#asp-5" style="background-color:#000000; color: white; font-weight: bold;">ASP5</a></li>
+      <li><a class="asp" href="#asp-6" style="background-color:#9932CC; color: white; font-weight: bold;">ASP6</a></li>
+      <li><a class="asp" href="#asp-7" style="background-color:#4ca6ff; color: white; font-weight: bold;">ASP7</a></li>
+    </ul>
+  </div>
+  <!-- Aspiration 1 Start -->
+
+  <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-1">
+    <div class="row" id="goals" style="border: none;margin-left: 10px;">
+      <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+        <ul>
+          <li class="aspirations"><a href="#goal-1" style="background-color:#9ACD32; color: white; font-weight: bold;">Goal 1</a></li>
+          <li class="aspirations"><a href="#goal-2" style="background-color:#FF9933; color: white; font-weight: bold;">Goal 2</a></li>
+          <li class="aspirations"><a href="#goal-3" style="background-color:#ff4c4c; color: white; font-weight: bold;">Goal 3</a></li>
+          <li class="aspirations"><a href="#goal-4" style="background-color:#6666ff; color: white; font-weight: bold;">Goal 4</a></li>
+          <li class="aspirations"><a href="#goal-5" style="background-color:#000000; color: white; font-weight: bold;">Goal 5</a></li>
+          <li class="aspirations"><a href="#goal-6" style="background-color:#9932CC; color: white; font-weight: bold;">Goal 6</a></li>
+          <li class="aspirations"><a href="#goal-7" style="background-color:#4ca6ff; color: white; font-weight: bold;">Goal 7</a></li>
+        </ul>
+      </div>
+      <!-- Goal 1 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-1">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center; "><strong>Objectif 1: Un niveau de vie &eacute;lev&eacute;, Qualit&eacute; de vie et Bien-&ecirc;tre pour Tous</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I111">RNB par habitant</option><option value="I112">Taux de ch&ocirc;mage</option><option value="I113">Pr&eacute;valence deinsuffisance pond&eacute;rale chezenfantsmoins5</option><option value="I114">% depopulation l&#39;&eacute;lectricit&eacute;</option> </select></div>
+        <!-- Tab disaggregations Start -->
+
+        <div id="disaggregations" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+
+          <div class="tabcontent2" id="NoDisagg">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I111">
+                  <td>Taux de croissance annuel du PIB r&eacute;el par habitant</td>
+                  <td><input id="rZQRXUXUPaL-HllvX50cXC0-val" name="entryfield" title="SDG_8:Annual growth rate of real GDP per capita	" value="[ SDG_8:Annual growth rate of real GDP per capita	 ]" /></td>
+                </tr>
+                <tr class="I112">
+                  <td>Taux de ch&ocirc;mage</td>
+                  <td><input id="ePlRlJHXijB-HllvX50cXC0-val" name="entryfield" title="SDG_8:Unemployment rate	" value="[ SDG_8:Unemployment rate	 ]" /></td>
+                </tr>
+                <tr class="I113">
+                  <td>Pr&eacute;valence du retard de croissance</td>
+                  <td><input id="Bt7EwzXnP1B-HllvX50cXC0-val" name="entryfield" title="SDG_2:Prevalence of stunting among children under 5" value="[ SDG_2:Prevalence of stunting among children under 5 ]" /></td>
+                </tr>
+                <tr class="I114">
+                  <td>Acc&egrave;s &agrave; l&#39;&eacute;lectricit&eacute; (% population)</td>
+                  <td><input id="EvxREEMoa5E-HllvX50cXC0-val" name="entryfield" title="SDG_7:Access to electricity (% population)	" value="[ SDG_7:Access to electricity (% population)	 ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th class="goal1NoHeaderSex" colspan="2">Sexe</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                  <th class="goal1NoHeaderSex">Femme</th>
+                  <th class="goal1NoHeaderSex">Homme</th>
+                  <th class="goal1NoHeaderValue">Valeur</th>
+                  <th class="goal1HeaderLoc">Rural</th>
+                  <th class="goal1HeaderLoc">Urbain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I111">
+                  <td>PIB par habitant dans l&#39;ann&eacute;e t+1</td>
+                  <td><input id="MpwayQltPTy-HllvX50cXC0-val" name="entryfield" title="SDG_8:GDP per capita in year t+1 at constant 2005 dollars- GDP per capita in year t at constant 2005 dollars" value="[ SDG_8:GDP per capita in year t+1 at constant 2005 dollars- GDP per capita in year t at constant 2005 dollars ]"
+                    /></td>
+                </tr>
+                <tr class="I111">
+                  <td>PIB par habitant dans l&#39;ann&eacute;e t</td>
+                  <td><input id="j6NGNhKM1jz-HllvX50cXC0-val" name="entryfield" title="SDG_8:GDP per capita in year t at constant 2005 dollars" value="[ SDG_8:GDP per capita in year t at constant 2005 dollars ]" /></td>
+                </tr>
+                <tr class="I112">
+                  <td>Personnes sans emploi</td>
+                  <td><input id="bKFp3z7BOK7-sLKRSW7xmwp-val" name="entryfield" title="SDG_8:Unemployed persons Female" value="[ SDG_8:Unemployed persons Female ]" /></td>
+                  <td><input id="bKFp3z7BOK7-sJUGNYho7Ey-val" name="entryfield" title="SDG_8:Unemployed persons Male" value="[ SDG_8:Unemployed persons Male ]" /></td>
+                </tr>
+                <tr class="I112">
+                  <td>Personnes qui sont sur le march&eacute; du travail</td>
+                  <td><input id="Gtrz0rkNIH9-sLKRSW7xmwp-val" name="entryfield" title="SDG_8:Persons in the labor force Female" value="[ SDG_8:Persons in the labor force Female ]" /></td>
+                  <td><input id="Gtrz0rkNIH9-sJUGNYho7Ey-val" name="entryfield" title="SDG_8:Persons in the labor force Male" value="[ SDG_8:Persons in the labor force Male ]" /></td>
+                </tr>
+                <tr class="I113">
+                  <td>Nombre d&#39;enfants de moins de 5 ans dont la taille pour cet &acirc;ge est &lt; -2</td>
+                  <td><input id="nsPgvbrDPwQ-HllvX50cXC0-val" name="entryfield" title="SDG_2:Children under five whose weight for height is &gt; +2" value="[ SDG_2:Children under five whose weight for height is &gt; +2 ]" /></td>
+                </tr>
+                <tr class="I113">
+                  <td>Nombre total d&#39;enfants de moins de 5 ans</td>
+                  <td><input id="LgOeUwjhGva-HllvX50cXC0-val" name="entryfield" title="SDG_2:221_Total number of children under 5 years of age" value="[ SDG_2:221_Total number of children under 5 years of age ]" /></td>
+                </tr>
+                <tr class="I114">
+                  <td>Population ayant acc&egrave;s &agrave; l&#39;&eacute;nergie</td>
+                  <td><input id="kCRn8WKklIR-iEgy3xKqVi5-val" name="entryfield" title="SDG_7:Population with access to energy Rural" value="[ SDG_7:Population with access to energy Rural ]" /></td>
+                  <td><input id="kCRn8WKklIR-r8hBd63qzn4-val" name="entryfield" title="SDG_7:Population with access to energy Urban" value="[ SDG_7:Population with access to energy Urban ]" /></td>
+                </tr>
+                <tr class="I114">
+                  <td>Population totale</td>
+                  <td><input id="RL5Cd2V59j9-iEgy3xKqVi5-val" name="entryfield" title="SDG_7:711_Total Population Rural" value="[ SDG_7:711_Total Population Rural ]" /></td>
+                  <td><input id="RL5Cd2V59j9-r8hBd63qzn4-val" name="entryfield" title="SDG_7:711_Total Population Urban" value="[ SDG_7:711_Total Population Urban ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 1 End -->
+      <!-- Goal 2 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-2">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933;text-align: center; "><strong>Objectif 2: Citoyens Bien Eduqu&eacute;s et R&eacute;volution des Comp&eacute;tences sous-tendue par la Science, la Technologie et l&#39;Innovation</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel2" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I211">No Indicator</option> </select></div>
+        <!-- Tab links -->
+        <!-- <div id="disaggregations2" style="margin-top: 10px;">
+                    <ul>
+                        <li><a class="disaggTab" href="#NoDisagg2">Agr&eacute;gation</a></li>
+                        <li><a class="disaggTab" href="#Disagg2">D&eacute;sagr&eacute;gation</a></li>
+                    </ul>
+
+                    <div class="tabcontent2" id="NoDisagg2">
+                        <table>
+                            <thead>
+                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                                    <th>Indicateur</th>
+                                    <th>Valeur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="xyz">
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tabcontent2" id="Disagg2">
+                        <table>
+                            <thead>
+                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                                    <th>&nbsp;</th>
+                                    <th>Valeur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="I211">
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> --></div>
+      <!-- Goal 2 End -->
+      <!-- Goal 3 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-3">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; "><strong>Objectif 3: Citoyens en Bonne Sant&eacute; et Bien Nourris</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel3" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I31">Nombre de nouveaux cas d&#39;infection par le VIH pour 1000 personnes</option><option value="I32">Cas de tuberculose pour 100,000 personnes par an</option><option value="I33">Incidence de cas de Malaria pour 1,000 personnes par an</option><option value="I34">% de la population &eacute;ligible vivant avec le VIH ayant acc&egrave;s aux ARV</option><option value="I35">%des femmes en &acirc;geprocr&eacute;er 15 49qui ont acc&egrave;s auxsexuelle et services de sant&eacute;reproductive</option><option value="I36">Taux de mortalit&eacute; maternelle</option><option value="I37">N&eacute;o- tauxmortalit&eacute;natal</option><option value="I38">Dans cinq mortalit y taux</option><option value="I39">% des accouchements assist&eacute;s parqualifi&eacute;. personnel de sant&eacute;</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations3" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg3">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg3">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg3">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I31">
+                  <td>Nombre de nouveaux cas d&#39;infection par le VIH pour 1000 personnes</td>
+                  <td><input id="gAnNDrg3dLo-HllvX50cXC0-val" name="entryfield" title="ASP_1:Number of new HIV infections per 1000 population	" value="[ ASP_1:Number of new HIV infections per 1000 population	 ]" /></td>
+                </tr>
+                <tr class="I32">
+                  <td>Cas de tuberculose pour 100,000 personnes par an</td>
+                  <td><input id="aGhDRO2S4Lu-HllvX50cXC0-val" name="entryfield" title="SDG_3:Tuberculosis incidence per 1,000 population	" value="[ SDG_3:Tuberculosis incidence per 1,000 population	 ]" /></td>
+                </tr>
+                <tr class="I33">
+                  <td>Incidence de cas de Malaria pour 1,000 personnes par an</td>
+                  <td><input id="atbJtXLSbyf-HllvX50cXC0-val" name="entryfield" title="SDG_3:Malaria incidence per 1,000 population	" value="[ SDG_3:Malaria incidence per 1,000 population	 ]" /></td>
+                </tr>
+                <tr class="I34">
+                  <td>% de la population &eacute;ligible vivant avec le VIH ayant acc&egrave;s aux ARV</td>
+                  <td><input id="L32d5C6AIqv-HllvX50cXC0-val" name="entryfield" title="ASP_1:% of eligible population with HIV having access to ARV	" value="[ ASP_1:% of eligible population with HIV having access to ARV	 ]" /></td>
+                </tr>
+                <tr class="I35">
+                  <td>Besoins en planification famliale satisfaits (%)</td>
+                  <td><input id="mFeVazpypaZ-HllvX50cXC0-val" name="entryfield" title="SDG_3:Family planning needs satisfied (%)	" value="[ SDG_3:Family planning needs satisfied (%)	 ]" /></td>
+                </tr>
+                <tr class="I36">
+                  <td>Mortalit&eacute; maternelle (pour 100,000 naissances vivantes)</td>
+                  <td><input id="qj15XcoUCDI-HllvX50cXC0-val" name="entryfield" title="SDG_3:Maternal mortality ratio	" value="[ SDG_3:Maternal mortality ratio	 ]" /></td>
+                </tr>
+                <tr class="I37">
+                  <td>Mortalit&eacute; n&eacute;o-natale (pour 1,000 naissances vivantes)</td>
+                  <td><input id="iCihpG4jRzH-HllvX50cXC0-val" name="entryfield" title="SDG_3:Neonatal mortality rate	" value="[ SDG_3:Neonatal mortality rate	 ]" /></td>
+                </tr>
+                <tr class="I38">
+                  <td>Mortalit&eacute; des moins de cinq ans (pour 1,000 naissances vivantes)</td>
+                  <td><input id="Ti6DZBxiGsG-HllvX50cXC0-val" name="entryfield" title="SDG_3:Under-five mortality rate	" value="[ SDG_3:Under-five mortality rate	 ]" /></td>
+                </tr>
+                <tr class="I39">
+                  <td>Naissances assist&eacute;es par un personnel de sant&eacute; qualifi&eacute; (%)</td>
+                  <td><input id="JCrwCxh05iE-HllvX50cXC0-val" name="entryfield" title="SDG_3:Proportion of births attended by skilled health personnel" value="[ SDG_3:Proportion of births attended by skilled health personnel ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg3">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th class="goal3NoHeaderSex" colspan="2">Sexe</th>
+                  <th class="goal3NoHeader" colspan="2">Localisation g&eacute;ographique</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th class="goal3NoHeaderSex">Femme</th>
+                  <th class="goal3NoHeaderSex">Homme</th>
+                  <th class="goal3NoHeader">Rural</th>
+                  <th class="goal3NoHeader">Urbain</th>
+                  <th class="goal3NoHeaderValue">Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I31">
+                  <td>Nombre total de cas de VIH sur une p&eacute;riode donn&eacute;e</td>
+                  <td><input id="oqVHB2xihvP-sLKRSW7xmwp-val" name="entryfield" title="ASP_1:Total HIV cases over a specified period Female" value="[ ASP_1:Total HIV cases over a specified period Female ]" /></td>
+                  <td><input id="oqVHB2xihvP-sJUGNYho7Ey-val" name="entryfield" title="ASP_1:Total HIV cases over a specified period Male" value="[ ASP_1:Total HIV cases over a specified period Male ]" /></td>
+                  <td><input id="oqVHB2xihvP-iEgy3xKqVi5-val" name="entryfield" title="ASP_1:Total HIV cases over a specified period Rural" value="[ ASP_1:Total HIV cases over a specified period Rural ]" /></td>
+                  <td><input id="oqVHB2xihvP-r8hBd63qzn4-val" name="entryfield" title="ASP_1:Total HIV cases over a specified period Urban" value="[ ASP_1:Total HIV cases over a specified period Urban ]" /></td>
+                </tr>
+                <tr class="I31">
+                  <td>Nombre total de personnes vivant avec le VIH</td>
+                  <td><input id="KKQuhnCMtEP-sLKRSW7xmwp-val" name="entryfield" title="ASP_1:Total people with HIV clustered Female" value="[ ASP_1:Total people with HIV clustered Female ]" /></td>
+                  <td><input id="KKQuhnCMtEP-sJUGNYho7Ey-val" name="entryfield" title="ASP_1:Total people with HIV clustered Male" value="[ ASP_1:Total people with HIV clustered Male ]" /></td>
+                  <td><input id="KKQuhnCMtEP-iEgy3xKqVi5-val" name="entryfield" title="ASP_1:Total people with HIV clustered Rural" value="[ ASP_1:Total people with HIV clustered Rural ]" /></td>
+                  <td><input id="KKQuhnCMtEP-r8hBd63qzn4-val" name="entryfield" title="ASP_1:Total people with HIV clustered Urban" value="[ ASP_1:Total people with HIV clustered Urban ]" /></td>
+                </tr>
+                <tr class="I32">
+                  <td>Nombre de nouveaux cas et de rechutes de tuberculose qui surviennent en une ann&eacute;e</td>
+                  <td><input id="mH9XBhoW1Cf-HllvX50cXC0-val" name="entryfield" title="SDG_3:New and relapse TB cases" value="[ SDG_3:New and relapse TB cases ]" /></td>
+                </tr>
+                <tr class="I32">
+                  <td>Nombre de personne-ann&eacute;es d&#39;exposition au risque</td>
+                  <td><input id="JFvlTEuknXq-HllvX50cXC0-val" name="entryfield" title="SDG_3:Person-years of exposure" value="[ SDG_3:Person-years of exposure ]" /></td>
+                </tr>
+                <tr class="I33">
+                  <td>Nombre de cas de malaria confirm&eacute;s</td>
+                  <td><input id="IcUjJW2C9Im-HllvX50cXC0-val" name="entryfield" title="SDG_3:Malaria cases" value="[ SDG_3:Malaria cases ]" /></td>
+                </tr>
+                <tr class="I33">
+                  <td>Nombre de personne-ann&eacute;es d&#39;exposition</td>
+                  <td><input id="dlinqsDHurO-HllvX50cXC0-val" name="entryfield" title="SDG_3:Population at risk" value="[ SDG_3:Population at risk ]" /></td>
+                </tr>
+                <tr class="I34">
+                  <td>Nombre d&#39;adultes et enfants qui ont acc&egrave;s au traitement ARV &agrave; la fin de la p&eacute;riode de reportage</td>
+                  <td><input id="EIxxvp8CHka-sLKRSW7xmwp-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Female ]"
+                    /></td>
+                  <td><input id="EIxxvp8CHka-sJUGNYho7Ey-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Male ]"
+                    /></td>
+                </tr>
+                <tr class="I34">
+                  <td>Le nombre estim&eacute; d&#39;adultes et d&#39;enfants vivant avec le VIH</td>
+                  <td><input id="q2e5Wwjb7Ut-sLKRSW7xmwp-val" name="entryfield" title="ASP_1:Estimated number of adults and children living with HIV Female" value="[ ASP_1:Estimated number of adults and children living with HIV Female ]" /></td>
+                  <td><input id="q2e5Wwjb7Ut-sJUGNYho7Ey-val" name="entryfield" title="ASP_1:Estimated number of adults and children living with HIV Male" value="[ ASP_1:Estimated number of adults and children living with HIV Male ]" /></td>
+                </tr>
+                <tr class="I35">
+                  <td>Percentage de femmes en &acirc;ge de procr&eacute;er (15-49 ans) qui pour le moment utilisent</td>
+                  <td><input id="TU2VGO7AnYK-HllvX50cXC0-val" name="entryfield" title="SDG_3:Women with family planning demand" value="[ SDG_3:Women with family planning demand ]" /></td>
+                </tr>
+                <tr class="I35">
+                  <td>Total de la demande en planning familiale</td>
+                  <td><input id="ETzoIk2kLNK-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total demand for family planning" value="[ SDG_3:Total demand for family planning ]" /></td>
+                </tr>
+                <tr class="I36">
+                  <td>D&eacute;c&egrave;s maternelles enregistr&eacute;es/estimation</td>
+                  <td><input id="MemsRPHqriD-HllvX50cXC0-val" name="entryfield" title="SDG_3:Recorded/estimated maternal deaths * 100,000" value="[ SDG_3:Recorded/estimated maternal deaths * 100,000 ]" /></td>
+                </tr>
+                <tr class="I36">
+                  <td>Total des vies enregistr&eacute;es/estim&eacute;es dans la m&ecirc;me p&eacute;riode</td>
+                  <td><input id="x7dHhPJWJPe-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total recorded/estimated lives in the same period" value="[ SDG_3:Total recorded/estimated lives in the same period ]" /></td>
+                </tr>
+                <tr class="I37">
+                  <td>Nombre d&#39;enfants d&eacute;c&eacute;d&eacute;s pendant les 28 premiers jours de la vie</td>
+                  <td><input id="r1tLOkgBXcw-HllvX50cXC0-val" name="entryfield" title="SDG_3:Children who died during the first 28 days of life" value="[ SDG_3:Children who died during the first 28 days of life ]" /></td>
+                </tr>
+                <tr class="I37">
+                  <td>Nombre de naissances vivantes</td>
+                  <td><input id="M0V0lnx10d4-HllvX50cXC0-val" name="entryfield" title="SDG_3:322_Number of live births" value="[ SDG_3:322_Number of live births ]" /></td>
+                </tr>
+                <tr class="I38">
+                  <td>Nombre de d&eacute;c&egrave;s parmi les enfants ag&eacute;s de 0-4</td>
+                  <td><input id="rR9ege9U0X3-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of dealths among childre age 0-4" value="[ SDG_3:Number of dealths among childre age 0-4 ]" /></td>
+                </tr>
+                <tr class="I38">
+                  <td>Nombre de naissances vivantes</td>
+                  <td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="SDG_3:321_Number of live births" value="[ SDG_3:321_Number of live births ]" /></td>
+                </tr>
+                <tr class="I39">
+                  <td>Nombre de naissances assist&eacute;es par du personnel de sant&eacute; qualifi&eacute;</td>
+                  <td><input id="F2kfyiytNRy-HllvX50cXC0-val" name="entryfield" title="SDG_3:Births attended by skilled health personnel" value="[ SDG_3:Births attended by skilled health personnel ]" /></td>
+                </tr>
+                <tr class="I39">
+                  <td>Nombre total de naissances vivantes dans la m&ecirc;me p&eacute;riode</td>
+                  <td><input id="vFCUplW58Dq-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total number of live births in the same period" value="[ SDG_3:Total number of live births in the same period ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 3 End -->
+      <!-- Goal 4 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-4">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center; "><strong>Objectif 4: </strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel4" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I41">Taux r&eacute;el de croissance du PIB</option><option value="I42">Valeur ajout&eacute;e de la Manufacture en tant que pourcentage du PIB</option><option value="I43">Proportion du PIB consacr&eacute;e aux d&eacute;penses pour la Recherche et D&eacute;veloppment</option><option value="I44">Valeur Ajout&eacute;e du Tourisme en proportion du PIB</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations4" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg4">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg4">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg4">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#6666ff !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I41">
+                  <td>Taux r&eacute;el de croissance du PIB</td>
+                  <!-- <td>
+                                                                                                    <input id="t0srib18QsM-HllvX50cXC0-val" name="entryfield" title="ASP_1:Real GDP Growth Rate	" value="[ ASP_1:Real GDP Growth Rate	 ]"/>
+                                                                                                </td> -->
+                  <td><input id="rZQRXUXUPaL-HllvX50cXC0-val" name="entryfield" title="SDG_8:Annual growth rate of real GDP per capita	" value="[ SDG_8:Annual growth rate of real GDP per capita	 ]" /></td>
+                </tr>
+                <tr class="I42">
+                  <td>Valeur ajout&eacute;e de la Manufacture en tant que pourcentage du PIB</td>
+                  <!-- <td>
+                                                                                                    <input id="MMgShX5U862-HllvX50cXC0-val" name="entryfield" title="ASP_1:Manufacturing value added as % of GDP	" value="[ ASP_1:Manufacturing value added as % of GDP	 ]"/>
+                                                                                                </td> -->
+                  <td><input id="D1xcT46JCVw-HllvX50cXC0-val" name="entryfield" title="SDG_9:Proportion of manufacturing value added	" value="[ SDG_9:Proportion of manufacturing value added	 ]" /></td>
+                </tr>
+                <tr class="I43">
+                  <td>Proportion du PIB consacr&eacute;e aux d&eacute;penses pour la Recherche et D&eacute;veloppment</td>
+                  <!-- <td>
+                                                                                                    <input id="KBGFT3kwOKC-HllvX50cXC0-val" name="entryfield" title="ASP_1:Research and development expenditure as a proportion of GDP	" value="[ ASP_1:Research and development expenditure as a proportion of GDP	 ]"/>
+                                                                                                </td> -->
+                  <td><input id="WCjZOCH6jPx-HllvX50cXC0-val" name="entryfield" title="SDG_9:Research and development expenditure as a proportion of GDP	" value="[ SDG_9:Research and development expenditure as a proportion of GDP	 ]" /></td>
+                </tr>
+                <tr class="I44">
+                  <td>Valeur Ajout&eacute;e du Tourisme en proportion du PIB</td>
+                  <td><input id="C5f5nB3USZ6-HllvX50cXC0-val" name="entryfield" title="ASP_1:Tourism value added as a proportion of GDP	" value="[ ASP_1:Tourism value added as a proportion of GDP	 ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg4">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#6666ff !important;">
+                  <th>&nbsp;</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I41">
+                  <td>PIB Nominal</td>
+                  <!-- <td>
+                                                                                                    <input id="VuxFvcDYY9Z-HllvX50cXC0-val" name="entryfield" title="ASP_1:Nominal GDP" value="[ ASP_1:Nominal GDP ]"/>
+                                                                                                </td> -->
+                  <td><input id="MpwayQltPTy-HllvX50cXC0-val" name="entryfield" title="SDG_8:GDP per capita in year t+1 at constant 2005 dollars- GDP per capita in year t at constant 2005 dollars" value="[ SDG_8:GDP per capita in year t+1 at constant 2005 dollars- GDP per capita in year t at constant 2005 dollars ]"
+                    /></td>
+                </tr>
+                <tr class="I41">
+                  <td>Le d&eacute;flateur (par exemple: IPC)</td>
+                  <!-- <td>
+                                                                                                    <input id="fnfYh6ZTlY2-HllvX50cXC0-val" name="entryfield" title="ASP_1:The deflator (i.e. CPI)" value="[ ASP_1:The deflator (i.e. CPI) ]"/>
+                                                                                                </td> -->
+                  <td><input id="j6NGNhKM1jz-HllvX50cXC0-val" name="entryfield" title="SDG_8:GDP per capita in year t at constant 2005 dollars" value="[ SDG_8:GDP per capita in year t at constant 2005 dollars ]" /></td>
+                </tr>
+                <tr class="I42">
+                  <td>le montant de la valeur de toute la production &ndash; (valeur des consommations interm&eacute;diaires)</td>
+                  <td><input id="o8atQWjlEQ5-HllvX50cXC0-val" name="entryfield" title="SDG_9:Manufacturing value added" value="[ SDG_9:Manufacturing value added ]" /></td>
+                </tr>
+                <tr class="I42">
+                  <td>PIB</td>
+                  <td><input id="RiN9u844TAI-HllvX50cXC0-val" name="entryfield" title="SDG_9:921_GDP" value="[ SDG_9:921_GDP ]" /></td>
+                </tr>
+                <tr class="I43">
+                  <td>D&eacute;penses Int&eacute;rieures Brutes de R&amp;D</td>
+                  <td><input id="R64mkjYs7B7-HllvX50cXC0-val" name="entryfield" title="SDG_9:Amount of Research and development (R&amp;D) expenditure" value="[ SDG_9:Amount of Research and development (R&amp;D) expenditure ]" /></td>
+                </tr>
+                <tr class="I43">
+                  <td>PIB</td>
+                  <td><input id="NehgnuC4gS7-HllvX50cXC0-val" name="entryfield" title="SDG_9:951_GDP" value="[ SDG_9:951_GDP ]" /></td>
+                </tr>
+                <tr class="I44">
+                  <td>PIB direct du Tourisme</td>
+                  <td><input id="kSShIs8ejPy-HllvX50cXC0-val" name="entryfield" title="ASP_1:Tourism direct GDP" value="[ ASP_1:Tourism direct GDP ]" /></td>
+                </tr>
+                <tr class="I44">
+                  <td>PIB</td>
+                  <td><input id="EIFg3dxRTm6-HllvX50cXC0-val" name="entryfield" title="ASP_1:Tourism_GDP" value="[ ASP_1:Tourism_GDP ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 4 End -->
+      <!-- Goal 5 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-5">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center; "><strong>Objectif 5: Agriculture moderne pour augmentation de la productivit&eacute; et de la production </strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel5" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I51">Productivit&eacute; totale des facteurs</option><option value="I52">% par sexe de petits agriculteurs qui se convertissent &agrave; l&#39;agriculture commerciale &agrave; petite &eacute;chelle</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations5" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg5">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg5">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg5">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#000000 !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I51">
+                  <td>Productivit&eacute; totale des facteurs</td>
+                  <td><input id="aQ7C0r1YsV1-HllvX50cXC0-val" name="entryfield" title="ASP_1:Total factor productivity	" value="[ ASP_1:Total factor productivity	 ]" /></td>
+                </tr>
+                <tr class="I52">
+                  <td>% par sexe de petits agriculteurs qui se convertissent &agrave; l&#39;agriculture commerciale &agrave; petite &eacute;chelle</td>
+                  <td><input id="qnlmEhaz3mm-HllvX50cXC0-val" name="entryfield" title="ASP_1:% of small-scale farmers graduating into small-scale commercial farming	" value="[ ASP_1:% of small-scale farmers graduating into small-scale commercial farming	 ]"
+                    /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg5">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#000000 !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th class="goal5Header">Valeur</th>
+                  <th class="goal5NoHeader" colspan="2">Sexe</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#000000 !important;">
+                  <th class="goal5NoHeader">Femme</th>
+                  <th class="goal5NoHeader">Homme</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I51">
+                  <td>Productions Agricoles</td>
+                  <td><input id="ab5HIxZDpT6-HllvX50cXC0-val" name="entryfield" title="ASP_1:Agriculture Outputs" value="[ ASP_1:Agriculture Outputs ]" /></td>
+                </tr>
+                <tr class="I51">
+                  <td>Moyenne pond&eacute;r&eacute;e des intrants</td>
+                  <td><input id="ZeItmMcJmlK-HllvX50cXC0-val" name="entryfield" title="ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input" value="[ ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input ]" /></td>
+                </tr>
+                <tr class="I52">
+                  <td>Nombre de petits agriculteurs passant &agrave; l&#39;agriculture commerciale</td>
+                  <td><input id="P1da2rLseDI-sLKRSW7xmwp-val" name="entryfield" title="ASP_1:Number of small scale farmers graduating into commerical farming Female" value="[ ASP_1:Number of small scale farmers graduating into commerical farming Female ]"
+                    /></td>
+                  <td><input id="P1da2rLseDI-sJUGNYho7Ey-val" name="entryfield" title="ASP_1:Number of small scale farmers graduating into commerical farming Male" value="[ ASP_1:Number of small scale farmers graduating into commerical farming Male ]" /></td>
+                </tr>
+                <tr class="I52">
+                  <td>Nombre de petits agriculteurs</td>
+                  <td><input id="ZgZNqYI4j8m-sLKRSW7xmwp-val" name="entryfield" title="ASP_1:Number of small scale farmers Female" value="[ ASP_1:Number of small scale farmers Female ]" /></td>
+                  <td><input id="ZgZNqYI4j8m-sJUGNYho7Ey-val" name="entryfield" title="ASP_1:Number of small scale farmers Male" value="[ ASP_1:Number of small scale farmers Male ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 5 End-->
+      <!-- Goal 6 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-6">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center; "><strong>Objectif 6: Economie Bleue/Oc&eacute;ane pour une croissance &eacute;conomique acc&eacute;l&eacute;r&eacute;e </strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel6" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I61">Valeur Ajout&eacute;e du Secteur Poisson (en poucentage du PIB)</option><option value="I62">Valeur Ajout&eacute;e de la biotechnologie marine en % du PIB</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations6" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg6">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg6">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg6">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9932CC !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I61">
+                  <td>Valeur Ajout&eacute;e du Secteur Poisson (en poucentage du PIB)</td>
+                  <td><input id="Zvs9yZWgT9C-HllvX50cXC0-val" name="entryfield" title="ASP_1:Fishery Sector value added ( as share of GDP)	" value="[ ASP_1:Fishery Sector value added ( as share of GDP)	 ]" /></td>
+                </tr>
+                <tr class="I62">
+                  <td>Valeur Ajout&eacute;e de la biotechnologie marine en % du PIB</td>
+                  <td><input id="dJC0iHI9bWC-HllvX50cXC0-val" name="entryfield" title="ASP_1:Marine biotechnology value added as a % of GDP	" value="[ ASP_1:Marine biotechnology value added as a % of GDP	 ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg6">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9932CC !important;">
+                  <th>&nbsp;</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I61">
+                  <td>Contribution de la p&ecirc;che au PIB</td>
+                  <td><input id="w5VGTETV8sF-HllvX50cXC0-val" name="entryfield" title="ASP_1:Fishery contribution to GDP" value="[ ASP_1:Fishery contribution to GDP ]" /></td>
+                </tr>
+                <tr class="I61">
+                  <td>PIB</td>
+                  <td><input id="bVLdO86vavP-HllvX50cXC0-val" name="entryfield" title="ASP_1:Fishery_GDP" value="[ ASP_1:Fishery_GDP ]" /></td>
+                </tr>
+                <tr class="I62">
+                  <td>Contribution de la biotechnologie marine au PIB</td>
+                  <td><input id="ZPFtZbsXQIT-HllvX50cXC0-val" name="entryfield" title="ASP_1:Marine biotechnolgy contribution to GDP" value="[ ASP_1:Marine biotechnolgy contribution to GDP ]" /></td>
+                </tr>
+                <tr class="I62">
+                  <td>PIB</td>
+                  <td><input id="EsP5GPtG6Nq-HllvX50cXC0-val" name="entryfield" title="ASP_1:Biotechnology_GDP" value="[ ASP_1:Biotechnology_GDP ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 6 End-->
+      <!-- Goal 7 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-7">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff;text-align: center; "><strong>Objectif 7: Climat &eacute;cologiquement durable; &eacute;conomies et communaut&eacute;s r&eacute;silientes</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel7" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I71">% de terre agricole plac&eacute;e sous la pratique de la gestion durable des terres</option><option value="I72">% de zones c&ocirc;ti&egrave;res et marines pr&eacute;serv&eacute;es</option><option value="I73">% deterrestre et eauint&eacute;rieurzones conserv&eacute;es.</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations7" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg7">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg7">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg7">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#4ca6ff !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I71">
+                  <td>% de terre agricole plac&eacute;e sous la pratique de la gestion durable des terres</td>
+                  <td><input id="njgxJV082qP-HllvX50cXC0-val" name="entryfield" title="ASP_1:% of agricultural land placed under sustainable land management practice.	" value="[ ASP_1:% of agricultural land placed under sustainable land management practice.	 ]"
+                    /></td>
+                </tr>
+                <tr class="I72">
+                  <td>% de zones c&ocirc;ti&egrave;res et marines pr&eacute;serv&eacute;es</td>
+                  <td><input id="OI8W4V2UeCw-HllvX50cXC0-val" name="entryfield" title="SDG_14:Marine sites, mean protected area (%)" value="[ SDG_14:Marine sites, mean protected area (%) ]" /></td>
+                </tr>
+                <tr class="I73">
+                  <td>Sites terrestres, zone prot&eacute;g&eacute;e moyenne ou biodiversit&eacute; de l&#39;eau douce, zone prot&eacute;g&eacute;e moyenne</td>
+                  <td><input id="lWs0BXDInz8-HllvX50cXC0-val" name="entryfield" title="SDG_15:Proportion of important sites for terrestrial and freshwater biodiversity	" value="[ SDG_15:Proportion of important sites for terrestrial and freshwater biodiversity	 ]"
+                    /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg7">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#4ca6ff !important;">
+                  <th>&nbsp;</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I71">
+                  <td>Terre sur laquelle des pratiques contribuant &agrave; la durabilit&eacute; environnementale de l&#39;agriculture sont appliqu&eacute;es</td>
+                  <td><input id="NvMedxX5rd6-HllvX50cXC0-val" name="entryfield" title="ASP_1:Land on which practices contributing to environmental sustainability of agriculture are conducted" value="[ ASP_1:Land on which practices contributing to environmental sustainability of agriculture are conducted ]"
+                    /></td>
+                </tr>
+                <tr class="I71">
+                  <td>Terre agricole en entier</td>
+                  <td><input id="oXGNeOZjg0F-HllvX50cXC0-val" name="entryfield" title="ASP_1:Total agricultural land" value="[ ASP_1:Total agricultural land ]" /></td>
+                </tr>
+                <tr class="I72">
+                  <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
+                </tr>
+                <tr class="I73">
+                  <td>Ensemble de la zone prot&eacute;g&eacute;e</td>
+                  <td><input id="fg10UJuPwYW-HllvX50cXC0-val" name="entryfield" title="SDG_15:Total Protected Area" value="[ SDG_15:Total Protected Area ]" /></td>
+                </tr>
+                <tr class="I73">
+                  <td>Ensemble de la zone territoriale</td>
+                  <td><input id="V9ahdUlT8ak-HllvX50cXC0-val" name="entryfield" title="SDG_15:Total Territorial Area" value="[ SDG_15:Total Territorial Area ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 7 End-->
+    </div>
+  </div>
+  <!-- Aspiration 1 End -->
+  <!-- Aspiration 2 Start -->
+
+  <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-2">
+    <div class="row" id="goals2" style="border: none;margin-left: 10px;">
+      <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+        <ul>
+          <li class="aspirations"><a href="#goal-8" style="background-color:#9ACD32; color: white; font-weight: bold;">Goal 8</a></li>
+          <li class="aspirations"><a href="#goal-9" style="background-color:#FF9933; color: white; font-weight: bold;">Goal 9</a></li>
+          <li class="aspirations"><a href="#goal-10" style="background-color:#ff4c4c; color: white; font-weight: bold;">Goal 10</a></li>
+        </ul>
+      </div>
+      <!-- Goal 8 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-8">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center; "><strong>Objectif 8: Une Afrique Unie (F&eacute;d&eacute;r&eacute;e ou Conf&eacute;d&eacute;r&eacute;e)</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel8" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I81">Nombre de Barri&egrave;res non tarifaires (BNT) signal&eacute;es et &eacute;limin&eacute;es</option><option value="I82">Changement des volumes des &eacute;changes intra-africains par an</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations8" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg8">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg8">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg8">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I81">
+                  <td>Nombre de Barri&egrave;res non tarifaires (BNT) signal&eacute;es et &eacute;limin&eacute;es</td>
+                  <td><input id="oLXCIJJx7vv-HllvX50cXC0-val" name="entryfield" title="ASP_2:Number of NTBs reported and eliminated" value="[ ASP_2:Number of NTBs reported and eliminated ]" /></td>
+                </tr>
+                <tr class="I82">
+                  <td>Changement des volumes des &eacute;changes intra-africains par an</td>
+                  <td><input id="yligDLmShDN-HllvX50cXC0-val" name="entryfield" title="ASP_2:Change in Volume of intra-African trade per annum	 " value="[ ASP_2:Change in Volume of intra-African trade per annum	  ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg8">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I81">
+                  <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
+                </tr>
+                <tr class="I82">
+                  <td>Volume par an des &eacute;changes de biens entre un pays et les autres (i)</td>
+                  <td><input id="HhL5Ma8V4Xg-HllvX50cXC0-val" name="entryfield" title="ASP_2:volume of trade in goods between a country and others in Year (i)" value="[ ASP_2:volume of trade in goods between a country and others in Year (i) ]" /></td>
+                </tr>
+                <tr class="I82">
+                  <td>Volume du commerce de biens entre un pays et les autres en un an (0)</td>
+                  <td><input id="dowKCFTkX21-HllvX50cXC0-val" name="entryfield" title="ASP_2:volume of trade in goods between a country and others in Year (0)" value="[ ASP_2:volume of trade in goods between a country and others in Year (0) ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 8 End -->
+      <!-- Goal 9 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-9">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933;text-align: center; "><strong>Objectif 9: Des Institutions Financi&egrave;res et Mon&eacute;taires cl&eacute;s sont cr&eacute;&eacute;es et fonctionnent au niveau continental</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel9" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I912">No Indicator</option> </select></div>
+        <!-- Tab links -->
+        <!-- <div id="disaggregations9" style="margin-top: 10px;">
+                    <ul>
+                        <li><a class="disaggTab" href="#NoDisagg9">Agr&eacute;gation</a></li>
+                        <li><a class="disaggTab" href="#Disagg9">D&eacute;sagr&eacute;gation</a></li>
+                    </ul>
+
+                    <div class="tabcontent2" id="NoDisagg9">
+                        <table>
+                            <thead>
+                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                                    <th>Indicateur</th>
+                                    <th>Valeur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="I912">
+                                    <td>Passenger and freight volumes</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I921">
+                                    <td>Proportion of manufacturing value added</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I922">
+                                    <td>Manufacturing employment as a proportion of total employment</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I941">
+                                    <td>CO2 emission per unit of value added</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I951">
+                                    <td>Research and development expenditure as a proportion of GDP</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I952">
+                                    <td>Researchers (in full-time equivalent) per million inhabitants</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I9a1">
+                                    <td>Total official international support to infrastructure</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I9b1">
+                                    <td>Proportion of medium and high-tech industry value added in total value added</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I9c1">
+                                    <td>Proportion of population covered by a mobile network</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tabcontent2" id="Disagg9">
+                        <table>
+                            <thead>
+                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                                    <th>&nbsp;</th>
+                                    <th>Valeur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="I912">
+                                    <td>Passenger and freight volumes</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I921">
+                                    <td>Manufacturing value added</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I921">
+                                    <td>PIB</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I922">
+                                    <td>Total employment in manufacturing activities</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I922">
+                                    <td>Total employment in all economic activities</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I941">
+                                    <td>CO2 emission from manufacturing (kg)</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I941">
+                                    <td>Total manufacturing value added (constant 2010 USD)</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I951">
+                                    <td>Amount of Research and development (R&amp;D) expenditure</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I951">
+                                    <td>PIB</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I952">
+                                    <td>Researchers (in full-time equivalent)</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I952">
+                                    <td>Population (divided by one million)</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I9a1">
+                                    <td>Total official international support to infrastructure</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I9b1">
+                                    <td>Sum of value added in medium and high-tech industry economic activities</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I9b1">
+                                    <td>Total value added of manufacturing</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I9c1">
+                                    <td>Number of inhabitants within range of a mobile-cellular signal</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I9c1">
+                                    <td>Total population</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> --></div>
+      <!-- Goal 9 End -->
+      <!-- Goal 10 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-10">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; "><strong>Objectif 10: Une infrastructure de Classe Mondiale sillonne l&#39;Afrique</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel10" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I101">% du progr&egrave;s r&eacute;alis&eacute; dans la construction du chaȋnon manquant de l&#39;Autoroute Transafricaine</option><option value="I102">% du progr&egrave;s r&eacute;alis&eacute; dans la construction du R&eacute;seau Ferroviaire Africain de Grande Vitesse</option><option value="I103">Nombre de protocoles mis en oeuvre sur l&#39;ouverture des cieux africains</option><option value="I104">Nombre de Mega Watts ajout&eacute;s au r&eacute;seau &eacute;lectrique national</option><option value="I105">Proportion de la population utilisant les t&eacute;l&eacute;phones portables</option><option value="I106">% de la contribution des TIC au PIB</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations10" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg10">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg10">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg10">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I101">
+                  <td>% du progr&egrave;s r&eacute;alis&eacute; dans la construction du chaȋnon manquant de l&#39;Autoroute Transafricaine</td>
+                  <td><input id="qldG2iRO23H-HllvX50cXC0-val" name="entryfield" title="ASP_2:% of the progress made on the implementation of Trans-African Highway Missing link	" value="[ ASP_2:% of the progress made on the implementation of Trans-African Highway Missing link	 ]"
+                    /></td>
+                </tr>
+                <tr class="I102">
+                  <td>% du progr&egrave;s r&eacute;alis&eacute; dans la construction du R&eacute;seau Ferroviaire Africain de Grande Vitesse</td>
+                  <td><input id="ps0bFERNaI8-HllvX50cXC0-val" name="entryfield" title="ASP_2:% of the progress made on the implementation the African High Speed Rail Network	" value="[ ASP_2:% of the progress made on the implementation the African High Speed Rail Network	 ]"
+                    /></td>
+                </tr>
+                <tr class="I103">
+                  <td>Nombre de protocoles mis en oeuvre sur l&#39;ouverture des cieux africains</td>
+                  <td><input id="BTmzpqEarJu-HllvX50cXC0-val" name="entryfield" title="ASP_2:Number of protocols on
+African open skies
+Implemented" value="[ ASP_2:Number of protocols on
+African open skies
+Implemented ]" /></td>
+                </tr>
+                <tr class="I104">
+                  <td>Nombre de Mega Watts ajout&eacute;s au r&eacute;seau &eacute;lectrique national</td>
+                  <!-- <td>
+                                                                                                    <input id="ZTHSXqAvoRh-HllvX50cXC0-val" name="entryfield" title="ASP_2:No. of Mega Watts
+added into the national
+grid" value="[ ASP_2:No. of Mega Watts
+added into the national
+grid ]"/>
+                                                                                                </td> -->
+                  <td><input id="EvxREEMoa5E-HllvX50cXC0-val" name="entryfield" title="SDG_7:Access to electricity (% population)	" value="[ SDG_7:Access to electricity (% population)	 ]" /></td>
+                </tr>
+                <tr class="I105">
+                  <td>Proportion de la population utilisant les t&eacute;l&eacute;phones portables</td>
+                  <!-- <td>
+                                                                                                    <input id="wOwLabpk4lJ-HllvX50cXC0-val" name="entryfield" title="ASP_2:Proportion of population using mobile phones	" value="[ ASP_2:Proportion of population using mobile phones	 ]"/>
+                                                                                                </td> -->
+                  <td><input id="kqnpnHrcTcg-bJmK5mlfvQk-val" name="entryfield" title="SDG_5:Individuals who own a mobile telephone. No Dissaggregation" value="[ SDG_5:Individuals who own a mobile telephone. No Dissaggregation ]" /></td>
+                </tr>
+                <tr class="I106">
+                  <td>% de la contribution des TIC au PIB</td>
+                  <td><input id="w0tytyY7kos-HllvX50cXC0-val" name="entryfield" title="ASP_1:% of ICT contribution to GDP	" value="[ ASP_1:% of ICT contribution to GDP	 ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg10">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th class="goal10Header" colspan="2">Localisation g&eacute;ographique</th>
+                  <th class="goal10HeaderSex" colspan="2">Sexe</th>
+                  <th class="goal10HeaderValue">Valeur</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th class="goal10Header">Rural</th>
+                  <th class="goal10Header">Urbain</th>
+                  <th class="goal10HeaderSex">Femme</th>
+                  <th class="goal10HeaderSex">Homme</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I101">
+                  <td>5 &eacute;tapes/composantes compl&eacute;t&eacute;es</td>
+                  <td><input id="y2DZFRXCUDf-HllvX50cXC0-val" name="entryfield" title="ASP_2:Number of the 5 stages / components completed" value="[ ASP_2:Number of the 5 stages / components completed ]" /></td>
+                </tr>
+                <tr class="I102">
+                  <td>7 &eacute;tapes compl&eacute;t&eacute;es</td>
+                  <td><input id="x2A8wcnnmQK-HllvX50cXC0-val" name="entryfield" title="ASP_2:Number of the 7 stages completed" value="[ ASP_2:Number of the 7 stages completed ]" /></td>
+                </tr>
+                <tr class="I103">
+                  <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
+                </tr>
+                <tr class="I104">
+                  <!-- <td colspan="2">Utilisation &quot;Agrégation&quot; languette</td> -->
+                  <td>Population ayant acc&egrave;s &agrave; l&#39;&eacute;nergie</td>
+                  <td><input id="kCRn8WKklIR-iEgy3xKqVi5-val" name="entryfield" title="SDG_7:Population with access to energy Rural" value="[ SDG_7:Population with access to energy Rural ]" /></td>
+                  <td><input id="kCRn8WKklIR-r8hBd63qzn4-val" name="entryfield" title="SDG_7:Population with access to energy Urban" value="[ SDG_7:Population with access to energy Urban ]" /></td>
+                </tr>
+                <tr class="I104">
+                  <!-- <td colspan="2">Utilisation &quot;Agrégation&quot; languette</td> -->
+                  <td>Population totale</td>
+                  <td><input id="pTOpNf6zkTv-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Total population Rural" value="[ SDG_1:Total population Rural ]" /></td>
+                  <td><input id="pTOpNf6zkTv-r8hBd63qzn4-val" name="entryfield" title="SDG_1:Total population Urban" value="[ SDG_1:Total population Urban ]" /></td>
+                </tr>
+                <tr class="I105">
+                  <td>Nombre de personnes utilisant les t&eacute;l&eacute;phones portables</td>
+                  <!-- <td>
+                                                                                                    <input id="XIqXOpGgKW3-HllvX50cXC0-val" name="entryfield" title="ASP_2:No. of persons using mobile phones" value="[ ASP_2:No. of persons using mobile phones ]"/>
+                                                                                                </td> -->
+                  <td><input id="kqnpnHrcTcg-sLKRSW7xmwp-val" name="entryfield" title="SDG_5:Individuals who own a mobile telephone. Female" value="[ SDG_5:Individuals who own a mobile telephone. Female ]" /></td>
+                  <td><input id="kqnpnHrcTcg-sJUGNYho7Ey-val" name="entryfield" title="SDG_5:Individuals who own a mobile telephone. Male" value="[ SDG_5:Individuals who own a mobile telephone. Male ]" /></td>
+                </tr>
+                <tr class="I105">
+                  <td>Population total &eacute;ligible (15+ ans)</td>
+                  <!-- <td>
+                                                                                                    <input id="UfvUkjWzWHS-HllvX50cXC0-val" name="entryfield" title="ASP_2:Total eligible population (15+ years)" value="[ ASP_2:Total eligible population (15+ years) ]"/>
+                                                                                                </td> -->
+                  <td><input id="pTOpNf6zkTv-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:Total population Female" value="[ SDG_1:Total population Female ]" /></td>
+                  <td><input id="pTOpNf6zkTv-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Total population Male" value="[ SDG_1:Total population Male ]" /></td>
+                </tr>
+                <tr class="I106">
+                  <td>Contribution des TIC au PIB</td>
+                  <td><input id="IvsMptl5UT8-HllvX50cXC0-val" name="entryfield" title="ASP_2:ICT contribution to GDP" value="[ ASP_2:ICT contribution to GDP ]" /></td>
+                </tr>
+                <tr class="I106">
+                  <td>PIB</td>
+                  <td><input id="SL3O2NTNULs-HllvX50cXC0-val" name="entryfield" title="ASP_2:ICT_GDP" value="[ ASP_2:ICT_GDP ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 10 End -->
+    </div>
+  </div>
+  <!-- Aspiration 2 End -->
+  <!-- Aspiration 3 Start -->
+
+  <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-3">
+    <div class="row" id="goals3" style="border: none;margin-left: 10px;">
+      <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+        <ul>
+          <li class="aspirations"><a href="#goal-11" style="background-color:#6666ff; color: white; font-weight: bold;">Goal 11</a></li>
+          <li class="aspirations"><a href="#goal-12" style="background-color:#000000; color: white; font-weight: bold;">Goal 12</a></li>
+        </ul>
+      </div>
+      <!-- Goal 11 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center; "><strong>Objectif 11: Valeurs, pratiques d&eacute;mocratiques, principes universels des droits de l&#39;homme, justice et Etat de Droit bien implant&eacute;s</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel11" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I111">% de personnes qui croient qu&#39;il existe des m&eacute;canismes effectifs et des institutions de surveillance de la redevabilit&eacute; de leurs dirigeants</option><option value="I112">% de la population qui per&ccedil;oit qu&#39;il y a une libert&eacute; de la presse</option><option value="I113">Au moins 70% des public percevraient &eacute;lectionssont libres &eacute;quitable et transparente</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations11" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg11">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg11">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg11">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#6666ff !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I111">
+                  <td>% de personnes qui croient qu&#39;il existe des m&eacute;canismes effectifs et des institutions de surveillance de la redevabilit&eacute; de leurs dirigeants</td>
+                  <td><input id="TDacBLZz715-HllvX50cXC0-val" name="entryfield" title="ASP_1:% of people who believe that there are effective mechanisms and oversight institutions to hold their leaders accountable	" value="[ ASP_1:% of people who believe that there are effective mechanisms and oversight institutions to hold their leaders accountable	 ]"
+                    /></td>
+                </tr>
+                <tr class="I112">
+                  <td>% de la population qui per&ccedil;oit qu&#39;il y a une libert&eacute; de la presse</td>
+                  <td><input id="c2wpYi5Pb4q-HllvX50cXC0-val" name="entryfield" title="ASP_3:% of people who perceive that there is freedom of the press.	" value="[ ASP_3:% of people who perceive that there is freedom of the press.	 ]" /></td>
+                </tr>
+                <tr class="I113">
+                  <td>D&eacute;penses publiques en proportion du budget initial approuv&eacute;</td>
+                  <td><input id="uM0hXE3jV3V-HllvX50cXC0-val" name="entryfield" title="SDG_16:Country score" value="[ SDG_16:Country score ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg11">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#6666ff !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th colspan="2">Sexe</th>
+                  <th colspan="2">Localisation g&eacute;ographique</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#6666ff !important;">
+                  <th>Femme</th>
+                  <th>Homme</th>
+                  <th>Rural</th>
+                  <th>Urbain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I111">
+                  <td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui croient que des m&eacute;canismes et des institutions de surveillance existent</td>
+                  <td><input id="TmujztOG0EK-sLKRSW7xmwp-val" name="entryfield" title="ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Female" value="[ ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Female ]"
+                    /></td>
+                  <td><input id="TmujztOG0EK-sJUGNYho7Ey-val" name="entryfield" title="ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Male" value="[ ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Male ]"
+                    /></td>
+                  <td><input id="TmujztOG0EK-iEgy3xKqVi5-val" name="entryfield" title="ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Rural" value="[ ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Rural ]"
+                    /></td>
+                  <td><input id="TmujztOG0EK-r8hBd63qzn4-val" name="entryfield" title="ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Urban" value="[ ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Urban ]"
+                    /></td>
+                </tr>
+                <tr class="I111">
+                  <td>Taille de l&#39;&eacute;chantillon</td>
+                  <td><input id="HsNWdBITNHt-sLKRSW7xmwp-val" name="entryfield" title="ASP_3:Sample size Female" value="[ ASP_3:Sample size Female ]" /></td>
+                  <td><input id="HsNWdBITNHt-sJUGNYho7Ey-val" name="entryfield" title="ASP_3:Sample size Male" value="[ ASP_3:Sample size Male ]" /></td>
+                  <td><input id="HsNWdBITNHt-iEgy3xKqVi5-val" name="entryfield" title="ASP_3:Sample size Rural" value="[ ASP_3:Sample size Rural ]" /></td>
+                  <td><input id="HsNWdBITNHt-r8hBd63qzn4-val" name="entryfield" title="ASP_3:Sample size Urban" value="[ ASP_3:Sample size Urban ]" /></td>
+                </tr>
+                <tr class="I112">
+                  <td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui per&ccedil;oivent la presse comme &eacute;tant libre</td>
+                  <td><input id="DFEUctZegna-sLKRSW7xmwp-val" name="entryfield" title="ASP_3:No. persons in the sample who perceive the press to be free Female" value="[ ASP_3:No. persons in the sample who perceive the press to be free Female ]" /></td>
+                  <td><input id="DFEUctZegna-sJUGNYho7Ey-val" name="entryfield" title="ASP_3:No. persons in the sample who perceive the press to be free Male" value="[ ASP_3:No. persons in the sample who perceive the press to be free Male ]" /></td>
+                  <td><input id="DFEUctZegna-iEgy3xKqVi5-val" name="entryfield" title="ASP_3:No. persons in the sample who perceive the press to be free Rural" value="[ ASP_3:No. persons in the sample who perceive the press to be free Rural ]" /></td>
+                  <td><input id="DFEUctZegna-r8hBd63qzn4-val" name="entryfield" title="ASP_3:No. persons in the sample who perceive the press to be free Urban" value="[ ASP_3:No. persons in the sample who perceive the press to be free Urban ]" /></td>
+                </tr>
+                <tr class="I112">
+                  <td>Taille de l&#39;&eacute;chantillon</td>
+                  <td><input id="mXWnPtBQw0A-sLKRSW7xmwp-val" name="entryfield" title="ASP_2:Press_Sample Size Female" value="[ ASP_2:Press_Sample Size Female ]" /></td>
+                  <td><input id="mXWnPtBQw0A-sJUGNYho7Ey-val" name="entryfield" title="ASP_2:Press_Sample Size Male" value="[ ASP_2:Press_Sample Size Male ]" /></td>
+                  <td><input id="mXWnPtBQw0A-iEgy3xKqVi5-val" name="entryfield" title="ASP_2:Press_Sample Size Rural" value="[ ASP_2:Press_Sample Size Rural ]" /></td>
+                  <td><input id="mXWnPtBQw0A-r8hBd63qzn4-val" name="entryfield" title="ASP_2:Press_Sample Size Urban" value="[ ASP_2:Press_Sample Size Urban ]" /></td>
+                </tr>
+                <tr class="I113">
+                  <!--<td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>-->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 11 End -->
+      <!-- Goal 12 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-12">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center; "><strong>Objectif 12: Des institutions performantes ainsi qu&#39;un leadership transform&eacute; mis en place &agrave; tous les niveaux</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel12" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I121">Institutions et Leadership</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations12" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg12">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg12">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg12">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#000000 !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I121">
+                  <td>Institutions et Leadership</td>
+                  <td><input id="iOUBfnKDDUd-HllvX50cXC0-val" name="entryfield" title="ASP_3:Proportion of persons who had at least one contact with a public official paid/asked a bribe to a public official	" value="[ ASP_3:Proportion of persons who had at least one contact with a public official paid/asked a bribe to a public official	 ]"
+                    /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg12">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#000000 !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th colspan="2">Sexe</th>
+                  <th colspan="2">Localisation g&eacute;ographique</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#000000 !important;">
+                  <th>Femme</th>
+                  <th>Homme</th>
+                  <th>Rural</th>
+                  <th>Urbain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I121">
+                  <td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui confirment avoir re&ccedil;u des demandes de pots-de-vin</td>
+                  <td><input id="x3ZQjj5q9hJ-sLKRSW7xmwp-val" name="entryfield" title="ASP_3:Number of persons in the sample confirming receipt of request for bribe Female" value="[ ASP_3:Number of persons in the sample confirming receipt of request for bribe Female ]"
+                    /></td>
+                  <td><input id="x3ZQjj5q9hJ-sJUGNYho7Ey-val" name="entryfield" title="ASP_3:Number of persons in the sample confirming receipt of request for bribe Male" value="[ ASP_3:Number of persons in the sample confirming receipt of request for bribe Male ]"
+                    /></td>
+                  <td><input id="x3ZQjj5q9hJ-iEgy3xKqVi5-val" name="entryfield" title="ASP_3:Number of persons in the sample confirming receipt of request for bribe Rural" value="[ ASP_3:Number of persons in the sample confirming receipt of request for bribe Rural ]"
+                    /></td>
+                  <td><input id="x3ZQjj5q9hJ-r8hBd63qzn4-val" name="entryfield" title="ASP_3:Number of persons in the sample confirming receipt of request for bribe Urban" value="[ ASP_3:Number of persons in the sample confirming receipt of request for bribe Urban ]"
+                    /></td>
+                </tr>
+                <tr class="I121">
+                  <td>Taille de l&#39;&eacute;chantillon</td>
+                  <td><input id="mmwkAx1qU1B-sLKRSW7xmwp-val" name="entryfield" title="ASP_2:Bribe_Sample Size Female" value="[ ASP_2:Bribe_Sample Size Female ]" /></td>
+                  <td><input id="mmwkAx1qU1B-sJUGNYho7Ey-val" name="entryfield" title="ASP_2:Bribe_Sample Size Male" value="[ ASP_2:Bribe_Sample Size Male ]" /></td>
+                  <td><input id="mmwkAx1qU1B-iEgy3xKqVi5-val" name="entryfield" title="ASP_2:Bribe_Sample Size Rural" value="[ ASP_2:Bribe_Sample Size Rural ]" /></td>
+                  <td><input id="mmwkAx1qU1B-r8hBd63qzn4-val" name="entryfield" title="ASP_2:Bribe_Sample Size Urban" value="[ ASP_2:Bribe_Sample Size Urban ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 12 End-->
+    </div>
+  </div>
+  <!-- Aspiration 3 End -->
+  <!-- Aspiration 4 Start -->
+
+  <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-4">
+    <div class="row" id="goals4" style="border: none;margin-left: 10px;">
+      <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+        <ul>
+          <li class="aspirations"><a href="#goal-13" style="background-color:#9932CC; color: white; font-weight: bold;">Goal 13</a></li>
+          <li class="aspirations"><a href="#goal-14" style="background-color:#4ca6ff; color: white; font-weight: bold;">Goal 14</a></li>
+          <li class="aspirations"><a href="#goal-15" style="background-color:#9ACD32; color: white; font-weight: bold;">Goal 15</a></li>
+        </ul>
+      </div>
+      <!-- Goal 13 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-13">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center; "><strong>Objectif 13: Paix, S&eacute;curit&eacute; et Stabilit&eacute; sont pr&eacute;serv&eacute;s</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel13" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I131">D&eacute;c&egrave;s li&eacute;s &agrave; un conflit pour une population de 100,000 habitants</option> </select></div>
+        <!-- Tab links -->
+
+        <div id="disaggregations13" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg13">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg13">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg13">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9932CC !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I131">
+                  <td>D&eacute;c&egrave;s li&eacute;s &agrave; un conflit pour une population de 100,000 habitants</td>
+                  <td><input id="u0VoltROklI-HllvX50cXC0-val" name="entryfield" title="ASP_4:Conflict related deaths per 100,000 population	" value="[ ASP_4:Conflict related deaths per 100,000 population	 ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg13">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9932CC !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th colspan="2">Sexe</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#9932CC !important;">
+                  <th>Femme</th>
+                  <th>Homme</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I131">
+                  <td>Nombre de d&eacute;c&egrave;s li&eacute;s aux conflits</td>
+                  <td><input id="DDUZoDV8n2F-sLKRSW7xmwp-val" name="entryfield" title="ASP_4:Number of deaths related to conflicts Female" value="[ ASP_4:Number of deaths related to conflicts Female ]" /></td>
+                  <td><input id="DDUZoDV8n2F-sJUGNYho7Ey-val" name="entryfield" title="ASP_4:Number of deaths related to conflicts Male" value="[ ASP_4:Number of deaths related to conflicts Male ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 13 End-->
+      <!-- Goal 14 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-14">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff;text-align: center; "><strong>Objectif 14: Une Afrique Stable et en Paix</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel14" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I1441">No Indicator</option> </select></div>
+        <!-- Tab links -->
+        <!-- <div id="disaggregations14" style="margin-top: 10px;">
+                    <ul>
+                        <li><a class="disaggTab" href="#NoDisagg14">Agr&eacute;gation</a></li>
+                        <li><a class="disaggTab" href="#Disagg14">D&eacute;sagr&eacute;gation</a></li>
+                    </ul>
+
+                    <div class="tabcontent2" id="NoDisagg14">
+                        <table>
+                            <thead>
+                                <tr class="tableHeader" style="background-color:#4ca6ff !important;">
+                                    <th>Indicateur</th>
+                                    <th>Valeur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="I1441">
+                                    <td>Proportion of fish stocks within biologically sustainable levels</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1451">
+                                    <td>Coverage of protected areas in relation to marine areas</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tabcontent2" id="Disagg14">
+                        <table>
+                            <thead>
+                                <tr class="tableHeader" style="background-color:#4ca6ff !important;">
+                                    <th>&nbsp;</th>
+                                    <th>Valeur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="I1441">
+                                    <td>Proportion of fish stocks within biologically sustainable levels</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1451">
+                                    <td>Coverage of protected areas in relation to marine areas</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> --></div>
+      <!-- Goal 14 End-->
+      <!-- Goal 15 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-15">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center;"><strong>Objectif 15: Une Architecture Africaine pour la Paix et la S&eacute;curit&eacute; enti&egrave;rement Fonctionnnelle et Op&eacute;rationnelle</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel15" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I1511">No Indicator</option> </select></div>
+        <!-- Tab links -->
+        <!--<div id="disaggregations15" style="margin-top: 10px;">-->
+        <!--<ul>-->
+        <!--<li><a class="disaggTab" href="#NoDisagg15">Agr&eacute;gation</a></li>-->
+        <!--<li><a class="disaggTab" href="#Disagg15">D&eacute;sagr&eacute;gation</a></li>-->
+        <!--</ul>-->
+        <!--&lt;!&ndash; Tab content &ndash;&gt;-->
+        <!--<div class="tabcontent2" id="NoDisagg15">-->
+        <!--<table>-->
+        <!--<thead>-->
+        <!--<tr class="tableHeader" style="background-color:#9ACD32 !important;">-->
+        <!--<th>Indicateur</th>-->
+        <!--<th>Valeur</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr class="I1511">-->
+        <!--<td>Forest area as a proportion of total land area</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1512">-->
+        <!--<td>Proportion of important sites for terrestrial and freshwater biodiversity</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1521">-->
+        <!--<td>Progress towards sustainable forest management</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1541">-->
+        <!--<td>Protection of mountain biodiversity sites</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1542">-->
+        <!--<td>Mountain Green Cover Index</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1551">-->
+        <!--<td>Red List Index</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1561">-->
+        <!--<td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I15a1">-->
+        <!--<td>Public expenditure on conservation</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--</div>-->
+        <!--<div class="tabcontent2" id="Disagg15">-->
+        <!--<table>-->
+        <!--<thead>-->
+        <!--<tr class="tableHeader" style="background-color:#9ACD32 !important;">-->
+        <!--<th>&nbsp;</th>-->
+        <!--<th>Valeur</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr class="I1511">-->
+        <!--<td>Forest area (reference year)</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1511">-->
+        <!--<td>Land area (2015)</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1512">-->
+        <!--<td>Total protected area</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1512">-->
+        <!--<td>Total territorial area</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1521">-->
+        <!--<td>Progress towards sustainable forest management</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1541">-->
+        <!--<td>Protection of mountain biodiversity sites</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1542">-->
+        <!--<td>Mountain Green Cover Index</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1551">-->
+        <!--<td>Red List Index</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I1561">-->
+        <!--<td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--<tr class="I15a1">-->
+        <!--<td>Public expenditure on conservation</td>-->
+        <!--<td>&nbsp;</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--</div>-->
+        <!--</div>-->
+      </div>
+      <!-- Goal 15 End -->
+    </div>
+  </div>
+  <!-- Aspiration 4 End -->
+  <!-- Aspiration 5 Start -->
+
+  <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-5">
+    <div class="row" id="goals5" style="border: none;margin-left: 10px;">
+      <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+        <ul>
+          <li class="aspirations"><a href="#goal-16" style="background-color:#FF9933; color: white; font-weight: bold;">Goal 16</a></li>
+        </ul>
+      </div>
+      <!-- Goal 16 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-16">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933; text-align: center;"><strong>Objectif 16: La Rennaissance Culturelle Africaine est pr&eacute;&eacute;minente</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel16" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I1611">No Indicator</option> </select></div>
+        <!-- Tab links -->
+        <!-- <div id="disaggregations16" style="margin-top: 10px;">
+                    <ul>
+                        <li><a class="disaggTab" href="#NoDisagg16">Agr&eacute;gation</a></li>
+                        <li><a class="disaggTab" href="#Disagg16">D&eacute;sagr&eacute;gation</a></li>
+                    </ul>
+
+                    <div class="tabcontent2" id="NoDisagg16">
+                        <table>
+                            <thead>
+                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                                    <th>Indicateur</th>
+                                    <th>Valeur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="I1611">
+                                    <td>Number of victims of intentional homicide</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1632">
+                                    <td>Unsentenced detainees as a proportion of overall prison population</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1661">
+                                    <td>Government expenditures as a proportion of original approved budget</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1691">
+                                    <td>Registered births (%)</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I16a1">
+                                    <td>Independent human rights institutions</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tabcontent2" id="Disagg16">
+                        <table>
+                            <thead>
+                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                                    <th rowspan="2">&nbsp;</th>
+                                    <th class="goal16Header" colspan="2">Sexe</th>
+                                    <th class="goal16NoHeader">Valeur</th>
+                                </tr>
+                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                                    <th class="goal16Header">Femme</th>
+                                    <th class="goal16Header">Homme</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="I1611">
+                                    <td>Total number of victims of intentional homicide recorded in a given year</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1611">
+                                    <td>Total population in given year divided by 100,000</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1632">
+                                    <td>Total number of unsentenced persons held in detention</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1632">
+                                    <td>Total number of persons held in detention</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1661">
+                                    <td>Country Score</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1691">
+                                    <td>Number of children under age of five whose births are reported as being registered with the relevant national civil authorities</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I1691">
+                                    <td>Total number of children under age of five in the population</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="I16a1">
+                                    <td>accreditation classification</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> --></div>
+      <!-- Goal 16 End -->
+    </div>
+  </div>
+  <!-- Aspiration 5 End -->
+  <!-- Aspiration 6 Start -->
+
+  <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-6">
+    <div class="row" id="goals6" style="border: none;margin-left: 10px;">
+      <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+        <ul>
+          <li class="aspirations"><a href="#goal-17" style="background-color:#ff4c4c; color: white; font-weight: bold;">Goal 17</a></li>
+          <li class="aspirations"><a href="#goal-18" style="background-color:#6666ff; color: white; font-weight: bold;">Goal 18</a></li>
+        </ul>
+      </div>
+      <!-- Goal 17 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-17">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center;"><strong>Objectif 17: Une &eacute;galit&eacute; de Genre enti&egrave;re dans toutes les sph&egrave;res de la Vie</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel17" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I171">Droits de propri&eacute;t&eacute; ou une guarantie sur la terre agricole</option><option value="I172">Si&egrave;ges occup&eacute;s par des femmes dans les parlements nationaux, dans des organismes r&eacute;gionaux et locaux</option><option value="I173">Femmes et filles ayant subi des violences sexuelles et physiques</option><option value="I174">Mutilation g&eacute;nitale f&eacute;minine</option><option value="I175">Proportion d&#39;enfants dont les naissances sont enregistr&eacute;es au cours de la premi&egrave;re ann&eacute;e</option> </select></div>
+
+        <div id="disaggregations17" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg17">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg17">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg17">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I171">
+                  <td>Droits de propri&eacute;t&eacute; ou une guarantie sur la terre agricole</td>
+                  <td><input id="whsq6j7qVVW-HllvX50cXC0-val" name="entryfield" title="ASP_6:Proportion of total agric. population with ownership	" value="[ ASP_6:Proportion of total agric. population with ownership	 ]" /></td>
+                </tr>
+                <tr class="I172">
+                  <td>Si&egrave;ges occup&eacute;s par des femmes dans les parlements nationaux, dans des organismes r&eacute;gionaux et locaux</td>
+                  <!-- <td>
+                                                                                                    <input id="nJagDyHOYjs-HllvX50cXC0-val" name="entryfield" title="ASP_6:Seats held by women in national parliaments, regional and local bodies	" value="[ ASP_6:Seats held by women in national parliaments, regional and local bodies	 ]"/>
+                                                                                                </td> -->
+                  <td><input id="rW9QXpbg4Xd-HllvX50cXC0-val" name="entryfield" title="SDG_5:Women in elected government	" value="[ SDG_5:Women in elected government	 ]" /></td>
+                </tr>
+                <tr class="I173">
+                  <td>Femmes et filles ayant subi des violences sexuelles et physiques</td>
+                  <td><input id="sqAeZUb3YJU-HllvX50cXC0-val" name="entryfield" title="ASP_6:Proportion of women &amp; girls subjected to sexual and physical violence	" value="[ ASP_6:Proportion of women &amp; girls subjected to sexual and physical violence	 ]"
+                    /></td>
+                </tr>
+                <tr class="I174">
+                  <td>Mutilation g&eacute;nitale f&eacute;minine</td>
+                  <td><input id="kNSVUXnWRoG-HllvX50cXC0-val" name="entryfield" title="ASP_6:Proportion of girls and women aged 15 - 49 years who have undergone FGM	" value="[ ASP_6:Proportion of girls and women aged 15 - 49 years who have undergone FGM	 ]"
+                    /></td>
+                </tr>
+                <tr class="I175">
+                  <td>Proportion d&#39;enfants dont les naissances sont enregistr&eacute;es au cours de la premi&egrave;re ann&eacute;e</td>
+                  <!-- <td>
+                                                                                                    <input id="PBzmX0ue2w3-HllvX50cXC0-val" name="entryfield" title="ASP_6:Proportion of children whose births are registered in the first year	" value="[ ASP_6:Proportion of children whose births are registered in the first year	 ]"/>
+                                                                                                </td> -->
+                  <td><input id="XbyQiRu1Ut1-HllvX50cXC0-val" name="entryfield" title="SDG_16:Registered births (%)	" value="[ SDG_16:Registered births (%)	 ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg17">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th class="sexDisagg" colspan="2">Sexe</th>
+                  <th class="geoDisagg" colspan="2">Localisation g&eacute;ographique</th>
+                  <th class="noDisagg">Valeur</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                  <th class="sexDisagg">Femme</th>
+                  <th class="sexDisagg">Homme</th>
+                  <th class="geoDisagg">Rural</th>
+                  <th class="geoDisagg">Urbain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I171">
+                  <td>Nombre total d&#39;agriculteurs qui sont propri&eacute;taires de leur terre ou bien qui ont des droits guarantis sur leur terre</td>
+                  <td><input id="Hj0yAWYGZ33-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Total number of farmers who own their land or with secure rights to the land/ total number of farmers Female" value="[ ASP_6:Total number of farmers who own their land or with secure rights to the land/ total number of farmers Female ]"
+                    /></td>
+                  <td><input id="Hj0yAWYGZ33-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Total number of farmers who own their land or with secure rights to the land/ total number of farmers Male" value="[ ASP_6:Total number of farmers who own their land or with secure rights to the land/ total number of farmers Male ]"
+                    /></td>
+                </tr>
+                <tr class="I171">
+                  <td>Nombre total d&#39;agriculteurs</td>
+                  <td><input id="f3V68OtSW84-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Total number of farmers Female" value="[ ASP_6:Total number of farmers Female ]" /></td>
+                  <td><input id="f3V68OtSW84-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Total number of farmers Male" value="[ ASP_6:Total number of farmers Male ]" /></td>
+                </tr>
+                <tr class="I172">
+                  <td>Nombre de Femmes &ndash; &eacute;lues ou nomm&eacute;es dans la l&eacute;gislature ou les organes de d&eacute;lib&eacute;ration aux niveaux r&eacute;gional et local le cas &eacute;ch&eacute;ant</td>
+                  <!-- <td>
+                                                                                                    <input id="U3l37LsYfDq-HllvX50cXC0-val" name="entryfield" title="ASP_6:Number of Women – elected or appointed in the legislature" value="[ ASP_6:Number of Women – elected or appointed in the legislature ]"/>
+                                                                                                </td> -->
+                  <td><input id="q534i5qtxG2-HllvX50cXC0-val" name="entryfield" title="SDG_5:Seats held by women members in parliaments" value="[ SDG_5:Seats held by women members in parliaments ]" /></td>
+                </tr>
+                <tr class="I172">
+                  <td>Nombre total de personnes dans la l&eacute;gislature ou les organes de d&eacute;lib&eacute;ration aux niveaux r&eacute;gional ou local</td>
+                  <!-- <td>
+                                                                                                    <input id="WV5YDberoqP-HllvX50cXC0-val" name="entryfield" title="ASP_6:Total number of persons in the legislature or deliberative body at regional or local level" value="[ ASP_6:Total number of persons in the legislature or deliberative body at regional or local level ]"/>
+                                                                                                </td> -->
+                  <td><input id="UTKJklNQim3-HllvX50cXC0-val" name="entryfield" title="SDG_5:Total number of seats" value="[ SDG_5:Total number of seats ]" /></td>
+                </tr>
+                <tr class="I173">
+                  <td>Nombre de femmes et de filles ayant subi des violence sexuelles ou physiques</td>
+                  <td><input id="G58TeKd3pmk-iEgy3xKqVi5-val" name="entryfield" title="ASP_6:Number of women and girls subjected to sexual or physical violence Rural" value="[ ASP_6:Number of women and girls subjected to sexual or physical violence Rural ]"
+                    /></td>
+                  <td><input id="G58TeKd3pmk-r8hBd63qzn4-val" name="entryfield" title="ASP_6:Number of women and girls subjected to sexual or physical violence Urban" value="[ ASP_6:Number of women and girls subjected to sexual or physical violence Urban ]"
+                    /></td>
+                </tr>
+                <tr class="I173">
+                  <td>Nombre total de femmes et de filles</td>
+                  <td><input id="zbkHN06Xsp3-iEgy3xKqVi5-val" name="entryfield" title="ASP_6:Total number of women and girls Rural" value="[ ASP_6:Total number of women and girls Rural ]" /></td>
+                  <td><input id="zbkHN06Xsp3-r8hBd63qzn4-val" name="entryfield" title="ASP_6:Total number of women and girls Urban" value="[ ASP_6:Total number of women and girls Urban ]" /></td>
+                </tr>
+                <tr class="I174">
+                  <td>Nombre de filles et de femmes ag&eacute;es de 15-49 ans qui ont subi des MGF/D</td>
+                  <td><input id="KODuYGvv3QD-iEgy3xKqVi5-val" name="entryfield" title="ASP_6:Number of girls and women aged 15-49 who have undergone FGM/C  Rural" value="[ ASP_6:Number of girls and women aged 15-49 who have undergone FGM/C  Rural ]" /></td>
+                  <td><input id="KODuYGvv3QD-r8hBd63qzn4-val" name="entryfield" title="ASP_6:Number of girls and women aged 15-49 who have undergone FGM/C  Urban" value="[ ASP_6:Number of girls and women aged 15-49 who have undergone FGM/C  Urban ]" /></td>
+                </tr>
+                <tr class="I174">
+                  <td>Nombre total de femmes ag&eacute;es de 15-49 ans dans la population</td>
+                  <td><input id="cGnhsPKJVI1-iEgy3xKqVi5-val" name="entryfield" title="ASP_6:Total number of women aged 15-49 in the population Rural" value="[ ASP_6:Total number of women aged 15-49 in the population Rural ]" /></td>
+                  <td><input id="cGnhsPKJVI1-r8hBd63qzn4-val" name="entryfield" title="ASP_6:Total number of women aged 15-49 in the population Urban" value="[ ASP_6:Total number of women aged 15-49 in the population Urban ]" /></td>
+                </tr>
+                <tr class="I175">
+                  <td>Nombre d&#39;enfants (0-1) dont les naissances sont enregistr&eacute;es au cours de la premi&egrave;re ann&eacute;e</td>
+                  <!-- <td>
+                                                                                                    <input id="KSKBf46UENw-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:No. of children (0-1) whose births are registered within the first year Female" value="[ ASP_6:No. of children (0-1) whose births are registered within the first year Female ]"/>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <input id="KSKBf46UENw-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:No. of children (0-1) whose births are registered within the first year Male" value="[ ASP_6:No. of children (0-1) whose births are registered within the first year Male ]"/>
+                                                                                                </td> -->
+                  <td><input id="h529oFxp0fz-HllvX50cXC0-val" name="entryfield" title="SDG_16:Registered Children &lt;5yrs" value="[ SDG_16:Registered Children &lt;5yrs ]" /></td>
+                </tr>
+                <tr class="I175">
+                  <td>Nombre total d&#39;enfants ag&eacute;s de 0 -1 ans</td>
+                  <!-- <td>
+                                                                                                    <input id="yAEMY0V2OHY-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Total No. of children aged 0 – 1 years Female" value="[ ASP_6:Total No. of children aged 0 – 1 years Female ]"/>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <input id="yAEMY0V2OHY-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Total No. of children aged 0 – 1 years Male" value="[ ASP_6:Total No. of children aged 0 – 1 years Male ]"/>
+                                                                                                </td> -->
+                  <td><input id="jvfrnV2dyE6-HllvX50cXC0-val" name="entryfield" title="SDG_16:Total number of children &lt;5yrs" value="[ SDG_16:Total number of children &lt;5yrs ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 17 End -->
+      <!-- Goal 18 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-18">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center;"><strong>Objectif 18: Une Jeunesse et des Enfants Engag&eacute;s et D&eacute;marginalis&eacute;s</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel18" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I181">Taux de ch&ocirc;mage</option><option value="I182">% d&#39;enfants enr&ocirc;l&eacute;s dans le travail des enfants</option><option value="I183">% d&#39;enfants engag&eacute;s dans le mariage d&#39;enfants</option><option value="I184">% d&#39;enfants victimes de la traite des &ecirc;tres humains</option><option value="I185">Degr&eacute; de mise en oeuvre des dispositions de la Charte Africaine sur les Droits de la Jeunesse par les Etats Membres</option> </select></div>
+
+        <div id="disaggregations18" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg18">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg18">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg18">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#6666ff !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I181">
+                  <td>Taux de ch&ocirc;mage</td>
+                  <!-- <td>
+                                                                                                    <input id="ni3Hjist7Ts-HllvX50cXC0-val" name="entryfield" title="ASP_6:Unemployment rate	" value="[ ASP_6:Unemployment rate	 ]"/>
+                                                                                                </td> -->
+                  <td><input id="ePlRlJHXijB-HllvX50cXC0-val" name="entryfield" title="SDG_8:Unemployment rate	" value="[ SDG_8:Unemployment rate	 ]" /></td>
+                </tr>
+                <tr class="I182">
+                  <td>% d&#39;enfants enr&ocirc;l&eacute;s dans le travail des enfants</td>
+                  <td><input id="BiJuAITpsnd-HllvX50cXC0-val" name="entryfield" title="ASP_6:% of children engaged in child labour	" value="[ ASP_6:% of children engaged in child labour	 ]" /></td>
+                </tr>
+                <tr class="I183">
+                  <td>% d&#39;enfants engag&eacute;s dans le mariage d&#39;enfants</td>
+                  <td><input id="crCqXgSy5qh-HllvX50cXC0-val" name="entryfield" title="ASP_6:% of children engaged in child marriage	" value="[ ASP_6:% of children engaged in child marriage	 ]" /></td>
+                </tr>
+                <tr class="I184">
+                  <td>% d&#39;enfants victimes de la traite des &ecirc;tres humains</td>
+                  <td><input id="tIVQtMfe8aT-HllvX50cXC0-val" name="entryfield" title="ASP_6:% of children who are victims of human trafficking	" value="[ ASP_6:% of children who are victims of human trafficking	 ]" /></td>
+                </tr>
+                <tr class="I185">
+                  <td>Degr&eacute; de mise en oeuvre des dispositions de la Charte Africaine sur les Droits de la Jeunesse par les Etats Membres</td>
+                  <td><input id="H9qjAbq9v2v-HllvX50cXC0-val" name="entryfield" title="ASP_6:Level of implementation of the provisions of the African Charter on the Rights of the Youth by Member States	" value="[ ASP_6:Level of implementation of the provisions of the African Charter on the Rights of the Youth by Member States	 ]"
+                    /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg18">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#6666ff !important;">
+                  <th rowspan="2">&nbsp;</th>
+                  <th class="sexDisagg" colspan="2">Sexe</th>
+                  <th class="geoDisagg" colspan="2">Localisation g&eacute;ographique</th>
+                  <th class="noDisagg">Valeur</th>
+                </tr>
+                <tr class="tableHeader" style="background-color:#6666ff !important;">
+                  <th class="sexDisagg">Femme</th>
+                  <th class="sexDisagg">Homme</th>
+                  <th class="geoDisagg">Rural</th>
+                  <th class="geoDisagg">Urbain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I181">
+                  <td>Nombre de personnes au ch&ocirc;mage</td>
+                  <!-- <td>
+                                                                                                    <input id="vuJpjTUhTHy-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Number of unemployed persons Female" value="[ ASP_6:Number of unemployed persons Female ]"/>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <input id="vuJpjTUhTHy-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Number of unemployed persons Male" value="[ ASP_6:Number of unemployed persons Male ]"/>
+                                                                                                </td> -->
+                  <td><input id="bKFp3z7BOK7-sLKRSW7xmwp-val" name="entryfield" title="SDG_8:Unemployed persons Female" value="[ SDG_8:Unemployed persons Female ]" /></td>
+                  <td><input id="bKFp3z7BOK7-sJUGNYho7Ey-val" name="entryfield" title="SDG_8:Unemployed persons Male" value="[ SDG_8:Unemployed persons Male ]" /></td>
+                </tr>
+                <tr class="I181">
+                  <td>Nombre total de personnes appartenant &agrave; la population civile active</td>
+                  <!-- <td>
+                                                                                                    <input id="NyxKpTHeRPD-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Total number of people in the civilian labor force Female" value="[ ASP_6:Total number of people in the civilian labor force Female ]"/>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <input id="NyxKpTHeRPD-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Total number of people in the civilian labor force Male" value="[ ASP_6:Total number of people in the civilian labor force Male ]"/>
+                                                                                                </td> -->
+                  <td><input id="Gtrz0rkNIH9-sLKRSW7xmwp-val" name="entryfield" title="SDG_8:Persons in the labor force Female" value="[ SDG_8:Persons in the labor force Female ]" /></td>
+                  <td><input id="Gtrz0rkNIH9-sJUGNYho7Ey-val" name="entryfield" title="SDG_8:Persons in the labor force Male" value="[ SDG_8:Persons in the labor force Male ]" /></td>
+                </tr>
+                <tr class="I182">
+                  <td>Nombre d&#39;enfants qui travaillent</td>
+                  <td><input id="eiYjVHRP49h-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Total number of children who are working Female" value="[ ASP_6:Total number of children who are working Female ]" /></td>
+                  <td><input id="eiYjVHRP49h-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Total number of children who are working Male" value="[ ASP_6:Total number of children who are working Male ]" /></td>
+                </tr>
+                <tr class="I182">
+                  <td>Nombre total d&#39;enfants</td>
+                  <td><input id="w3t9VXk1mpU-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Total number of children Female" value="[ ASP_6:Total number of children Female ]" /></td>
+                  <td><input id="w3t9VXk1mpU-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Total number of children Male" value="[ ASP_6:Total number of children Male ]" /></td>
+                </tr>
+                <tr class="I183">
+                  <td>Nombre d&#39;enfants mari&eacute;s de moins de 18 ans</td>
+                  <td><input id="H4oevm5A5Pi-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Number of children married under 18 years Female" value="[ ASP_6:Number of children married under 18 years Female ]" /></td>
+                  <td><input id="H4oevm5A5Pi-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Number of children married under 18 years Male" value="[ ASP_6:Number of children married under 18 years Male ]" /></td>
+                  <td><input id="H4oevm5A5Pi-iEgy3xKqVi5-val" name="entryfield" title="ASP_6:Number of children married under 18 years Rural" value="[ ASP_6:Number of children married under 18 years Rural ]" /></td>
+                  <td><input id="H4oevm5A5Pi-r8hBd63qzn4-val" name="entryfield" title="ASP_6:Number of children married under 18 years Urban" value="[ ASP_6:Number of children married under 18 years Urban ]" /></td>
+                </tr>
+                <tr class="I183">
+                  <td>Nombre total d&#39;enfants dans la population</td>
+                  <td><input id="SBeRiBAZwCi-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Total number of children in the population Female" value="[ ASP_6:Total number of children in the population Female ]" /></td>
+                  <td><input id="SBeRiBAZwCi-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Total number of children in the population Male" value="[ ASP_6:Total number of children in the population Male ]" /></td>
+                  <td><input id="SBeRiBAZwCi-iEgy3xKqVi5-val" name="entryfield" title="ASP_6:Total number of children in the population Rural" value="[ ASP_6:Total number of children in the population Rural ]" /></td>
+                  <td><input id="SBeRiBAZwCi-r8hBd63qzn4-val" name="entryfield" title="ASP_6:Total number of children in the population Urban" value="[ ASP_6:Total number of children in the population Urban ]" /></td>
+                </tr>
+                <tr class="I184">
+                  <td>Nombre d&#39;enfants victimes de la traite des &ecirc;tres humains</td>
+                  <td><input id="nXclvc4EIB4-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:No. of children who are victims of human trafficking Female" value="[ ASP_6:No. of children who are victims of human trafficking Female ]" /></td>
+                  <td><input id="nXclvc4EIB4-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:No. of children who are victims of human trafficking Male" value="[ ASP_6:No. of children who are victims of human trafficking Male ]" /></td>
+                </tr>
+                <tr class="I184">
+                  <td>Nombre total d&#39;enfants dans la population</td>
+                  <td><input id="SBeRiBAZwCi-sLKRSW7xmwp-val" name="entryfield" title="ASP_6:Total number of children in the population Female" value="[ ASP_6:Total number of children in the population Female ]" /></td>
+                  <td><input id="SBeRiBAZwCi-sJUGNYho7Ey-val" name="entryfield" title="ASP_6:Total number of children in the population Male" value="[ ASP_6:Total number of children in the population Male ]" /></td>
+                </tr>
+                <tr class="I185">
+                  <td>Niveau de mise&oelig;uvre des dispositions de la Charte africaine des droits de la jeunesse par &Eacute;tats membres</td>
+                  <td><input id="BgbLInmNwUu-HllvX50cXC0-val" name="entryfield" title="ASP_6:Level of implementation of the provisions(Options)" value="[ ASP_6:Level of implementation of the provisions(Options) ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 18 End -->
+    </div>
+  </div>
+  <!-- Aspiration 6 End -->
+  <!-- Aspiration 7 Start -->
+
+  <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-7">
+    <div class="row" id="goals7" style="border: none;margin-left: 10px;">
+      <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+        <ul>
+          <li class="aspirations"><a href="#goal-19" style="background-color:#000000; color: white; font-weight: bold;">Goal 19</a></li>
+          <li class="aspirations"><a href="#goal-20" style="background-color:#9932CC; color: white; font-weight: bold;">Goal 20</a></li>
+        </ul>
+      </div>
+      <!-- Goal 19 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-19">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center;"><strong>Objectif 19: L&#39;Afrique en tant que Partenaire Important dans les Affaires Mondiales et la Coexistence Pacifique</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel19" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I191">L&eacute;gislation en mati&egrave;re statistique</option><option value="I192">Financement allou&eacute;e au syst&egrave;me statistique fonctionnel</option><option value="I193">Coordination de la compilation de statistiques officielles</option> </select></div>
+
+        <div id="disaggregations19" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg19">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg19">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg19">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#000000 !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I191">
+                  <td>Disponibilit&eacute; (Oui / Non) de la l&eacute;gislation sur les statistiques</td>
+                  <td><input id="O5OlvsE3MwN-HllvX50cXC0-val" name="entryfield" title="ASP_7:Availability (Yes / No) of legislation on statistics" value="[ ASP_7:Availability (Yes / No) of legislation on statistics ]" /></td>
+                </tr>
+                <tr class="I192">
+                  <td>Financement allou&eacute;e au syst&egrave;me statistique fonctionnel</td>
+                  <td><input id="MbHnRFptgWp-HllvX50cXC0-val" name="entryfield" title="ASP_7:Funding allocated for the implementation	" value="[ ASP_7:Funding allocated for the implementation	 ]" /></td>
+                </tr>
+                <tr class="I193">
+                  <td>Existencedesformels institutionnels arrangementspour la coordination de la compilation desofficielles statistiques</td>
+                  <td><input id="sSGLC3rkVGs-HllvX50cXC0-val" name="entryfield" title="ASP_7: Existence of formal institutional arrangements for the coordination of the compilation of official statistics" value="[ ASP_7: Existence of formal institutional arrangements for the coordination of the compilation of official statistics ]"
+                    /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg19">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#000000 !important;">
+                  <th>&nbsp;</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I191">
+                  <!--<td>Disponibilit&eacute; (Oui / Non) de la l&eacute;gislation sur les statistiques</td>-->
+                  <!--<td><input id="O5OlvsE3MwN-HllvX50cXC0-val" name="entryfield" title="ASP_7:Availability (Yes / No) of legislation on statistics" value="[ ASP_7:Availability (Yes / No) of legislation on statistics ]"/></td>-->
+                </tr>
+                <tr class="I192">
+                  <td>Le budget total allou&eacute; au syst&egrave;me statistique fonctionnel (X + Y + Z)</td>
+                  <td><input id="Ej7dXcqX99a-HllvX50cXC0-val" name="entryfield" title="ASP_7:The total budget allocated to the functional statistical system (X + Y + Z)" value="[ ASP_7:The total budget allocated to the functional statistical system (X + Y + Z) ]"
+                    /></td>
+                </tr>
+                <tr class="I192">
+                  <td>Le Budget total du gouvernement &eacute;tant</td>
+                  <td><input id="FLrQcqOLRfd-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total government budget." value="[ ASP_7:Total government budget. ]" /></td>
+                </tr>
+                <tr class="I193">
+                  <!--<td>Coordination de la compilation de statistiques officielles</td>-->
+                  <!--<td><input id="sSGLC3rkVGs-HllvX50cXC0-val" name="entryfield" title="ASP_7: Existence of formal institutional arrangements for the coordination of the compilation of official statistics" value="[ ASP_7: Existence of formal institutional arrangements for the coordination of the compilation of official statistics ]"/>-->
+                  <!--</td>-->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 19 End -->
+      <!-- Goal 20 Start -->
+
+      <div class="col-xm-11 col-sm-10 col-md-11" id="goal-20">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center;"><strong>Objectif 20: L&#39;Afrique prend enti&egrave;rement en charge le financement de son d&eacute;veloppement</strong></h3>
+
+        <div><select class="dropdown" id="indicatorLevel20" name="indicators"><option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option><option value="I201">March&eacute;s des Capitaux</option><option value="I202">Syst&egrave;me Fiscal et les Revenus</option><option value="I203">Total de l&#39;APD en pourcentage du budget national</option><option value="I204">Ressources mobilis&eacute;es gr&acirc;ce &agrave; des m&eacute;canismes de financement innovants en % du budget national</option> </select></div>
+
+        <div id="disaggregations20" style="margin-top: 10px;">
+          <ul>
+            <li><a class="disaggTab" href="#NoDisagg20">Agr&eacute;gation</a></li>
+            <li><a class="disaggTab" href="#Disagg20">D&eacute;sagr&eacute;gation</a></li>
+          </ul>
+          <!-- Tab content -->
+
+          <div class="tabcontent2" id="NoDisagg20">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9932CC !important;">
+                  <th>Indicateur</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I201">
+                  <td>March&eacute;s des Capitaux</td>
+                  <td><input id="XnqjuYc8o6n-HllvX50cXC0-val" name="entryfield" title="ASP_7:Proportion of development expenditure contributed by national capital markets	" value="[ ASP_7:Proportion of development expenditure contributed by national capital markets	 ]"
+                    /></td>
+                </tr>
+                <tr class="I202">
+                  <td>Syst&egrave;me Fiscal et les Revenus</td>
+                  <td><input id="xt2wtvE2Nse-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total tax revenue as a % GDP	" value="[ ASP_7:Total tax revenue as a % GDP	 ]" /></td>
+                </tr>
+                <tr class="I203">
+                  <td>Total de l&#39;APD en pourcentage du budget national</td>
+                  <!-- <td>
+                                                                                                    <input id="PGnHsKoDdrK-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total ODA as a percentage of the national budget	" value="[ ASP_7:Total ODA as a percentage of the national budget	 ]"/>
+                                                                                                </td> -->
+                  <td><input id="QIdqsSCdmSP-HllvX50cXC0-val" name="entryfield" title="SDG_17:ODA distributions as proportion of total domestic budget (in USD)	" value="[ SDG_17:ODA distributions as proportion of total domestic budget (in USD)	 ]" /></td>
+                </tr>
+                <tr class="I204">
+                  <td>Ressources mobilis&eacute;es gr&acirc;ce &agrave; des m&eacute;canismes de financement innovants en % du budget national</td>
+                  <td><input id="RynAka2RtAM-HllvX50cXC0-val" name="entryfield" title="ASP_7:Resources raised through innovative financing mechanisms as a % of national budget	" value="[ ASP_7:Resources raised through innovative financing mechanisms as a % of national budget	 ]"
+                    /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabcontent2" id="Disagg20">
+            <table>
+              <thead>
+                <tr class="tableHeader" style="background-color:#9932CC !important;">
+                  <th>&nbsp;</th>
+                  <th>Valeur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="I201">
+                  <td>Total des fonds provenant du march&eacute; national des capitaux</td>
+                  <td><input id="JoDKuZTXJwg-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total funds raised from the domestic capital market" value="[ ASP_7:Total funds raised from the domestic capital market ]" /></td>
+                </tr>
+                <tr class="I201">
+                  <td>Total du budget du secteur public</td>
+                  <td><input id="swN4BwyElT3-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total public sector budget" value="[ ASP_7:Total public sector budget ]" /></td>
+                </tr>
+                <tr class="I202">
+                  <td>Total des taxes pr&eacute;lev&eacute;s comme d&eacute;fini ci-dessus</td>
+                  <td><input id="arJXCM5aX0X-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total taxes collected as defined above" value="[ ASP_7:Total taxes collected as defined above ]" /></td>
+                </tr>
+                <tr class="I202">
+                  <td>PIB</td>
+                  <td><input id="pLzcyCsoHlj-HllvX50cXC0-val" name="entryfield" title="ASP_7:Revenue_GDP" value="[ ASP_7:Revenue_GDP ]" /></td>
+                </tr>
+                <tr class="I203">
+                  <td>Total de toutes les sources de l&#39;Assistance Publique au D&eacute;veloppement tel que d&eacute;fini ci-dessus</td>
+                  <!-- <td>
+                                                                                                    <input id="h8IKDgZef2x-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total of all sources of official development assistance as defined above" value="[ ASP_7:Total of all sources of official development assistance as defined above ]"/>
+                                                                                                </td> -->
+                  <td><input id="WNbwHJdi9fj-HllvX50cXC0-val" name="entryfield" title="SDG_17:ODA distribution" value="[ SDG_17:ODA distribution ]" /></td>
+                </tr>
+                <tr class="I203">
+                  <td>Total de toutes les sources de financement - n&eacute;cessaires &agrave; l&#39;ex&eacute;cuton du budget</td>
+                  <!-- <td>
+                                                                                                    <input id="UzzgE5rssPd-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total of all sources of funds – required to execute the budget" value="[ ASP_7:Total of all sources of funds – required to execute the budget ]"/>
+                                                                                                </td> -->
+                  <td><input id="R2mSVduTEHb-HllvX50cXC0-val" name="entryfield" title="SDG_17:Total domestic budget" value="[ SDG_17:Total domestic budget ]" /></td>
+                </tr>
+                <tr class="I204">
+                  <td>Total de toutes les sources de financement innovantes telles que d&eacute;finies ci-dessus</td>
+                  <td><input id="DrAIwyrNJTi-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total of all sources of innovative financing as defined above" value="[ ASP_7:Total of all sources of innovative financing as defined above ]" /></td>
+                </tr>
+                <tr class="I204">
+                  <td>Total de toutes les sources de financement - n&eacute;cessaires &agrave; l&#39;ex&eacute;cuton du budget</td>
+                  <td><input id="UzzgE5rssPd-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total of all sources of funds – required to execute the budget" value="[ ASP_7:Total of all sources of funds – required to execute the budget ]" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Goal 20 End -->
+    </div>
+  </div>
+  <!-- Aspiration 7 End -->
+</div>
