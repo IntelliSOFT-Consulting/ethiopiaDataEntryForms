@@ -11,10 +11,15 @@ with open("1121.csv", "r") as f:
     reader = csv.DictReader(f)
     for row in reader:
         cat = row['CategoryOption']
-        uid = row['uid']
+        uid = row['Uid']
+
+        print(uid)
 
         de1 += str1 % (uid, cat, cat)
         de2 += str2 % (uid, cat, cat)
+with open("1121-1.html", "w") as f1:
+    f1.write(de1)
 
-with open("1121.html", "w") as f1:
+
+with open("1121-2.html", "w") as f1:
     f1.write(de2)

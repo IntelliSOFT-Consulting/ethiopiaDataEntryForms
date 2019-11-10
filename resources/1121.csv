@@ -1,34 +1,34 @@
-CategoryOption,uid
-Male,Male
-Female,Female
-Difficulty in basic activity,Difficulty in basic activity
-No difficulty in basic activity,No difficulty in basic activity
-Limitation in work caused by a health condition or difficulty in basic activity,Limitation in work caused by a health condition or difficulty in basic activity
-No limitation in work caused by a health condition or difficulty in basic activity,No limitation in work caused by a health condition or difficulty in basic activity
-Rural,Rural
-Urban,Urban
-Poorest,Poorest
-Poorer,Poorer
-Middle,Middle
-Richer,Richer
-Richest,Richest
-Female-headed households,Female-headed households
-Male-headed households,Male-headed households
-Child headed households,Child headed households
-0-14,0-14
-15-19,15-19
-20-29,20-29
-30-39,30-39
-40-49,40-49
-50-59,50-59
-60-69,60-69
-70+,70+
-air,air
-Sea,Sea
-Inland Waterways,Inland Waterways
-Road,Road
-Railways,Railways
-pipelines,pipelines
-Cables,Cables
-"Post Consignment, mail or courier shipments","Post Consignment, mail or courier shipments"
-Self-propelled good,Self-propelled good
+CategoryOption,Uid
+Male,sJUGNYho7Ey
+Female,sLKRSW7xmwp
+Difficulty in basic activity,exvpGLIpWDC
+No difficulty in basic activity,GiBFNT1NBia
+Limitation in work caused by a health condition or difficulty in basic activity,e4IBCox0kMB
+No limitation in work caused by a health condition or difficulty in basic activity,UiRnRJkWqF0
+Rural,iEgy3xKqVi5
+Urban,r8hBd63qzn4
+Poorest,biAre9KyPA9
+Poorer,yIItn7U5D5Y
+Middle,c22X33E3k0M
+Richer,cjkupqwapFY
+Richest,ltjwI9CIULk
+Female-headed households,ZXPduAD5Itx
+Male -headed households,ziwQjzugX3F
+Child headed  households,GXItT9TMwxX
+0-14,uTey4V59fkH
+15-19,oDV0qi1ZdAc
+20-29,C0gmB4XnaCd
+30-39,hoqUGaZquP0
+40-49,hoqUGaZquP0
+50-59,AwdM7SteCga
+60-69,vzd7UsGmnAU
+70+,OK3yMHOFoGz
+air,uI8wtmUK1fO
+Sea,VnWvo8zBF4t
+Inland water way,IicIkCvtlVC
+Roads,MDBCszg1d82
+Railway,fTPDdSzyKHf
+pipelines,p6wEgiLpkQf
+Cables,dGCFVZShnyl
+"Post Consignment, mail or courier shipments",rYlMKzkti6r
+Self propelled goods,KyzA4MpLxGc
