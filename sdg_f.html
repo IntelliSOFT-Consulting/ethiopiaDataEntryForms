@@ -112,16 +112,6 @@
 
         // 2ai - tier ii
 
-
-
-        /* if ((($("#IVpEDiEkPEw-HllvX50cXC0-val").val()) != "")) {
-                    DisaggregationDisabled("II2a1Disabled", "II2a1Enabled");
-                }
-            
-                if ($("#Z4MY98edt6O-HllvX50cXC0-val").val() != "" || $("#s28QRqyjEzV-HllvX50cXC0-val").val() != "") {
-                    noDisaggregationDisabled("II2a1Disabled", "II2a1Enabled")
-                }
-        */
         if ((($(".II2a1Enabled td input").val()) != "")) {
             DisaggregationDisabled("II2a1Disabled", "II2a1Enabled");
         }
@@ -2041,10 +2031,10 @@
                 <option value="I111b">1.1.1b Population active vivant en dessous du seuil international de pauvreté
                 </option>
                 <option value="I121">1.2.1 Population vivant en dessous du seuil de pauvreté national</option>
-                <option value="II131">1.3.1Population couverte par la protection sociale</option>
+                <option value="II131">1.3.1 Population couverte par la protection sociale</option>
                 <option value="II142">1.4.2 Population adulte totale ayant des droits fonciers garantis sur la terre.
                 </option>
-                <option value="II151">1.5.1 Deaths, missing persons and persons affected by disaster</option>
+                <option value="II151">1.5.1 Nombre de décès, de personnes disparues et de personnes affectées par le désastre par population de 100,000 personnes</option>
             </select></div>
         <!-- Tab disaggregations Start -->
 
@@ -2181,7 +2171,7 @@
                             <td><input id="WXQgRsAeXa9-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.4.2_II:Adult population with legally recognized documentation over land Male" value="[ SDG_1.4.2_II:Adult population with legally recognized documentation over land Male ]"></td>
                         </tr>
                         <tr class="II142 II142Disabled">
-                            <td>"Population adulte totale</td>
+                            <td>Population adulte totale</td>
                             <td><input id="Og4XfD2cPvu-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.4.2_II:Total adult population Female" value="[ SDG_1.4.2_II:Total adult population Female ]">
                             </td>
                             <td><input id="Og4XfD2cPvu-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.4.2_II:Total adult population Male" value="[ SDG_1.4.2_II:Total adult population Male ]"></td>
@@ -2194,7 +2184,7 @@
                             </td>
                         </tr>
                         <tr class="II151 II151Disabled">
-                            <td>"Population totale</td>
+                            <td>Population totale</td>
                             <td><input id="Cc8hzGkTDh2-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.5.1_II:Total population Female" value="[ SDG_1.5.1_II:Total population Female]"></td>
                             <td><input id="Cc8hzGkTDh2-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.5.1_II:Total population Male" value="[ SDG_1.5.1_II:Total population ale]"></td>
                         </tr>
@@ -2241,7 +2231,7 @@
                     à risque (%)</option>
                 <option value="I252a3">2.5.2a Races animales locales classées à un niveau de risque
                     d'extinction inconnu (%)</option>
-                <option value="II2a1">2.a.1 Orientation Index for governement expenditures</option>
+                <option value="II2a1">2.a.1 Index d'orientation de l'agriculture pour les dépenses gouvernementales.</option>
                 <option value="I2a2">2.a.2 Total des flux officiels vers l'agriculture</option>
                 <option value="I2b1">2.b.1 Subventions à l'exportation agricole</option>
 
@@ -2343,7 +2333,7 @@
                             </td>
                         </tr>
                         <tr class="II2a1 II2a1Disabled">
-                            <td>la part de l'agriculture dans le PIB</td>
+                            <td>La part de l'agriculture dans le PIB</td>
                             <td><input id="Z4MY98edt6O-HllvX50cXC0-val" name="entryfield" title="SDG_2.a.1_II:Agriculture Share of GDP (agriculture value added / GDP)" value="[ SDG_2.a.1_II:Agriculture Share of GDP (agriculture value added / GDP) ]"></td>
                         </tr>
                         <tr class="I221 I221Disabled">
@@ -2433,16 +2423,8 @@
                 <option value="II372-2">3.7.2(ii) Taux de natalité chez les adolescentes (pour 1,000 femmes agées de
                     15-19 ans)
                 </option>
-                <option value="II381">3.8.1 Couverture des services de santé essentiels (définis comme la couverture
-                    moyenne des
-                    services essentiels telle que déterminée par les interventions de référence concernant notamment la
-                    santé
-                    procréative, maternelle, néonatale, infantile, les maladies infectieuses, la capacité d'acceuil et
-                    l'accessibilité des services pour la population en générale et les plus défavorisés en particulier)
-                </option>
-                <option value="II382">3.8.2 Proportion de la population pour laquelle les dépenses en santé du ménage
-                    sont
-                    importantes, en proportion des dépenses totales ou du revenu du ménage</option>
+                <option value="II381">3.8.1 Coverage of essential health services</option>
+                <option value="II382">3.8.2 Proportion of population with large household expenditures on health</option>
                 <option value="I391">3.9.1 Mortalité, pollution de l'air</option>
                 <option value="I392">3.9.2 Mortalité, eau insalubre (pour 100,000)</option>
                 <option value="I393">3.9.3 Mortalité, empoisonnement accidentel (pour 100,000)</option>
@@ -2875,9 +2857,7 @@
                         <!--                    tier ii -->
 
 
-                        <tr class="II372-1 II372-1Disabled">
-                            <td colspan="2">Taux de natalité chez les adolescentes (âgées de 10 à 14 ans) pour 1 000 femmes de ce groupe d'âge</td>
-                        </tr>
+
                         <tr class="II372-1 II372-1Disabled">
                             <td>Nombre de naissances vivantes chez les femmes âgées de 10 à 14 ans</td>
                             <td><input id="SEFh0NstvUS-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Number of live births to women aged 10-14" value="[ SDG_3.7.2_II:Number of live births to women aged 10-14 ]"></td>
@@ -2886,16 +2866,14 @@
                             <td>Exposition à la maternité chez les femmes âgées de 10 à 14 ans</td>
                             <td><input id="oNP8xYKgM9j-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years" value="[ SDG_3.7.2_II:Exposure to childbearing by women aged 10-14 years ]"></td>
                         </tr>
-                        <tr class="II372-2 II372-2Disabled">
-                            <td colspan="2">Taux de natalité chez les adolescentes (âgées de 15 à 19 ans) pour 1 000 femmes de ce groupe d'âge</td>
-                        </tr>
+
                         <tr class="II372-2 II372-2Disabled">
                             <td>Nombre de naissances vivantes chez les femmes âgées de 15 à 19 ans</td>
 
                             <td><input id="hOWf7pMsfol-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Number of live births to women aged 15-19" value="[ SDG_3.7.2_II:Number of live births to women aged 15-19 ]"></td>
                         </tr>
                         <tr class="II372-2 II372-Disabled">
-                            <td>Exposition à la maternité chez les femmes âgées de 10 à 14 ans</td>
+                            <td>Exposition de femmes agées de 15-19 ans à la maternité</td>
                             <td><input id="H2ICvPO88LD-HllvX50cXC0-val" name="entryfield" title="SDG_3.7.2_II:Exposure to childbearing by women aged 15-19 years" value="[ SDG_3.7.2_II:Exposure to childbearing by women aged 15-19 years ]"></td>
                         </tr>
 
@@ -4692,7 +4670,7 @@
                 <option value="I861">8.6.1 Jeunes qui ne sont ni éduqués, ni employés, ni formés </option>
                 <option value="II871">8.7.1 Travail des enfants (absolu et % population)</option>
                 <option value="II881">8.8.1 Accidents de travail fatal et non fatal (taux)</option>
-                <option value="III882">8.8.2 Labour rights compliance</option>
+                <option value="III882">8.8.2 Application des droits du travail</option>
                 <option value="II891">8.9.1 Part du tourisme et crossance ( % PIB)</option>
                 <!-- <option value="I8101">8.10.1 Commercial bank and ATMs presence (per 100,000)</option> -->
                 <option value="I8101a">8.10.a(a) Banques commerciales et présence de distributeurs automatiques ATMs
@@ -5891,7 +5869,7 @@
                 <option value="I1441">14.4.1 Stocks de poisson durables </option>
                 <option value="I1451">14.5.1 Sites marins, zone protégée moyenne (%)</option>
                 <option value="II14a1">14.a.1 Recherche sur la technologie marine (%)</option>
-                <option value="III14c1">14.c.1 Ratification de la Convention de l'OIT de 2006 sur le Travail Maritime </option>
+                <option value="III14c1">14.c.1 Ratification de la Convention de l'OIT de 2006 sur le Travail Maritime</option>
             </select></div>
         <!-- Tab links -->
 
@@ -5927,8 +5905,7 @@
                         </tr>
                         <tr class="III14c1 III14c1Enabled">
                             <td>Nombre de pays qui réalisent des progrès dans la ratification, l'acceptation et la mise en oeuvre, à travers des moyens juridiques, politiques et des cadres institutionnels, des instruments relatifs à l'ocean, qui mettent en
-                                oeuvre le droit international, tel que cela se refléte dans la Convention des Nations Unies sur la Loi de la Mer pour la conservation et l'utilisation durable des océans et de leurs ressources.
-                            </td>
+                                oeuvre le droit international, tel que cela se refléte dans la Convention des Nations Unies sur la Loi de la Mer pour la conservation et l'utilisation durable des océans et de leurs ressources.</td>
                             <td><input id="giHpKd7C0af-HllvX50cXC0-val" name="entryfield" title="SDG_14.c.1_III: Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the Unite"
                                     value="[ SDG_14.c.1_III: Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the Unite ]">
                             </td>
@@ -6077,18 +6054,18 @@
                             </td>
                         </tr>
                         <tr class="III1591 III1591Enabled">
-                            <td>15.9.1 Progrès réalisés en vue d'atteindre les cibles nationales définies conformément à la Cible 2 de la Biodversité Aichi du Plan Stratégique pour la Biodiversité 2011–2020</td>
+                            <td>Progrès réalisés en vue d'atteindre les cibles nationales définies conformément à la Cible 2 de la Biodversité Aichi du Plan Stratégique pour la Biodiversité 2011–2020</td>
                             <td><input id="LeUFPjdutFx-HllvX50cXC0-val" name="entryfield" title="SDG_15.9.1_III: Progress towards national targets established in accordance with Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020"
                                     value="[ SDG_15.9.1_III: Progress towards national targets established in accordance with Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020 ]">
                             </td>
                         </tr>
                         <tr class="III15a1 III15a1Enabled">
-                            <td>15.a.1 Aide Publique au développement et dépenses publiques pour la conservation et l'utilisation durable de la biodiversité et des ecosystèmes</td>
+                            <td>Aide Publique au développement et dépenses publiques pour la conservation et l'utilisation durable de la biodiversité et des ecosystèmes</td>
                             <td><input id="zcBnEn29zQw-HllvX50cXC0-val" name="entryfield" title="SDG_15.a.1_III: Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems" value="[ SDG_15.a.1_III: Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems ]">
                             </td>
                         </tr>
                         <tr class="III15b1 III15b1Enabled">
-                            <td>15.b.1 Aide Publique au Développement et dépenses publiques pour la conservation et l'utilisation durable de la biodiversité et des ecosystèmes</td>
+                            <td>Aide Publique au Développement et dépenses publiques pour la conservation et l'utilisation durable de la biodiversité et des ecosystèmes</td>
                             <td><input id="fYfsfU4nGKh-HllvX50cXC0-val" name="entryfield" title="SDG_15.b.1_III: Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems" value="[ SDG_15.b.1_III: Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems ]">
                             </td>
                         </tr>
