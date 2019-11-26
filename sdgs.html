@@ -1222,8 +1222,12 @@
     if ((($("#APPRHhMypTn-HllvX50cXC0-val").val()) != "")) {
         DisaggregationDisabled("I1561Disabled", "I1561Enabled");
     }
-    if ((($("#KI4KGmBjeK5-HllvX50cXC0-val").val()) != "")) {
-        DisaggregationDisabled("I15a1Disabled", "I15a1Enabled");
+
+    if ($(".I15a1Enabled td input").val() != "") {
+        DisaggregationDisabled("I15a1Disabled", "I15a1Enabled")
+    }
+    if ($(".I15a1Disabled td input").val() != "") {
+        noDisaggregationDisabled("I15a1Disabled", "I15a1Enabled")
     }
 
     // tier ii start
@@ -2972,13 +2976,12 @@
             <option disabled="disabled" selected="selected">Please select an indicator</option>
             <option value="II411bI">4.1.1b(i) Primary students proficient in reading (%)</option>
             <option value="II411bII">4.1.1b(ii) Primary students proficient in mathematics (%)</option>
-            <option value="II411cI">4.1.1c(i) Lower secondary students proficient in mathematics (%)</option>
+            <option value="II411cI">4.1.1c(i) Lower secondary students proficient in reading (%)</option>
             <option value="II411cII">4.1.1c(ii) Lower secondary students proficient in mathematics (%)</option>
             <option value="I422">4.2.2 Organized learning one year before official primary entry age (%)</option>
             <option value="II431-1">4.3.1 Youth and adults (age 15-24) in formal and non-formal education and training (%)
             </option>
-            <option value="II431-2">4.3.1 Youth and adults (age 25-64) in formal and non-formal education and training (%)
-            </option>
+            <option value="II431-2">4.3.1 Youth and adults (age 25-64) in formal and non-formal education and training (%)</option>
             <option value="II441">4.4.1 Youth and adults (age 15+) with ICT skills (%)</option>
             <option value="I451a">4.5.1 Gender Parity Index - Primary Education Enrollment</option>
             <option value="I451b">4.5.1 Gender Parity Index - Secondary Education Enrollment</option>
