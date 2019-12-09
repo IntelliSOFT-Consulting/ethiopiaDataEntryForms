@@ -1869,6 +1869,9 @@
                 $('.tableHeader').show();
             })
         });
+
+
+
         $(function() {
             $("#sdgs").tabs();
             $("#disaggregations").tabs();
@@ -1889,7 +1892,20 @@
             $("#disaggregations16").tabs();
             $("#disaggregations17").tabs();
             $("#sdgs3").tabs();
-        })
+        });
+
+
+    });
+
+    $(document).ready(function() {
+        var inputClasses = ["I1732", "I1791", "I17101", "I17111", "I17121", "2.a.2", "I2b1", "I8a1", "I9a1", "I1152", "I15a1", "I16a1"].map(input => ["." + input + "Enabled td input ", "." + input + "Disabled td input "]);
+
+        var inputClassesStr = inputClasses.join(",");
+        $(inputClassesStr).change(function() {
+            var roundedOff = Math.round(parseFloat(this.value) * 100) / 100;
+            this.value = roundedOff;
+            console.error(roundedOff, this.value)
+        });
     });
 </script>
 <style type="text/css">
@@ -2035,7 +2051,7 @@
             <option value="I121">1.2.1 Population living below the national poverty line</option>
             <option value="II131">1.3.1 Population covered by social protection</option>
             <option value="II142">1.4.2 Total adult population with secure tenure rights to land</option>
-            <option value="II151">1.5.1  Décès, personnes disparues et personnes affectées par des désatres</option>
+            <option value="II151">1.5.1  Deaths, missing persons and persons affected by disaster</option>
         </select></div>
         <!-- Tab disaggregations Start -->
 
@@ -2081,7 +2097,7 @@
                             </td>
                         </tr>
                         <tr class="II151 II151Enabled">
-                            <td>Nombre de décès, de personnes disparues et de personnes affectées par le désastre par population de 100,000 personnes</td>
+                            <td>Number of deaths, missing persons and persons affected attributed to disasters</td>
                             <td><input id="O7F9PcuM0eD-HllvX50cXC0-val" name="entryfield" title="SDG_1.5.1_II:Number of deaths, missing persons and persons affected attributed to disasters" value="[ SDG_1.5.1_II:Number of deaths, missing persons and persons affected attributed to disasters ]"
                                 />
                             </td>
@@ -2184,17 +2200,9 @@
                                 />
                             </td>
                         </tr>
+
                         <tr class="II151 II151Disabled">
-                            <td>Nombre de décès, personnes disparues et personnes affectées par des désatres</td>
-                            <td><input id="ASTBz862Ehq-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population Female" value="[ SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population Female ]"
-                                />
-                            </td>
-                            <td><input id="ASTBz862Ehq-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population Male" value="[ SDG_1.5.1_II: Number of deaths, missing persons and persons affected attributed to disasters per 100,000 population Male ]"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="II151 II151Disabled">
-                            <td></td>
+                            <td>Total population</td>
                             <td><input id="Cc8hzGkTDh2-sLKRSW7xmwp-val" name="entryfield" title="SDG_1.5.1_II:Total population Female" value="[ SDG_1.5.1_II:Total population Female]" /></td>
                             <td><input id="Cc8hzGkTDh2-sJUGNYho7Ey-val" name="entryfield" title="SDG_1.5.1_II:Total population Male" value="[ SDG_1.5.1_II:Total population ale]" /></td>
                         </tr>
@@ -2464,7 +2472,7 @@
                             <td>Under-five mortality rate</td>
                             <td><input id="Ti6DZBxiGsG-HllvX50cXC0-val" name="entryfield" title="SDG_3:Under-five mortality rate	" value="[ SDG_3:Under-five mortality rate	 ]" /></td>
                         </tr>
-                        <tr class="I322">
+                        <tr class="I322 I322Enabled">
                             <td>Neonatal mortality rate</td>
                             <td><input id="iCihpG4jRzH-HllvX50cXC0-val" name="entryfield" title="SDG_3:Neonatal mortality rate	" value="[ SDG_3:Neonatal mortality rate	 ]" /></td>
                         </tr>
@@ -2474,7 +2482,7 @@
                                 />
                             </td>
                         </tr>
-                        <tr class="I332">
+                        <tr class="I332 I332Enabled">
                             <td>Tuberculosis incidence per 1,000 population</td>
                             <td><input id="aGhDRO2S4Lu-HllvX50cXC0-val" name="entryfield" title="SDG_3:Tuberculosis incidence per 1,000 population	" value="[ SDG_3:Tuberculosis incidence per 1,000 population	 ]" /></td>
                         </tr>
@@ -2490,19 +2498,19 @@
                             <td>Requiring intervention against NTDs</td>
                             <td><input id="wjtsNUXEZmA-HllvX50cXC0-val" name="entryfield" title="SDG_3:Requiring intervention against NTDs	" value="[ SDG_3:Requiring intervention against NTDs	 ]" /></td>
                         </tr>
-                        <tr class="I341">
+                        <tr class="I341 I341Enabled">
                             <td>Death rate from NCDs (per 100,000)</td>
                             <td><input id="NS7zBWqKEXq-HllvX50cXC0-val" name="entryfield" title="SDG_3:Death rate from NCDs (per 100,000)	" value="[ SDG_3:Death rate from NCDs (per 100,000)	 ]" /></td>
                         </tr>
-                        <tr class="I342">
+                        <tr class="I342 I342Enabled">
                             <td>Suicide mortality rate</td>
                             <td><input id="qO7NEsYVVXN-HllvX50cXC0-val" name="entryfield" title="SDG_3:Suicide deaths in a year  x 100,000" value="[ SDG_3:Suicide deaths in a year  x 100,000 ]" /></td>
                         </tr>
-                        <tr class="I352">
+                        <tr class="I352 I352Enabled">
                             <td>Alcoholic consumption (in liters)</td>
                             <td><input id="Yk7ej3qZXDv-HllvX50cXC0-val" name="entryfield" title="SDG_3:Alcoholic consumption (in liters)	" value="[ SDG_3:Alcoholic consumption (in liters)	 ]" /></td>
                         </tr>
-                        <tr class="I361">
+                        <tr class="I361 I361Enabled">
                             <td>Traffic deaths (per 100,000)</td>
                             <td><input id="vmzqxcCgqPd-HllvX50cXC0-val" name="entryfield" title="SDG_3:Traffic deaths (per 100,000)	" value="[ SDG_3:Traffic deaths (per 100,000)	 ]" /></td>
                         </tr>
@@ -2526,11 +2534,11 @@
                             <td>Mortality, air pollution</td>
                             <td><input id="DtwIkKQchib-HllvX50cXC0-val" name="entryfield" title="SDG_3:Mortality, air pollution	" value="[ SDG_3:Mortality, air pollution	 ]" /></td>
                         </tr>
-                        <tr class="I392">
+                        <tr class="I392 I392Enabled">
                             <td>Mortality, unsafe water (per 100,000)</td>
                             <td><input id="Rd6xzemL4S5-HllvX50cXC0-val" name="entryfield" title="SDG_3:Mortality, unsafe water (per 100,000)	" value="[ SDG_3:Mortality, unsafe water (per 100,000)	 ]" /></td>
                         </tr>
-                        <tr class="I393">
+                        <tr class="I393 I393Enabled">
                             <td>Mortality, unintentional poisoning (per 100,000)</td>
                             <td><input id="HW9SvVBHjfX-HllvX50cXC0-val" name="entryfield" title="SDG_3:Mortality, unintentional poisoning (per 100,000)	" value="[ SDG_3:Mortality, unintentional poisoning (per 100,000)	 ]" /></td>
                         </tr>
@@ -2679,11 +2687,11 @@
                             <td>Number of live births</td>
                             <td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="SDG_3:321_Number of live births" value="[ SDG_3:321_Number of live births ]" /></td>
                         </tr>
-                        <tr class="I322">
+                        <tr class="I322 I322Disabled">
                             <td>Number of children who died during the first 28 days of life</td>
                             <td><input id="r1tLOkgBXcw-HllvX50cXC0-val" name="entryfield" title="SDG_3:Children who died during the first 28 days of life" value="[ SDG_3:Children who died during the first 28 days of life ]" /></td>
                         </tr>
-                        <tr class="I322">
+                        <tr class="I322 I322Disabled">
                             <td>Number of live births</td>
                             <td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="SDG_3:321_Number of live births" value="[ SDG_3:321_Number of live births ]" /></td>
                         </tr>
@@ -2701,20 +2709,7 @@
                             <td><input id="ZbDhzDEUP4l-jA1UZk4LsMq-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected Transgender people" value="[ SDG_3.3.1: Number of people who are newly infected Transgender people ]" /></td>
                             <td><input id="ZbDhzDEUP4l-hKZlCUP9HHk-val" name="entryfield" title="SDG_3.3.1: Number of people who are newly infected Prisoners" value="[ SDG_3.3.1: Number of people who are newly infected Prisoners ]" /></td>
                         </tr>
-                        <tr class="II331 II331Disabled">
-                            <td>Total uninfected person-years of exposure</td>
-                            <td><input id="N14ZAt5js3h-Yj666plLUsm-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure &lt;25" value="[ SDG_3.3.1: total uninfected person-years of exposure &lt;25 ]" /></td>
-                            <td><input id="N14ZAt5js3h-geV0GS9Fg9z-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure +25" value="[ SDG_3.3.1: total uninfected person-years of exposure +25 ]" /></td>
-                            <td><input id="N14ZAt5js3h-sJUGNYho7Ey-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Male" value="[ SDG_3.3.1: total uninfected person-years of exposure Male ]" /></td>
-                            <td><input id="N14ZAt5js3h-sLKRSW7xmwp-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Female" value="[ SDG_3.3.1: total uninfected person-years of exposure Female ]" /></td>
-                            <td><input id="N14ZAt5js3h-U4ijqcMNltY-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Men who have sex with men" value="[ SDG_3.3.1: total uninfected person-years of exposure Men who have sex with men ]"
-                                /></td>
-                            <td><input id="N14ZAt5js3h-FTkGfOSKzH4-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Sex workers" value="[ SDG_3.3.1: total uninfected person-years of exposure Sex workers ]" /></td>
-                            <td><input id="N14ZAt5js3h-NpsqiM3gmGZ-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure People who inject drugs" value="[ SDG_3.3.1: total uninfected person-years of exposure People who inject drugs ]"
-                                /></td>
-                            <td><input id="N14ZAt5js3h-jA1UZk4LsMq-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Transgender people" value="[ SDG_3.3.1: total uninfected person-years of exposure Transgender people ]" /></td>
-                            <td><input id="N14ZAt5js3h-hKZlCUP9HHk-val" name="entryfield" title="SDG_3.3.1: total uninfected person-years of exposure Prisoners" value="[ SDG_3.3.1: total uninfected person-years of exposure Prisoners ]" /></td>
-                        </tr>
+
                         <tr class="I332 I332Disabled">
                             <td>Number of new and relapse TB cases arising in a specified time period</td>
                             <td><input id="mH9XBhoW1Cf-HllvX50cXC0-val" name="entryfield" title="SDG_3:New and relapse TB cases" value="[ SDG_3:New and relapse TB cases ]" /></td>
@@ -2786,35 +2781,35 @@
                             <td>Yaws</td>
                             <td><input id="r4N5yJAOI06-HllvX50cXC0-val" name="entryfield" title="SDG_3.3.5: Yaws" value="[ SDG_3.3.5: Yaws ]" /></td>
                         </tr>
-                        <tr class="I341">
+                        <tr class="I341 I341Disabled">
                             <td>Number of deaths between ages 30 and 70 years from 4 NCD</td>
                             <td><input id="Cl2zeNxNNEM-HllvX50cXC0-val" name="entryfield" title="SDG_3:Deaths 30-70yrs frm 4 NCD" value="[ SDG_3:Deaths 30-70yrs frm 4 NCD ]" /></td>
                         </tr>
-                        <tr class="I341">
+                        <tr class="I341 I341Disabled">
                             <td>The population at exact age 30 in the synthetic life-table population</td>
                             <td><input id="yj4fJbzFrfg-HllvX50cXC0-val" name="entryfield" title="SDG_3:Population at exact age 30 in synthetic life-table" value="[ SDG_3:Population at exact age 30 in synthetic life-table ]" /></td>
                         </tr>
-                        <tr class="I342">
+                        <tr class="I342 I342Disabled">
                             <td>Number of suicide deaths in a year</td>
                             <td><input id="HzqYEXs8hoO-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of suicide deaths in a year" value="[ SDG_3:Number of suicide deaths in a year ]" /></td>
                         </tr>
-                        <tr class="I342">
+                        <tr class="I342 I342Disabled">
                             <td>Midyear resident population for the same calendar year</td>
                             <td><input id="Vak8DH4WNiD-HllvX50cXC0-val" name="entryfield" title="SDG_3:Midyear resident population same calendar year" value="[ SDG_3:Midyear resident population same calendar year ]" /></td>
                         </tr>
-                        <tr class="I352">
+                        <tr class="I352 I352Disabled">
                             <td>The total amount of alcohol consumed per adult (15+ years)</td>
                             <td><input id="w8oLlRxIzST-HllvX50cXC0-val" name="entryfield" title="SDG_3:Total amount of alcohol consumbed per adult" value="[ SDG_3:Total amount of alcohol consumbed per adult ]" /></td>
                         </tr>
-                        <tr class="I352">
+                        <tr class="I352 I352Disabled">
                             <td>Midyear resident population (15+ years) for the same calendar year</td>
                             <td><input id="b1IbuE6i9Tc-HllvX50cXC0-val" name="entryfield" title="SDG_3:Midyear resident population (15+ years)" value="[ SDG_3:Midyear resident population (15+ years) ]" /></td>
                         </tr>
-                        <tr class="I361">
+                        <tr class="I361 I361Disabled">
                             <td>Number of deaths due to road traffic crashes</td>
                             <td><input id="SJCuhkbZCqN-HllvX50cXC0-val" name="entryfield" title="SDG_3:Deaths due to road traffic crashes" value="[ SDG_3:Deaths due to road traffic crashes ]" /></td>
                         </tr>
-                        <tr class="I361">
+                        <tr class="I361 I361Disabled">
                             <td>Total Population</td>
                             <td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
                         </tr>
@@ -2862,19 +2857,19 @@
                             <td>Total population</td>
                             <td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
                         </tr>
-                        <tr class="I392">
+                        <tr class="I392 I392Disabled">
                             <td>Number of deaths from unsafe water, sanitation, and hygiene</td>
                             <td><input id="VM8F1Q8EVxB-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of deaths from unsafe water, sanitation and hygiene" value="[ SDG_3:Number of deaths from unsafe water, sanitation and hygiene ]" /></td>
                         </tr>
-                        <tr class="I392">
+                        <tr class="I392 I392Disabled">
                             <td>Total population</td>
                             <td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
                         </tr>
-                        <tr class="I393">
+                        <tr class="I393 I393Disabled">
                             <td>Number of deaths from unintentional poisoning</td>
                             <td><input id="C22hsuW2rE5-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of deaths from unintentional poisoning" value="[ SDG_3:Number of deaths from unintentional poisoning ]" /></td>
                         </tr>
-                        <tr class="I393">
+                        <tr class="I393 I393Disabled">
                             <td>Total population</td>
                             <td><input id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield" title="SDG_1:Total population No Dissaggregation" value="[ SDG_1:Total population No Dissaggregation ]" /></td>
                         </tr>
@@ -3035,25 +3030,25 @@
                     </thead>
                     <tbody>
                         <tr class="II411bI II411bIEnabled">
-                            <td>Primary students proficient in reading (%)</td>
+                            <td>Proportion of children and young people at the end of primary achieving at least a minimum proficiency level in reading</td>
                             <td><input id="EaEZ5VBb282-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1b(i)_II:  Proportion of children and young people at the end of primary achieving at least a minimum proficiency level in reading" value="[ SDG_4.1.1b(i)_II:  Proportion of children and young people at the end of primary achieving at least a minimum proficiency level in reading ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411bII II411bIIEnabled">
-                            <td>Primary students proficient in mathematics (%)</td>
+                            <td>Proportion of children and young people at the end of primary achieving at least a minimum proficiency level in mathematics</td>
                             <td><input id="u93cl2SJv4A-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1b(ii)_II: Proportion of children and young people at the end of primary achieving at least a minimum proficiency level in mathematics" value="[ SDG_4.1.1b(ii)_II: Proportion of children and young people at the end of primary achieving at least a minimum proficiency level in mathematics ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411cI II411cIEnabled">
-                            <td>Lower secondary students proficient in mathematics (%)</td>
+                            <td>Proportion of children and young people at the end of lower secondary achieving at least a minimum proficiency level in reading</td>
                             <td><input id="M1wiDRTEgG3-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1c(i)_II: Proportion of children and young people at the end of lower secondary achieving at least a minimum proficiency level in reading" value="[ SDG_4.1.1c(i)_II: Proportion of children and young people at the end of lower secondary achieving at least a minimum proficiency level in reading ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II411cII II411cIIEnabled">
-                            <td>Lower secondary students proficient in mathematics (%)</td>
+                            <td>Proportion of children and young people at the end of lower secondary achieving at least a minimum proficiency level in mathematics</td>
                             <td><input id="ETHIoYJnH9Y-HllvX50cXC0-val" name="entryfield" title="SDG_4.1.1c(ii)_II:Proportion of children and young people at the end of lower secondary achieving at least a minimum proficiency level in mathematics" value="[ SDG_4.1.1c(ii)_II:Proportion of children and young people at the end of lower secondary achieving at least a minimum proficiency level in mathematics ]"
                                 />
                             </td>
@@ -3069,13 +3064,13 @@
     ]" /></td>
                         </tr>
                         <tr class="II431-2 II431-2Enabled">
-                            <td>Youth and adults (age 25-64) in formal and non-formal education and training (%)</td>
+                            <td>Participation rate of youth and adults (age 25-64) in formal and non-formal education and training in the previous 12 months, by sex</td>
                             <td><input id="TAgmnLZvdKV-HllvX50cXC0-val" name="entryfield" title="SDG_4.3.1_II:Participation rate of youth and adults (age 25-64) in formal and non-formal education and training in the previous 12 months, by sex" value="[ SDG_4.3.1_II:Participation rate of youth and adults (age 25-64) in formal and non-formal education and training in the previous 12 months, by sex ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II441 II441Enabled">
-                            <td>Youth and adults (age 15+) with ICT skills (%)</td>
+                            <td>Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill</td>
                             <td><input id="zUZPV63CYv4-HllvX50cXC0-val" name="entryfield" title="SDG_4.4.1_II: Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill" value="[ SDG_4.4.1_II: Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill ]"
                                 />
                             </td>
@@ -3211,7 +3206,7 @@
                             </td>
                         </tr>
                         <tr class="II4a1-20 II4a1-20Enabled">
-                            <td>Upper secondary schools with single-sex bathrooms (%)</td>
+                            <td>Proportion of upper secondary schools with access to single-sex basic sanitation facilities</td>
                             <td><input id="CDL2UuqkTXO-HllvX50cXC0-val" name="entryfield" title="SDG_4.a.1_II: Proportion of upper secondary schools with access to single-sex basic sanitation facilities" value="[ SDG_4.a.1_II: Proportion of upper secondary schools with access to single-sex basic sanitation facilities ]"
                                 />
                             </td>
@@ -3249,7 +3244,9 @@
                             </td>
                         </tr>
                         <tr class="II4c1-4">
-                            <td>Trained upper secondary teachers (%)</td>
+                            <td>Proportion of teachers in upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given
+                                country
+                            </td>
                             <td><input id="lCCFRquKZbH-HllvX50cXC0-val" name="entryfield" title="SDG_4.c.1_II: Proportion of teachers in upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level "
                                     value="[ SDG_4.c.1_II: Proportion of teachers in upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level  ]"
                                 />
@@ -3713,13 +3710,13 @@
                             </td>
                         </tr>
                         <tr class="II531-1 II531-1Enabled">
-                            <td>5.3.1(i) Proportion of women aged 20-24 years who were married or in a union before age 15</td>
+                            <td>Proportion of women aged 20-24 years who were married or in a union before age 15</td>
                             <td><input id="UjzDoreFKHg-HllvX50cXC0-val" name="entryfield" title="SDG_5.3.1_II: Proportion of women aged 20-24 years who were married or in a union before age 15" value="[ SDG_5.3.1_II: Proportion of women aged 20-24 years who were married or in a union before age 15 ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II531-2 II531-1Enabled">
-                            <td>5.3.1(ii) Proportion of women aged 20-24 years who were married or in a union before age 18</td>
+                            <td>Proportion of women aged 20-24 years who were married or in a union before age 18</td>
                             <td><input id="MvH5wN3SqAc-HllvX50cXC0-val" name="entryfield" title="SDG_5.3.1_II: Proportion of women aged 20-24 years who were married or in a union before age 18" value="[ SDG_5.3.1_II: Proportion of women aged 20-24 years who were married or in a union before age 18 ]"
                                 />
                             </td>
@@ -4208,7 +4205,7 @@
                             </td>
                         </tr>
                         <tr class="II5a1a II5a1aDisabled">
-                            <td>total agricultural population</td>
+                            <td>Total agricultural population</td>
                             <td><input id="Gbz8l2eLWQr-sLKRSW7xmwp-val" name="entryfield" title="SDG_5.a.1(a)_II: total agricultural population Female" value="[ SDG_5.a.1(a)_II: total agricultural population Female ]" /></td>
                             <td><input id="Gbz8l2eLWQr-sJUGNYho7Ey-val" name="entryfield" title="SDG_5.a.1(a)_II: total agricultural population Male" value="[ SDG_5.a.1(a)_II: total agricultural population Male ]" /></td>
                             <td><input id="Gbz8l2eLWQr-biAre9KyPA9-val" name="entryfield" title="SDG_5.a.1(a)_II: total agricultural population Poorest" value="[ SDG_5.a.1(a)_II: total agricultural population Poorest ]" /></td>
@@ -4345,7 +4342,7 @@
                             <td><input id="" name="" type="text" /></td>
                         </tr>
                         <tr class="II611 II611Enabled">
-                            <td>6.1.1 Proportion of population using safely managed drinking water services</td>
+                            <td>Proportion of population using safely managed drinking water services</td>
                             <td><input id="e3MQW3SodRF-HllvX50cXC0-val" name="entryfield" title="SDG_6.1.1_II: Proportion of population using safely managed drinking water services" value="[ SDG_6.1.1_II: Proportion of population using safely managed drinking water services ]"
                                 />
                             </td>
@@ -4608,13 +4605,13 @@
                             </td>
                         </tr>
                         <tr class="II7a1 II7a1Disabled">
-                            <td>total public investment flows from IRENA&rsquo;s Public Renewable Energy Investment Database</td>
+                            <td>Total public investment flows from IRENA&rsquo;s Public Renewable Energy Investment Database</td>
                             <td><input id="GmwCM1oGkST-HllvX50cXC0-val" name="entryfield" title="SDG_7.a.1_II: total public investment flows from IRENA’s Public Renewable Energy Investment Database" value="[ SDG_7.a.1_II: total public investment flows from IRENA’s Public Renewable Energy Investment Database ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II7a1 II7a1Disabled">
-                            <td>domestic financial flows; international flows to countries outside developing regions; and flows reported by OECD in USD</td>
+                            <td>Domestic financial flows; international flows to countries outside developing regions; and flows reported by OECD in USD</td>
                             <td><input id="zYGWKi526H5-HllvX50cXC0-val" name="entryfield" title="SDG_7.a.1_II: domestic financial flows; international flows to countries outside developing regions; and flows reported by OECD in USD" value="[ SDG_7.a.1_II: domestic financial flows; international flows to countries outside developing regions; and flows reported by OECD in USD ]"
                                 />
                             </td>
@@ -4917,7 +4914,7 @@
                             </td>
                         </tr>
                         <tr class="II881 II881Disabled">
-                            <td>number of new cases of fatal injury during the reference year</td>
+                            <td>Number of new cases of fatal injury during the reference year</td>
                             <td><input id="CpC2Hda55Hr-sLKRSW7xmwp-val" name="entryfield" title="SDG_8.8.1_II: number of new cases of fatal injury during the reference year Female" value="[ SDG_8.8.1_II: number of new cases of fatal injury during the reference year Female ]"
                                 /></td>
                             <td><input id="CpC2Hda55Hr-sJUGNYho7Ey-val" name="entryfield" title="SDG_8.8.1_II: number of new cases of fatal injury during the reference year Male" value="[ SDG_8.8.1_II: number of new cases of fatal injury during the reference year Male ]"
@@ -5220,7 +5217,7 @@
                             <td><input id="LGR9NIOhJZN-HllvX50cXC0-val" name="entryfield" title="SDG_10:AVg share of national tariff lines(free of duty)" value="[ SDG_10:AVg share of national tariff lines(free of duty) ]" /></td>
                         </tr>
                         <tr class="I10b1 I10b1Enabled">
-                            <td>Total resource flow for development</td>
+                            <td>Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)</td>
                             <td><input id="doGQYyiL5Xc-HllvX50cXC0-val" name="entryfield" title="SDG_10:Sum of official and private flows frm donors" value="[ SDG_10:Sum of official and private flows frm donors ]" /></td>
                         </tr>
                         <tr class="II1011 II1011Enabled">
@@ -5274,7 +5271,7 @@
                             <td colspan="2">Use &quot;No Disaggregation&quot; Tab</td>
                         </tr>
                         <tr class="II1011 II1011Disabled">
-                            <td>annualized average growth rates of household expenditure over a roughly five-year period</td>
+                            <td>Annualized average growth rates of household expenditure over a roughly five-year period</td>
                             <td><input id="iCWipfKa9Ya-HllvX50cXC0-val" name="entryfield" title="SDG_10.1.1_II:annualized average growth rates of household expenditure over a roughly five-year period" value="[ SDG_10.1.1_II:annualized average growth rates of household expenditure over a roughly five-year period ]"
                                 />
                             </td>
@@ -6109,8 +6106,7 @@
                             </td>
                         </tr>
                         <tr class="II1571 II1571Disabled">
-                            <td>Legal trade (weighted average of prices declared for legal imports of analogous species product units)
-                            </td>
+                            <td>Illegal trade + legal trade (sum of all species-product units documented in CITES export permits)</td>
                             <td><input id="eBK4nat88tP-HllvX50cXC0-val" name="entryfield" title="SDG_15.7.1_II:Legal trade (weighted average of prices declared for legal imports of analogous species product units)" value="[ SDG_15.7.1_II:Legal trade (weighted average of prices declared for legal imports of analogous species product units) ]"
                                 />
                             </td>
@@ -6125,7 +6121,7 @@
                             </td>
                         </tr>
                         <tr class="II15c1 II15c1Disabled">
-                            <td>legal trade (sum of all species-product units documented in CITES export permits)</td>
+                            <td>Illegal trade + legal trade (sum of all species-product units documented in CITES export permits)</td>
                             <td><input id="Tr4QHr2VRi7-HllvX50cXC0-val" name="entryfield" title="SDG_15.c.1_II:legal trade (sum of all species-product units documented in CITES export permits)" value="[ SDG_15.c.1_II:legal trade (sum of all species-product units documented in CITES export permits) ]"
                                 />
                             </td>
@@ -6300,7 +6296,7 @@
                             </td>
                         </tr>
                         <tr class="II16101 II16101Enabled">
-                            <td>16.10.1 Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12&nbsp;months</td>
+                            <td>Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12&nbsp;months</td>
                             <td><input id="NAIE7IYIfnv-HllvX50cXC0-val" name="entryfield" title="SDG_16.10.1_II: Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 mon"
                                     value="[ SDG_16.10.1_II: Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 mon ]"
                                 />
@@ -6421,19 +6417,19 @@
                             </td>
                         </tr>
                         <tr class="II1631 II1631Disabled">
-                            <td>the number of all victims of violent crime in the previous 12 months</td>
+                            <td>The number of all victims of violent crime in the previous 12 months</td>
                             <td><input id="XiHAr2zK03T-HllvX50cXC0-val" name="entryfield" title="SDG_16.3.1_II: the number of all victims of violent crime in the previous 12 months" value="[ SDG_16.3.1_II: the number of all victims of violent crime in the previous 12 months ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II1651 II1651Disabled">
-                            <td>total number of persons who paid at least one bribe to a public official, or were asked for a bribe, in the last 12 months</td>
+                            <td>Total number of persons who paid at least one bribe to a public official, or were asked for a bribe, in the last 12 months</td>
                             <td><input id="UruUwmweVha-HllvX50cXC0-val" name="entryfield" title="SDG_16.5.1_II:total number of persons who paid at least one bribe to a public official, or were asked for a bribe, in the last 12 months" value="[ SDG_16.5.1_II:total number of persons who paid at least one bribe to a public official, or were asked for a bribe, in the last 12 months ]"
                                 />
                             </td>
                         </tr>
                         <tr class="II1651 II1651Disabled">
-                            <td>total number of persons who had at least one contact with a public official in the last 12 months</td>
+                            <td>Total number of persons who had at least one contact with a public official in the last 12 months</td>
                             <td><input id="S7z3x7PuSGm-HllvX50cXC0-val" name="entryfield" title="SDG_16.5.1_II:total number of persons who had at least one contact with a public official in the last 12 months" value="[ SDG_16.5.1_II:total number of persons who had at least one contact with a public official in the last 12 months ]"
                                 />
                             </td>

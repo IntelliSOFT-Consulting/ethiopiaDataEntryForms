@@ -1886,6 +1886,19 @@
             $("#sdgs3").tabs();
         })
     });
+
+    $(document).ready(function() {
+        var inputClasses = ["I1732", "I1791", "I17101", "I17111", "I17121", "2.a.2", "I2b1", "I8a1", "I9a1", "I1152", "I15a1", "I16a1"].map(input => ["." + input + "Enabled td input ", "." + input + "Disabled td input "]);
+
+        var inputClassesStr = inputClasses.join(",");
+        $(inputClassesStr).change(function() {
+            var roundedOff = Math.round(parseFloat(this.value) * 100) / 100;
+            this.value = roundedOff;
+            console.error(roundedOff, this.value)
+        });
+    });
+
+    
 </script>
 <style type="text/css">
     /*Styling for the outter tab Start*/
