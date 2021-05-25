@@ -782,14 +782,30 @@
 				$('.sexDisagg').show();
 				$('.geoDisagg').hide();
 				$('.noDisagg').hide();
-			} else if (($(this).val() == "I1748") || ($(this).val() == "I1751") || ($(this).val() == "I1750")) {
+				$('.ageDisagg').hide();
+				$('.locDisagg').hide();
+				$('.educationDisagg').hide();
+			} else if (($(this).val() == "I1748") || ($(this).val() == "I1751") ) {
 				$('.sexDisagg').hide();
 				$('.geoDisagg').hide();
 				$('.noDisagg').show();
-			} else {
+				$('.ageDisagg').hide();
+				$('.locDisagg').hide();
+				$('.educationDisagg').hide();
+			} else if (($(this).val() == "I1750")) {
+				$('.sexDisagg').hide();
+				$('.geoDisagg').hide();
+				$('.noDisagg').hide();
+				$('.ageDisagg').show();
+				$('.locDisagg').show();
+				$('.educationDisagg').show();
+			}else {
 				$('.sexDisagg').hide();
 				$('.geoDisagg').show();
 				$('.noDisagg').hide();
+				$('.ageDisagg').hide();
+				$('.locDisagg').hide();
+				$('.educationDisagg').hide();
 			}
 		})
 	});
@@ -1091,10 +1107,12 @@
 											title="ASP_11:Gini Coefficient" value="[ ASP_11:Gini Coefficient ]" /></td>
 								</tr>
 								<tr class="I13 I13Enabled">
-									<td>Pr&eacute;valence de l&#39;insuffisance pond&eacute;rale</td>
-									<td><input id="Bt7EwzXnP1B-HllvX50cXC0-val" name="entryfield"
-											title="SDG_2:Prevalence of stunting among children under 5"
-											value="[ SDG_2:Prevalence of stunting among children under 5 ]" /></td>
+											<td>Pr&eacute;valence du retard de croissance (taille pour &acirc;ge &lt; -2
+												&eacute;cart-type de la m&eacute;diane de l&#39;Organisation Mondiale de la Sant&eacute;
+												(OMS Normes de Croissance de l&#39;Enfant) parmi les enfants de moins de 5 ans</td>
+											<td><input disabled="disabled" id="Bt7EwzXnP1B-HllvX50cXC0-val" name="entryfield"
+													title="SDG_2:Prevalence of stunting among children under 5"
+													value="[ SDG_2:Prevalence of stunting among children under 5 ]" /></td>
 								</tr>
 								<tr class="I14 I14Enabled">
 									<td>Pourcentage de la population ayant acc&egrave;s &agrave; l&#39;eau potable</td>
@@ -1183,12 +1201,12 @@
 									<td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
 								</tr>
 								<tr class="I13 I13Disabled">
-									<td>Nombre d&#39;enfants de moins de 5 ans dont la taille pour cet &acirc;ge est
-										&lt; -2</td>
-									<td><input id="nsPgvbrDPwQ-HllvX50cXC0-val" name="entryfield"
-											title="SDG_2:Children under five whose weight for height is &gt; +2"
-											value="[ SDG_2:Children under five whose weight for height is &gt; +2 ]" />
-									</td>
+									<td>Nombre d&#39;enfants de moins de 5 ans dont la taille pour cet &acirc;ge est &lt; -2
+										&eacute;cart-type de la m&eacute;diane de l&#39;Organisation Mondiale de la Sant&eacute;
+										(OMS) Normes de Croissance de l&#39;Enfant</td>
+									<td><input id="cBaVY4cTk1A-HllvX50cXC0-val" name="entryfield"
+											title="SDG_2:Children under 5 whose weight for height is &lt; -2"
+											value="[ SDG_2:Children under 5 whose weight for height is &lt; -2 ]" /></td>
 								</tr>
 								<tr class="I13 I13Disabled">
 									<td>Nombre total d&#39;enfants de moins de 5 ans</td>
@@ -3028,12 +3046,11 @@ Implemented ]" /></td>
 									</td>
 								</tr>
 								<tr class="I1750 I1750Enabled">
-									<td>Proportion de filles et de femmes ag&eacute;es de 15 &agrave; 49 ans ayant subi
-										une mutilation g&eacute;nitale f&eacute;minine/d&eacute;coupage par &acirc;ge
-									</td>
-									<td><input id="xQ8YvLwgJ5q-HllvX50cXC0-val" name="entryfield"
-											title="ASP_61750:Proportion of girls and women aged 15 - 49 years who have undergone FGM"
-											value="[ ASP_61750:Proportion of girls and women aged 15 - 49 years who have undergone FGM ]" />
+									<td>Proportion de filles et de femmes ag&eacute;es de 15-49 ans ayant subi la mutilation
+										g&eacute;nitale f&eacute;minine/coupe, par &acirc;ge</td>
+									<td><input disabled="disabled" id="LRn64F4vgGU-HllvX50cXC0-val" name="entryfield"
+											title="SDG_5.3.2_II: Proportion of girls and women aged 15-49 years who have undergone female genital mutilation/cutting, by age"
+											value="[ SDG_5.3.2_II: Proportion of girls and women aged 15-49 years who have undergone female genital mutilation/cutting, by age ]" />
 									</td>
 								</tr>
 								<tr class="I1751 I1751Enabled">
@@ -3054,14 +3071,28 @@ Implemented ]" /></td>
 								<tr class="tableHeader" style="background-color:#ff4c4c !important;">
 									<th rowspan="2">&nbsp;</th>
 									<th class="sexDisagg" colspan="2">Sexe</th>
+									<th class="ageDisagg" colspan="4">Âge</th>
 									<th class="geoDisagg" colspan="2">Geagraphical location</th>
+									<th class="locDisagg" colspan="2">Localisation géographique	</th>
+									<th class="educationDisagg" colspan="4">Éducation</th>
 									<th class="noDisagg">Valeur</th>
 								</tr>
 								<tr class="tableHeader" style="background-color:#ff4c4c !important;">
 									<th class="sexDisagg">Femme</th>
 									<th class="sexDisagg">Homme</th>
+									<th class="ageDisagg">15-19</th>
+									<th class="ageDisagg">20-29</th>
+									<th class="ageDisagg">30-39</th>
+									<th class="ageDisagg">40-49</th>
 									<th class="geoDisagg">Rural</th>
 									<th class="geoDisagg">Urbain</th>
+									<th class="locDisagg">Urbain</th>
+									<th class="locDisagg">Rural</th>
+									<th class="educationDisagg">Pas d'éducation</th>
+									<th class="educationDisagg">Primaire</th>
+									<th class="educationDisagg">Secondaire</th>
+									<th class="educationDisagg">l'enseignement supérieur</th>
+									
 								</tr>
 							</thead>
 							<tbody>
@@ -3126,18 +3157,89 @@ Implemented ]" /></td>
 								<tr class="I1750 I1750Disabled">
 									<td>Nombre de filles et de femmes ag&eacute;es de 15-49 qui ont subi la mutilation
 										g&eacute;nitale f&eacute;minine FGM/C ou MGF</td>
-									<td><input id="EJEH8E4WOOK-HllvX50cXC0-val" name="entryfield"
-											title="ASP_61750:Number of girls and women aged 15-49 who have undergone FGM"
-											value="[ ASP_61750:Number of girls and women aged 15-49 who have undergone FGM ]" />
+									<td><input id="RNex2ouwgwY-oDV0qi1ZdAc-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C 15-19"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C 15-19 ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-C0gmB4XnaCd-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C 20-29"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C 20-29 ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-a19Tnjiu0dM-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C 30-39"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C 30-39 ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-hoqUGaZquP0-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C 40-49"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C 40-49 ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-r8hBd63qzn4-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Urban"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Urban ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-iEgy3xKqVi5-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Rural"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Rural ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-G0cW2urnedp-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C No education"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C No education ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-eWUEO0HAsAP-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Primary"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Primary ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-m7FNLGoFgoS-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Secondary"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Secondary ]" />
+									</td>
+									<td><input id="RNex2ouwgwY-UjCRNYSFj3d-val" name="entryfield"
+											title="SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Higher Education"
+											value="[ SDG_5.3.2_II: Number of girls and women aged 15-49 who have undergone FGM/C Higher Education ]" />
 									</td>
 								</tr>
 								<tr class="I1750 I1750Disabled">
-									<td>Nombre total de femmes &acirc;g&eacute;es de 15 &agrave; 49 ans dans la
-										population</td>
-									<td><input id="YQbEH3YbgIS-HllvX50cXC0-val" name="entryfield"
-											title="ASP_61750:Total number of women aged 15-49 in the population"
-											value="[ ASP_61750:Total number of women aged 15-49 in the population ]" />
-									</td>
+									<td>Nombre total de femmes &acirc;g&eacute;es de 15 &agrave; 49 ans dans la population</td>
+                            <td><input id="BF5pvCCd6vW-oDV0qi1ZdAc-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population 15-19"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population 15-19 ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-C0gmB4XnaCd-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population 20-29"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population 20-29 ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-a19Tnjiu0dM-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population 30-39"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population 30-39 ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-hoqUGaZquP0-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population 40-49"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population 40-49 ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-r8hBd63qzn4-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population Urban"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population Urban ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-iEgy3xKqVi5-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population Rural"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population Rural ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-G0cW2urnedp-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population No education"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population No education ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-eWUEO0HAsAP-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population Primary"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population Primary ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-m7FNLGoFgoS-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population Secondary"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population Secondary ]" />
+                            </td>
+                            <td><input id="BF5pvCCd6vW-UjCRNYSFj3d-val" name="entryfield"
+                                    title="SDG_5.3.2_II: Total number of women aged 15-49 in the population Higher Education"
+                                    value="[ SDG_5.3.2_II: Total number of women aged 15-49 in the population Higher Education ]" />
+                            </td>
 								</tr>
 								<tr class="I1751 I1751Disabled">
 									<td>Nombre d&#39;enfants (0-1) dont les naissances sont enregistr&eacute;es au cours
