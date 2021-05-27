@@ -243,12 +243,12 @@
         if ((($('.I342Disabled :input').val()) != "") ) {
             noDisaggregationDisabled("I342Disabled", "I342Enabled");
         }
-        if ((($("'.I352Enabled :input'").val()) != "")) {
-            DisaggregationDisabled("I352Disabled", "I352Enabled");
-        }
-        if ((($('.I352Disabled :input').val()) != "")) {
-            noDisaggregationDisabled("I352Disabled", "I352Enabled");
-        }
+        // if ((($("'.I352Enabled :input'").val()) != "")) {
+        //     DisaggregationDisabled("I352Disabled", "I352Enabled");
+        // }
+        // if ((($('.I352Disabled :input').val()) != "")) {
+        //     noDisaggregationDisabled("I352Disabled", "I352Enabled");
+        // }
         if ((($('.I361Enabled :input').val()) != "")) {
             DisaggregationDisabled("I361Disabled", "I361Enabled");
         }
@@ -2091,11 +2091,11 @@
                 <li aria-controls="NoDisagg" aria-expanded="true" aria-labelledby="ui-id-18" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg" id="ui-id-18" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg" aria-expanded="false" aria-labelledby="ui-id-19" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg" id="ui-id-19" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
 
             <div aria-hidden="false" aria-labelledby="ui-id-18"
@@ -2402,11 +2402,11 @@
                 <li aria-controls="NoDisagg2" aria-expanded="true" aria-labelledby="ui-id-20" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg2" id="ui-id-20" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg2" aria-expanded="false" aria-labelledby="ui-id-21" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg2" id="ui-id-21" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
 
             <div aria-hidden="false" aria-labelledby="ui-id-20"
@@ -2688,11 +2688,11 @@
                 <li aria-controls="NoDisagg3" aria-expanded="true" aria-labelledby="ui-id-22" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg3" id="ui-id-22" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg3" aria-expanded="false" aria-labelledby="ui-id-23" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg3" id="ui-id-23" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -2765,20 +2765,20 @@
                                     title="SDG_3:Requiring intervention against NTDs	"
                                     value="[ SDG_3:Requiring intervention against NTDs	 ]" /></td>
                         </tr>
-                        <tr class="I341">
+                        <tr class="I341 I341Enabled">
                             <td>Taux de mortalit&eacute; attribu&eacute; aux maladies cardiovasculaires, cancer,
                                 diab&egrave;tes ou bien maladie respiratoire chronique</td>
                             <td><input id="NS7zBWqKEXq-HllvX50cXC0-val" name="entryfield"
                                     title="SDG_3:Death rate from NCDs (per 100,000)	"
                                     value="[ SDG_3:Death rate from NCDs (per 100,000)	 ]" /></td>
                         </tr>
-                        <tr class="I342">
+                        <tr class="I342 I342Enabled">
                             <td>Taux de mortalit&eacute; par suicide</td>
                             <td><input id="qO7NEsYVVXN-HllvX50cXC0-val" name="entryfield"
                                     title="SDG_3:Suicide deaths in a year  x 100,000"
                                     value="[ SDG_3:Suicide deaths in a year  x 100,000 ]" /></td>
                         </tr>
-                        <tr class="I352">
+                        <tr class="I352 I352Enabled">
                             <td>Consommation nocive de l&#39;alcool, d&eacute;fini selon le contexte national comme la
                                 consommation d&#39;alcool ( en litres d&#39;alcool pur) par habitant (15 ans et plus)
                                 dans une ann&eacute;e civile</td>
@@ -2786,14 +2786,14 @@
                                     title="SDG_3:Alcoholic consumption (in liters)	"
                                     value="[ SDG_3:Alcoholic consumption (in liters)	 ]" /></td>
                         </tr>
-                        <tr class="I361">
+                        <tr class="I361 I361Enabled">
                             <td>Taux de d&eacute;c&egrave;s caus&eacute;s par les blessures inflig&eacute;es par les
                                 accidents de la route</td>
                             <td><input id="vmzqxcCgqPd-HllvX50cXC0-val" name="entryfield"
                                     title="SDG_3:Traffic deaths (per 100,000)	"
                                     value="[ SDG_3:Traffic deaths (per 100,000)	 ]" /></td>
                         </tr>
-                        <tr class="I371">
+                        <tr class="I371 I371Enabled">
                             <td>Proportion de femmes en &acirc;ge de procr&eacute;er (ag&eacute;es de 15-49 ans) dont
                                 les besoins en planification familiale sont satisfaits avec des m&eacute;thodes
                                 modernes.</td>
@@ -3555,11 +3555,11 @@
                 <li aria-controls="NoDisagg4" aria-expanded="true" aria-labelledby="ui-id-24" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg4" id="ui-id-24" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg4" aria-expanded="false" aria-labelledby="ui-id-25" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg4" id="ui-id-25" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -4510,11 +4510,11 @@
                 <li aria-controls="NoDisagg5" aria-expanded="true" aria-labelledby="ui-id-26" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg5" id="ui-id-26" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg5" aria-expanded="false" aria-labelledby="ui-id-27" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg5" id="ui-id-27" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -5395,11 +5395,11 @@
                 <li aria-controls="NoDisagg6" aria-expanded="true" aria-labelledby="ui-id-28" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg6" id="ui-id-28" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg6" aria-expanded="false" aria-labelledby="ui-id-29" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg6" id="ui-id-29" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -5679,11 +5679,11 @@
                 <li aria-controls="NoDisagg7" aria-expanded="true" aria-labelledby="ui-id-30" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg7" id="ui-id-30" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg7" aria-expanded="false" aria-labelledby="ui-id-31" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg7" id="ui-id-31" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -5879,11 +5879,11 @@
                 <li aria-controls="NoDisagg8" aria-expanded="true" aria-labelledby="ui-id-32" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg8" id="ui-id-32" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg8" aria-expanded="false" aria-labelledby="ui-id-33" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg8" id="ui-id-33" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -6338,11 +6338,11 @@
                 <li aria-controls="NoDisagg9" aria-expanded="true" aria-labelledby="ui-id-34" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg9" id="ui-id-34" role="presentation"
-                        tabindex="-1">Agr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg9" aria-expanded="false" aria-labelledby="ui-id-35" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg9" id="ui-id-35" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -6630,11 +6630,11 @@
                 <li aria-controls="NoDisagg10" aria-expanded="true" aria-labelledby="ui-id-36" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg10" id="ui-id-36"
-                        role="presentation" tabindex="-1">Agr&eacute;gation</a></li>
+                        role="presentation" tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg10" aria-expanded="false" aria-labelledby="ui-id-37" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg10" id="ui-id-37" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -6801,11 +6801,11 @@
                 <li aria-controls="NoDisagg11" aria-expanded="true" aria-labelledby="ui-id-38" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg11" id="ui-id-38"
-                        role="presentation" tabindex="-1">Agr&eacute;gation</a></li>
+                        role="presentation" tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg11" aria-expanded="false" aria-labelledby="ui-id-39" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg11" id="ui-id-39" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -7330,11 +7330,11 @@
                 <li aria-controls="NoDisagg12" aria-expanded="true" aria-labelledby="ui-id-40" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg12" id="ui-id-40"
-                        role="presentation" tabindex="-1">Agr&eacute;gation</a></li>
+                        role="presentation" tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg12" aria-expanded="false" aria-labelledby="ui-id-41" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg12" id="ui-id-41" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -7456,11 +7456,11 @@
                 <li aria-controls="NoDisagg13" aria-expanded="true" aria-labelledby="ui-id-42" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg13" id="ui-id-42"
-                        role="presentation" tabindex="-1">Agr&eacute;gation</a></li>
+                        role="presentation" tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg13" aria-expanded="false" aria-labelledby="ui-id-43" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg13" id="ui-id-43" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -7551,11 +7551,11 @@
                 <li aria-controls="NoDisagg14" aria-expanded="true" aria-labelledby="ui-id-44" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg14" id="ui-id-44"
-                        role="presentation" tabindex="-1">Agr&eacute;gation</a></li>
+                        role="presentation" tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg14" aria-expanded="false" aria-labelledby="ui-id-45" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg14" id="ui-id-45" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -7684,11 +7684,11 @@
                 <li aria-controls="NoDisagg15" aria-expanded="true" aria-labelledby="ui-id-46" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg15" id="ui-id-46"
-                        role="presentation" tabindex="-1">Agr&eacute;gation</a></li>
+                        role="presentation" tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg15" aria-expanded="false" aria-labelledby="ui-id-47" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg15" id="ui-id-47" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -7992,11 +7992,11 @@
                 <li aria-controls="NoDisagg16" aria-expanded="true" aria-labelledby="ui-id-48" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg16" id="ui-id-48"
-                        role="presentation" tabindex="-1">Agr&eacute;gation</a></li>
+                        role="presentation" tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg16" aria-expanded="false" aria-labelledby="ui-id-49" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg16" id="ui-id-49" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
@@ -8410,7 +8410,7 @@
                 <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
                 <option value="I1711">17.1.1 Total des recettes publiques en proportion du PIB</option>
                 <option value="I1712">17.1.2 Proportion du budget national financ&eacute;</option>
-                <option value="I1721">17.2.1 17.2.1 APD nette en proportion du RNB des pays donateurs</option>
+                <option value="I1721">17.2.1 APD nette en proportion du RNB des pays donateurs</option>
                 <option value="I1731">17.3.1 R&eacute;partition de l&#39; APD en proportion du budget national total (en
                     USD)</option>
                 <option value="I1732">17.3.2 Volume des envois de fonds (en USD)</option>
@@ -8444,11 +8444,11 @@
                 <li aria-controls="NoDisagg17" aria-expanded="true" aria-labelledby="ui-id-50" aria-selected="true"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab"
                     tabindex="0"><a class="disaggTab ui-tabs-anchor" href="#NoDisagg17" id="ui-id-50"
-                        role="presentation" tabindex="-1">Agr&eacute;gation</a></li>
+                        role="presentation" tabindex="-1" onclick="disableOption()">Agr&eacute;gation</a></li>
                 <li aria-controls="Disagg17" aria-expanded="false" aria-labelledby="ui-id-51" aria-selected="false"
                     class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"><a
                         class="disaggTab ui-tabs-anchor" href="#Disagg17" id="ui-id-51" role="presentation"
-                        tabindex="-1">D&eacute;sagr&eacute;gation</a></li>
+                        tabindex="-1" onclick="disableOption()">D&eacute;sagr&eacute;gation</a></li>
             </ul>
             <!-- Tab content -->
 
